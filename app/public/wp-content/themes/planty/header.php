@@ -35,7 +35,7 @@
 			<div class="header-inner section-inner">
 
 				<div class="header-titles-wrapper">
-				
+
 					<?php
 
 					// Check whether the header search is activated in the customizer.
@@ -55,7 +55,7 @@
 						</button><!-- .search-toggle -->
 
 					<?php } ?>
-						
+
 					<div class="header-titles">
 
 						<?php
@@ -120,13 +120,13 @@
 
 						<?php
 					}
-
 					if ( true === $enable_header_search || has_nav_menu( 'expanded' ) ) {
 						?>
 
 						<div class="header-toggles hide-no-js">
 
 						<?php
+				
 						if ( has_nav_menu( 'expanded' ) ) {
 							?>
 
