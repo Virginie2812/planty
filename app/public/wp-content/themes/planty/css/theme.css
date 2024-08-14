@@ -2,10 +2,19 @@
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
    font-family: "Syne", sans-serif;  
-  
+   margin-top: 0px;
+}
+.entry-content  {
+   width: 100%;
+}
+.elementor-button-content-wrapper {
+   justify-content: center;
+   background: #E0B9B4;
+ color: white;
+ padding: 15px;
 }
 /*header*/
-#custom-logo img {
+.custom-logo img {
    height: 10%;
 }
 nav a {
@@ -13,7 +22,7 @@ nav a {
    display: inline-block;
    padding: 5px 10px;
    text-align: center;
-   text-decoration: none;
+   text-decoration: none !important;
 }
 
 li a:hover
@@ -24,35 +33,73 @@ li a:hover
    padding: 20px;
    margin: 0px;
 }
-#section-inner   {
-  background-color: #ece2da;
-  padding: 10px;
-  border-bottom-right-radius: 30%;
-  border-bottom-left-radius: 30%;
-}
+/* général*/
+
 
 
 /* footer*/
-#site-footer .footer {
+.site-footer .footer {
    padding: 20px;
    color: #000000 !important;
    text-align: center;
 
 }
 /* accueil*/
-h1, h2, h3 {
-   font-family: "Syne", sans-serif;
+h1, h2 {
+   font-family: "Syne", sans-serif !important ;
+   font-weight: bold !important;
    color:#3B8E46 !important;
    text-align: center;
 }
-h2, #elementor-widget-container #elementor-heading-title{
-   color:#D2776A;
+h3 {
+   font-family: "Syne", sans-serif !important;
+   font-weight: normal !important;
+   color:#3B8E46 !important;
+   text-align: center;
 }
- #wp-block-image {
+.elementor-56 .elementor-element.elementor-element-7c6d70e0 {
+   width: 100%;
+    background-color: #ece2da;
+   border-bottom-right-radius: 1%;
+   border-bottom-left-radius: 1%;
+ }
+ .elementor-56 .elementor-element.elementor-element-fa12ed1 {
+   width: 100%;
+    background-color: #ece2da;
+   border-bottom-right-radius: 1%;
+   border-bottom-left-radius: 1%;
+ }
+
+  /* image*/
+  .wp-image-91 {
+   padding-left: 0px;
+
+  }
+.wp-image-89 {
+padding-left: 0px;
+  }
+  /* les gouts*/
+.elementor-56 .elementor-element.elementor-element-5ed865f.e-con {
+   margin-top: -500px;
+   padding-left:25px;
+   padding-right: 25px;
+   gap: 20px;
+   justify-content: center;
+}
+
+.elementor-widget > .elementor-widget-container .elementor-widget-heading .elementor-heading-title {
+   font-size: 50px;
+   color: white !important;
+}
+
+.elementor-widget-container.elementor-widget-heading .elementor-heading-title {
+   color:#D2776A !important;
+}
+ .wp-block-image {
    display: flex;
    padding-left: 10px;
 }
- #post-inner #wp-block-gallery {
+ #post-inner .wp-block-gallery {
    background:#ece2da;
    padding: 10px;
    border-bottom-right-radius: 30%;
@@ -61,14 +108,31 @@ h2, #elementor-widget-container #elementor-heading-title{
  p {
    text-align: center;
  }
+ /*mise en forme "ce qu'ils en pensent"*/
+ h4 .elementor-widget-heading .elementor-heading-title {
+   color:#3B8E46 !important;
+   font-size: 25px;
+   text-align: center;
+ }
+ .elementor-56 .elementor-element .elementor-element-04587cf {
+   padding: 4px;
+ }
+ .elementor-56 .elementor-element .elementor-element-e60e33b.e-con {
+font-size : 15px;
+text-align: left !important;
+ }
  /* Admin*/
 
 
 /* commander*/
- #post-67 {
-   background-color: #3B8E46;
+ .post-67 {
+   background: #3B8E46;
+  
      
  }
-h1 #elementor-heading-title{
-   color:white;
+ h2 .wp-block-heading .elementor-widget-container{
+   color: white;
+   display: flex;
+   justify-content: center;
+  
  }
