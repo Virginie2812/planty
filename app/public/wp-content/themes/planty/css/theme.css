@@ -7,12 +7,7 @@ body * {
 .entry-content  {
    width: 100%;
 }
-.elementor-button-content-wrapper {
-   justify-content: center;
-   background: #E0B9B4;
- color: white;
- padding: 15px;
-}
+
 /*header*/
 .custom-logo img {
    height: 10%;
@@ -34,7 +29,26 @@ li a:hover
    margin: 0px;
 }
 /* général*/
-
+h1 {
+   font-size: 45px;
+   font-family: "Syne", sans-serif !important ;
+   font-weight: 900 !important;
+   color:#3B8E46 !important;
+   text-align: center;
+}
+h2 {
+   font-size: 30px;
+   font-family: "Syne", sans-serif !important ;
+   font-weight: 900 !important;
+   color:#3B8E46 !important;
+   text-align: center;
+}
+h3 {
+   font-family: "Syne", sans-serif !important;
+   font-weight: normal !important;
+   color:#3B8E46 !important;
+   text-align: center;
+}
 
 
 /* footer*/
@@ -45,18 +59,7 @@ li a:hover
 
 }
 /* accueil*/
-h1, h2 {
-   font-family: "Syne", sans-serif !important ;
-   font-weight: bold !important;
-   color:#3B8E46 !important;
-   text-align: center;
-}
-h3 {
-   font-family: "Syne", sans-serif !important;
-   font-weight: normal !important;
-   color:#3B8E46 !important;
-   text-align: center;
-}
+
 .elementor-56 .elementor-element.elementor-element-7c6d70e0 {
    width: 100%;
     background-color: #ece2da;
@@ -71,56 +74,128 @@ h3 {
  }
 
   /* image*/
-  .wp-image-91 {
-   padding-left: 0px;
+  .wp-block-gallery .wp-block-image .wp-image-91 {
+  margin-left: -150px;
+ }
 
-  }
+  
 .wp-image-89 {
 padding-left: 0px;
   }
   /* les gouts*/
+  .elementor-element .elementor-element-0e4728e .elementor-heading-title {
+   color:#D2776A !important;
+   font-family: "Syne", sans-serif !important;
+   font-weight: 900 !important ;
+}
+/*goût modification*/
 .elementor-56 .elementor-element.elementor-element-5ed865f.e-con {
-   margin-top: -500px;
-   padding-left:25px;
-   padding-right: 25px;
-   gap: 20px;
-   justify-content: center;
+   margin-top: -480px;
+   
+   margin-bottom: 25px;
+  
 }
 
-.elementor-widget > .elementor-widget-container .elementor-widget-heading .elementor-heading-title {
-   font-size: 50px;
+.elementor-element .elementor-element-8e421e3 .elementor-heading-title
+
+{
+   font-family: "Syne", sans-serif !important;
+   font-weight: bold !important ;
+   font-size: 55px;
    color: white !important;
 }
-
-.elementor-widget-container.elementor-widget-heading .elementor-heading-title {
-   color:#D2776A !important;
+.elementor-element .elementor-element-621597f .elementor-heading-title
+{
+   font-family: "Syne", sans-serif !important;
+   font-weight: bold !important ;
+   font-size: 55px;
+   color: white !important;
+}
+.elementor-element .elementor-element-a51a422 .elementor-heading-title
+{
+   font-family: "Syne", sans-serif !important;
+   font-weight: bold !important ;
+   font-size: 55px;
+   color: white !important;
+}
+.elementor-element .elementor-element-fabf04f .elementor-heading-title
+{
+   font-family: "Syne", sans-serif !important;
+   font-weight: bold !important ;
+   font-size: 55px;
+   color: white !important;
+}
+/*button*/
+.elementor-element .elementor-element-ffffc34 .elementor-button-content-wrapper {
+   justify-content: center;
+   background: #E0B9B4 !important;
+ color: white !important;
+ 
+ 
+}
+.elementor-element .elementor-element-ffffc34 a{
+   background-color: #E0B9B4;
+   padding: 20px 35px 20px 35px;
+   border-radius: 5px;
+   margin: 20px;
 }
  .wp-block-image {
    display: flex;
    padding-left: 10px;
 }
- #post-inner .wp-block-gallery {
-   background:#ece2da;
-   padding: 10px;
-   border-bottom-right-radius: 30%;
-   border-bottom-left-radius: 30%;
- }
+
+   
  p {
    text-align: center;
  }
  /*mise en forme "ce qu'ils en pensent"*/
- h4 .elementor-widget-heading .elementor-heading-title {
+ 
+  /*titre Fathia*/
+ .elementor-element .elementor-element-3c0a467 .elementor-widget-container .elementor-heading-title {
    color:#3B8E46 !important;
-   font-size: 25px;
-   text-align: center;
+   font-size: 40px;
+   font-weight: normal !important;
+   text-align: left;
+   margin-top: 10px;
+   margin-bottom: 0px;
  }
- .elementor-56 .elementor-element .elementor-element-04587cf {
-   padding: 4px;
- }
- .elementor-56 .elementor-element .elementor-element-e60e33b.e-con {
+   /*text Fatiha*/
+ .elementor-56 .elementor-element .elementor-element-9046a2d p {
 font-size : 15px;
 text-align: left !important;
+padding: 4px;
  }
+ /*titre Véro*/
+ .elementor-element .elementor-element-eccff35 .elementor-widget-container .elementor-heading-title {
+   color:#3B8E46 !important;
+   font-size: 40px;
+   font-weight: normal !important;
+   text-align: left;
+   margin-top: 10px;
+   margin-bottom: 0px;
+ }
+   /*text Véro*/
+ .elementor-56 .elementor-element .elementor-element-f39c475 p {
+font-size : 15px;
+text-align: left !important;
+padding: 4px;
+ }
+/*titre Marc*/
+.elementor-element .elementor-element-27636ef .elementor-widget-container .elementor-heading-title {
+   color:#3B8E46 !important;
+   font-size: 40px;
+   font-weight: normal !important;
+   text-align: left;
+   padding-bottom: 0px;
+   margin-top: 10px;
+   margin-bottom: 0px;
+ }
+   /*text Marc*/
+ .elementor-56 .elementor-element .elementor-element-f75e1d4 p {
+font-size : 15px;
+text-align: left !important;
+padding: 4px;
+ } 
  /* Admin*/
 
 
