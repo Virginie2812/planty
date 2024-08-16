@@ -1,213 +1,327 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet');
+
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
-   font-family: "Syne", sans-serif;  
-   margin-top: 0px;
+	font-family: "Syne", sans-serif;
+	margin-top: 0px;
 }
-.entry-content  {
-   width: 100%;
+
+.entry-content {
+	width: 100%;
 }
 
 /*header*/
 .custom-logo img {
-   height: 10%;
-}
-nav a {
-   color:  black !important;
-   display: inline-block;
-   padding: 5px 10px;
-   text-align: center;
-   text-decoration: none !important;
+	height: 10%;
 }
 
-li a:hover
- {
-   color: white !important;
-   background:#D2776A;
-   text-decoration: none !important;
-   padding: 20px;
-   margin: 0px;
+nav a {
+	color: black !important;
+	display: inline-block;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none !important;
 }
+
+li a:hover {
+	color: white !important;
+	background: #D2776A;
+	text-decoration: none !important;
+	padding: 20px;
+	margin: 0px;
+}
+
 /* général*/
 h1 {
-   font-size: 45px;
-   font-family: "Syne", sans-serif !important ;
-   font-weight: 900 !important;
-   color:#3B8E46 !important;
-   text-align: center;
+	font-size: 40px;
+	font-family: "Syne", sans-serif !important;
+	font-weight: 900 !important;
+	color: #3B8E46 !important;
+	text-align: center;
 }
+
 h2 {
-   font-size: 30px;
-   font-family: "Syne", sans-serif !important ;
-   font-weight: 900 !important;
-   color:#3B8E46 !important;
-   text-align: center;
+	font-size: 32px;
+	font-family: "Syne", sans-serif !important;
+	font-weight: 900 !important;
+	color: #3B8E46 !important;
+	text-align: center;
 }
+
 h3 {
-   font-family: "Syne", sans-serif !important;
-   font-weight: normal !important;
-   color:#3B8E46 !important;
-   text-align: center;
+	font-size: 28px;
+	font-family: "Syne", sans-serif !important;
+	font-weight: normal !important;
+	color: #3B8E46 !important;
+	text-align: center;
+}
+
+h4 {
+	font-size: 22px;
+	font-family: "Syne", sans-serif !important;
+
+	text-align: center;
+}
+
+h5 {
+	font-size: 20px;
+	font-family: "Syne", sans-serif !important;
+	color: black;
+	text-align: center;
+}
+
+p {
+	font-size: 18px;
+	text-align: center;
+	color: black;
 }
 
 
 /* footer*/
 .site-footer .footer {
-   padding: 20px;
-   color: #000000 !important;
-   text-align: center;
+	padding: 20px;
+	color: #000000 !important;
+	text-align: center;
 
 }
+
 /* accueil*/
 
 .elementor-56 .elementor-element.elementor-element-7c6d70e0 {
-   width: 100%;
-    background-color: #ece2da;
-   border-bottom-right-radius: 1%;
-   border-bottom-left-radius: 1%;
- }
- .elementor-56 .elementor-element.elementor-element-fa12ed1 {
-   width: 100%;
-    background-color: #ece2da;
-   border-bottom-right-radius: 1%;
-   border-bottom-left-radius: 1%;
- }
-
-  /* image*/
-  .wp-block-gallery .wp-block-image .wp-image-91 {
-  margin-left: -150px;
- }
-
-  
-.wp-image-89 {
-padding-left: 0px;
-  }
-  /* les gouts*/
-  .elementor-element .elementor-element-0e4728e .elementor-heading-title {
-   color:#D2776A !important;
-   font-family: "Syne", sans-serif !important;
-   font-weight: 900 !important ;
+	width: 100%;
+	background-color: #ece2da;
+	border-bottom-right-radius: 1%;
+	border-bottom-left-radius: 1%;
 }
+
+.elementor-56 .elementor-element.elementor-element-fa12ed1 {
+	width: 100%;
+	background-color: #ece2da;
+	border-bottom-right-radius: 1%;
+	border-bottom-left-radius: 1%;
+}
+
+/* image*/
+/*.elementor-element .elementor-element-a07db66 .wp-image-281{
+  margin-right:0px;
+  padding-right: 0px;
+ }*/
+
+
+/* les gouts*/
+.elementor-element .elementor-element-0e4728e .elementor-heading-title {
+	color: #D2776A !important;
+	font-family: "Syne", sans-serif !important;
+	font-weight: 900 !important;
+}
+
 /*goût modification*/
 .elementor-56 .elementor-element.elementor-element-5ed865f.e-con {
-   margin-top: -480px;
-   
-   margin-bottom: 25px;
-  
+	margin-top: -480px;
+
+	margin-bottom: 25px;
+
 }
 
-.elementor-element .elementor-element-8e421e3 .elementor-heading-title
+.elementor-element .elementor-element-8e421e3 .elementor-heading-title {
+	font-family: "Syne", sans-serif !important;
+	font-weight: bold !important;
+	font-size: 55px;
+	color: white !important;
+}
 
-{
-   font-family: "Syne", sans-serif !important;
-   font-weight: bold !important ;
-   font-size: 55px;
-   color: white !important;
+.elementor-element .elementor-element-621597f .elementor-heading-title {
+	font-family: "Syne", sans-serif !important;
+	font-weight: bold !important;
+	font-size: 55px;
+	color: white !important;
 }
-.elementor-element .elementor-element-621597f .elementor-heading-title
-{
-   font-family: "Syne", sans-serif !important;
-   font-weight: bold !important ;
-   font-size: 55px;
-   color: white !important;
+
+.elementor-element .elementor-element-a51a422 .elementor-heading-title {
+	font-family: "Syne", sans-serif !important;
+	font-weight: bold !important;
+	font-size: 55px;
+	color: white !important;
 }
-.elementor-element .elementor-element-a51a422 .elementor-heading-title
-{
-   font-family: "Syne", sans-serif !important;
-   font-weight: bold !important ;
-   font-size: 55px;
-   color: white !important;
+
+.elementor-element .elementor-element-fabf04f .elementor-heading-title {
+	font-family: "Syne", sans-serif !important;
+	font-weight: bold !important;
+	font-size: 55px;
+	color: white !important;
 }
-.elementor-element .elementor-element-fabf04f .elementor-heading-title
-{
-   font-family: "Syne", sans-serif !important;
-   font-weight: bold !important ;
-   font-size: 55px;
-   color: white !important;
-}
+
 /*button*/
 .elementor-element .elementor-element-ffffc34 .elementor-button-content-wrapper {
-   justify-content: center;
-   background: #E0B9B4 !important;
- color: white !important;
- 
- 
-}
-.elementor-element .elementor-element-ffffc34 a{
-   background-color: #E0B9B4;
-   padding: 20px 35px 20px 35px;
-   border-radius: 5px;
-   margin: 20px;
-}
- .wp-block-image {
-   display: flex;
-   padding-left: 10px;
+	justify-content: center;
+	background: #E0B9B4 !important;
+	color: white !important;
+
+
 }
 
-   
- p {
-   text-align: center;
- }
- /*mise en forme "ce qu'ils en pensent"*/
- 
-  /*titre Fathia*/
- .elementor-element .elementor-element-3c0a467 .elementor-widget-container .elementor-heading-title {
-   color:#3B8E46 !important;
-   font-size: 40px;
-   font-weight: normal !important;
-   text-align: left;
-   margin-top: 10px;
-   margin-bottom: 0px;
- }
-   /*text Fatiha*/
- .elementor-56 .elementor-element .elementor-element-9046a2d p {
-font-size : 15px;
-text-align: left !important;
-padding: 4px;
- }
- /*titre Véro*/
- .elementor-element .elementor-element-eccff35 .elementor-widget-container .elementor-heading-title {
-   color:#3B8E46 !important;
-   font-size: 40px;
-   font-weight: normal !important;
-   text-align: left;
-   margin-top: 10px;
-   margin-bottom: 0px;
- }
-   /*text Véro*/
- .elementor-56 .elementor-element .elementor-element-f39c475 p {
-font-size : 15px;
-text-align: left !important;
-padding: 4px;
- }
+.elementor-element .elementor-element-ffffc34 a {
+	background-color: #E0B9B4;
+	padding: 20px 35px 20px 35px;
+	border-radius: 5px;
+	margin: 20px;
+}
+
+.wp-block-image {
+	display: flex;
+	padding-left: 10px;
+}
+
+
+/*mise en forme "ce qu'ils en pensent"*/
+
+/*titre Fathia*/
+.elementor-element .elementor-element-3c0a467 .elementor-widget-container .elementor-heading-title {
+	color: #3B8E46 !important;
+	font-size: 40px;
+	font-weight: normal !important;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+/*text Fatiha*/
+.elementor-56 .elementor-element .elementor-element-9046a2d p {
+	font-size: 15px;
+	text-align: left !important;
+	padding: 4px;
+}
+
+/*titre Véro*/
+.elementor-element .elementor-element-eccff35 .elementor-widget-container .elementor-heading-title {
+	color: #3B8E46 !important;
+	font-size: 40px;
+	font-weight: normal !important;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+/*text Véro*/
+.elementor-56 .elementor-element .elementor-element-f39c475 p {
+	font-size: 15px;
+	text-align: left !important;
+	padding: 4px;
+}
+
 /*titre Marc*/
 .elementor-element .elementor-element-27636ef .elementor-widget-container .elementor-heading-title {
-   color:#3B8E46 !important;
-   font-size: 40px;
-   font-weight: normal !important;
-   text-align: left;
-   padding-bottom: 0px;
-   margin-top: 10px;
-   margin-bottom: 0px;
- }
-   /*text Marc*/
- .elementor-56 .elementor-element .elementor-element-f75e1d4 p {
-font-size : 15px;
-text-align: left !important;
-padding: 4px;
- } 
- /* Admin*/
+	color: #3B8E46 !important;
+	font-size: 40px;
+	font-weight: normal !important;
+	text-align: left;
+	padding-bottom: 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+/*text Marc*/
+.elementor-56 .elementor-element .elementor-element-f75e1d4 p {
+	font-size: 15px;
+	text-align: left !important;
+	padding: 4px;
+}
+
+/* Nous rencontrer*/
+.elementor-40 .elementor-element.elementor-element-453113f {
+	width: 100%;
+	background-color: #ece2da;
+	border-bottom-right-radius: 1%;
+	border-bottom-left-radius: 1%;
+}
+
+/*image*/
+.elementor-element .elementor-element-d5bd055 .wp-image-302 {
+	width: 15%;
+	margin-bottom: -150px;
+	display: flex;
+	justify-content: left;
+}
+
+/*titre*/
+.elementor-element .elementor-element-4da7625 .elementor-heading-title {
+	color: #D2776A !important;
+	font-family: "Syne", sans-serif !important;
+	font-weight: 900 !important;
+}
+
+/*texte*/
+.elementor-element .elementor-element-10ce064 p {
+	font-family: "Syne", sans-serif !important;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+/* titre l'équipe*/
+/* titre*/
+.elementor-element .elementor-element-55c3691 .elementor-heading-title {
+	color: black !important;
+	font-weight: bold;
+
+}
+
+/* images*/
+.elementor-element .elementor-element-1d117c8 {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+.elementor-40 .elementor-element.elementor-element-37acd31 {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+/* noms fonctions*/
+.elementor-element .elementor-element-e28c391 .elementor-heading-title {
+	color: black !important;
+
+}
+
+.elementor-element .elementor-element-eeb7f0a .elementor-heading-title {
+	color: black !important;
+
+}
+
+.elementor-element .elementor-element-7943f0e .elementor-heading-title {
+	color: black !important;
+
+}
+
+/* image feuille*/
+.elementor-element .elementor-element-e0614ba .wp-image-281 {
+	width: 15%;
+	margin-top: -150px;
+	margin-right: 15px;
+}
+
+/*formulaire*/
+/*background*/
+.elementor-40 .elementor-element.elementor-element-094abec {
+	background-color: #ece2da;
+	border-bottom-right-radius: 2%;
+	border-bottom-left-radius: 2%;
+}
+
+/* Admin*/
 
 
 /* commander*/
- .post-67 {
-   background: #3B8E46;
-  
-     
- }
- h2 .wp-block-heading .elementor-widget-container{
-   color: white;
-   display: flex;
-   justify-content: center;
-  
- }
+.post-67 {
+	background: #3B8E46;
+
+
+}
+
+h2 .wp-block-heading .elementor-widget-container {
+	color: white;
+	display: flex;
+	justify-content: center;
+
+}
