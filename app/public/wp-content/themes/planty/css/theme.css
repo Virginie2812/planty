@@ -10,10 +10,7 @@ body * {
 	width: 100%;
 }
 
-/*header*/
-.custom-logo img {
-	height: 10%;
-}
+
 
 nav a {
 	color: black !important;
@@ -41,7 +38,7 @@ h1 {
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 30px;
 	font-family: "Syne", sans-serif !important;
 	font-weight: 900 !important;
 	color: #3B8E46 !important;
@@ -49,7 +46,7 @@ h2 {
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "Syne", sans-serif !important;
 	font-weight: normal !important;
 	color: #3B8E46 !important;
@@ -90,22 +87,19 @@ p {
 .elementor-56 .elementor-element.elementor-element-7c6d70e0 {
 	width: 100%;
 	background-color: #ece2da;
-	border-bottom-right-radius: 1%;
-	border-bottom-left-radius: 1%;
+	border-bottom-right-radius: 20%;
+	border-bottom-left-radius: 20%;
 }
 
 .elementor-56 .elementor-element.elementor-element-fa12ed1 {
 	width: 100%;
 	background-color: #ece2da;
-	border-bottom-right-radius: 1%;
-	border-bottom-left-radius: 1%;
+	border-bottom-right-radius: 20%;
+	border-bottom-left-radius: 20%;
 }
 
 /* image*/
-/*.elementor-element .elementor-element-a07db66 .wp-image-281{
-  margin-right:0px;
-  padding-right: 0px;
- }*/
+
 
 
 /* les gouts*/
@@ -231,8 +225,8 @@ p {
 .elementor-40 .elementor-element.elementor-element-453113f {
 	width: 100%;
 	background-color: #ece2da;
-	border-bottom-right-radius: 1%;
-	border-bottom-left-radius: 1%;
+	border-bottom-right-radius: 20%;
+	border-bottom-left-radius: 20%;
 }
 
 /*image*/
@@ -257,6 +251,7 @@ p {
 	padding-right: 200px;
 }
 
+
 /* titre l'équipe*/
 /* titre*/
 .elementor-element .elementor-element-55c3691 .elementor-heading-title {
@@ -271,14 +266,13 @@ p {
 	gap: 20px;
 	justify-content: center;
 }
+/* noms fonctions*/
 
-.elementor-40 .elementor-element.elementor-element-37acd31 {
-	display: flex;
-	gap: 20px;
-	justify-content: center;
+.elementor-40 .elementor-element.elementor-element-eeb7f0a {
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
-/* noms fonctions*/
 .elementor-element .elementor-element-e28c391 .elementor-heading-title {
 	color: black !important;
 
@@ -299,14 +293,35 @@ p {
 	width: 15%;
 	margin-top: -150px;
 	margin-right: 15px;
+	
 }
 
 /*formulaire*/
 /*background*/
 .elementor-40 .elementor-element.elementor-element-094abec {
 	background-color: #ece2da;
-	border-bottom-right-radius: 2%;
-	border-bottom-left-radius: 2%;
+	border-bottom-right-radius: 20%;
+	border-bottom-left-radius: 20%;
+}
+/*nous contacter*/
+/*titre*/
+.elementor-element .elementor-element-9dc6753 .elementor-heading-title {
+	color: black !important ;
+	
+}
+.elementor-element .elementor-element-21896eb{
+	width: 40%;
+	margin: auto;
+}
+
+/* text*/
+label {
+	text-align: left;
+}
+/*arrondis case*/
+/*titres*/
+/*.wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-text .wpcf7-validates-as-required {
+	border-radius: 5px;
 }
 
 /* Admin*/
@@ -314,14 +329,65 @@ p {
 
 /* commander*/
 .post-67 {
-	background: #3B8E46;
-
-
-}
-
-h2 .wp-block-heading .elementor-widget-container {
-	color: white;
-	display: flex;
-	justify-content: center;
+	background-color: #3B8E46;
 
 }
+.elementor-element .elementor-element-9db6ade textarea {
+	color: white !important;
+}
+.elementor-element .elementor-element-86f9281 .elementor-heading-title {
+	color: white !important;
+	text-align: left;
+}
+
+/* superposition sous titre*/
+.elementor-element .elementor-element-4e3a413 {
+	margin:auto;
+}
+
+.elementor-element .elementor-element-ef9d503 {	
+	margin-top: -250px;
+
+} 
+
+.elementor-element .elementor-element-068b41e .elementor-heading-title {
+	color: white !important;
+}
+.elementor-element .elementor-element-d57a617 .elementor-heading-title {
+	color: white !important;
+}
+.elementor-element .elementor-element-573ba04 .elementor-heading-title {
+	color: white !important;
+}.elementor-element .elementor-element-d676cc6 .elementor-heading-title {
+	color: white !important;
+}
+
+.elementor-67 .elementor-element .elementor-element-be4d29e {
+	margin-top: -250px !important;
+}
+
+
+.elementor-element .elementor-element-83a4e34 .elementor-heading-title {
+	color: white !important;
+	text-align: left;
+	font-weight: bold;
+	
+}
+.elementor-67 .elementor-element.elementor-element-9db6ade {
+	width: 80%;
+	margin: auto;
+}
+.elementor-element .elementor-element-9826482 .elementor-heading-title {
+	color: white !important;
+	justify-content: left;
+	font-weight: bold;
+}
+.elementor-67 .elementor-element.elementor-element-57ca18e {
+	width: 80%;
+	margin: auto;
+}
+/* text*/
+.screen-reader-response{
+	color: white !important;
+}
+/*button*/
