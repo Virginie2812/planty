@@ -30,7 +30,7 @@ li a:hover {
 
 /* général*/
 h1 {
-	font-size: 40px;
+	font-size: 36px;
 	font-family: "Syne", sans-serif !important;
 	font-weight: 900 !important;
 	color: #3B8E46 !important;
@@ -73,7 +73,10 @@ p {
 	color: black;
 }
 
-
+.reduced-spacing.missing-post-thumbnail .post-inner {
+	margin-left: 0px;
+	margin-right: 0px;
+}
 /* footer*/
 .site-footer .footer {
 	padding: 20px;
