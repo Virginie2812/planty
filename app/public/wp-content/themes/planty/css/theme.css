@@ -90,62 +90,38 @@ p {
 .elementor-56 .elementor-element.elementor-element-7c6d70e0 {
 	width: 100%;
 	background-color: #ece2da;
-	border-bottom-right-radius: 20%;
-	border-bottom-left-radius: 20%;
-}
 
-.elementor-56 .elementor-element.elementor-element-fa12ed1 {
+}
+.elementor-56 .elementor-element .elementor-element-0eaf590 {
 	width: 100%;
 	background-color: #ece2da;
-	border-bottom-right-radius: 20%;
-	border-bottom-left-radius: 20%;
+	
+}
+.elementor-56 .elementor-element.elementor-element-5f4221d {
+	width: 100%;
+	background-color: #ece2da;
+	border-bottom-right-radius: 10%;
+	border-bottom-left-radius: 10%;
 }
 
 /* image*/
 
 
 
-/* les gouts*/
+/* LES GOUTS */
 .elementor-element .elementor-element-0e4728e .elementor-heading-title {
 	color: #D2776A !important;
 	font-family: "Syne", sans-serif !important;
 	font-weight: 900 !important;
 }
 
-/*goût modification*/
-.elementor-56 .elementor-element.elementor-element-5ed865f.e-con {
-	margin-top: -480px;
-
-	margin-bottom: 25px;
-
+/* Titres images */
+.elementor-element .elementor-element-234b62d  .elementor-heading-title {
+		color: white !important;
 }
-
-.elementor-element .elementor-element-8e421e3 .elementor-heading-title {
-	font-family: "Syne", sans-serif !important;
-	font-weight: bold !important;
-	font-size: 55px;
-	color: white !important;
-}
-
-.elementor-element .elementor-element-621597f .elementor-heading-title {
-	font-family: "Syne", sans-serif !important;
-	font-weight: bold !important;
-	font-size: 55px;
-	color: white !important;
-}
-
-.elementor-element .elementor-element-a51a422 .elementor-heading-title {
-	font-family: "Syne", sans-serif !important;
-	font-weight: bold !important;
-	font-size: 55px;
-	color: white !important;
-}
-
-.elementor-element .elementor-element-fabf04f .elementor-heading-title {
-	font-family: "Syne", sans-serif !important;
-	font-weight: bold !important;
-	font-size: 55px;
-	color: white !important;
+.elementor-element .elementor-element-af60c3c .elementor-heading-title {
+		color: white !important;
+	
 }
 
 /*button*/
@@ -175,8 +151,9 @@ p {
 /*titre Fathia*/
 .elementor-element .elementor-element-3c0a467 .elementor-widget-container .elementor-heading-title {
 	color: #3B8E46 !important;
-	font-size: 40px;
-	font-weight: normal !important;
+	font-size: 26px;
+	
+	font-weight: bold !important;
 	text-align: left;
 	margin-top: 10px;
 	margin-bottom: 0px;
@@ -192,8 +169,8 @@ p {
 /*titre Véro*/
 .elementor-element .elementor-element-eccff35 .elementor-widget-container .elementor-heading-title {
 	color: #3B8E46 !important;
-	font-size: 40px;
-	font-weight: normal !important;
+	font-size: 30px;
+	font-weight: bold !important;
 	text-align: left;
 	margin-top: 10px;
 	margin-bottom: 0px;
@@ -209,8 +186,8 @@ p {
 /*titre Marc*/
 .elementor-element .elementor-element-27636ef .elementor-widget-container .elementor-heading-title {
 	color: #3B8E46 !important;
-	font-size: 40px;
-	font-weight: normal !important;
+	font-size: 26px;
+	font-weight: bold !important;
 	text-align: left;
 	padding-bottom: 0px;
 	margin-top: 10px;
@@ -228,9 +205,10 @@ p {
 .elementor-40 .elementor-element.elementor-element-453113f {
 	width: 100%;
 	background-color: #ece2da;
-	border-bottom-right-radius: 20%;
-	border-bottom-left-radius: 20%;
-}
+	border-bottom-right-radius: 7%;
+	border-bottom-left-radius: 7%;
+	padding: 50px 100px 50px 100px;
+	}
 
 /*image*/
 .elementor-element .elementor-element-d5bd055 .wp-image-302 {
@@ -269,7 +247,7 @@ p {
 	gap: 20px;
 	justify-content: center;
 }
-/* noms fonctions*/
+/* noms fonctions */
 
 .elementor-40 .elementor-element.elementor-element-eeb7f0a {
 	margin-left: 20px;
@@ -303,8 +281,7 @@ p {
 /*background*/
 .elementor-40 .elementor-element.elementor-element-094abec {
 	background-color: #ece2da;
-	border-bottom-right-radius: 20%;
-	border-bottom-left-radius: 20%;
+	
 }
 /*nous contacter*/
 /*titre*/
@@ -317,23 +294,18 @@ p {
 	margin: auto;
 }
 
-/* text*/
-label {
-	text-align: left;
-}
-/*arrondis case*/
-/*titres*/
-/*.wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-text .wpcf7-validates-as-required {
-	border-radius: 5px;
-}
 
-/* Admin*/
 
 
 /* commander*/
 .post-67 {
-	background-color: #3B8E46;
+	color: white !important;
+	background-color: #3B8E46 !important;
 
+
+}
+.elementor-67 .elementor-element.elementor-element-8320e05 .elementor-heading-title {
+	color: white !important;
 }
 .elementor-element .elementor-element-9db6ade textarea {
 	color: white !important;
@@ -352,45 +324,127 @@ label {
 	margin-top: -250px;
 
 } 
-
-.elementor-element .elementor-element-068b41e .elementor-heading-title {
-	color: white !important;
+/* border radius formulaire*/
+.wpcf7-form-control .wpcf7-text .wpcf7-validates-as-required .wpcf7-form-control-wrap {
+	border-radius: 5px;
 }
-.elementor-element .elementor-element-d57a617 .elementor-heading-title {
-	color: white !important;
-}
-.elementor-element .elementor-element-573ba04 .elementor-heading-title {
-	color: white !important;
-}.elementor-element .elementor-element-d676cc6 .elementor-heading-title {
-	color: white !important;
-}
-
-.elementor-67 .elementor-element .elementor-element-be4d29e {
-	margin-top: -250px !important;
-}
-
-
-.elementor-element .elementor-element-83a4e34 .elementor-heading-title {
+.wpcf7-form h2 {
 	color: white !important;
 	text-align: left;
-	font-weight: bold;
+	font-weight: normal !important ;
+	margin-bottom: 10px;
+}
+.wpcf7-form label  {
+	color: white !important;
+}
+.formulaire {
+    display: flex;
+	flex-direction: column;
+	width: 60%;
+    justify-content: space-between; 
+}
+/*@media (max-width: 767px){
+	h1, h2, h3, h4 p {
+		font-size: 100%;
+	}
+.elementor-element .elementor-element-234b62d  .elementor-heading-title {
+		font-size: 50%;
+}
+.elementor-element .elementor-element-af60c3c .elementor-heading-title {
+	font-size: 50%;
 	
+	}
+	.elementor-56 .elementor-element.elementor-element-a07db66 {
+		width: 100%;
+		position: relative;
+		
 }
-.elementor-67 .elementor-element.elementor-element-9db6ade {
-	width: 80%;
-	margin: auto;
+.wp-image-281 {
+	width: 50%;
 }
-.elementor-element .elementor-element-9826482 .elementor-heading-title {
-	color: white !important;
-	justify-content: left;
-	font-weight: bold;
+.wp-image-280 {
+	width: 50%;
 }
-.elementor-67 .elementor-element.elementor-element-57ca18e {
-	width: 80%;
-	margin: auto;
+.wp-image-288 {
+	width: 50%;
+	display: flex;
 }
-/* text*/
-.screen-reader-response{
-	color: white !important;
+
+}*/
+
+@media (width: 320px) {
+	h1  {
+		font-size: 100%;
+	}
+	h2  {
+		font-size: 24px;
+	}
+	h3  {
+		font-size: 22px;
+	}
+	h4  {
+		font-size: 20px;
+	}
+	h5  {
+		font-size: 18px;
+	}
+	p {
+		font-size: 14px;
+	}
+/*.elementor-element .elementor-element-234b62d  .elementor-heading-title {
+		font-size: 50%;
 }
-/*button*/
+.elementor-element .elementor-element-af60c3c .elementor-heading-title {
+	font-size: 50%;
+
+	}*/
+	.elementor-56 .elementor-element.elementor-element-342eefe .elementor-widget-container{
+		padding: 0px 0px 15px 0px !important;
+	}
+	/*marge bloc boisson*/
+	.elementor-element .elementor-element-5f4221d {
+	
+		padding-bottom: 200px;
+	}	
+	/* feuille gauche*/
+	.elementor-56 .elementor-element.elementor-element-a07db66 {
+		padding: 0px !important;
+	}
+		  .wp-image-281 {
+			width: 60%;
+	/* feuille droite */	
+		}
+		.wp-image-280 {
+			width: 60%;
+			
+		}
+		/*canette*/
+		.elementor-56 .elementor-element.elementor-element-858cc8d {
+			left: 0px !important;
+		}			
+		.wp-image-288 {
+			width: 50%;
+			position: relative;
+			
+		}
+		
+		.elementor-56 .elementor-element.elementor-element-a07db66 {
+			padding: 0px !important;
+		}
+		/*bloc fruits*/
+		.elementor-56 .elementor-element.elementor-element-aaf52e9 {
+			margin-bottom: 100px;
+		}
+	/* texte les gouts*/
+.elementor-element .elementor-element-234b62d .elementor-heading-title	{
+		font-size: 30px !important;
+		justify-content: auto;		
+	}
+	.elementor-element .elementor-element-234b62d {
+		margin-top: -350px !important;
+		
+		
+	}
+}
+
+
