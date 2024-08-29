@@ -97,11 +97,11 @@ p {
 	background-color: #ece2da;
 	
 }
-.elementor-56 .elementor-element.elementor-element-5f4221d {
+.elementor-56 .elementor-element.elementor-element-0eaf590 {
 	width: 100%;
 	background-color: #ece2da;
-	border-bottom-right-radius: 10%;
-	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 7%;
+	border-bottom-left-radius: 7%;
 }
 
 /* image*/
@@ -114,7 +114,11 @@ p {
 	font-family: "Syne", sans-serif !important;
 	font-weight: 900 !important;
 }
-
+/* Arrondis bloc */
+.elementor-element.elementor-element-497b00a {
+	border-bottom-right-radius: 7%;
+	border-bottom-left-radius: 7%;
+}
 /* Titres images */
 .elementor-element .elementor-element-234b62d  .elementor-heading-title {
 		color: white !important;
@@ -129,8 +133,6 @@ p {
 	justify-content: center;
 	background: #E0B9B4 !important;
 	color: white !important;
-
-
 }
 
 .elementor-element .elementor-element-ffffc34 a {
@@ -200,8 +202,10 @@ p {
 	text-align: left !important;
 	padding: 4px;
 }
-
-/* Nous rencontrer*/
+.elementor-element .elementor-element-5f8922e .wp-image-265 {
+	padding: 0px !important;
+}
+/* NOUS RENCONTRER */
 .elementor-40 .elementor-element.elementor-element-453113f {
 	width: 100%;
 	background-color: #ece2da;
@@ -214,6 +218,7 @@ p {
 .elementor-element .elementor-element-d5bd055 .wp-image-302 {
 	width: 15%;
 	margin-bottom: -150px;
+	padding-left: -50px;
 	display: flex;
 	justify-content: left;
 }
@@ -289,31 +294,30 @@ p {
 	color: black !important ;
 	
 }
-.elementor-element .elementor-element-21896eb{
-	width: 40%;
-	margin: auto;
+
+
+
+
+
+/* COMMANDER */
+/* sous titre */
+.elementor-element .elementor-element-86f9281 .elementor-heading-title {
+	font-weight: 700 !important;
+		
 }
-
-
-
-
-/* commander*/
 .post-67 {
 	color: white !important;
 	background-color: #3B8E46 !important;
-
-
 }
-.elementor-67 .elementor-element.elementor-element-8320e05 .elementor-heading-title {
+/* titre page */
+ .elementor-67 .elementor-element.elementor-element-8320e05 .elementor-heading-title {
 	color: white !important;
 }
-.elementor-element .elementor-element-9db6ade textarea {
-	color: white !important;
-}
+
 .elementor-element .elementor-element-86f9281 .elementor-heading-title {
 	color: white !important;
 	text-align: left;
-}
+} 
 
 /* superposition sous titre*/
 .elementor-element .elementor-element-4e3a413 {
@@ -324,53 +328,51 @@ p {
 	margin-top: -250px;
 
 } 
-/* border radius formulaire*/
-.wpcf7-form-control .wpcf7-text .wpcf7-validates-as-required .wpcf7-form-control-wrap {
-	border-radius: 5px;
-}
-.wpcf7-form h2 {
-	color: white !important;
-	text-align: left;
-	font-weight: normal !important ;
-	margin-bottom: 10px;
-}
-.wpcf7-form label  {
-	color: white !important;
-}
-.formulaire {
-    display: flex;
-	flex-direction: column;
-	width: 60%;
-    justify-content: space-between; 
-}
-/*@media (max-width: 767px){
-	h1, h2, h3, h4 p {
-		font-size: 100%;
-	}
-.elementor-element .elementor-element-234b62d  .elementor-heading-title {
-		font-size: 50%;
-}
-.elementor-element .elementor-element-af60c3c .elementor-heading-title {
-	font-size: 50%;
+
 	
-	}
-	.elementor-56 .elementor-element.elementor-element-a07db66 {
-		width: 100%;
-		position: relative;
-		
+/* Texte fruits */
+.elementor-element .elementor-element-9e3a73d .elementor-heading-title {
+	color: white !important;
 }
-.wp-image-281 {
-	width: 50%;
+.elementor-element .elementor-element-c595c98 .elementor-heading-title {
+	color: white !important;
 }
-.wp-image-280 {
-	width: 50%;
+.elementor-element .elementor-element-8fab661 .elementor-heading-title {
+	color: white !important;
 }
-.wp-image-288 {
-	width: 50%;
-	display: flex;
+.elementor-element .elementor-element-aa0ed5a .elementor-heading-title {
+	color: white !important;
 }
 
-}*/
+/* format quantité */
+.wpcf7-form .compteur {
+    display: flex;
+	gap: 180px;
+	justify-content: center;
+	width: 15%;
+    margin: auto;
+	}
+/* formulaire */
+	.formulaire h2 {
+		color:white !important;
+		text-align: left;
+		font-weight: 700 !important;
+	}
+	.formulaire {
+		display: flex;
+		justify-content: space-between; 
+		
+    	margin: auto; 
+		gap: 150px;
+	}
+	.colonne {
+		margin-bottom: 20px;
+		display: flex;
+    	flex-direction: column;
+		}
+	.commander {
+		margin-top: 15px;
+	}
 
 @media (width: 320px) {
 	h1  {
@@ -446,5 +448,6 @@ p {
 		
 	}
 }
+
 
 
