@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet');
+
+
+	
+	@media (min-width: 768px) and (max-width: 1024px ) {
+		h1, h2, h3, h4, h5, p  {
+			font-size: 100% !important;
+		}	
+		/* ACCEUIL */
+		/* marge bloc titre */
+		/*.elementor-element .elementor-element-342eefe  {
+			padding: 0px 0px -10px 0px;
+		}*/
+		/* Bloc cannette */
+		.elementor-element .elementor-element-0eaf590 {
+			margin-bottom: -100px;
+				}
+		.elementor-element .elementor-element-5f4221d  {
+			
+			padding-bottom: 250px;
+			margin-left: 0px !important;
+			
+		} 
+		/* feuille gauche */
+		.elementor-element .elementor-element-a07db66 .wp-image-281 {
+			width: 50%;
+			margin-left: -50px !important;
+		}
+		/* feuille droite */
+		.elementor-element .elementor-element-00a26d7 .wp-image-280{
+			width: 40%;
+			margin-right: 300px !important;
+		}
+		/* cannette */
+		.wp-image-288 {
+			width: 60%;
+			margin-left: -90px;
+		}
+
+		/* images bloc 1 */
+		.elementor-element.elementor-element-d483368  {
+			width: 80%;
+			display: flex !important;
+			justify-content: space-around;
+			margin-bottom: 20px;
+		}
+		.elementor-element .elementor-element-f98833c {
+			width: 45%;
+		}
+		.elementor-element .elementor-element-a9970fc {
+			width: 45%;
+		}
+		/* textes bloc 1 */
+		.elementor-element .elementor-element-234b62d .elementor-heading-title {
+			font-size: 100% !important;
+			margin-left: -60px;
+			text-align: center !important;
+			
+		}
+
+		.elementor-element .elementor-element-301c2fe .elementor-heading-title {
+			font-size: 100%!important ;
+			margin-left: 30px;
+			text-align: center !important;
+			
+		} 
+		/* images bloc 2 */
+		.elementor-element.elementor-element-03ad47c  {
+			width: 80%;
+			display: flex !important;
+			justify-content: space-around;
+			padding-bottom: 60px;
+		}
+		.elementor-element .elementor-element-c3462b6 {
+			width: 45%;
+		}
+		.elementor-element .elementor-element-e2e7f1e {
+			width: 45%;
+		}
+		/* textes bloc 2 */
+		.elementor-element .elementor-element-d9dd635 .elementor-heading-title {
+			font-size: 100% !important;
+			margin-left: -60px;
+			text-align: center !important;
+		} 
+		.elementor-element .elementor-element-134d518 .elementor-heading-title {
+			font-size: 100% !important;
+			margin-left: 30px;
+			text-align: center !important;
+		} 
+		
+/* PAGE NOUS RENCONTRER */
+
+
+ /* images l'équipe */
+ /* bloc */
+ .elementor-40 .elementor-element.elementor-element-c3ce7dd {
+	padding-left: 0px;
+	padding-right: 0px;
+	display: flex;
+	justify-content: center;
+
+ }
+ /* formulaire */
+ .elementor-element .elementor-element-c5c6efd  {
+	width: 60% !important ;
+ }
+ .elementor-element .elementor-element-c5c6efd label {
+	font-size: 80%;
+	text-align: left;
+ }
+ .elementor-element .elementor-element-641d995 .wp-image-506  {
+	width: 20%;
+	
+ }
+/* PAGE COMMANDER */
+ /* sous titre */
+ .elementor-67 .elementor-element.elementor-element-86f9281 .elementor-widget-container {
+	margin: -25px 0px 0px 50px;
+ }
+ /* immages commande */
+ .elementor-element .elementor-element-8afd33a  {
+	width: 100% !important;
+ }
+ .elementor-element .elementor-element-4e3a413 .gallery-item {
+	margin: 10px;
+ }
+.elementor-element .elementor-element-1b8c16a {
+	width: 100%;
+	margin-top: -130px;
+	
+}
+.elementor-element .elementor-element-1b8c16a h2 {
+	font-size: 30% !important;
+	
+}
+/* commande */
+.formulaire {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.formulaire h2 {
+	font-size: 100% !important;
+}
+.ligne {
+	height: 2px;
+	width: 100%; 
+	background-color: #ffff;
+	margin-top: 10px;
+	}
+	/* formulaire compteur */
+.compteur {
+	display: flex !important;
+	
+	gap: 90px !important;
+	
+}
+.elementor-element .elementor-element-7e3611b {
+	margin-top: -550px;
+	}
+}
+
+	 /* ........................ */
+@media (min-width: 320px ) and (max-width: 767.98px) {
+	h1, h2, h3, h4, h5, p  {
+		font-size: 60% !important ;
+	}
+	/* PAGE ACCUEIL */
+	/* mise en place canette et feuille */
+.elementor-56 .elementor-element.elementor-element-342eefe .elementor-widget-container{
+		padding: 0px 0px 15px 0px !important;
+	}
+	/*marge bloc boisson*/
+	.elementor-element .elementor-element-5f4221d {
+	
+		padding-bottom: 200px;
+	}	
+	/* feuille gauche*/
+.elementor-56 .elementor-element.elementor-element-a07db66 {
+		margin-left: 60px !important;
+	}
+		 .wp-image-281 {
+			width: 60%;
+		}
+	/* feuille droite */	
+		
+	.elementor-element .elementor-element-00a26d7 .wp-image-280 {
+			
+			margin-right: 50px !important;
+		}
+		.wp-image-280 {
+			width: 50% !important ;
+		}
+		/*canette*/
+		.elementor-56 .elementor-element.elementor-element-858cc8d {
+			left: 0px !important;
+		}	
+		.wp-image-288 {
+			width: 60%;
+			padding-left: 70px;
+			
+		}
+		
+
+	.elementor-element .elementor-element-a07db66 .wp-image-281 {
+		width: 40%;
+		display: grid;
+		justify-items: left;
+	}
+	.elementor-element .elementor-element-00a26d7 .wp-image-280 {
+		margin-left: -20px;
+	}
+	.elementor-element .elementor-element-d483368  {
+		width: 100%;
+		
+	}
+ /* Textes les gouts */
+ .elementor-element .elementor-element-2f236a9 .elementor-heading-title {
+	font-size: 50% !important;
+	
+	width: auto !important;
+ }
+ .elementor-element .elementor-element-301c2fe .elementor-heading-title {
+	font-size: 50%!important ;
+	width: auto !important;
+ }
+ /* PAGE NOUS RENCONTRER */
+ .elementor-40 .elementor-element.elementor-element-453113f {
+	padding: 0px;
+ }
+ .elementor-element .elementor-element-10ce064 p {
+	padding-left: 0px;
+	padding-right: 0px;
+ }
+ /* images l'équipe */
+ /* bloc */
+ .elementor-40 .elementor-element.elementor-element-c3ce7dd {
+	padding-left: 0px;
+	padding-right: 0px;
+	display: flex;
+	justify-content: center;
+
+ }
+
+ /* formulaire */
+ .elementor-element .elementor-element-c5c6efd  {
+	width: 60% !important;
+ }
+ .elementor-element .elementor-element-c5c6efd label {
+	font-size: 80%;
+	text-align: left;
+ }
+ .elementor-element .elementor-element-641d995 .wp-image-506  {
+	width: 20%;
+	margin-right: -160px;
+	
+ }
+ /* PAGE COMMANDER */
+ /* sous titre */
+.elementor-67 .elementor-element.elementor-element-86f9281 .elementor-widget-container {
+	margin: -25px 0px 0px 50px;
+ }
+ /* images commande */
+ .elementor-element .elementor-element-8afd33a  {
+	width: 60% !important;
+ }
+ .elementor-element .elementor-element-4e3a413 .gallery-item {
+	margin: 10px;
+	
+ }
+/* texte commande */
+.elementor-element .elementor-element-1b8c16a {
+	width: 60%;
+	margin-top: -500px;
+	padding-bottom: 180px;
+	height: 100%
+}
+ /* formulaire compteur */
+.compteur {
+	display: flex !important;
+	flex-direction: column;
+	gap: 90px !important;
+	padding-top: 60px;
+	
+}
+.elementor-element .elementor-element-7e3611b {
+	margin-top: -550px;
+}
+/*.elementor-element .elementor-element-f3527a5 {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+}*/
+/* commande */
+.formulaire {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.formulaire h2 {
+	font-size: 100% !important;
+}
+.ligne {
+	height: 2px;
+	width: 100%; 
+	background-color: #ffff;
+	margin-top: 10px;
+	}
+}
+
+
+

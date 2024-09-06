@@ -223,7 +223,7 @@ p {
 .elementor-element .elementor-element-d5bd055 .wp-image-302 {
 	width: 15%;
 	margin-bottom: -150px;
-	padding-left: -50px;
+	/*padding-left: -50px;*/
 	display: flex;
 	justify-content: left;
 }
@@ -359,290 +359,41 @@ p {
 /* formulaire */
 	.formulaire h2 {
 		color:white !important;
+		font-size: 26px;
 		text-align: left;
 		font-weight: 700 !important;
 	}
+	.formulaire label {
+		text-align: left !important ;
+	}
 	.formulaire {
 		display: flex;
-		justify-content: space-between; 
-		
-    	margin: auto; 
-		gap: 150px;
+		justify-content: center; 
+		gap: 50px;
 	}
 	.colonne {
 		margin-bottom: 20px;
 		display: flex;
     	flex-direction: column;
 		}
-	.commander {
-		margin-top: 15px;
-	}
+	
 	.elementor-element.elementor-element-03a84a9 {
 		padding-left: 10px;
 	}
 	.elementor-element .elementor-element-9046a2d p {
 		font-size: 60% !important;
 	}
+	.ligne {
+			width: 2px; 
+			height: 350px;
+			background-color: #ffff;
+			margin-top: 50px;
+			}
+	
 	/* ......................... */
 
-	@media (max-width: 1024px){
-		h1, h2, h3, h4, h5, p  {
-			font-size: 80% !important;
-		}
-		/* ACCUEIL */
-		/* Mise en forme cannette*/
-		.elementor-element .elementor-element-5f4221d {
-			margin-left: -30px;
-		}
-		/* MISE EN FORME PRODUITS*/
-		/*textes 1er bloc*/
-		.elementor-element .elementor-element-234b62d {
-			margin-top: -170px;
-		}
-		/* marge images 2ème bloc*/	
-		.elementor-element.elementor-element-03ad47c {
-			width: 60%;
-			padding-bottom: 40px;
-		}
-		/* marge texte 2ème bloc*/
-		.elementor-element .elementor-element-af60c3c {
-			margin-top: -300px;
-		}
-		/* marge textes ce qu'ils en pensent Fatiha*/
-		.elementor-element.elementor-element-03a84a9 {
-			padding-left: 10px;
-		}
-		.elementor-element .elementor-element-9046a2d p {
-			font-size: 60% !important;
-		}
-		/* marge textes ce qu'ils en pensent Véro */
-		.elementor-element.elementor-element-033947c {
-			padding-left: 10px;
-		}
-		.elementor-element .elementor-element-f39c475 p {
-			font-size: 60% !important;
-		}
-		/* marge textes ce qu'ils en pensent Marc */
-		.elementor-element.elementor-element-8d6ce4bc {
-			padding-left: 10px;
-		}
-		.elementor-element .elementor-element-f75e1d4 p {
-			font-size: 60% !important;
-		}
-	}
-	@media (max-width: 767px) {
-		h1, h2, h3, h4, h5, p  {
-			font-size: 100% !important;
-		}	
-		/* ACCEUIL */
-		/* marge bloc titre */
-		.elementor-element .elementor-element-342eefe  {
-			padding: 0px 0px -10px 0px;
-		}
-		/* Bloc cannette */
-		.elementor-element .elementor-element-0eaf590 {
-			margin-bottom: -100px;
-				}
-		.elementor-element .elementor-element-5f4221d  {
-			
-			padding-bottom: 250px;
-			margin-left: 0px !important;
-			
-		} 
-		/* feuille gauche */
-		.elementor-element .elementor-element-a07db66 .wp-image-281 {
-			width: 50%;
-			margin-left: -50px !important;
-		}
-		/* feuille droite */
-		.elementor-element .elementor-element-00a26d7 .wp-image-280{
-			width: 40%;
-			margin-right: 300px !important;
-		}
-		/* cannette */
-		.wp-image-288 {
-			width: 60%;
-			margin-left: -90px;
-		}
-/*.elementor-element .elementor-element- {
-			
-		}*/
-		/* images bloc 1 */
-		.elementor-element.elementor-element-d483368  {
-			width: 80%;
-			display: flex !important;
-			justify-content: space-around;
-			margin-bottom: 20px;
-		}
-		.elementor-element .elementor-element-f98833c {
-			width: 45%;
-		}
-		.elementor-element .elementor-element-a9970fc {
-			width: 45%;
-		}
-		/* textes bloc 1 */
-		.elementor-element .elementor-element-234b62d .elementor-heading-title {
-			font-size: 100% !important;
-			margin-left: -60px;
-			text-align: center !important;
-			
-		}
-
-		.elementor-element .elementor-element-301c2fe .elementor-heading-title {
-			font-size: 100%!important ;
-			margin-left: 30px;
-			text-align: center !important;
-			
-		} 
-		/* images bloc 2 */
-		.elementor-element.elementor-element-03ad47c  {
-			width: 80%;
-			display: flex !important;
-			justify-content: space-around;
-			padding-bottom: 60px;
-		}
-		.elementor-element .elementor-element-c3462b6 {
-			width: 45%;
-		}
-		.elementor-element .elementor-element-e2e7f1e {
-			width: 45%;
-		}
-		/* textes bloc 2 */
-		.elementor-element .elementor-element-d9dd635 .elementor-heading-title {
-			font-size: 100% !important;
-			margin-left: -60px;
-			text-align: center !important;
-		} 
-		.elementor-element .elementor-element-134d518 .elementor-heading-title {
-			font-size: 100% !important;
-			margin-left: 30px;
-			text-align: center !important;
-		} 
-		
-/* PAGE NOUS RENCONTRER */
-
-
- /* images l'équipe */
- /* bloc */
- .elementor-40 .elementor-element.elementor-element-c3ce7dd {
-	padding-left: 0px;
-	padding-right: 0px;
-	display: flex;
-	justify-content: center;
-
- }
- /* formulaire */
- .elementor-element .elementor-element-c5c6efd  {
-	width: 60% !important ;
- }
- .elementor-element .elementor-element-c5c6efd label {
-	font-size: 80%;
-	text-align: left;
- }
- .elementor-element .elementor-element-641d995 .wp-image-506  {
-	width: 20%;
 	
- }
-
-	}
-
-	 /* ........................ */
-@media (max-width: 320px) {
-	h1, h2, h3, h4, h5, p  {
-		font-size: 60% !important ;
-	}
-	/* PAGE ACCUEIL */
-	/* mise en place canette et feuille */
-.elementor-56 .elementor-element.elementor-element-342eefe .elementor-widget-container{
-		padding: 0px 0px 15px 0px !important;
-	}
-	/*marge bloc boisson*/
-	.elementor-element .elementor-element-5f4221d {
 	
-		padding-bottom: 200px;
-	}	
-	/* feuille gauche*/
-.elementor-56 .elementor-element.elementor-element-a07db66 {
-		margin-left: 60px !important;
-	}
-		 .wp-image-281 {
-			width: 60%;
-		}
-	/* feuille droite */	
-		
-	.elementor-element .elementor-element-00a26d7 .wp-image-280 {
-			
-			margin-right: 50px !important;
-		}
-		.wp-image-280 {
-			width: 50% !important ;
-		}
-		/*canette*/
-		.elementor-56 .elementor-element.elementor-element-858cc8d {
-			left: 0px !important;
-		}	
-		.wp-image-288 {
-			width: 60%;
-			padding-left: 70px;
-			
-		}
-		
-
-	.elementor-element .elementor-element-a07db66 .wp-image-281 {
-		width: 40%;
-		display: grid;
-		justify-items: left;
-	}
-	.elementor-element .elementor-element-00a26d7 .wp-image-280 {
-		margin-left: -20px;
-	}
-	.elementor-element .elementor-element-d483368  {
-		width: 100%;
-		
-	}
- /* Textes les gouts */
- .elementor-element .elementor-element-2f236a9 .elementor-heading-title {
-	font-size: 50% !important;
-	
-	width: auto !important;
- }
- .elementor-element .elementor-element-301c2fe .elementor-heading-title {
-	font-size: 50%!important ;
-	width: auto !important;
- }
- /* PAGE NOUS RENCONTRER */
- .elementor-40 .elementor-element.elementor-element-453113f {
-	padding: 0px;
- }
- .elementor-element .elementor-element-10ce064 p {
-	padding-left: 0px;
-	padding-right: 0px;
- }
- /* images l'équipe */
- /* bloc */
- .elementor-40 .elementor-element.elementor-element-c3ce7dd {
-	padding-left: 0px;
-	padding-right: 0px;
-	display: flex;
-	justify-content: center;
-
- }
-
-
- /* formulaire */
- .elementor-element .elementor-element-c5c6efd  {
-	width: 60% !important ;
- }
- .elementor-element .elementor-element-c5c6efd label {
-	font-size: 80%;
-	text-align: left;
- }
- .elementor-element .elementor-element-641d995 .wp-image-506  {
-	width: 20%;
-	margin-right: -160px;
-	
- }
-}
 
 
 
