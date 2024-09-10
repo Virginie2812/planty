@@ -132,7 +132,12 @@ p {
 		color: white !important;
 	
 }
-
+.elementor-element .elementor-element-544482a .elementor-heading-title {
+	color: white !important;
+}
+.elementor-element .elementor-element-3f77966 .elementor-heading-title {
+	color: white !important;
+}
 /*button*/
 .elementor-element .elementor-element-ffffc34 .elementor-button-content-wrapper {
 	justify-content: center;
@@ -151,8 +156,6 @@ p {
 	display: flex;
 	padding-left: 10px;
 }
-
-
 /*mise en forme "ce qu'ils en pensent"*/
 
 /*titre Fathia*/
@@ -168,26 +171,24 @@ p {
 
 /*text Fatiha*/
 .elementor-56 .elementor-element .elementor-element-9046a2d p {
-	font-size: 15px;
+	font-size: 15px !important;
 	text-align: left !important;
-	padding: 4px;
 }
 
 /*titre Véro*/
 .elementor-element .elementor-element-eccff35 .elementor-widget-container .elementor-heading-title {
 	color: #3B8E46 !important;
-	font-size: 30px;
+	font-size: 26px;
 	font-weight: bold !important;
-	text-align: left;
 	margin-top: 10px;
 	margin-bottom: 0px;
 }
 
 /*text Véro*/
 .elementor-56 .elementor-element .elementor-element-f39c475 p {
-	font-size: 15px;
+	font-size: 15px !important ;
 	text-align: left !important;
-	padding: 4px;
+	
 }
 
 /*titre Marc*/
@@ -203,13 +204,15 @@ p {
 
 /*text Marc*/
 .elementor-56 .elementor-element .elementor-element-f75e1d4 p {
-	font-size: 15px;
+	font-size: 15px !important;
 	text-align: left !important;
 	padding: 4px;
 }
-.elementor-element .elementor-element-5f8922e .wp-image-265 {
+
+
+/*.elementor-element .elementor-element-5f8922e .wp-image-265 {
 	padding: 0px !important;
-}
+}*/
 /* NOUS RENCONTRER */
 .elementor-40 .elementor-element.elementor-element-453113f {
 	width: 100%;
