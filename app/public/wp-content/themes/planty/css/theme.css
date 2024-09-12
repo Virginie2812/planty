@@ -79,7 +79,7 @@ p {
 }
 /* header */
 .site-logo .custom-logo {
-	width: 80%;
+	width: 60%;
 	height: auto;
 }
 /* footer*/
@@ -97,21 +97,13 @@ p {
 	background-color: #ece2da;
 
 }
-.elementor-56 .elementor-element .elementor-element-0eaf590 {
-	width: 100%;
-	background-color: #ece2da;
-	
-}
+
 .elementor-56 .elementor-element.elementor-element-0eaf590 {
 	width: 100%;
 	background-color: #ece2da;
 	border-bottom-right-radius: 7%;
 	border-bottom-left-radius: 7%;
 }
-
-/* image*/
-
-
 
 /* LES GOUTS */
 .elementor-element .elementor-element-0e4728e .elementor-heading-title {
@@ -125,10 +117,10 @@ p {
 	border-bottom-left-radius: 7%;
 }
 /* Titres images */
-.elementor-element .elementor-element-234b62d  .elementor-heading-title {
+.elementor-element .elementor-element-2224221  .elementor-heading-title {
 		color: white !important;
 }
-.elementor-element .elementor-element-af60c3c .elementor-heading-title {
+.elementor-element .elementor-element-2629b3c .elementor-heading-title {
 		color: white !important;
 	
 }
@@ -209,10 +201,6 @@ p {
 	padding: 4px;
 }
 
-
-/*.elementor-element .elementor-element-5f8922e .wp-image-265 {
-	padding: 0px !important;
-}*/
 /* NOUS RENCONTRER */
 .elementor-40 .elementor-element.elementor-element-453113f {
 	width: 100%;

@@ -6,37 +6,10 @@
 		}	
 		/* ACCEUIL */
 		/* marge bloc titre */
-		.elementor-element .elementor-element-342eefe  {
-			padding: 0px 0px -10px 0px;
-		}
-		/* Bloc cannette */
-		.elementor-element .elementor-element-5f4221d  {
-			width: 100% ;
-		}
-		/* feuille gauche */
-		.elementor-element .elementor-element-a07db66 .wp-image-281 {
-			width: 100% !important;
-		}
-		.elementor-element .elementor-element-0eaf590 {
-			margin-bottom: 0px
-				}
-		.elementor-element .elementor-element-5f4221d  {
-			
-			padding-bottom: 250px;
-			margin-left: 0px !important;
-			
+			.elementor-element .elementor-element-5f4221d {
+			padding-bottom: 470px !important;
 		}
 		
-		/* feuille droite */
-		.elementor-element .elementor-element-00a26d7 .wp-image-280{
-			width: 60%;
-			
-		}
-		/* cannette */
-		.elementor-element .elementor-element-858cc8d .wp-image-288 {
-			width: 60%;
-		}
-
 		
 		
 /* PAGE NOUS RENCONTRER */
@@ -118,64 +91,10 @@
 		font-size: 90% !important ;
 	}
 	/* PAGE ACCUEIL */
-	/*mise en place canette et feuille */
-.elementor-56 .elementor-element.elementor-element-342eefe .elementor-widget-container{
-		padding: 0px 0px 15px 0px !important;
+	.elementor-element .elementor-element-5f4221d {
+		padding-bottom: 300px !important;
 	}
-	/*marge bloc boisson*/
-.elementor-element .elementor-element-5f4221d {
 	
-		padding-bottom: 200px;
-	}	
-	/* feuille gauche*/
-.elementor-56 .elementor-element.elementor-element-a07db66 {
-		margin-left: 60px !important;
-	}
-		 .wp-image-281 {
-			width: 60%;
-		}
-	/* feuille droite */	
-		
-	.elementor-element .elementor-element-00a26d7 .wp-image-280 {
-			
-			margin-right: 50px !important;
-		}
-		.wp-image-280 {
-			width: 50% !important ;
-		}
-		/*canette*/
-		.elementor-56 .elementor-element.elementor-element-858cc8d {
-			left: 0px !important;
-		}	
-		.wp-image-288 {
-			width: 60%;
-			padding-left: 70px;
-			
-	}
-		
-
-	.elementor-element .elementor-element-a07db66 .wp-image-281 {
-		width: 40%;
-		display: grid;
-		justify-items: left;
-	}
-	.elementor-element .elementor-element-00a26d7 .wp-image-280 {
-		margin-left: -20px;
-	}
-	.elementor-element .elementor-element-d483368  {
-		width: 60% !important;
-		
-	}
- /* Textes les gouts */
- .elementor-element .elementor-element-2f236a9 .elementor-heading-title {
-	font-size: 50% !important;
-	
-	width: auto !important;
- }
- .elementor-element .elementor-element-301c2fe .elementor-heading-title {
-	font-size: 50%!important ;
-	width: auto !important;
- }
  /* PAGE NOUS RENCONTRER */
  .elementor-40 .elementor-element.elementor-element-453113f {
 	padding: 0px;
