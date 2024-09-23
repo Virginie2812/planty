@@ -1768,6 +1768,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
+  AlignmentMatrixControl: () => (/* reexport */ alignment_matrix_control),
   AnglePickerControl: () => (/* reexport */ angle_picker_control),
   Animate: () => (/* reexport */ animate),
   Autocomplete: () => (/* reexport */ Autocomplete),
@@ -1897,11 +1898,11 @@ __webpack_require__.d(__webpack_exports__, {
   __experimentalNavigationGroup: () => (/* reexport */ group),
   __experimentalNavigationItem: () => (/* reexport */ navigation_item),
   __experimentalNavigationMenu: () => (/* reexport */ navigation_menu),
-  __experimentalNavigatorBackButton: () => (/* reexport */ navigator_back_button_component),
-  __experimentalNavigatorButton: () => (/* reexport */ navigator_button_component),
-  __experimentalNavigatorProvider: () => (/* reexport */ navigator_provider_component),
-  __experimentalNavigatorScreen: () => (/* reexport */ navigator_screen_component),
-  __experimentalNavigatorToParentButton: () => (/* reexport */ navigator_to_parent_button_component),
+  __experimentalNavigatorBackButton: () => (/* reexport */ NavigatorBackButton),
+  __experimentalNavigatorButton: () => (/* reexport */ NavigatorButton),
+  __experimentalNavigatorProvider: () => (/* reexport */ NavigatorProvider),
+  __experimentalNavigatorScreen: () => (/* reexport */ NavigatorScreen),
+  __experimentalNavigatorToParentButton: () => (/* reexport */ NavigatorToParentButton),
   __experimentalNumberControl: () => (/* reexport */ number_control),
   __experimentalPaletteEdit: () => (/* reexport */ palette_edit),
   __experimentalParseQuantityAndUnitFromRawValue: () => (/* reexport */ parseQuantityAndUnitFromRawValue),
@@ -1926,7 +1927,7 @@ __webpack_require__.d(__webpack_exports__, {
   __experimentalTruncate: () => (/* reexport */ truncate_component),
   __experimentalUnitControl: () => (/* reexport */ unit_control),
   __experimentalUseCustomUnits: () => (/* reexport */ useCustomUnits),
-  __experimentalUseNavigator: () => (/* reexport */ use_navigator),
+  __experimentalUseNavigator: () => (/* reexport */ useNavigator),
   __experimentalUseSlot: () => (/* reexport */ useSlot),
   __experimentalUseSlotFills: () => (/* reexport */ useSlotFills),
   __experimentalVStack: () => (/* reexport */ v_stack_component),
@@ -1988,7 +1989,9 @@ function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else i
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 ;// CONCATENATED MODULE: external ["wp","compose"]
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/4R3V3JGP.js
+;// CONCATENATED MODULE: external ["wp","element"]
+const external_wp_element_namespaceObject = window["wp"]["element"];
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/3YLGPPWQ.js
 "use client";
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
@@ -1997,7 +2000,7 @@ var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __propIsEnum = Object.prototype.propertyIsEnumerable;
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var _4R3V3JGP_spreadValues = (a, b) => {
+var _3YLGPPWQ_spreadValues = (a, b) => {
   for (var prop in b || (b = {}))
     if (__hasOwnProp.call(b, prop))
       __defNormalProp(a, prop, b[prop]);
@@ -2008,7 +2011,7 @@ var _4R3V3JGP_spreadValues = (a, b) => {
     }
   return a;
 };
-var _4R3V3JGP_spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+var _3YLGPPWQ_spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 var __objRest = (source, exclude) => {
   var target = {};
   for (var prop in source)
@@ -2024,35 +2027,35 @@ var __objRest = (source, exclude) => {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/4R3V3JGP.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/3YLGPPWQ.js
 "use client";
-var _4R3V3JGP_defProp = Object.defineProperty;
-var _4R3V3JGP_defProps = Object.defineProperties;
-var _4R3V3JGP_getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var _4R3V3JGP_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var _4R3V3JGP_hasOwnProp = Object.prototype.hasOwnProperty;
-var _4R3V3JGP_propIsEnum = Object.prototype.propertyIsEnumerable;
-var _4R3V3JGP_defNormalProp = (obj, key, value) => key in obj ? _4R3V3JGP_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var _chunks_4R3V3JGP_spreadValues = (a, b) => {
+var _3YLGPPWQ_defProp = Object.defineProperty;
+var _3YLGPPWQ_defProps = Object.defineProperties;
+var _3YLGPPWQ_getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var _3YLGPPWQ_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var _3YLGPPWQ_hasOwnProp = Object.prototype.hasOwnProperty;
+var _3YLGPPWQ_propIsEnum = Object.prototype.propertyIsEnumerable;
+var _3YLGPPWQ_defNormalProp = (obj, key, value) => key in obj ? _3YLGPPWQ_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var _chunks_3YLGPPWQ_spreadValues = (a, b) => {
   for (var prop in b || (b = {}))
-    if (_4R3V3JGP_hasOwnProp.call(b, prop))
-      _4R3V3JGP_defNormalProp(a, prop, b[prop]);
-  if (_4R3V3JGP_getOwnPropSymbols)
-    for (var prop of _4R3V3JGP_getOwnPropSymbols(b)) {
-      if (_4R3V3JGP_propIsEnum.call(b, prop))
-        _4R3V3JGP_defNormalProp(a, prop, b[prop]);
+    if (_3YLGPPWQ_hasOwnProp.call(b, prop))
+      _3YLGPPWQ_defNormalProp(a, prop, b[prop]);
+  if (_3YLGPPWQ_getOwnPropSymbols)
+    for (var prop of _3YLGPPWQ_getOwnPropSymbols(b)) {
+      if (_3YLGPPWQ_propIsEnum.call(b, prop))
+        _3YLGPPWQ_defNormalProp(a, prop, b[prop]);
     }
   return a;
 };
-var _chunks_4R3V3JGP_spreadProps = (a, b) => _4R3V3JGP_defProps(a, _4R3V3JGP_getOwnPropDescs(b));
-var _4R3V3JGP_objRest = (source, exclude) => {
+var _chunks_3YLGPPWQ_spreadProps = (a, b) => _3YLGPPWQ_defProps(a, _3YLGPPWQ_getOwnPropDescs(b));
+var _3YLGPPWQ_objRest = (source, exclude) => {
   var target = {};
   for (var prop in source)
-    if (_4R3V3JGP_hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+    if (_3YLGPPWQ_hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
       target[prop] = source[prop];
-  if (source != null && _4R3V3JGP_getOwnPropSymbols)
-    for (var prop of _4R3V3JGP_getOwnPropSymbols(source)) {
-      if (exclude.indexOf(prop) < 0 && _4R3V3JGP_propIsEnum.call(source, prop))
+  if (source != null && _3YLGPPWQ_getOwnPropSymbols)
+    for (var prop of _3YLGPPWQ_getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && _3YLGPPWQ_propIsEnum.call(source, prop))
         target[prop] = source[prop];
     }
   return target;
@@ -2060,7 +2063,7 @@ var _4R3V3JGP_objRest = (source, exclude) => {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/22HHDS5F.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/PBFD2E7P.js
 "use client";
 
 
@@ -2068,21 +2071,15 @@ var _4R3V3JGP_objRest = (source, exclude) => {
 function noop(..._) {
 }
 function shallowEqual(a, b) {
-  if (a === b)
-    return true;
-  if (!a)
-    return false;
-  if (!b)
-    return false;
-  if (typeof a !== "object")
-    return false;
-  if (typeof b !== "object")
-    return false;
+  if (a === b) return true;
+  if (!a) return false;
+  if (!b) return false;
+  if (typeof a !== "object") return false;
+  if (typeof b !== "object") return false;
   const aKeys = Object.keys(a);
   const bKeys = Object.keys(b);
   const { length } = aKeys;
-  if (bKeys.length !== length)
-    return false;
+  if (bKeys.length !== length) return false;
   for (const key of aKeys) {
     if (a[key] !== b[key]) {
       return false;
@@ -2090,7 +2087,7 @@ function shallowEqual(a, b) {
   }
   return true;
 }
-function _22HHDS5F_applyState(argument, currentValue) {
+function applyState(argument, currentValue) {
   if (isUpdater(argument)) {
     const value = isLazyValue(currentValue) ? currentValue() : currentValue;
     return argument(value);
@@ -2107,14 +2104,10 @@ function isObject(arg) {
   return typeof arg === "object" && arg != null;
 }
 function isEmpty(arg) {
-  if (Array.isArray(arg))
-    return !arg.length;
-  if (isObject(arg))
-    return !Object.keys(arg).length;
-  if (arg == null)
-    return true;
-  if (arg === "")
-    return true;
+  if (Array.isArray(arg)) return !arg.length;
+  if (isObject(arg)) return !Object.keys(arg).length;
+  if (arg == null) return true;
+  if (arg === "") return true;
   return false;
 }
 function isInteger(arg) {
@@ -2123,7 +2116,7 @@ function isInteger(arg) {
   }
   return String(Math.floor(Number(arg))) === arg;
 }
-function _22HHDS5F_hasOwnProperty(object, prop) {
+function PBFD2E7P_hasOwnProperty(object, prop) {
   if (typeof Object.hasOwn === "function") {
     return Object.hasOwn(object, prop);
   }
@@ -2145,9 +2138,9 @@ function normalizeString(str) {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 function omit(object, keys) {
-  const result = _chunks_4R3V3JGP_spreadValues({}, object);
+  const result = _chunks_3YLGPPWQ_spreadValues({}, object);
   for (const key of keys) {
-    if (_22HHDS5F_hasOwnProperty(result, key)) {
+    if (PBFD2E7P_hasOwnProperty(result, key)) {
       delete result[key];
     }
   }
@@ -2156,7 +2149,7 @@ function omit(object, keys) {
 function pick(object, paths) {
   const result = {};
   for (const key of paths) {
-    if (_22HHDS5F_hasOwnProperty(object, key)) {
+    if (PBFD2E7P_hasOwnProperty(object, key)) {
       result[key] = object[key];
     }
   }
@@ -2176,10 +2169,8 @@ function afterPaint(cb = noop) {
   return () => cancelAnimationFrame(raf);
 }
 function invariant(condition, message) {
-  if (condition)
-    return;
-  if (typeof message !== "string")
-    throw new Error("Invariant failed");
+  if (condition) return;
+  if (typeof message !== "string") throw new Error("Invariant failed");
   throw new Error(message);
 }
 function getKeys(obj) {
@@ -2187,8 +2178,7 @@ function getKeys(obj) {
 }
 function isFalsyBooleanCallback(booleanOrCallback, ...args) {
   const result = typeof booleanOrCallback === "function" ? booleanOrCallback(...args) : booleanOrCallback;
-  if (result == null)
-    return false;
+  if (result == null) return false;
   return !result;
 }
 function disabledFromProps(props) {
@@ -2205,8 +2195,7 @@ function removeUndefinedValues(obj) {
 }
 function defaultValue(...values) {
   for (const value of values) {
-    if (value !== void 0)
-      return value;
+    if (value !== void 0) return value;
   }
   return void 0;
 }
@@ -2217,7 +2206,7 @@ function defaultValue(...values) {
 var external_React_ = __webpack_require__(9196);
 var external_React_namespaceObject = /*#__PURE__*/__webpack_require__.t(external_React_, 2);
 var external_React_default = /*#__PURE__*/__webpack_require__.n(external_React_);
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/4ROCFRIN.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/SK3NAZA3.js
 "use client";
 
 
@@ -2232,27 +2221,21 @@ function setRef(ref, value) {
   }
 }
 function isValidElementWithRef(element) {
-  if (!element)
-    return false;
-  if (!(0,external_React_.isValidElement)(element))
-    return false;
-  if ("ref" in element.props)
-    return true;
-  if ("ref" in element)
-    return true;
+  if (!element) return false;
+  if (!(0,external_React_.isValidElement)(element)) return false;
+  if ("ref" in element.props) return true;
+  if ("ref" in element) return true;
   return false;
 }
 function getRefProperty(element) {
-  if (!isValidElementWithRef(element))
-    return null;
-  const props = _4R3V3JGP_spreadValues({}, element.props);
+  if (!isValidElementWithRef(element)) return null;
+  const props = _3YLGPPWQ_spreadValues({}, element.props);
   return props.ref || element.ref;
 }
 function mergeProps(base, overrides) {
-  const props = _4R3V3JGP_spreadValues({}, base);
+  const props = _3YLGPPWQ_spreadValues({}, base);
   for (const key in overrides) {
-    if (!_22HHDS5F_hasOwnProperty(overrides, key))
-      continue;
+    if (!PBFD2E7P_hasOwnProperty(overrides, key)) continue;
     if (key === "className") {
       const prop = "className";
       props[prop] = base[prop] ? `${base[prop]} ${overrides[prop]}` : overrides[prop];
@@ -2260,7 +2243,7 @@ function mergeProps(base, overrides) {
     }
     if (key === "style") {
       const prop = "style";
-      props[prop] = base[prop] ? _4R3V3JGP_spreadValues(_4R3V3JGP_spreadValues({}, base[prop]), overrides[prop]) : overrides[prop];
+      props[prop] = base[prop] ? _3YLGPPWQ_spreadValues(_3YLGPPWQ_spreadValues({}, base[prop]), overrides[prop]) : overrides[prop];
       continue;
     }
     const overrideValue = overrides[key];
@@ -2281,7 +2264,7 @@ function mergeProps(base, overrides) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/I2NJJ3XW.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/HWOIWM4O.js
 "use client";
 
 // src/utils/dom.ts
@@ -2326,8 +2309,7 @@ function isFrame(element) {
 }
 function isButton(element) {
   const tagName = element.tagName.toLowerCase();
-  if (tagName === "button")
-    return true;
+  if (tagName === "button") return true;
   if (tagName === "input" && element.type) {
     return buttonInputTypes.indexOf(element.type) !== -1;
   }
@@ -2407,8 +2389,7 @@ function getPopupItemRole(element, fallback) {
     tree: "treeitem"
   };
   const popupRole = getPopupRole(element);
-  if (!popupRole)
-    return fallback;
+  if (!popupRole) return fallback;
   const key = popupRole;
   return (_a = itemRoleByPopupRole[key]) != null ? _a : fallback;
 }
@@ -2418,26 +2399,22 @@ function scrollIntoViewIfNeeded(element, arg) {
   }
 }
 function getScrollingElement(element) {
-  if (!element)
-    return null;
+  if (!element) return null;
   if (element.clientHeight && element.scrollHeight > element.clientHeight) {
     const { overflowY } = getComputedStyle(element);
     const isScrollable = overflowY !== "visible" && overflowY !== "hidden";
-    if (isScrollable)
-      return element;
+    if (isScrollable) return element;
   } else if (element.clientWidth && element.scrollWidth > element.clientWidth) {
     const { overflowX } = getComputedStyle(element);
     const isScrollable = overflowX !== "visible" && overflowX !== "hidden";
-    if (isScrollable)
-      return element;
+    if (isScrollable) return element;
   }
   return getScrollingElement(element.parentElement) || document.scrollingElement || document.body;
 }
 function isPartiallyHidden(element) {
   const elementRect = element.getBoundingClientRect();
   const scroller = getScrollingElement(element);
-  if (!scroller)
-    return false;
+  if (!scroller) return false;
   const scrollerRect = scroller.getBoundingClientRect();
   const isHTML = scroller.tagName === "HTML";
   const scrollerTop = isHTML ? scrollerRect.top + scroller.scrollTop : scrollerRect.top;
@@ -2458,7 +2435,7 @@ function setSelectionRange(element, ...args) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/CLSHHUGK.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/US4USQPI.js
 "use client";
 
 
@@ -2467,8 +2444,7 @@ function isTouchDevice() {
   return canUseDOM && !!navigator.maxTouchPoints;
 }
 function isApple() {
-  if (!canUseDOM)
-    return false;
+  if (!canUseDOM) return false;
   return /mac|iphone|ipad|ipod/i.test(navigator.platform);
 }
 function isSafari() {
@@ -2483,7 +2459,7 @@ function isMac() {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/utils/events.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/utils/events.js
 "use client";
 
 
@@ -2500,35 +2476,24 @@ function isSelfTarget(event) {
 }
 function isOpeningInNewTab(event) {
   const element = event.currentTarget;
-  if (!element)
-    return false;
+  if (!element) return false;
   const isAppleDevice = isApple();
-  if (isAppleDevice && !event.metaKey)
-    return false;
-  if (!isAppleDevice && !event.ctrlKey)
-    return false;
+  if (isAppleDevice && !event.metaKey) return false;
+  if (!isAppleDevice && !event.ctrlKey) return false;
   const tagName = element.tagName.toLowerCase();
-  if (tagName === "a")
-    return true;
-  if (tagName === "button" && element.type === "submit")
-    return true;
-  if (tagName === "input" && element.type === "submit")
-    return true;
+  if (tagName === "a") return true;
+  if (tagName === "button" && element.type === "submit") return true;
+  if (tagName === "input" && element.type === "submit") return true;
   return false;
 }
 function isDownloading(event) {
   const element = event.currentTarget;
-  if (!element)
-    return false;
+  if (!element) return false;
   const tagName = element.tagName.toLowerCase();
-  if (!event.altKey)
-    return false;
-  if (tagName === "a")
-    return true;
-  if (tagName === "button" && element.type === "submit")
-    return true;
-  if (tagName === "input" && element.type === "submit")
-    return true;
+  if (!event.altKey) return false;
+  if (tagName === "a") return true;
+  if (tagName === "button" && element.type === "submit") return true;
+  if (tagName === "input" && element.type === "submit") return true;
   return false;
 }
 function fireEvent(element, type, eventInit) {
@@ -2538,7 +2503,7 @@ function fireEvent(element, type, eventInit) {
 function fireBlurEvent(element, eventInit) {
   const event = new FocusEvent("blur", eventInit);
   const defaultAllowed = element.dispatchEvent(event);
-  const bubbleInit = _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, eventInit), { bubbles: true });
+  const bubbleInit = _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, eventInit), { bubbles: true });
   element.dispatchEvent(new FocusEvent("focusout", bubbleInit));
   return defaultAllowed;
 }
@@ -2564,12 +2529,9 @@ function isFocusEventOutside(event, container) {
 }
 function getInputType(event) {
   const nativeEvent = "nativeEvent" in event ? event.nativeEvent : event;
-  if (!nativeEvent)
-    return;
-  if (!("inputType" in nativeEvent))
-    return;
-  if (typeof nativeEvent.inputType !== "string")
-    return;
+  if (!nativeEvent) return;
+  if (!("inputType" in nativeEvent)) return;
+  if (typeof nativeEvent.inputType !== "string") return;
   return nativeEvent.inputType;
 }
 function queueBeforeEvent(element, type, callback, timeout) {
@@ -2614,7 +2576,7 @@ function addGlobalEventListener(type, listener, options, scope = window) {
 }
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/OPTPHWV7.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/Z32BISHQ.js
 "use client";
 
 
@@ -2624,8 +2586,7 @@ function addGlobalEventListener(type, listener, options, scope = window) {
 
 
 
-
-var _React = _4R3V3JGP_spreadValues({}, external_React_namespaceObject);
+var _React = _3YLGPPWQ_spreadValues({}, external_React_namespaceObject);
 var useReactId = _React.useId;
 var useReactDeferredValue = _React.useDeferredValue;
 var useReactInsertionEffect = _React.useInsertionEffect;
@@ -2674,10 +2635,8 @@ function useEvent(callback) {
 function useTransactionState(callback) {
   const [state, setState] = (0,external_React_.useState)(null);
   useSafeLayoutEffect(() => {
-    if (state == null)
-      return;
-    if (!callback)
-      return;
+    if (state == null) return;
+    if (!callback) return;
     let prevState = null;
     callback((prev) => {
       prevState = prev;
@@ -2691,8 +2650,7 @@ function useTransactionState(callback) {
 }
 function useMergeRefs(...refs) {
   return (0,external_React_.useMemo)(() => {
-    if (!refs.some(Boolean))
-      return;
+    if (!refs.some(Boolean)) return;
     return (value) => {
       for (const ref of refs) {
         setRef(ref, value);
@@ -2700,25 +2658,15 @@ function useMergeRefs(...refs) {
     };
   }, refs);
 }
-function useRefId(ref, deps) {
-  const [id, setId] = useState(void 0);
-  useSafeLayoutEffect(() => {
-    var _a;
-    setId((_a = ref == null ? void 0 : ref.current) == null ? void 0 : _a.id);
-  }, deps);
-  return id;
-}
 function useId(defaultId) {
   if (useReactId) {
     const reactId = useReactId();
-    if (defaultId)
-      return defaultId;
+    if (defaultId) return defaultId;
     return reactId;
   }
   const [id, setId] = (0,external_React_.useState)(defaultId);
   useSafeLayoutEffect(() => {
-    if (defaultId || id)
-      return;
+    if (defaultId || id) return;
     const random = Math.random().toString(36).substr(2, 6);
     setId(`id-${random}`);
   }, [defaultId, id]);
@@ -2737,8 +2685,7 @@ function useDeferredValue(value) {
 }
 function useTagName(refOrElement, type) {
   const stringOrUndefined = (type2) => {
-    if (typeof type2 !== "string")
-      return;
+    if (typeof type2 !== "string") return;
     return type2;
   };
   const [tagName, setTagName] = (0,external_React_.useState)(() => stringOrUndefined(type));
@@ -2752,12 +2699,10 @@ function useAttribute(refOrElement, attributeName, defaultValue) {
   const [attribute, setAttribute] = (0,external_React_.useState)(defaultValue);
   useSafeLayoutEffect(() => {
     const element = refOrElement && "current" in refOrElement ? refOrElement.current : refOrElement;
-    if (!element)
-      return;
+    if (!element) return;
     const callback = () => {
       const value = element.getAttribute(attributeName);
-      if (value == null)
-        return;
+      if (value == null) return;
       setAttribute(value);
     };
     const observer = new MutationObserver(callback);
@@ -2797,39 +2742,6 @@ function useUpdateLayoutEffect(effect, deps) {
     []
   );
 }
-function useControlledState(defaultState, state, setState) {
-  const [localState, setLocalState] = useState(defaultState);
-  const nextState = state !== void 0 ? state : localState;
-  const stateRef = useLiveRef(state);
-  const setStateRef = useLiveRef(setState);
-  const nextStateRef = useLiveRef(nextState);
-  const setNextState = useCallback((prevValue) => {
-    const setStateProp = setStateRef.current;
-    if (setStateProp) {
-      if (isSetNextState(setStateProp)) {
-        setStateProp(prevValue);
-      } else {
-        const nextValue = applyState(prevValue, nextStateRef.current);
-        nextStateRef.current = nextValue;
-        setStateProp(nextValue);
-      }
-    }
-    if (stateRef.current === void 0) {
-      setLocalState(prevValue);
-    }
-  }, []);
-  defineSetNextState(setNextState);
-  return [nextState, setNextState];
-}
-var SET_NEXT_STATE = Symbol("setNextState");
-function isSetNextState(arg) {
-  return arg[SET_NEXT_STATE] === true;
-}
-function defineSetNextState(arg) {
-  if (!isSetNextState(arg)) {
-    Object.defineProperty(arg, SET_NEXT_STATE, { value: true });
-  }
-}
 function useForceUpdate() {
   return (0,external_React_.useReducer)(() => [], []);
 }
@@ -2848,7 +2760,7 @@ function useWrapElement(props, callback, deps = []) {
     },
     [...deps, props.wrapElement]
   );
-  return _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { wrapElement });
+  return _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { wrapElement });
 }
 function usePortalRef(portalProp = false, portalRefProp) {
   const [portalNode, setPortalNode] = (0,external_React_.useState)(null);
@@ -2860,7 +2772,7 @@ function useMetadataProps(props, key, value) {
   const parent = props.onLoadedMetadataCapture;
   const onLoadedMetadataCapture = (0,external_React_.useMemo)(() => {
     return Object.assign(() => {
-    }, _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, parent), { [key]: value }));
+    }, _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, parent), { [key]: value }));
   }, [parent, key, value]);
   return [parent == null ? void 0 : parent[key], { onLoadedMetadataCapture }];
 }
@@ -2886,8 +2798,7 @@ function hasMouseMovement(event) {
   return movementX || movementY || "production" === "test";
 }
 function setMouseMoving(event) {
-  if (!hasMouseMovement(event))
-    return;
+  if (!hasMouseMovement(event)) return;
   mouseMoving = true;
 }
 function resetMouseMoving() {
@@ -2896,9 +2807,913 @@ function resetMouseMoving() {
 
 
 
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/EQQLU3CG.js
+"use client";
+
+
+
+// src/utils/store.ts
+function getInternal(store, key) {
+  const internals = store.__unstableInternals;
+  invariant(internals, "Invalid store");
+  return internals[key];
+}
+function createStore(initialState, ...stores) {
+  let state = initialState;
+  let prevStateBatch = state;
+  let lastUpdate = Symbol();
+  let destroy = noop;
+  const instances = /* @__PURE__ */ new Set();
+  const updatedKeys = /* @__PURE__ */ new Set();
+  const setups = /* @__PURE__ */ new Set();
+  const listeners = /* @__PURE__ */ new Set();
+  const batchListeners = /* @__PURE__ */ new Set();
+  const disposables = /* @__PURE__ */ new WeakMap();
+  const listenerKeys = /* @__PURE__ */ new WeakMap();
+  const storeSetup = (callback) => {
+    setups.add(callback);
+    return () => setups.delete(callback);
+  };
+  const storeInit = () => {
+    const initialized = instances.size;
+    const instance = Symbol();
+    instances.add(instance);
+    const maybeDestroy = () => {
+      instances.delete(instance);
+      if (instances.size) return;
+      destroy();
+    };
+    if (initialized) return maybeDestroy;
+    const desyncs = getKeys(state).map(
+      (key) => chain(
+        ...stores.map((store) => {
+          var _a;
+          const storeState = (_a = store == null ? void 0 : store.getState) == null ? void 0 : _a.call(store);
+          if (!storeState) return;
+          if (!PBFD2E7P_hasOwnProperty(storeState, key)) return;
+          return sync(store, [key], (state2) => {
+            setState(
+              key,
+              state2[key],
+              // @ts-expect-error - Not public API. This is just to prevent
+              // infinite loops.
+              true
+            );
+          });
+        })
+      )
+    );
+    const teardowns = [];
+    for (const setup2 of setups) {
+      teardowns.push(setup2());
+    }
+    const cleanups = stores.map(init);
+    destroy = chain(...desyncs, ...teardowns, ...cleanups);
+    return maybeDestroy;
+  };
+  const sub = (keys, listener, set = listeners) => {
+    set.add(listener);
+    listenerKeys.set(listener, keys);
+    return () => {
+      var _a;
+      (_a = disposables.get(listener)) == null ? void 0 : _a();
+      disposables.delete(listener);
+      listenerKeys.delete(listener);
+      set.delete(listener);
+    };
+  };
+  const storeSubscribe = (keys, listener) => sub(keys, listener);
+  const storeSync = (keys, listener) => {
+    disposables.set(listener, listener(state, state));
+    return sub(keys, listener);
+  };
+  const storeBatch = (keys, listener) => {
+    disposables.set(listener, listener(state, prevStateBatch));
+    return sub(keys, listener, batchListeners);
+  };
+  const storePick = (keys) => createStore(pick(state, keys), finalStore);
+  const storeOmit = (keys) => createStore(omit(state, keys), finalStore);
+  const getState = () => state;
+  const setState = (key, value, fromStores = false) => {
+    var _a;
+    if (!PBFD2E7P_hasOwnProperty(state, key)) return;
+    const nextValue = applyState(value, state[key]);
+    if (nextValue === state[key]) return;
+    if (!fromStores) {
+      for (const store of stores) {
+        (_a = store == null ? void 0 : store.setState) == null ? void 0 : _a.call(store, key, nextValue);
+      }
+    }
+    const prevState = state;
+    state = _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, state), { [key]: nextValue });
+    const thisUpdate = Symbol();
+    lastUpdate = thisUpdate;
+    updatedKeys.add(key);
+    const run = (listener, prev, uKeys) => {
+      var _a2;
+      const keys = listenerKeys.get(listener);
+      const updated = (k) => uKeys ? uKeys.has(k) : k === key;
+      if (!keys || keys.some(updated)) {
+        (_a2 = disposables.get(listener)) == null ? void 0 : _a2();
+        disposables.set(listener, listener(state, prev));
+      }
+    };
+    for (const listener of listeners) {
+      run(listener, prevState);
+    }
+    queueMicrotask(() => {
+      if (lastUpdate !== thisUpdate) return;
+      const snapshot = state;
+      for (const listener of batchListeners) {
+        run(listener, prevStateBatch, updatedKeys);
+      }
+      prevStateBatch = snapshot;
+      updatedKeys.clear();
+    });
+  };
+  const finalStore = {
+    getState,
+    setState,
+    __unstableInternals: {
+      setup: storeSetup,
+      init: storeInit,
+      subscribe: storeSubscribe,
+      sync: storeSync,
+      batch: storeBatch,
+      pick: storePick,
+      omit: storeOmit
+    }
+  };
+  return finalStore;
+}
+function setup(store, ...args) {
+  if (!store) return;
+  return getInternal(store, "setup")(...args);
+}
+function init(store, ...args) {
+  if (!store) return;
+  return getInternal(store, "init")(...args);
+}
+function subscribe(store, ...args) {
+  if (!store) return;
+  return getInternal(store, "subscribe")(...args);
+}
+function sync(store, ...args) {
+  if (!store) return;
+  return getInternal(store, "sync")(...args);
+}
+function batch(store, ...args) {
+  if (!store) return;
+  return getInternal(store, "batch")(...args);
+}
+function omit2(store, ...args) {
+  if (!store) return;
+  return getInternal(store, "omit")(...args);
+}
+function pick2(store, ...args) {
+  if (!store) return;
+  return getInternal(store, "pick")(...args);
+}
+function mergeStore(...stores) {
+  const initialState = stores.reduce((state, store2) => {
+    var _a;
+    const nextState = (_a = store2 == null ? void 0 : store2.getState) == null ? void 0 : _a.call(store2);
+    if (!nextState) return state;
+    return Object.assign(state, nextState);
+  }, {});
+  const store = createStore(initialState, ...stores);
+  return store;
+}
+function throwOnConflictingProps(props, store) {
+  if (true) return;
+  if (!store) return;
+  const defaultKeys = Object.entries(props).filter(([key, value]) => key.startsWith("default") && value !== void 0).map(([key]) => {
+    var _a;
+    const stateKey = key.replace("default", "");
+    return `${((_a = stateKey[0]) == null ? void 0 : _a.toLowerCase()) || ""}${stateKey.slice(1)}`;
+  });
+  if (!defaultKeys.length) return;
+  const storeState = store.getState();
+  const conflictingProps = defaultKeys.filter(
+    (key) => PBFD2E7P_hasOwnProperty(storeState, key)
+  );
+  if (!conflictingProps.length) return;
+  throw new Error(
+    `Passing a store prop in conjunction with a default state is not supported.
+
+const store = useSelectStore();
+<SelectProvider store={store} defaultValue="Apple" />
+                ^             ^
+
+Instead, pass the default state to the topmost store:
+
+const store = useSelectStore({ defaultValue: "Apple" });
+<SelectProvider store={store} />
+
+See https://github.com/ariakit/ariakit/pull/2745 for more details.
+
+If there's a particular need for this, please submit a feature request at https://github.com/ariakit/ariakit
+`
+  );
+}
+
+
+
+// EXTERNAL MODULE: ./node_modules/use-sync-external-store/shim/index.js
+var shim = __webpack_require__(635);
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/2GXGCHW6.js
+"use client";
+
+
+
+// src/utils/store.tsx
+
+
+
+
+var { useSyncExternalStore } = shim;
+var noopSubscribe = () => () => {
+};
+function useStoreState(store, keyOrSelector = identity) {
+  const storeSubscribe = external_React_.useCallback(
+    (callback) => {
+      if (!store) return noopSubscribe();
+      return subscribe(store, null, callback);
+    },
+    [store]
+  );
+  const getSnapshot = () => {
+    const key = typeof keyOrSelector === "string" ? keyOrSelector : null;
+    const selector = typeof keyOrSelector === "function" ? keyOrSelector : null;
+    const state = store == null ? void 0 : store.getState();
+    if (selector) return selector(state);
+    if (!state) return;
+    if (!key) return;
+    if (!PBFD2E7P_hasOwnProperty(state, key)) return;
+    return state[key];
+  };
+  return useSyncExternalStore(storeSubscribe, getSnapshot, getSnapshot);
+}
+function useStoreProps(store, props, key, setKey) {
+  const value = PBFD2E7P_hasOwnProperty(props, key) ? props[key] : void 0;
+  const setValue = setKey ? props[setKey] : void 0;
+  const propsRef = useLiveRef({ value, setValue });
+  useSafeLayoutEffect(() => {
+    return sync(store, [key], (state, prev) => {
+      const { value: value2, setValue: setValue2 } = propsRef.current;
+      if (!setValue2) return;
+      if (state[key] === prev[key]) return;
+      if (state[key] === value2) return;
+      setValue2(state[key]);
+    });
+  }, [store, key]);
+  useSafeLayoutEffect(() => {
+    if (value === void 0) return;
+    store.setState(key, value);
+    return batch(store, [key], () => {
+      if (value === void 0) return;
+      store.setState(key, value);
+    });
+  });
+}
+function _2GXGCHW6_useStore(createStore, props) {
+  const [store, setStore] = external_React_.useState(() => createStore(props));
+  useSafeLayoutEffect(() => init(store), [store]);
+  const useState2 = external_React_.useCallback(
+    (keyOrSelector) => useStoreState(store, keyOrSelector),
+    [store]
+  );
+  const memoizedStore = external_React_.useMemo(
+    () => _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, store), { useState: useState2 }),
+    [store, useState2]
+  );
+  const updateStore = useEvent(() => {
+    setStore((store2) => createStore(_3YLGPPWQ_spreadValues(_3YLGPPWQ_spreadValues({}, props), store2.getState())));
+  });
+  return [memoizedStore, updateStore];
+}
+
+
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/TCAGH6BH.js
+"use client";
+
+
+
+// src/collection/collection-store.ts
+
+function useCollectionStoreProps(store, update, props) {
+  useUpdateEffect(update, [props.store]);
+  useStoreProps(store, props, "items", "setItems");
+  return store;
+}
+function useCollectionStore(props = {}) {
+  const [store, update] = useStore(Core.createCollectionStore, props);
+  return useCollectionStoreProps(store, update, props);
+}
+
+
+
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/6DHTHWXD.js
+"use client";
+
+
+
+
+
+// src/collection/collection-store.ts
+function isElementPreceding(a, b) {
+  return Boolean(
+    b.compareDocumentPosition(a) & Node.DOCUMENT_POSITION_PRECEDING
+  );
+}
+function sortBasedOnDOMPosition(items) {
+  const pairs = items.map((item, index) => [index, item]);
+  let isOrderDifferent = false;
+  pairs.sort(([indexA, a], [indexB, b]) => {
+    const elementA = a.element;
+    const elementB = b.element;
+    if (elementA === elementB) return 0;
+    if (!elementA || !elementB) return 0;
+    if (isElementPreceding(elementA, elementB)) {
+      if (indexA > indexB) {
+        isOrderDifferent = true;
+      }
+      return -1;
+    }
+    if (indexA < indexB) {
+      isOrderDifferent = true;
+    }
+    return 1;
+  });
+  if (isOrderDifferent) {
+    return pairs.map(([_, item]) => item);
+  }
+  return items;
+}
+function getCommonParent(items) {
+  var _a;
+  const firstItem = items.find((item) => !!item.element);
+  const lastItem = [...items].reverse().find((item) => !!item.element);
+  let parentElement = (_a = firstItem == null ? void 0 : firstItem.element) == null ? void 0 : _a.parentElement;
+  while (parentElement && (lastItem == null ? void 0 : lastItem.element)) {
+    const parent = parentElement;
+    if (lastItem && parent.contains(lastItem.element)) {
+      return parentElement;
+    }
+    parentElement = parentElement.parentElement;
+  }
+  return getDocument(parentElement).body;
+}
+function getPrivateStore(store) {
+  return store == null ? void 0 : store.__unstablePrivateStore;
+}
+function createCollectionStore(props = {}) {
+  var _a;
+  throwOnConflictingProps(props, props.store);
+  const syncState = (_a = props.store) == null ? void 0 : _a.getState();
+  const items = defaultValue(
+    props.items,
+    syncState == null ? void 0 : syncState.items,
+    props.defaultItems,
+    []
+  );
+  const itemsMap = new Map(items.map((item) => [item.id, item]));
+  const initialState = {
+    items,
+    renderedItems: defaultValue(syncState == null ? void 0 : syncState.renderedItems, [])
+  };
+  const syncPrivateStore = getPrivateStore(props.store);
+  const privateStore = createStore(
+    { items, renderedItems: initialState.renderedItems },
+    syncPrivateStore
+  );
+  const collection = createStore(initialState, props.store);
+  const sortItems = (renderedItems) => {
+    const sortedItems = sortBasedOnDOMPosition(renderedItems);
+    privateStore.setState("renderedItems", sortedItems);
+    collection.setState("renderedItems", sortedItems);
+  };
+  setup(collection, () => init(privateStore));
+  setup(privateStore, () => {
+    return batch(privateStore, ["items"], (state) => {
+      collection.setState("items", state.items);
+    });
+  });
+  setup(privateStore, () => {
+    return batch(privateStore, ["renderedItems"], (state) => {
+      let firstRun = true;
+      let raf = requestAnimationFrame(() => {
+        const { renderedItems } = collection.getState();
+        if (state.renderedItems === renderedItems) return;
+        sortItems(state.renderedItems);
+      });
+      if (typeof IntersectionObserver !== "function") {
+        return () => cancelAnimationFrame(raf);
+      }
+      const ioCallback = () => {
+        if (firstRun) {
+          firstRun = false;
+          return;
+        }
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(() => sortItems(state.renderedItems));
+      };
+      const root = getCommonParent(state.renderedItems);
+      const observer = new IntersectionObserver(ioCallback, { root });
+      for (const item of state.renderedItems) {
+        if (!item.element) continue;
+        observer.observe(item.element);
+      }
+      return () => {
+        cancelAnimationFrame(raf);
+        observer.disconnect();
+      };
+    });
+  });
+  const mergeItem = (item, setItems, canDeleteFromMap = false) => {
+    let prevItem;
+    setItems((items2) => {
+      const index = items2.findIndex(({ id }) => id === item.id);
+      const nextItems = items2.slice();
+      if (index !== -1) {
+        prevItem = items2[index];
+        const nextItem = _chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, prevItem), item);
+        nextItems[index] = nextItem;
+        itemsMap.set(item.id, nextItem);
+      } else {
+        nextItems.push(item);
+        itemsMap.set(item.id, item);
+      }
+      return nextItems;
+    });
+    const unmergeItem = () => {
+      setItems((items2) => {
+        if (!prevItem) {
+          if (canDeleteFromMap) {
+            itemsMap.delete(item.id);
+          }
+          return items2.filter(({ id }) => id !== item.id);
+        }
+        const index = items2.findIndex(({ id }) => id === item.id);
+        if (index === -1) return items2;
+        const nextItems = items2.slice();
+        nextItems[index] = prevItem;
+        itemsMap.set(item.id, prevItem);
+        return nextItems;
+      });
+    };
+    return unmergeItem;
+  };
+  const registerItem = (item) => mergeItem(
+    item,
+    (getItems) => privateStore.setState("items", getItems),
+    true
+  );
+  return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, collection), {
+    registerItem,
+    renderItem: (item) => chain(
+      registerItem(item),
+      mergeItem(
+        item,
+        (getItems) => privateStore.setState("renderedItems", getItems)
+      )
+    ),
+    item: (id) => {
+      if (!id) return null;
+      let item = itemsMap.get(id);
+      if (!item) {
+        const { items: items2 } = collection.getState();
+        item = items2.find((item2) => item2.id === id);
+        if (item) {
+          itemsMap.set(id, item);
+        }
+      }
+      return item || null;
+    },
+    // @ts-expect-error Internal
+    __unstablePrivateStore: privateStore
+  });
+}
+
+
+
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/7PRQYBBV.js
+"use client";
+
+// src/utils/array.ts
+function toArray(arg) {
+  if (Array.isArray(arg)) {
+    return arg;
+  }
+  return typeof arg !== "undefined" ? [arg] : [];
+}
+function addItemToArray(array, item, index = -1) {
+  if (!(index in array)) {
+    return [...array, item];
+  }
+  return [...array.slice(0, index), item, ...array.slice(index)];
+}
+function flatten2DArray(array) {
+  const flattened = [];
+  for (const row of array) {
+    flattened.push(...row);
+  }
+  return flattened;
+}
+function reverseArray(array) {
+  return array.slice().reverse();
+}
+
+
+
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/D7EIQZAU.js
+"use client";
+
+
+
+
+
+
+// src/composite/composite-store.ts
+var NULL_ITEM = { id: null };
+function findFirstEnabledItem(items, excludeId) {
+  return items.find((item) => {
+    if (excludeId) {
+      return !item.disabled && item.id !== excludeId;
+    }
+    return !item.disabled;
+  });
+}
+function getEnabledItems(items, excludeId) {
+  return items.filter((item) => {
+    if (excludeId) {
+      return !item.disabled && item.id !== excludeId;
+    }
+    return !item.disabled;
+  });
+}
+function getOppositeOrientation(orientation) {
+  if (orientation === "vertical") return "horizontal";
+  if (orientation === "horizontal") return "vertical";
+  return;
+}
+function getItemsInRow(items, rowId) {
+  return items.filter((item) => item.rowId === rowId);
+}
+function flipItems(items, activeId, shouldInsertNullItem = false) {
+  const index = items.findIndex((item) => item.id === activeId);
+  return [
+    ...items.slice(index + 1),
+    ...shouldInsertNullItem ? [NULL_ITEM] : [],
+    ...items.slice(0, index)
+  ];
+}
+function groupItemsByRows(items) {
+  const rows = [];
+  for (const item of items) {
+    const row = rows.find((currentRow) => {
+      var _a;
+      return ((_a = currentRow[0]) == null ? void 0 : _a.rowId) === item.rowId;
+    });
+    if (row) {
+      row.push(item);
+    } else {
+      rows.push([item]);
+    }
+  }
+  return rows;
+}
+function getMaxRowLength(array) {
+  let maxLength = 0;
+  for (const { length } of array) {
+    if (length > maxLength) {
+      maxLength = length;
+    }
+  }
+  return maxLength;
+}
+function createEmptyItem(rowId) {
+  return {
+    id: "__EMPTY_ITEM__",
+    disabled: true,
+    rowId
+  };
+}
+function normalizeRows(rows, activeId, focusShift) {
+  const maxLength = getMaxRowLength(rows);
+  for (const row of rows) {
+    for (let i = 0; i < maxLength; i += 1) {
+      const item = row[i];
+      if (!item || focusShift && item.disabled) {
+        const isFirst = i === 0;
+        const previousItem = isFirst && focusShift ? findFirstEnabledItem(row) : row[i - 1];
+        row[i] = previousItem && activeId !== previousItem.id && focusShift ? previousItem : createEmptyItem(previousItem == null ? void 0 : previousItem.rowId);
+      }
+    }
+  }
+  return rows;
+}
+function verticalizeItems(items) {
+  const rows = groupItemsByRows(items);
+  const maxLength = getMaxRowLength(rows);
+  const verticalized = [];
+  for (let i = 0; i < maxLength; i += 1) {
+    for (const row of rows) {
+      const item = row[i];
+      if (item) {
+        verticalized.push(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, item), {
+          // If there's no rowId, it means that it's not a grid composite, but
+          // a single row instead. So, instead of verticalizing it, that is,
+          // assigning a different rowId based on the column index, we keep it
+          // undefined so they will be part of the same row. This is useful
+          // when using up/down on one-dimensional composites.
+          rowId: item.rowId ? `${i}` : void 0
+        }));
+      }
+    }
+  }
+  return verticalized;
+}
+function createCompositeStore(props = {}) {
+  var _a;
+  const syncState = (_a = props.store) == null ? void 0 : _a.getState();
+  const collection = createCollectionStore(props);
+  const activeId = defaultValue(
+    props.activeId,
+    syncState == null ? void 0 : syncState.activeId,
+    props.defaultActiveId
+  );
+  const initialState = _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, collection.getState()), {
+    activeId,
+    baseElement: defaultValue(syncState == null ? void 0 : syncState.baseElement, null),
+    includesBaseElement: defaultValue(
+      props.includesBaseElement,
+      syncState == null ? void 0 : syncState.includesBaseElement,
+      activeId === null
+    ),
+    moves: defaultValue(syncState == null ? void 0 : syncState.moves, 0),
+    orientation: defaultValue(
+      props.orientation,
+      syncState == null ? void 0 : syncState.orientation,
+      "both"
+    ),
+    rtl: defaultValue(props.rtl, syncState == null ? void 0 : syncState.rtl, false),
+    virtualFocus: defaultValue(
+      props.virtualFocus,
+      syncState == null ? void 0 : syncState.virtualFocus,
+      false
+    ),
+    focusLoop: defaultValue(props.focusLoop, syncState == null ? void 0 : syncState.focusLoop, false),
+    focusWrap: defaultValue(props.focusWrap, syncState == null ? void 0 : syncState.focusWrap, false),
+    focusShift: defaultValue(props.focusShift, syncState == null ? void 0 : syncState.focusShift, false)
+  });
+  const composite = createStore(initialState, collection, props.store);
+  setup(
+    composite,
+    () => sync(composite, ["renderedItems", "activeId"], (state) => {
+      composite.setState("activeId", (activeId2) => {
+        var _a2;
+        if (activeId2 !== void 0) return activeId2;
+        return (_a2 = findFirstEnabledItem(state.renderedItems)) == null ? void 0 : _a2.id;
+      });
+    })
+  );
+  const getNextId = (items, orientation, hasNullItem, skip) => {
+    var _a2, _b;
+    const { activeId: activeId2, rtl, focusLoop, focusWrap, includesBaseElement } = composite.getState();
+    const isHorizontal = orientation !== "vertical";
+    const isRTL = rtl && isHorizontal;
+    const allItems = isRTL ? reverseArray(items) : items;
+    if (activeId2 == null) {
+      return (_a2 = findFirstEnabledItem(allItems)) == null ? void 0 : _a2.id;
+    }
+    const activeItem = allItems.find((item) => item.id === activeId2);
+    if (!activeItem) {
+      return (_b = findFirstEnabledItem(allItems)) == null ? void 0 : _b.id;
+    }
+    const isGrid = !!activeItem.rowId;
+    const activeIndex = allItems.indexOf(activeItem);
+    const nextItems = allItems.slice(activeIndex + 1);
+    const nextItemsInRow = getItemsInRow(nextItems, activeItem.rowId);
+    if (skip !== void 0) {
+      const nextEnabledItemsInRow = getEnabledItems(nextItemsInRow, activeId2);
+      const nextItem2 = nextEnabledItemsInRow.slice(skip)[0] || // If we can't find an item, just return the last one.
+      nextEnabledItemsInRow[nextEnabledItemsInRow.length - 1];
+      return nextItem2 == null ? void 0 : nextItem2.id;
+    }
+    const oppositeOrientation = getOppositeOrientation(
+      // If it's a grid and orientation is not set, it's a next/previous call,
+      // which is inherently horizontal. up/down will call next with orientation
+      // set to vertical by default (see below on up/down methods).
+      isGrid ? orientation || "horizontal" : orientation
+    );
+    const canLoop = focusLoop && focusLoop !== oppositeOrientation;
+    const canWrap = isGrid && focusWrap && focusWrap !== oppositeOrientation;
+    hasNullItem = hasNullItem || !isGrid && canLoop && includesBaseElement;
+    if (canLoop) {
+      const loopItems = canWrap && !hasNullItem ? allItems : getItemsInRow(allItems, activeItem.rowId);
+      const sortedItems = flipItems(loopItems, activeId2, hasNullItem);
+      const nextItem2 = findFirstEnabledItem(sortedItems, activeId2);
+      return nextItem2 == null ? void 0 : nextItem2.id;
+    }
+    if (canWrap) {
+      const nextItem2 = findFirstEnabledItem(
+        // We can use nextItems, which contains all the next items, including
+        // items from other rows, to wrap between rows. However, if there is a
+        // null item (the composite container), we'll only use the next items in
+        // the row. So moving next from the last item will focus on the
+        // composite container. On grid composites, horizontal navigation never
+        // focuses on the composite container, only vertical.
+        hasNullItem ? nextItemsInRow : nextItems,
+        activeId2
+      );
+      const nextId = hasNullItem ? (nextItem2 == null ? void 0 : nextItem2.id) || null : nextItem2 == null ? void 0 : nextItem2.id;
+      return nextId;
+    }
+    const nextItem = findFirstEnabledItem(nextItemsInRow, activeId2);
+    if (!nextItem && hasNullItem) {
+      return null;
+    }
+    return nextItem == null ? void 0 : nextItem.id;
+  };
+  return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, collection), composite), {
+    setBaseElement: (element) => composite.setState("baseElement", element),
+    setActiveId: (id) => composite.setState("activeId", id),
+    move: (id) => {
+      if (id === void 0) return;
+      composite.setState("activeId", id);
+      composite.setState("moves", (moves) => moves + 1);
+    },
+    first: () => {
+      var _a2;
+      return (_a2 = findFirstEnabledItem(composite.getState().renderedItems)) == null ? void 0 : _a2.id;
+    },
+    last: () => {
+      var _a2;
+      return (_a2 = findFirstEnabledItem(reverseArray(composite.getState().renderedItems))) == null ? void 0 : _a2.id;
+    },
+    next: (skip) => {
+      const { renderedItems, orientation } = composite.getState();
+      return getNextId(renderedItems, orientation, false, skip);
+    },
+    previous: (skip) => {
+      var _a2;
+      const { renderedItems, orientation, includesBaseElement } = composite.getState();
+      const isGrid = !!((_a2 = findFirstEnabledItem(renderedItems)) == null ? void 0 : _a2.rowId);
+      const hasNullItem = !isGrid && includesBaseElement;
+      return getNextId(
+        reverseArray(renderedItems),
+        orientation,
+        hasNullItem,
+        skip
+      );
+    },
+    down: (skip) => {
+      const {
+        activeId: activeId2,
+        renderedItems,
+        focusShift,
+        focusLoop,
+        includesBaseElement
+      } = composite.getState();
+      const shouldShift = focusShift && !skip;
+      const verticalItems = verticalizeItems(
+        flatten2DArray(
+          normalizeRows(groupItemsByRows(renderedItems), activeId2, shouldShift)
+        )
+      );
+      const canLoop = focusLoop && focusLoop !== "horizontal";
+      const hasNullItem = canLoop && includesBaseElement;
+      return getNextId(verticalItems, "vertical", hasNullItem, skip);
+    },
+    up: (skip) => {
+      const { activeId: activeId2, renderedItems, focusShift, includesBaseElement } = composite.getState();
+      const shouldShift = focusShift && !skip;
+      const verticalItems = verticalizeItems(
+        reverseArray(
+          flatten2DArray(
+            normalizeRows(
+              groupItemsByRows(renderedItems),
+              activeId2,
+              shouldShift
+            )
+          )
+        )
+      );
+      const hasNullItem = includesBaseElement;
+      return getNextId(verticalItems, "vertical", hasNullItem, skip);
+    }
+  });
+}
+
+
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/UVQLZ7T5.js
+"use client";
+
+
+
+// src/composite/composite-store.ts
+
+function useCompositeStoreProps(store, update, props) {
+  store = useCollectionStoreProps(store, update, props);
+  useStoreProps(store, props, "activeId", "setActiveId");
+  useStoreProps(store, props, "includesBaseElement");
+  useStoreProps(store, props, "virtualFocus");
+  useStoreProps(store, props, "orientation");
+  useStoreProps(store, props, "rtl");
+  useStoreProps(store, props, "focusLoop");
+  useStoreProps(store, props, "focusWrap");
+  useStoreProps(store, props, "focusShift");
+  return store;
+}
+function useCompositeStore(props = {}) {
+  const [store, update] = _2GXGCHW6_useStore(createCompositeStore, props);
+  return useCompositeStoreProps(store, update, props);
+}
+
+
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/5VQZOHHZ.js
+"use client";
+
+// src/composite/utils.ts
+
+var _5VQZOHHZ_NULL_ITEM = { id: null };
+function _5VQZOHHZ_flipItems(items, activeId, shouldInsertNullItem = false) {
+  const index = items.findIndex((item) => item.id === activeId);
+  return [
+    ...items.slice(index + 1),
+    ...shouldInsertNullItem ? [_5VQZOHHZ_NULL_ITEM] : [],
+    ...items.slice(0, index)
+  ];
+}
+function _5VQZOHHZ_findFirstEnabledItem(items, excludeId) {
+  return items.find((item) => {
+    if (excludeId) {
+      return !item.disabled && item.id !== excludeId;
+    }
+    return !item.disabled;
+  });
+}
+function getEnabledItem(store, id) {
+  if (!id) return null;
+  return store.item(id) || null;
+}
+function _5VQZOHHZ_groupItemsByRows(items) {
+  const rows = [];
+  for (const item of items) {
+    const row = rows.find((currentRow) => {
+      var _a;
+      return ((_a = currentRow[0]) == null ? void 0 : _a.rowId) === item.rowId;
+    });
+    if (row) {
+      row.push(item);
+    } else {
+      rows.push([item]);
+    }
+  }
+  return rows;
+}
+function selectTextField(element, collapseToEnd = false) {
+  if (isTextField(element)) {
+    element.setSelectionRange(
+      collapseToEnd ? element.value.length : 0,
+      element.value.length
+    );
+  } else if (element.isContentEditable) {
+    const selection = getDocument(element).getSelection();
+    selection == null ? void 0 : selection.selectAllChildren(element);
+    if (collapseToEnd) {
+      selection == null ? void 0 : selection.collapseToEnd();
+    }
+  }
+}
+var FOCUS_SILENTLY = Symbol("FOCUS_SILENTLY");
+function focusSilently(element) {
+  element[FOCUS_SILENTLY] = true;
+  element.focus({ preventScroll: true });
+}
+function silentlyFocused(element) {
+  const isSilentlyFocused = element[FOCUS_SILENTLY];
+  delete element[FOCUS_SILENTLY];
+  return isSilentlyFocused;
+}
+function isItem(store, element, exclude) {
+  if (!element) return false;
+  if (element === exclude) return false;
+  const item = store.item(element.id);
+  if (!item) return false;
+  if (exclude && item.element === exclude) return false;
+  return true;
+}
+
+
+
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/YIF72NQG.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/HKOOKEDE.js
 "use client";
 
 
@@ -2908,24 +3723,24 @@ const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
 
 
 function forwardRef2(render) {
-  const Role = external_React_.forwardRef((props, ref) => render(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { ref })));
+  const Role = external_React_.forwardRef((props, ref) => render(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { ref })));
   Role.displayName = render.displayName || render.name;
   return Role;
 }
 function memo2(Component, propsAreEqual) {
   return external_React_.memo(Component, propsAreEqual);
 }
-function YIF72NQG_createElement(Type, props) {
+function HKOOKEDE_createElement(Type, props) {
   const _a = props, { wrapElement, render } = _a, rest = __objRest(_a, ["wrapElement", "render"]);
   const mergedRef = useMergeRefs(props.ref, getRefProperty(render));
   let element;
   if (external_React_.isValidElement(render)) {
-    const renderProps = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, render.props), { ref: mergedRef });
+    const renderProps = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, render.props), { ref: mergedRef });
     element = external_React_.cloneElement(render, mergeProps(rest, renderProps));
   } else if (render) {
     element = render(rest);
   } else {
-    element = /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Type, _4R3V3JGP_spreadValues({}, rest));
+    element = /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Type, _3YLGPPWQ_spreadValues({}, rest));
   }
   if (wrapElement) {
     return wrapElement(element);
@@ -2946,27 +3761,25 @@ function createStoreContext(providers = [], scopedProviders = []) {
   const useScopedContext = (onlyScoped = false) => {
     const scoped = external_React_.useContext(scopedContext);
     const store = useContext2();
-    if (onlyScoped)
-      return scoped;
+    if (onlyScoped) return scoped;
     return scoped || store;
   };
   const useProviderContext = () => {
     const scoped = external_React_.useContext(scopedContext);
     const store = useContext2();
-    if (scoped && scoped === store)
-      return;
+    if (scoped && scoped === store) return;
     return store;
   };
   const ContextProvider = (props) => {
     return providers.reduceRight(
-      (children, Provider) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Provider, _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { children })),
-      /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(context.Provider, _4R3V3JGP_spreadValues({}, props))
+      (children, Provider) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Provider, _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { children })),
+      /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(context.Provider, _3YLGPPWQ_spreadValues({}, props))
     );
   };
   const ScopedContextProvider = (props) => {
-    return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(ContextProvider, _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { children: scopedProviders.reduceRight(
-      (children, Provider) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Provider, _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { children })),
-      /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(scopedContext.Provider, _4R3V3JGP_spreadValues({}, props))
+    return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(ContextProvider, _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { children: scopedProviders.reduceRight(
+      (children, Provider) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Provider, _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { children })),
+      /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(scopedContext.Provider, _3YLGPPWQ_spreadValues({}, props))
     ) }));
   };
   return {
@@ -2982,7 +3795,7 @@ function createStoreContext(providers = [], scopedProviders = []) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/FU7RTSEI.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/FMYQNSCK.js
 "use client";
 
 
@@ -2996,56 +3809,28 @@ var CollectionScopedContextProvider = ctx.ScopedContextProvider;
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/OEBCGVCG.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/WENSINUV.js
 "use client";
 
 
 
+// src/composite/composite-context.tsx
 
-
-// src/collection/collection-item.tsx
-
-
-var TagName = "div";
-var useCollectionItem = createHook(
-  function useCollectionItem2(_a) {
-    var _b = _a, {
-      store,
-      shouldRegisterItem = true,
-      getItem = identity,
-      element: element
-    } = _b, props = __objRest(_b, [
-      "store",
-      "shouldRegisterItem",
-      "getItem",
-      // @ts-expect-error This prop may come from a collection renderer.
-      "element"
-    ]);
-    const context = useCollectionContext();
-    store = store || context;
-    const id = useId(props.id);
-    const ref = (0,external_React_.useRef)(element);
-    (0,external_React_.useEffect)(() => {
-      const element2 = ref.current;
-      if (!id)
-        return;
-      if (!element2)
-        return;
-      if (!shouldRegisterItem)
-        return;
-      const item = getItem({ id, element: element2 });
-      return store == null ? void 0 : store.renderItem(item);
-    }, [id, shouldRegisterItem, getItem, store]);
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
-      ref: useMergeRefs(ref, props.ref)
-    });
-    return removeUndefinedValues(props);
-  }
+var WENSINUV_ctx = createStoreContext(
+  [CollectionContextProvider],
+  [CollectionScopedContextProvider]
 );
-var CollectionItem = forwardRef2(function CollectionItem2(props) {
-  const htmlProps = useCollectionItem(props);
-  return YIF72NQG_createElement(TagName, htmlProps);
-});
+var useCompositeContext = WENSINUV_ctx.useContext;
+var useCompositeScopedContext = WENSINUV_ctx.useScopedContext;
+var useCompositeProviderContext = WENSINUV_ctx.useProviderContext;
+var CompositeContextProvider = WENSINUV_ctx.ContextProvider;
+var CompositeScopedContextProvider = WENSINUV_ctx.ScopedContextProvider;
+var CompositeItemContext = (0,external_React_.createContext)(
+  void 0
+);
+var CompositeRowContext = (0,external_React_.createContext)(
+  void 0
+);
 
 
 
@@ -3058,7 +3843,7 @@ var FocusableContext = (0,external_React_.createContext)(true);
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/utils/focus.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/utils/focus.js
 "use client";
 
 
@@ -3070,43 +3855,27 @@ function hasNegativeTabIndex(element) {
   return tabIndex < 0;
 }
 function isFocusable(element) {
-  if (!element.matches(selector))
-    return false;
-  if (!isVisible(element))
-    return false;
-  if (element.closest("[inert]"))
-    return false;
+  if (!element.matches(selector)) return false;
+  if (!isVisible(element)) return false;
+  if (element.closest("[inert]")) return false;
   return true;
 }
 function isTabbable(element) {
-  if (!isFocusable(element))
-    return false;
-  if (hasNegativeTabIndex(element))
-    return false;
-  if (!("form" in element))
-    return true;
-  if (!element.form)
-    return true;
-  if (element.checked)
-    return true;
-  if (element.type !== "radio")
-    return true;
+  if (!isFocusable(element)) return false;
+  if (hasNegativeTabIndex(element)) return false;
+  if (!("form" in element)) return true;
+  if (!element.form) return true;
+  if (element.checked) return true;
+  if (element.type !== "radio") return true;
   const radioGroup = element.form.elements.namedItem(element.name);
-  if (!radioGroup)
-    return true;
-  if (!("length" in radioGroup))
-    return true;
+  if (!radioGroup) return true;
+  if (!("length" in radioGroup)) return true;
   const activeElement = getActiveElement(element);
-  if (!activeElement)
-    return true;
-  if (activeElement === element)
-    return true;
-  if (!("form" in activeElement))
-    return true;
-  if (activeElement.form !== element.form)
-    return true;
-  if (activeElement.name !== element.name)
-    return true;
+  if (!activeElement) return true;
+  if (activeElement === element) return true;
+  if (!("form" in activeElement)) return true;
+  if (activeElement.form !== element.form) return true;
+  if (activeElement.name !== element.name) return true;
   return false;
 }
 function getAllFocusableIn(container, includeContainer) {
@@ -3222,28 +3991,20 @@ function getClosestFocusable(element) {
 }
 function hasFocus(element) {
   const activeElement = getActiveElement(element);
-  if (!activeElement)
-    return false;
-  if (activeElement === element)
-    return true;
+  if (!activeElement) return false;
+  if (activeElement === element) return true;
   const activeDescendant = activeElement.getAttribute("aria-activedescendant");
-  if (!activeDescendant)
-    return false;
+  if (!activeDescendant) return false;
   return activeDescendant === element.id;
 }
 function hasFocusWithin(element) {
   const activeElement = getActiveElement(element);
-  if (!activeElement)
-    return false;
-  if (contains(element, activeElement))
-    return true;
+  if (!activeElement) return false;
+  if (contains(element, activeElement)) return true;
   const activeDescendant = activeElement.getAttribute("aria-activedescendant");
-  if (!activeDescendant)
-    return false;
-  if (!("id" in element))
-    return false;
-  if (activeDescendant === element.id)
-    return true;
+  if (!activeDescendant) return false;
+  if (!("id" in element)) return false;
+  if (activeDescendant === element.id) return true;
   return !!element.querySelector(`#${CSS.escape(activeDescendant)}`);
 }
 function focusIfNeeded(element) {
@@ -3286,12 +4047,12 @@ function focusIntoView(element, options) {
     element.focus();
   } else {
     element.focus({ preventScroll: true });
-    element.scrollIntoView(_chunks_4R3V3JGP_spreadValues({ block: "nearest", inline: "nearest" }, options));
+    element.scrollIntoView(_chunks_3YLGPPWQ_spreadValues({ block: "nearest", inline: "nearest" }, options));
   }
 }
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/DYAGAZRT.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/HGZKAGPL.js
 "use client";
 
 
@@ -3305,7 +4066,7 @@ function focusIntoView(element, options) {
 
 
 
-var DYAGAZRT_TagName = "div";
+var TagName = "div";
 var isSafariBrowser = isSafari();
 var alwaysFocusVisibleInputTypes = [
   "text",
@@ -3324,15 +4085,12 @@ var alwaysFocusVisibleInputTypes = [
 ];
 function isAlwaysFocusVisible(element) {
   const { tagName, readOnly, type } = element;
-  if (tagName === "TEXTAREA" && !readOnly)
-    return true;
-  if (tagName === "SELECT" && !readOnly)
-    return true;
+  if (tagName === "TEXTAREA" && !readOnly) return true;
+  if (tagName === "SELECT" && !readOnly) return true;
   if (tagName === "INPUT" && !readOnly) {
     return alwaysFocusVisibleInputTypes.includes(type);
   }
-  if (element.isContentEditable)
-    return true;
+  if (element.isContentEditable) return true;
   const role = element.getAttribute("role");
   if (role === "combobox" && element.dataset.name) {
     return true;
@@ -3353,13 +4111,11 @@ function isNativeCheckboxOrRadio(element) {
   return false;
 }
 function isNativeTabbable(tagName) {
-  if (!tagName)
-    return true;
+  if (!tagName) return true;
   return tagName === "button" || tagName === "summary" || tagName === "input" || tagName === "select" || tagName === "textarea" || tagName === "a";
 }
 function supportsDisabledAttribute(tagName) {
-  if (!tagName)
-    return true;
+  if (!tagName) return true;
   return tagName === "button" || tagName === "input" || tagName === "select" || tagName === "textarea";
 }
 function getTabIndex(focusable, trulyDisabled, nativeTabbable, supportsDisabled, tabIndexProp) {
@@ -3380,8 +4136,7 @@ function getTabIndex(focusable, trulyDisabled, nativeTabbable, supportsDisabled,
 function useDisableEvent(onEvent, disabled) {
   return useEvent((event) => {
     onEvent == null ? void 0 : onEvent(event);
-    if (event.defaultPrevented)
-      return;
+    if (event.defaultPrevented) return;
     if (disabled) {
       event.stopPropagation();
       event.preventDefault();
@@ -3398,12 +4153,9 @@ function onGlobalMouseDown(event) {
   }
 }
 function onGlobalKeyDown(event) {
-  if (event.metaKey)
-    return;
-  if (event.ctrlKey)
-    return;
-  if (event.altKey)
-    return;
+  if (event.metaKey) return;
+  if (event.ctrlKey) return;
+  if (event.altKey) return;
   isKeyboardModality = true;
 }
 var useFocusable = createHook(
@@ -3421,23 +4173,18 @@ var useFocusable = createHook(
     ]);
     const ref = (0,external_React_.useRef)(null);
     (0,external_React_.useEffect)(() => {
-      if (!focusable)
-        return;
+      if (!focusable) return;
       addGlobalEventListener("mousedown", onGlobalMouseDown, true);
       addGlobalEventListener("keydown", onGlobalKeyDown, true);
     }, [focusable]);
     if (isSafariBrowser) {
       (0,external_React_.useEffect)(() => {
-        if (!focusable)
-          return;
+        if (!focusable) return;
         const element = ref.current;
-        if (!element)
-          return;
-        if (!isNativeCheckboxOrRadio(element))
-          return;
+        if (!element) return;
+        if (!isNativeCheckboxOrRadio(element)) return;
         const labels = getLabels(element);
-        if (!labels)
-          return;
+        if (!labels) return;
         const onMouseUp = () => queueMicrotask(() => element.focus());
         for (const label of labels) {
           label.addEventListener("mouseup", onMouseUp);
@@ -3453,22 +4200,17 @@ var useFocusable = createHook(
     const trulyDisabled = !!disabled && !accessibleWhenDisabled;
     const [focusVisible, setFocusVisible] = (0,external_React_.useState)(false);
     (0,external_React_.useEffect)(() => {
-      if (!focusable)
-        return;
+      if (!focusable) return;
       if (trulyDisabled && focusVisible) {
         setFocusVisible(false);
       }
     }, [focusable, trulyDisabled, focusVisible]);
     (0,external_React_.useEffect)(() => {
-      if (!focusable)
-        return;
-      if (!focusVisible)
-        return;
+      if (!focusable) return;
+      if (!focusVisible) return;
       const element = ref.current;
-      if (!element)
-        return;
-      if (typeof IntersectionObserver === "undefined")
-        return;
+      if (!element) return;
+      if (typeof IntersectionObserver === "undefined") return;
       const observer = new IntersectionObserver(() => {
         if (!isFocusable(element)) {
           setFocusVisible(false);
@@ -3489,17 +4231,12 @@ var useFocusable = createHook(
     const onMouseDownProp = props.onMouseDown;
     const onMouseDown = useEvent((event) => {
       onMouseDownProp == null ? void 0 : onMouseDownProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!focusable)
-        return;
+      if (event.defaultPrevented) return;
+      if (!focusable) return;
       const element = event.currentTarget;
-      if (!isSafariBrowser)
-        return;
-      if (isPortalEvent(event))
-        return;
-      if (!isButton(element) && !isNativeCheckboxOrRadio(element))
-        return;
+      if (!isSafariBrowser) return;
+      if (isPortalEvent(event)) return;
+      if (!isButton(element) && !isNativeCheckboxOrRadio(element)) return;
       let receivedFocus = false;
       const onFocus = () => {
         receivedFocus = true;
@@ -3508,8 +4245,7 @@ var useFocusable = createHook(
       element.addEventListener("focusin", onFocus, options);
       queueBeforeEvent(element, "mouseup", () => {
         element.removeEventListener("focusin", onFocus, true);
-        if (receivedFocus)
-          return;
+        if (receivedFocus) return;
         focusIfNeeded(element);
       });
     });
@@ -3517,35 +4253,24 @@ var useFocusable = createHook(
       if (currentTarget) {
         event.currentTarget = currentTarget;
       }
-      if (!focusable)
-        return;
+      if (!focusable) return;
       const element = event.currentTarget;
-      if (!element)
-        return;
-      if (!hasFocus(element))
-        return;
+      if (!element) return;
+      if (!hasFocus(element)) return;
       onFocusVisible == null ? void 0 : onFocusVisible(event);
-      if (event.defaultPrevented)
-        return;
+      if (event.defaultPrevented) return;
       setFocusVisible(true);
     };
     const onKeyDownCaptureProp = props.onKeyDownCapture;
     const onKeyDownCapture = useEvent((event) => {
       onKeyDownCaptureProp == null ? void 0 : onKeyDownCaptureProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!focusable)
-        return;
-      if (focusVisible)
-        return;
-      if (event.metaKey)
-        return;
-      if (event.altKey)
-        return;
-      if (event.ctrlKey)
-        return;
-      if (!isSelfTarget(event))
-        return;
+      if (event.defaultPrevented) return;
+      if (!focusable) return;
+      if (focusVisible) return;
+      if (event.metaKey) return;
+      if (event.altKey) return;
+      if (event.ctrlKey) return;
+      if (!isSelfTarget(event)) return;
       const element = event.currentTarget;
       const applyFocusVisible = () => handleFocusVisible(event, element);
       queueBeforeEvent(element, "focusout", applyFocusVisible);
@@ -3553,10 +4278,8 @@ var useFocusable = createHook(
     const onFocusCaptureProp = props.onFocusCapture;
     const onFocusCapture = useEvent((event) => {
       onFocusCaptureProp == null ? void 0 : onFocusCaptureProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!focusable)
-        return;
+      if (event.defaultPrevented) return;
+      if (!focusable) return;
       if (!isSelfTarget(event)) {
         setFocusVisible(false);
         return;
@@ -3572,27 +4295,19 @@ var useFocusable = createHook(
     const onBlurProp = props.onBlur;
     const onBlur = useEvent((event) => {
       onBlurProp == null ? void 0 : onBlurProp(event);
-      if (!focusable)
-        return;
-      if (!isFocusEventOutside(event))
-        return;
+      if (!focusable) return;
+      if (!isFocusEventOutside(event)) return;
       setFocusVisible(false);
     });
     const autoFocusOnShow = (0,external_React_.useContext)(FocusableContext);
     const autoFocusRef = useEvent((element) => {
-      if (!focusable)
-        return;
-      if (!autoFocus)
-        return;
-      if (!element)
-        return;
-      if (!autoFocusOnShow)
-        return;
+      if (!focusable) return;
+      if (!autoFocus) return;
+      if (!element) return;
+      if (!autoFocusOnShow) return;
       queueMicrotask(() => {
-        if (hasFocus(element))
-          return;
-        if (!isFocusable(element))
-          return;
+        if (hasFocus(element)) return;
+        if (!isFocusable(element)) return;
         element.focus();
       });
     });
@@ -3602,11 +4317,11 @@ var useFocusable = createHook(
     const styleProp = props.style;
     const style = (0,external_React_.useMemo)(() => {
       if (trulyDisabled) {
-        return _4R3V3JGP_spreadValues({ pointerEvents: "none" }, styleProp);
+        return _3YLGPPWQ_spreadValues({ pointerEvents: "none" }, styleProp);
       }
       return styleProp;
     }, [trulyDisabled, styleProp]);
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       "data-focus-visible": focusable && focusVisible || void 0,
       "data-autofocus": autoFocus || void 0,
       "aria-disabled": disabled || void 0
@@ -3636,12 +4351,668 @@ var useFocusable = createHook(
 );
 var Focusable = forwardRef2(function Focusable2(props) {
   const htmlProps = useFocusable(props);
-  return YIF72NQG_createElement(DYAGAZRT_TagName, htmlProps);
+  return HKOOKEDE_createElement(TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/5EKYTDKF.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/TW35PKTK.js
+"use client";
+
+
+
+
+
+
+
+// src/composite/composite.tsx
+
+
+
+
+
+
+
+var TW35PKTK_TagName = "div";
+function isGrid(items) {
+  return items.some((item) => !!item.rowId);
+}
+function isPrintableKey(event) {
+  const target = event.target;
+  if (target && !isTextField(target)) return false;
+  return event.key.length === 1 && !event.ctrlKey && !event.metaKey;
+}
+function isModifierKey(event) {
+  return event.key === "Shift" || event.key === "Control" || event.key === "Alt" || event.key === "Meta";
+}
+function useKeyboardEventProxy(store, onKeyboardEvent, previousElementRef) {
+  return useEvent((event) => {
+    var _a;
+    onKeyboardEvent == null ? void 0 : onKeyboardEvent(event);
+    if (event.defaultPrevented) return;
+    if (event.isPropagationStopped()) return;
+    if (!isSelfTarget(event)) return;
+    if (isModifierKey(event)) return;
+    if (isPrintableKey(event)) return;
+    const state = store.getState();
+    const activeElement = (_a = getEnabledItem(store, state.activeId)) == null ? void 0 : _a.element;
+    if (!activeElement) return;
+    const _b = event, { view } = _b, eventInit = __objRest(_b, ["view"]);
+    const previousElement = previousElementRef == null ? void 0 : previousElementRef.current;
+    if (activeElement !== previousElement) {
+      activeElement.focus();
+    }
+    if (!fireKeyboardEvent(activeElement, event.type, eventInit)) {
+      event.preventDefault();
+    }
+    if (event.currentTarget.contains(activeElement)) {
+      event.stopPropagation();
+    }
+  });
+}
+function findFirstEnabledItemInTheLastRow(items) {
+  return _5VQZOHHZ_findFirstEnabledItem(
+    flatten2DArray(reverseArray(_5VQZOHHZ_groupItemsByRows(items)))
+  );
+}
+function useScheduleFocus(store) {
+  const [scheduled, setScheduled] = (0,external_React_.useState)(false);
+  const schedule = (0,external_React_.useCallback)(() => setScheduled(true), []);
+  const activeItem = store.useState(
+    (state) => getEnabledItem(store, state.activeId)
+  );
+  (0,external_React_.useEffect)(() => {
+    const activeElement = activeItem == null ? void 0 : activeItem.element;
+    if (!scheduled) return;
+    if (!activeElement) return;
+    setScheduled(false);
+    activeElement.focus({ preventScroll: true });
+  }, [activeItem, scheduled]);
+  return schedule;
+}
+var useComposite = createHook(
+  function useComposite2(_a) {
+    var _b = _a, {
+      store,
+      composite = true,
+      focusOnMove = composite,
+      moveOnKeyPress = true
+    } = _b, props = __objRest(_b, [
+      "store",
+      "composite",
+      "focusOnMove",
+      "moveOnKeyPress"
+    ]);
+    const context = useCompositeProviderContext();
+    store = store || context;
+    invariant(
+      store,
+       false && 0
+    );
+    const ref = (0,external_React_.useRef)(null);
+    const previousElementRef = (0,external_React_.useRef)(null);
+    const scheduleFocus = useScheduleFocus(store);
+    const moves = store.useState("moves");
+    const [, setBaseElement] = useTransactionState(
+      composite ? store.setBaseElement : null
+    );
+    (0,external_React_.useEffect)(() => {
+      var _a2;
+      if (!store) return;
+      if (!moves) return;
+      if (!composite) return;
+      if (!focusOnMove) return;
+      const { activeId: activeId2 } = store.getState();
+      const itemElement = (_a2 = getEnabledItem(store, activeId2)) == null ? void 0 : _a2.element;
+      if (!itemElement) return;
+      focusIntoView(itemElement);
+    }, [store, moves, composite, focusOnMove]);
+    useSafeLayoutEffect(() => {
+      if (!store) return;
+      if (!moves) return;
+      if (!composite) return;
+      const { baseElement, activeId: activeId2 } = store.getState();
+      const isSelfAcive = activeId2 === null;
+      if (!isSelfAcive) return;
+      if (!baseElement) return;
+      const previousElement = previousElementRef.current;
+      previousElementRef.current = null;
+      if (previousElement) {
+        fireBlurEvent(previousElement, { relatedTarget: baseElement });
+      }
+      if (!hasFocus(baseElement)) {
+        baseElement.focus();
+      }
+    }, [store, moves, composite]);
+    const activeId = store.useState("activeId");
+    const virtualFocus = store.useState("virtualFocus");
+    useSafeLayoutEffect(() => {
+      var _a2;
+      if (!store) return;
+      if (!composite) return;
+      if (!virtualFocus) return;
+      const previousElement = previousElementRef.current;
+      previousElementRef.current = null;
+      if (!previousElement) return;
+      const activeElement = (_a2 = getEnabledItem(store, activeId)) == null ? void 0 : _a2.element;
+      const relatedTarget = activeElement || getActiveElement(previousElement);
+      if (relatedTarget === previousElement) return;
+      fireBlurEvent(previousElement, { relatedTarget });
+    }, [store, activeId, virtualFocus, composite]);
+    const onKeyDownCapture = useKeyboardEventProxy(
+      store,
+      props.onKeyDownCapture,
+      previousElementRef
+    );
+    const onKeyUpCapture = useKeyboardEventProxy(
+      store,
+      props.onKeyUpCapture,
+      previousElementRef
+    );
+    const onFocusCaptureProp = props.onFocusCapture;
+    const onFocusCapture = useEvent((event) => {
+      onFocusCaptureProp == null ? void 0 : onFocusCaptureProp(event);
+      if (event.defaultPrevented) return;
+      if (!store) return;
+      const { virtualFocus: virtualFocus2 } = store.getState();
+      if (!virtualFocus2) return;
+      const previousActiveElement = event.relatedTarget;
+      const isSilentlyFocused = silentlyFocused(event.currentTarget);
+      if (isSelfTarget(event) && isSilentlyFocused) {
+        event.stopPropagation();
+        previousElementRef.current = previousActiveElement;
+      }
+    });
+    const onFocusProp = props.onFocus;
+    const onFocus = useEvent((event) => {
+      onFocusProp == null ? void 0 : onFocusProp(event);
+      if (event.defaultPrevented) return;
+      if (!composite) return;
+      if (!store) return;
+      const { relatedTarget } = event;
+      const { virtualFocus: virtualFocus2 } = store.getState();
+      if (virtualFocus2) {
+        if (isSelfTarget(event) && !isItem(store, relatedTarget)) {
+          queueMicrotask(scheduleFocus);
+        }
+      } else if (isSelfTarget(event)) {
+        store.setActiveId(null);
+      }
+    });
+    const onBlurCaptureProp = props.onBlurCapture;
+    const onBlurCapture = useEvent((event) => {
+      var _a2;
+      onBlurCaptureProp == null ? void 0 : onBlurCaptureProp(event);
+      if (event.defaultPrevented) return;
+      if (!store) return;
+      const { virtualFocus: virtualFocus2, activeId: activeId2 } = store.getState();
+      if (!virtualFocus2) return;
+      const activeElement = (_a2 = getEnabledItem(store, activeId2)) == null ? void 0 : _a2.element;
+      const nextActiveElement = event.relatedTarget;
+      const nextActiveElementIsItem = isItem(store, nextActiveElement);
+      const previousElement = previousElementRef.current;
+      previousElementRef.current = null;
+      if (isSelfTarget(event) && nextActiveElementIsItem) {
+        if (nextActiveElement === activeElement) {
+          if (previousElement && previousElement !== nextActiveElement) {
+            fireBlurEvent(previousElement, event);
+          }
+        } else if (activeElement) {
+          fireBlurEvent(activeElement, event);
+        } else if (previousElement) {
+          fireBlurEvent(previousElement, event);
+        }
+        event.stopPropagation();
+      } else {
+        const targetIsItem = isItem(store, event.target);
+        if (!targetIsItem && activeElement) {
+          fireBlurEvent(activeElement, event);
+        }
+      }
+    });
+    const onKeyDownProp = props.onKeyDown;
+    const moveOnKeyPressProp = useBooleanEvent(moveOnKeyPress);
+    const onKeyDown = useEvent((event) => {
+      var _a2;
+      onKeyDownProp == null ? void 0 : onKeyDownProp(event);
+      if (event.defaultPrevented) return;
+      if (!store) return;
+      if (!isSelfTarget(event)) return;
+      const { orientation, items, renderedItems, activeId: activeId2 } = store.getState();
+      const activeItem = getEnabledItem(store, activeId2);
+      if ((_a2 = activeItem == null ? void 0 : activeItem.element) == null ? void 0 : _a2.isConnected) return;
+      const isVertical = orientation !== "horizontal";
+      const isHorizontal = orientation !== "vertical";
+      const grid = isGrid(renderedItems);
+      const isHorizontalKey = event.key === "ArrowLeft" || event.key === "ArrowRight" || event.key === "Home" || event.key === "End";
+      if (isHorizontalKey && isTextField(event.currentTarget)) return;
+      const up = () => {
+        if (grid) {
+          const item = items && findFirstEnabledItemInTheLastRow(items);
+          return item == null ? void 0 : item.id;
+        }
+        return store == null ? void 0 : store.last();
+      };
+      const keyMap = {
+        ArrowUp: (grid || isVertical) && up,
+        ArrowRight: (grid || isHorizontal) && store.first,
+        ArrowDown: (grid || isVertical) && store.first,
+        ArrowLeft: (grid || isHorizontal) && store.last,
+        Home: store.first,
+        End: store.last,
+        PageUp: store.first,
+        PageDown: store.last
+      };
+      const action = keyMap[event.key];
+      if (action) {
+        const id = action();
+        if (id !== void 0) {
+          if (!moveOnKeyPressProp(event)) return;
+          event.preventDefault();
+          store.move(id);
+        }
+      }
+    });
+    props = useWrapElement(
+      props,
+      (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(CompositeContextProvider, { value: store, children: element }),
+      [store]
+    );
+    const activeDescendant = store.useState((state) => {
+      var _a2;
+      if (!store) return;
+      if (!composite) return;
+      if (!state.virtualFocus) return;
+      return (_a2 = getEnabledItem(store, state.activeId)) == null ? void 0 : _a2.id;
+    });
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
+      "aria-activedescendant": activeDescendant
+    }, props), {
+      ref: useMergeRefs(ref, setBaseElement, props.ref),
+      onKeyDownCapture,
+      onKeyUpCapture,
+      onFocusCapture,
+      onFocus,
+      onBlurCapture,
+      onKeyDown
+    });
+    const focusable = store.useState(
+      (state) => composite && (state.virtualFocus || state.activeId === null)
+    );
+    props = useFocusable(_3YLGPPWQ_spreadValues({ focusable }, props));
+    return props;
+  }
+);
+var TW35PKTK_Composite = forwardRef2(function Composite2(props) {
+  const htmlProps = useComposite(props);
+  return HKOOKEDE_createElement(TW35PKTK_TagName, htmlProps);
+});
+
+
+
+;// CONCATENATED MODULE: ./packages/components/build-module/composite/context.js
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+const CompositeContext = (0,external_wp_element_namespaceObject.createContext)(undefined);
+const context_useCompositeContext = () => (0,external_wp_element_namespaceObject.useContext)(CompositeContext);
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/7HVFURXT.js
+"use client";
+
+// src/group/group-label-context.tsx
+
+var GroupLabelContext = (0,external_React_.createContext)(void 0);
+
+
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/ZPO4YZYE.js
+"use client";
+
+
+
+
+
+// src/group/group.tsx
+
+
+
+var ZPO4YZYE_TagName = "div";
+var useGroup = createHook(
+  function useGroup2(props) {
+    const [labelId, setLabelId] = (0,external_React_.useState)();
+    props = useWrapElement(
+      props,
+      (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GroupLabelContext.Provider, { value: setLabelId, children: element }),
+      []
+    );
+    props = _3YLGPPWQ_spreadValues({
+      role: "group",
+      "aria-labelledby": labelId
+    }, props);
+    return removeUndefinedValues(props);
+  }
+);
+var Group = forwardRef2(function Group2(props) {
+  const htmlProps = useGroup(props);
+  return HKOOKEDE_createElement(ZPO4YZYE_TagName, htmlProps);
+});
+
+
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/IEKMDIUY.js
+"use client";
+
+
+
+
+// src/composite/composite-group.tsx
+var IEKMDIUY_TagName = "div";
+var useCompositeGroup = createHook(
+  function useCompositeGroup2(_a) {
+    var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
+    props = useGroup(props);
+    return props;
+  }
+);
+var IEKMDIUY_CompositeGroup = forwardRef2(function CompositeGroup2(props) {
+  const htmlProps = useCompositeGroup(props);
+  return HKOOKEDE_createElement(IEKMDIUY_TagName, htmlProps);
+});
+
+
+
+;// CONCATENATED MODULE: ./packages/components/build-module/composite/group.js
+/**
+ * External dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+const CompositeGroup = (0,external_wp_element_namespaceObject.forwardRef)(function CompositeGroup(props, ref) {
+  const context = context_useCompositeContext();
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(IEKMDIUY_CompositeGroup, {
+    store: context?.store,
+    ...props,
+    ref: ref
+  });
+});
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/IGFP5YPG.js
+"use client";
+
+
+
+
+
+// src/group/group-label.tsx
+
+
+var IGFP5YPG_TagName = "div";
+var useGroupLabel = createHook(
+  function useGroupLabel2(props) {
+    const setLabelId = (0,external_React_.useContext)(GroupLabelContext);
+    const id = useId(props.id);
+    useSafeLayoutEffect(() => {
+      setLabelId == null ? void 0 : setLabelId(id);
+      return () => setLabelId == null ? void 0 : setLabelId(void 0);
+    }, [setLabelId, id]);
+    props = _3YLGPPWQ_spreadValues({
+      id,
+      "aria-hidden": true
+    }, props);
+    return removeUndefinedValues(props);
+  }
+);
+var GroupLabel = forwardRef2(function GroupLabel2(props) {
+  const htmlProps = useGroupLabel(props);
+  return HKOOKEDE_createElement(IGFP5YPG_TagName, htmlProps);
+});
+
+
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/Y2MAXF6C.js
+"use client";
+
+
+
+
+// src/composite/composite-group-label.tsx
+var Y2MAXF6C_TagName = "div";
+var useCompositeGroupLabel = createHook(function useCompositeGroupLabel2(_a) {
+  var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
+  props = useGroupLabel(props);
+  return props;
+});
+var Y2MAXF6C_CompositeGroupLabel = forwardRef2(function CompositeGroupLabel2(props) {
+  const htmlProps = useCompositeGroupLabel(props);
+  return HKOOKEDE_createElement(Y2MAXF6C_TagName, htmlProps);
+});
+
+
+
+;// CONCATENATED MODULE: ./packages/components/build-module/composite/group-label.js
+/**
+ * External dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+const CompositeGroupLabel = (0,external_wp_element_namespaceObject.forwardRef)(function CompositeGroupLabel(props, ref) {
+  const context = context_useCompositeContext();
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Y2MAXF6C_CompositeGroupLabel, {
+    store: context?.store,
+    ...props,
+    ref: ref
+  });
+});
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/OBZMLI6J.js
+"use client";
+
+
+
+
+
+// src/composite/composite-hover.tsx
+
+
+
+
+var OBZMLI6J_TagName = "div";
+function getMouseDestination(event) {
+  const relatedTarget = event.relatedTarget;
+  if ((relatedTarget == null ? void 0 : relatedTarget.nodeType) === Node.ELEMENT_NODE) {
+    return relatedTarget;
+  }
+  return null;
+}
+function hoveringInside(event) {
+  const nextElement = getMouseDestination(event);
+  if (!nextElement) return false;
+  return contains(event.currentTarget, nextElement);
+}
+var symbol = Symbol("composite-hover");
+function movingToAnotherItem(event) {
+  let dest = getMouseDestination(event);
+  if (!dest) return false;
+  do {
+    if (PBFD2E7P_hasOwnProperty(dest, symbol) && dest[symbol]) return true;
+    dest = dest.parentElement;
+  } while (dest);
+  return false;
+}
+var useCompositeHover = createHook(
+  function useCompositeHover2(_a) {
+    var _b = _a, {
+      store,
+      focusOnHover = true,
+      blurOnHoverEnd = !!focusOnHover
+    } = _b, props = __objRest(_b, [
+      "store",
+      "focusOnHover",
+      "blurOnHoverEnd"
+    ]);
+    const context = useCompositeContext();
+    store = store || context;
+    invariant(
+      store,
+       false && 0
+    );
+    const isMouseMoving = useIsMouseMoving();
+    const onMouseMoveProp = props.onMouseMove;
+    const focusOnHoverProp = useBooleanEvent(focusOnHover);
+    const onMouseMove = useEvent((event) => {
+      onMouseMoveProp == null ? void 0 : onMouseMoveProp(event);
+      if (event.defaultPrevented) return;
+      if (!isMouseMoving()) return;
+      if (!focusOnHoverProp(event)) return;
+      if (!hasFocusWithin(event.currentTarget)) {
+        const baseElement = store == null ? void 0 : store.getState().baseElement;
+        if (baseElement && !hasFocus(baseElement)) {
+          baseElement.focus();
+        }
+      }
+      store == null ? void 0 : store.setActiveId(event.currentTarget.id);
+    });
+    const onMouseLeaveProp = props.onMouseLeave;
+    const blurOnHoverEndProp = useBooleanEvent(blurOnHoverEnd);
+    const onMouseLeave = useEvent((event) => {
+      var _a2;
+      onMouseLeaveProp == null ? void 0 : onMouseLeaveProp(event);
+      if (event.defaultPrevented) return;
+      if (!isMouseMoving()) return;
+      if (hoveringInside(event)) return;
+      if (movingToAnotherItem(event)) return;
+      if (!focusOnHoverProp(event)) return;
+      if (!blurOnHoverEndProp(event)) return;
+      store == null ? void 0 : store.setActiveId(null);
+      (_a2 = store == null ? void 0 : store.getState().baseElement) == null ? void 0 : _a2.focus();
+    });
+    const ref = (0,external_React_.useCallback)((element) => {
+      if (!element) return;
+      element[symbol] = true;
+    }, []);
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
+      ref: useMergeRefs(ref, props.ref),
+      onMouseMove,
+      onMouseLeave
+    });
+    return removeUndefinedValues(props);
+  }
+);
+var OBZMLI6J_CompositeHover = memo2(
+  forwardRef2(function CompositeHover2(props) {
+    const htmlProps = useCompositeHover(props);
+    return HKOOKEDE_createElement(OBZMLI6J_TagName, htmlProps);
+  })
+);
+
+
+
+;// CONCATENATED MODULE: ./packages/components/build-module/composite/hover.js
+/**
+ * External dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+const CompositeHover = (0,external_wp_element_namespaceObject.forwardRef)(function CompositeHover(props, ref) {
+  const context = context_useCompositeContext();
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(OBZMLI6J_CompositeHover, {
+    store: context?.store,
+    ...props,
+    ref: ref
+  });
+});
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/PLQDTVXM.js
+"use client";
+
+
+
+
+
+// src/collection/collection-item.tsx
+
+
+var PLQDTVXM_TagName = "div";
+var useCollectionItem = createHook(
+  function useCollectionItem2(_a) {
+    var _b = _a, {
+      store,
+      shouldRegisterItem = true,
+      getItem = identity,
+      element: element
+    } = _b, props = __objRest(_b, [
+      "store",
+      "shouldRegisterItem",
+      "getItem",
+      // @ts-expect-error This prop may come from a collection renderer.
+      "element"
+    ]);
+    const context = useCollectionContext();
+    store = store || context;
+    const id = useId(props.id);
+    const ref = (0,external_React_.useRef)(element);
+    (0,external_React_.useEffect)(() => {
+      const element2 = ref.current;
+      if (!id) return;
+      if (!element2) return;
+      if (!shouldRegisterItem) return;
+      const item = getItem({ id, element: element2 });
+      return store == null ? void 0 : store.renderItem(item);
+    }, [id, shouldRegisterItem, getItem, store]);
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
+      ref: useMergeRefs(ref, props.ref)
+    });
+    return removeUndefinedValues(props);
+  }
+);
+var CollectionItem = forwardRef2(function CollectionItem2(props) {
+  const htmlProps = useCollectionItem(props);
+  return HKOOKEDE_createElement(PLQDTVXM_TagName, htmlProps);
+});
+
+
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/NAXN2XAB.js
 "use client";
 
 
@@ -3654,10 +5025,9 @@ var Focusable = forwardRef2(function Focusable2(props) {
 
 
 
-var _5EKYTDKF_TagName = "button";
+var NAXN2XAB_TagName = "button";
 function isNativeClick(event) {
-  if (!event.isTrusted)
-    return false;
+  if (!event.isTrusted) return false;
   const element = event.currentTarget;
   if (event.key === "Enter") {
     return isButton(element) || element.tagName === "SUMMARY" || element.tagName === "A";
@@ -3667,7 +5037,7 @@ function isNativeClick(event) {
   }
   return false;
 }
-var symbol = Symbol("command");
+var NAXN2XAB_symbol = Symbol("command");
 var useCommand = createHook(
   function useCommand2(_a) {
     var _b = _a, { clickOnEnter = true, clickOnSpace = true } = _b, props = __objRest(_b, ["clickOnEnter", "clickOnSpace"]);
@@ -3678,30 +5048,23 @@ var useCommand = createHook(
       () => !!tagName && isButton({ tagName, type })
     );
     (0,external_React_.useEffect)(() => {
-      if (!ref.current)
-        return;
+      if (!ref.current) return;
       setIsNativeButton(isButton(ref.current));
     }, []);
     const [active, setActive] = (0,external_React_.useState)(false);
     const activeRef = (0,external_React_.useRef)(false);
     const disabled = disabledFromProps(props);
-    const [isDuplicate, metadataProps] = useMetadataProps(props, symbol, true);
+    const [isDuplicate, metadataProps] = useMetadataProps(props, NAXN2XAB_symbol, true);
     const onKeyDownProp = props.onKeyDown;
     const onKeyDown = useEvent((event) => {
       onKeyDownProp == null ? void 0 : onKeyDownProp(event);
       const element = event.currentTarget;
-      if (event.defaultPrevented)
-        return;
-      if (isDuplicate)
-        return;
-      if (disabled)
-        return;
-      if (!isSelfTarget(event))
-        return;
-      if (isTextField(element))
-        return;
-      if (element.isContentEditable)
-        return;
+      if (event.defaultPrevented) return;
+      if (isDuplicate) return;
+      if (disabled) return;
+      if (!isSelfTarget(event)) return;
+      if (isTextField(element)) return;
+      if (element.isContentEditable) return;
       const isEnter = clickOnEnter && event.key === "Enter";
       const isSpace = clickOnSpace && event.key === " ";
       const shouldPreventEnter = event.key === "Enter" && !clickOnEnter;
@@ -3735,14 +5098,10 @@ var useCommand = createHook(
     const onKeyUpProp = props.onKeyUp;
     const onKeyUp = useEvent((event) => {
       onKeyUpProp == null ? void 0 : onKeyUpProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (isDuplicate)
-        return;
-      if (disabled)
-        return;
-      if (event.metaKey)
-        return;
+      if (event.defaultPrevented) return;
+      if (isDuplicate) return;
+      if (disabled) return;
+      if (event.metaKey) return;
       const isSpace = clickOnSpace && event.key === " ";
       if (activeRef.current && isSpace) {
         activeRef.current = false;
@@ -3755,7 +5114,7 @@ var useCommand = createHook(
         }
       }
     });
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues(_3YLGPPWQ_spreadValues({
       "data-active": active || void 0,
       type: isNativeButton ? "button" : void 0
     }, metadataProps), props), {
@@ -3769,435 +5128,12 @@ var useCommand = createHook(
 );
 var Command = forwardRef2(function Command2(props) {
   const htmlProps = useCommand(props);
-  return YIF72NQG_createElement(_5EKYTDKF_TagName, htmlProps);
+  return HKOOKEDE_createElement(NAXN2XAB_TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/3IEDWLST.js
-"use client";
-
-// src/composite/utils.ts
-
-var NULL_ITEM = { id: null };
-function flipItems(items, activeId, shouldInsertNullItem = false) {
-  const index = items.findIndex((item) => item.id === activeId);
-  return [
-    ...items.slice(index + 1),
-    ...shouldInsertNullItem ? [NULL_ITEM] : [],
-    ...items.slice(0, index)
-  ];
-}
-function findFirstEnabledItem(items, excludeId) {
-  return items.find((item) => {
-    if (excludeId) {
-      return !item.disabled && item.id !== excludeId;
-    }
-    return !item.disabled;
-  });
-}
-function getEnabledItem(store, id) {
-  if (!id)
-    return null;
-  return store.item(id) || null;
-}
-function groupItemsByRows(items) {
-  const rows = [];
-  for (const item of items) {
-    const row = rows.find((currentRow) => {
-      var _a;
-      return ((_a = currentRow[0]) == null ? void 0 : _a.rowId) === item.rowId;
-    });
-    if (row) {
-      row.push(item);
-    } else {
-      rows.push([item]);
-    }
-  }
-  return rows;
-}
-function selectTextField(element, collapseToEnd = false) {
-  if (isTextField(element)) {
-    element.setSelectionRange(
-      collapseToEnd ? element.value.length : 0,
-      element.value.length
-    );
-  } else if (element.isContentEditable) {
-    const selection = getDocument(element).getSelection();
-    selection == null ? void 0 : selection.selectAllChildren(element);
-    if (collapseToEnd) {
-      selection == null ? void 0 : selection.collapseToEnd();
-    }
-  }
-}
-var FOCUS_SILENTLY = Symbol("FOCUS_SILENTLY");
-function focusSilently(element) {
-  element[FOCUS_SILENTLY] = true;
-  element.focus({ preventScroll: true });
-}
-function silentlyFocused(element) {
-  const isSilentlyFocused = element[FOCUS_SILENTLY];
-  delete element[FOCUS_SILENTLY];
-  return isSilentlyFocused;
-}
-function isItem(store, element, exclude) {
-  if (!element)
-    return false;
-  if (element === exclude)
-    return false;
-  const item = store.item(element.id);
-  if (!item)
-    return false;
-  if (exclude && item.element === exclude)
-    return false;
-  return true;
-}
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/53KINMNA.js
-"use client";
-
-
-
-// src/composite/composite-context.tsx
-
-var _53KINMNA_ctx = createStoreContext(
-  [CollectionContextProvider],
-  [CollectionScopedContextProvider]
-);
-var useCompositeContext = _53KINMNA_ctx.useContext;
-var useCompositeScopedContext = _53KINMNA_ctx.useScopedContext;
-var useCompositeProviderContext = _53KINMNA_ctx.useProviderContext;
-var CompositeContextProvider = _53KINMNA_ctx.ContextProvider;
-var CompositeScopedContextProvider = _53KINMNA_ctx.ScopedContextProvider;
-var CompositeItemContext = (0,external_React_.createContext)(
-  void 0
-);
-var CompositeRowContext = (0,external_React_.createContext)(
-  void 0
-);
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/KLPDXTDE.js
-"use client";
-
-
-
-// src/utils/store.ts
-function getInternal(store, key) {
-  const internals = store.__unstableInternals;
-  invariant(internals, "Invalid store");
-  return internals[key];
-}
-function createStore(initialState, ...stores) {
-  let state = initialState;
-  let prevStateBatch = state;
-  let lastUpdate = Symbol();
-  let destroy = noop;
-  const instances = /* @__PURE__ */ new Set();
-  const updatedKeys = /* @__PURE__ */ new Set();
-  const setups = /* @__PURE__ */ new Set();
-  const listeners = /* @__PURE__ */ new Set();
-  const batchListeners = /* @__PURE__ */ new Set();
-  const disposables = /* @__PURE__ */ new WeakMap();
-  const listenerKeys = /* @__PURE__ */ new WeakMap();
-  const storeSetup = (callback) => {
-    setups.add(callback);
-    return () => setups.delete(callback);
-  };
-  const storeInit = () => {
-    const initialized = instances.size;
-    const instance = Symbol();
-    instances.add(instance);
-    const maybeDestroy = () => {
-      instances.delete(instance);
-      if (instances.size)
-        return;
-      destroy();
-    };
-    if (initialized)
-      return maybeDestroy;
-    const desyncs = getKeys(state).map(
-      (key) => chain(
-        ...stores.map((store) => {
-          var _a;
-          const storeState = (_a = store == null ? void 0 : store.getState) == null ? void 0 : _a.call(store);
-          if (!storeState)
-            return;
-          if (!_22HHDS5F_hasOwnProperty(storeState, key))
-            return;
-          return sync(store, [key], (state2) => {
-            setState(
-              key,
-              state2[key],
-              // @ts-expect-error - Not public API. This is just to prevent
-              // infinite loops.
-              true
-            );
-          });
-        })
-      )
-    );
-    const teardowns = [];
-    for (const setup2 of setups) {
-      teardowns.push(setup2());
-    }
-    const cleanups = stores.map(init);
-    destroy = chain(...desyncs, ...teardowns, ...cleanups);
-    return maybeDestroy;
-  };
-  const sub = (keys, listener, set = listeners) => {
-    set.add(listener);
-    listenerKeys.set(listener, keys);
-    return () => {
-      var _a;
-      (_a = disposables.get(listener)) == null ? void 0 : _a();
-      disposables.delete(listener);
-      listenerKeys.delete(listener);
-      set.delete(listener);
-    };
-  };
-  const storeSubscribe = (keys, listener) => sub(keys, listener);
-  const storeSync = (keys, listener) => {
-    disposables.set(listener, listener(state, state));
-    return sub(keys, listener);
-  };
-  const storeBatch = (keys, listener) => {
-    disposables.set(listener, listener(state, prevStateBatch));
-    return sub(keys, listener, batchListeners);
-  };
-  const storePick = (keys) => createStore(pick(state, keys), finalStore);
-  const storeOmit = (keys) => createStore(omit(state, keys), finalStore);
-  const getState = () => state;
-  const setState = (key, value, fromStores = false) => {
-    var _a;
-    if (!_22HHDS5F_hasOwnProperty(state, key))
-      return;
-    const nextValue = _22HHDS5F_applyState(value, state[key]);
-    if (nextValue === state[key])
-      return;
-    if (!fromStores) {
-      for (const store of stores) {
-        (_a = store == null ? void 0 : store.setState) == null ? void 0 : _a.call(store, key, nextValue);
-      }
-    }
-    const prevState = state;
-    state = _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, state), { [key]: nextValue });
-    const thisUpdate = Symbol();
-    lastUpdate = thisUpdate;
-    updatedKeys.add(key);
-    const run = (listener, prev, uKeys) => {
-      var _a2;
-      const keys = listenerKeys.get(listener);
-      const updated = (k) => uKeys ? uKeys.has(k) : k === key;
-      if (!keys || keys.some(updated)) {
-        (_a2 = disposables.get(listener)) == null ? void 0 : _a2();
-        disposables.set(listener, listener(state, prev));
-      }
-    };
-    for (const listener of listeners) {
-      run(listener, prevState);
-    }
-    queueMicrotask(() => {
-      if (lastUpdate !== thisUpdate)
-        return;
-      const snapshot = state;
-      for (const listener of batchListeners) {
-        run(listener, prevStateBatch, updatedKeys);
-      }
-      prevStateBatch = snapshot;
-      updatedKeys.clear();
-    });
-  };
-  const finalStore = {
-    getState,
-    setState,
-    __unstableInternals: {
-      setup: storeSetup,
-      init: storeInit,
-      subscribe: storeSubscribe,
-      sync: storeSync,
-      batch: storeBatch,
-      pick: storePick,
-      omit: storeOmit
-    }
-  };
-  return finalStore;
-}
-function setup(store, ...args) {
-  if (!store)
-    return;
-  return getInternal(store, "setup")(...args);
-}
-function init(store, ...args) {
-  if (!store)
-    return;
-  return getInternal(store, "init")(...args);
-}
-function subscribe(store, ...args) {
-  if (!store)
-    return;
-  return getInternal(store, "subscribe")(...args);
-}
-function sync(store, ...args) {
-  if (!store)
-    return;
-  return getInternal(store, "sync")(...args);
-}
-function batch(store, ...args) {
-  if (!store)
-    return;
-  return getInternal(store, "batch")(...args);
-}
-function omit2(store, ...args) {
-  if (!store)
-    return;
-  return getInternal(store, "omit")(...args);
-}
-function pick2(store, ...args) {
-  if (!store)
-    return;
-  return getInternal(store, "pick")(...args);
-}
-function mergeStore(...stores) {
-  const initialState = stores.reduce((state, store2) => {
-    var _a;
-    const nextState = (_a = store2 == null ? void 0 : store2.getState) == null ? void 0 : _a.call(store2);
-    if (!nextState)
-      return state;
-    return Object.assign(state, nextState);
-  }, {});
-  const store = createStore(initialState, ...stores);
-  return store;
-}
-function throwOnConflictingProps(props, store) {
-  if (true)
-    return;
-  if (!store)
-    return;
-  const defaultKeys = Object.entries(props).filter(([key, value]) => key.startsWith("default") && value !== void 0).map(([key]) => {
-    var _a;
-    const stateKey = key.replace("default", "");
-    return `${((_a = stateKey[0]) == null ? void 0 : _a.toLowerCase()) || ""}${stateKey.slice(1)}`;
-  });
-  if (!defaultKeys.length)
-    return;
-  const storeState = store.getState();
-  const conflictingProps = defaultKeys.filter(
-    (key) => _22HHDS5F_hasOwnProperty(storeState, key)
-  );
-  if (!conflictingProps.length)
-    return;
-  throw new Error(
-    `Passing a store prop in conjunction with a default state is not supported.
-
-const store = useSelectStore();
-<SelectProvider store={store} defaultValue="Apple" />
-                ^             ^
-
-Instead, pass the default state to the topmost store:
-
-const store = useSelectStore({ defaultValue: "Apple" });
-<SelectProvider store={store} />
-
-See https://github.com/ariakit/ariakit/pull/2745 for more details.
-
-If there's a particular need for this, please submit a feature request at https://github.com/ariakit/ariakit
-`
-  );
-}
-
-
-
-// EXTERNAL MODULE: ./node_modules/use-sync-external-store/shim/index.js
-var shim = __webpack_require__(635);
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/DTNGDFNU.js
-"use client";
-
-
-
-// src/utils/store.tsx
-
-
-
-
-var { useSyncExternalStore } = shim;
-var noopSubscribe = () => () => {
-};
-function useStoreState(store, keyOrSelector = identity) {
-  const storeSubscribe = external_React_.useCallback(
-    (callback) => {
-      if (!store)
-        return noopSubscribe();
-      return subscribe(store, null, callback);
-    },
-    [store]
-  );
-  const getSnapshot = () => {
-    const key = typeof keyOrSelector === "string" ? keyOrSelector : null;
-    const selector = typeof keyOrSelector === "function" ? keyOrSelector : null;
-    const state = store == null ? void 0 : store.getState();
-    if (selector)
-      return selector(state);
-    if (!state)
-      return;
-    if (!key)
-      return;
-    if (!_22HHDS5F_hasOwnProperty(state, key))
-      return;
-    return state[key];
-  };
-  return useSyncExternalStore(storeSubscribe, getSnapshot, getSnapshot);
-}
-function useStoreProps(store, props, key, setKey) {
-  const value = _22HHDS5F_hasOwnProperty(props, key) ? props[key] : void 0;
-  const setValue = setKey ? props[setKey] : void 0;
-  const propsRef = useLiveRef({ value, setValue });
-  useSafeLayoutEffect(() => {
-    return sync(store, [key], (state, prev) => {
-      const { value: value2, setValue: setValue2 } = propsRef.current;
-      if (!setValue2)
-        return;
-      if (state[key] === prev[key])
-        return;
-      if (state[key] === value2)
-        return;
-      setValue2(state[key]);
-    });
-  }, [store, key]);
-  useSafeLayoutEffect(() => {
-    if (value === void 0)
-      return;
-    store.setState(key, value);
-    return batch(store, [key], () => {
-      if (value === void 0)
-        return;
-      store.setState(key, value);
-    });
-  });
-}
-function DTNGDFNU_useStore(createStore, props) {
-  const [store, setStore] = external_React_.useState(() => createStore(props));
-  useSafeLayoutEffect(() => init(store), [store]);
-  const useState2 = external_React_.useCallback(
-    (keyOrSelector) => useStoreState(store, keyOrSelector),
-    [store]
-  );
-  const memoizedStore = external_React_.useMemo(
-    () => _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, store), { useState: useState2 }),
-    [store, useState2]
-  );
-  const updateStore = useEvent(() => {
-    setStore((store2) => createStore(_4R3V3JGP_spreadValues(_4R3V3JGP_spreadValues({}, props), store2.getState())));
-  });
-  return [memoizedStore, updateStore];
-}
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/UN4MKOLN.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/3CCTMYB6.js
 "use client";
 
 
@@ -4215,10 +5151,9 @@ function DTNGDFNU_useStore(createStore, props) {
 
 
 
-var UN4MKOLN_TagName = "button";
+var _3CCTMYB6_TagName = "button";
 function isEditableElement(element) {
-  if (isTextbox(element))
-    return true;
+  if (isTextbox(element)) return true;
   return element.tagName === "INPUT" && !isButton(element);
 }
 function getNextPageOffset(scrollingElement, pageUp = false) {
@@ -4240,27 +5175,21 @@ function getItemOffset(itemElement, pageUp = false) {
 }
 function findNextPageItemId(element, store, next, pageUp = false) {
   var _a;
-  if (!store)
-    return;
-  if (!next)
-    return;
+  if (!store) return;
+  if (!next) return;
   const { renderedItems } = store.getState();
   const scrollingElement = getScrollingElement(element);
-  if (!scrollingElement)
-    return;
+  if (!scrollingElement) return;
   const nextPageOffset = getNextPageOffset(scrollingElement, pageUp);
   let id;
   let prevDifference;
   for (let i = 0; i < renderedItems.length; i += 1) {
     const previousId = id;
     id = next(i);
-    if (!id)
-      break;
-    if (id === previousId)
-      continue;
+    if (!id) break;
+    if (id === previousId) continue;
     const itemElement = (_a = getEnabledItem(store, id)) == null ? void 0 : _a.element;
-    if (!itemElement)
-      continue;
+    if (!itemElement) continue;
     const itemOffset = getItemOffset(itemElement, pageUp);
     const difference = itemOffset - nextPageOffset;
     const absDifference = Math.abs(difference);
@@ -4275,40 +5204,8 @@ function findNextPageItemId(element, store, next, pageUp = false) {
   return id;
 }
 function targetIsAnotherItem(event, store) {
-  if (isSelfTarget(event))
-    return false;
+  if (isSelfTarget(event)) return false;
   return isItem(store, event.target);
-}
-function useRole(ref, props) {
-  const roleProp = props.role;
-  const [role, setRole] = (0,external_React_.useState)(roleProp);
-  useSafeLayoutEffect(() => {
-    const element = ref.current;
-    if (!element)
-      return;
-    setRole(element.getAttribute("role") || roleProp);
-  }, [roleProp]);
-  return role;
-}
-function requiresAriaSelected(role) {
-  return role === "option" || role === "treeitem";
-}
-function supportsAriaSelected(role) {
-  if (role === "option")
-    return true;
-  if (role === "tab")
-    return true;
-  if (role === "treeitem")
-    return true;
-  if (role === "gridcell")
-    return true;
-  if (role === "row")
-    return true;
-  if (role === "columnheader")
-    return true;
-  if (role === "rowheader")
-    return true;
-  return false;
 }
 var useCompositeItem = createHook(
   function useCompositeItem2(_a) {
@@ -4337,21 +5234,17 @@ var useCompositeItem = createHook(
     const ref = (0,external_React_.useRef)(null);
     const row = (0,external_React_.useContext)(CompositeRowContext);
     const rowId = useStoreState(store, (state) => {
-      if (rowIdProp)
-        return rowIdProp;
-      if (!state)
-        return;
-      if (!(row == null ? void 0 : row.baseElement))
-        return;
-      if (row.baseElement !== state.baseElement)
-        return;
+      if (rowIdProp) return rowIdProp;
+      if (!state) return;
+      if (!(row == null ? void 0 : row.baseElement)) return;
+      if (row.baseElement !== state.baseElement) return;
       return row.id;
     });
     const disabled = disabledFromProps(props);
     const trulyDisabled = disabled && !props.accessibleWhenDisabled;
     const getItem = (0,external_React_.useCallback)(
       (item) => {
-        const nextItem = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, item), {
+        const nextItem = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, item), {
           id: id || item.id,
           rowId,
           disabled: !!trulyDisabled
@@ -4367,29 +5260,20 @@ var useCompositeItem = createHook(
     const hasFocusedComposite = (0,external_React_.useRef)(false);
     const onFocus = useEvent((event) => {
       onFocusProp == null ? void 0 : onFocusProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (isPortalEvent(event))
-        return;
-      if (!id)
-        return;
-      if (!store)
-        return;
-      if (targetIsAnotherItem(event, store))
-        return;
-      const { virtualFocus: virtualFocus2, baseElement: baseElement2 } = store.getState();
+      if (event.defaultPrevented) return;
+      if (isPortalEvent(event)) return;
+      if (!id) return;
+      if (!store) return;
+      if (targetIsAnotherItem(event, store)) return;
+      const { virtualFocus, baseElement: baseElement2 } = store.getState();
       store.setActiveId(id);
       if (isTextbox(event.currentTarget)) {
         selectTextField(event.currentTarget);
       }
-      if (!virtualFocus2)
-        return;
-      if (!isSelfTarget(event))
-        return;
-      if (isEditableElement(event.currentTarget))
-        return;
-      if (!(baseElement2 == null ? void 0 : baseElement2.isConnected))
-        return;
+      if (!virtualFocus) return;
+      if (!isSelfTarget(event)) return;
+      if (isEditableElement(event.currentTarget)) return;
+      if (!(baseElement2 == null ? void 0 : baseElement2.isConnected)) return;
       if (isSafari() && event.currentTarget.hasAttribute("data-autofocus")) {
         event.currentTarget.scrollIntoView({
           block: "nearest",
@@ -4407,8 +5291,7 @@ var useCompositeItem = createHook(
     const onBlurCaptureProp = props.onBlurCapture;
     const onBlurCapture = useEvent((event) => {
       onBlurCaptureProp == null ? void 0 : onBlurCaptureProp(event);
-      if (event.defaultPrevented)
-        return;
+      if (event.defaultPrevented) return;
       const state = store == null ? void 0 : store.getState();
       if ((state == null ? void 0 : state.virtualFocus) && hasFocusedComposite.current) {
         hasFocusedComposite.current = false;
@@ -4421,12 +5304,9 @@ var useCompositeItem = createHook(
     const moveOnKeyPressProp = useBooleanEvent(moveOnKeyPress);
     const onKeyDown = useEvent((event) => {
       onKeyDownProp == null ? void 0 : onKeyDownProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!isSelfTarget(event))
-        return;
-      if (!store)
-        return;
+      if (event.defaultPrevented) return;
+      if (!isSelfTarget(event)) return;
+      if (!store) return;
       const { currentTarget } = event;
       const state = store.getState();
       const item = store.item(id);
@@ -4434,14 +5314,10 @@ var useCompositeItem = createHook(
       const isVertical = state.orientation !== "horizontal";
       const isHorizontal = state.orientation !== "vertical";
       const canHomeEnd = () => {
-        if (isGrid)
-          return true;
-        if (isHorizontal)
-          return true;
-        if (!state.baseElement)
-          return true;
-        if (!isTextField(state.baseElement))
-          return true;
+        if (isGrid) return true;
+        if (isHorizontal) return true;
+        if (!state.baseElement) return true;
+        if (!isTextField(state.baseElement)) return true;
         return false;
       };
       const keyMap = {
@@ -4450,16 +5326,14 @@ var useCompositeItem = createHook(
         ArrowDown: (isGrid || isVertical) && store.down,
         ArrowLeft: (isGrid || isHorizontal) && store.previous,
         Home: () => {
-          if (!canHomeEnd())
-            return;
+          if (!canHomeEnd()) return;
           if (!isGrid || event.ctrlKey) {
             return store == null ? void 0 : store.first();
           }
           return store == null ? void 0 : store.previous(-1);
         },
         End: () => {
-          if (!canHomeEnd())
-            return;
+          if (!canHomeEnd()) return;
           if (!isGrid || event.ctrlKey) {
             return store == null ? void 0 : store.last();
           }
@@ -4482,15 +5356,12 @@ var useCompositeItem = createHook(
           const isDown = isVertical && event.key === "ArrowDown";
           if (isRight || isDown) {
             const { length: valueLength } = getTextboxValue(currentTarget);
-            if (selection.end !== valueLength)
-              return;
-          } else if ((isLeft || isUp) && selection.start !== 0)
-            return;
+            if (selection.end !== valueLength) return;
+          } else if ((isLeft || isUp) && selection.start !== 0) return;
         }
         const nextId = action();
         if (preventScrollOnKeyDownProp(event) || nextId !== void 0) {
-          if (!moveOnKeyPressProp(event))
-            return;
+          if (!moveOnKeyPressProp(event)) return;
           event.preventDefault();
           store.move(nextId);
         }
@@ -4513,53 +5384,31 @@ var useCompositeItem = createHook(
       store,
       (state) => !!state && state.activeId === id
     );
-    const virtualFocus = useStoreState(store, "virtualFocus");
-    const role = useRole(ref, props);
-    let ariaSelected;
-    if (isActiveItem) {
-      if (requiresAriaSelected(role)) {
-        ariaSelected = true;
-      } else if (virtualFocus && supportsAriaSelected(role)) {
-        ariaSelected = true;
-      }
-    }
     const ariaSetSize = useStoreState(store, (state) => {
-      if (ariaSetSizeProp != null)
-        return ariaSetSizeProp;
-      if (!state)
-        return;
-      if (!(row == null ? void 0 : row.ariaSetSize))
-        return;
-      if (row.baseElement !== state.baseElement)
-        return;
+      if (ariaSetSizeProp != null) return ariaSetSizeProp;
+      if (!state) return;
+      if (!(row == null ? void 0 : row.ariaSetSize)) return;
+      if (row.baseElement !== state.baseElement) return;
       return row.ariaSetSize;
     });
     const ariaPosInSet = useStoreState(store, (state) => {
-      if (ariaPosInSetProp != null)
-        return ariaPosInSetProp;
-      if (!state)
-        return;
-      if (!(row == null ? void 0 : row.ariaPosInSet))
-        return;
-      if (row.baseElement !== state.baseElement)
-        return;
+      if (ariaPosInSetProp != null) return ariaPosInSetProp;
+      if (!state) return;
+      if (!(row == null ? void 0 : row.ariaPosInSet)) return;
+      if (row.baseElement !== state.baseElement) return;
       const itemsInRow = state.renderedItems.filter(
         (item) => item.rowId === rowId
       );
       return row.ariaPosInSet + itemsInRow.findIndex((item) => item.id === id);
     });
     const isTabbable = useStoreState(store, (state) => {
-      if (!(state == null ? void 0 : state.renderedItems.length))
-        return true;
-      if (state.virtualFocus)
-        return false;
-      if (tabbable)
-        return true;
+      if (!(state == null ? void 0 : state.renderedItems.length)) return true;
+      if (state.virtualFocus) return false;
+      if (tabbable) return true;
       return state.activeId === id;
     });
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       id,
-      "aria-selected": ariaSelected,
       "data-active-item": isActiveItem || void 0
     }, props), {
       ref: useMergeRefs(ref, props.ref),
@@ -4569,28 +5418,505 @@ var useCompositeItem = createHook(
       onKeyDown
     });
     props = useCommand(props);
-    props = useCollectionItem(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = useCollectionItem(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       store
     }, props), {
       getItem,
       shouldRegisterItem: id ? props.shouldRegisterItem : false
     }));
-    return removeUndefinedValues(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+    return removeUndefinedValues(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
       "aria-setsize": ariaSetSize,
       "aria-posinset": ariaPosInSet
     }));
   }
 );
-var CompositeItem = memo2(
+var _3CCTMYB6_CompositeItem = memo2(
   forwardRef2(function CompositeItem2(props) {
     const htmlProps = useCompositeItem(props);
-    return YIF72NQG_createElement(UN4MKOLN_TagName, htmlProps);
+    return HKOOKEDE_createElement(_3CCTMYB6_TagName, htmlProps);
   })
 );
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/KDSZSVV5.js
+;// CONCATENATED MODULE: ./packages/components/build-module/composite/item.js
+/**
+ * External dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+const CompositeItem = (0,external_wp_element_namespaceObject.forwardRef)(function CompositeItem(props, ref) {
+  const context = context_useCompositeContext();
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(_3CCTMYB6_CompositeItem, {
+    store: context?.store,
+    ...props,
+    ref: ref
+  });
+});
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/6BE7QOX5.js
+"use client";
+
+
+
+
+
+// src/composite/composite-row.tsx
+
+
+
+var _6BE7QOX5_TagName = "div";
+var useCompositeRow = createHook(
+  function useCompositeRow2(_a) {
+    var _b = _a, {
+      store,
+      "aria-setsize": ariaSetSize,
+      "aria-posinset": ariaPosInSet
+    } = _b, props = __objRest(_b, [
+      "store",
+      "aria-setsize",
+      "aria-posinset"
+    ]);
+    const context = useCompositeContext();
+    store = store || context;
+    invariant(
+      store,
+       false && 0
+    );
+    const id = useId(props.id);
+    const baseElement = store.useState(
+      (state) => state.baseElement || void 0
+    );
+    const providerValue = (0,external_React_.useMemo)(
+      () => ({ id, baseElement, ariaSetSize, ariaPosInSet }),
+      [id, baseElement, ariaSetSize, ariaPosInSet]
+    );
+    props = useWrapElement(
+      props,
+      (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(CompositeRowContext.Provider, { value: providerValue, children: element }),
+      [providerValue]
+    );
+    props = _3YLGPPWQ_spreadValues({ id }, props);
+    return removeUndefinedValues(props);
+  }
+);
+var _6BE7QOX5_CompositeRow = forwardRef2(function CompositeRow2(props) {
+  const htmlProps = useCompositeRow(props);
+  return HKOOKEDE_createElement(_6BE7QOX5_TagName, htmlProps);
+});
+
+
+
+;// CONCATENATED MODULE: ./packages/components/build-module/composite/row.js
+/**
+ * External dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+const CompositeRow = (0,external_wp_element_namespaceObject.forwardRef)(function CompositeRow(props, ref) {
+  const context = context_useCompositeContext();
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(_6BE7QOX5_CompositeRow, {
+    store: context?.store,
+    ...props,
+    ref: ref
+  });
+});
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/DS36B3MQ.js
+"use client";
+
+
+
+
+
+
+// src/composite/composite-typeahead.tsx
+
+
+
+
+var DS36B3MQ_TagName = "div";
+var chars = "";
+function clearChars() {
+  chars = "";
+}
+function isValidTypeaheadEvent(event) {
+  const target = event.target;
+  if (target && isTextField(target)) return false;
+  if (event.key === " " && chars.length) return true;
+  return event.key.length === 1 && !event.ctrlKey && !event.altKey && !event.metaKey && /^[\p{Letter}\p{Number}]$/u.test(event.key);
+}
+function isSelfTargetOrItem(event, items) {
+  if (isSelfTarget(event)) return true;
+  const target = event.target;
+  if (!target) return false;
+  const isItem = items.some((item) => item.element === target);
+  return isItem;
+}
+function DS36B3MQ_getEnabledItems(items) {
+  return items.filter((item) => !item.disabled);
+}
+function itemTextStartsWith(item, text) {
+  var _a;
+  const itemText = ((_a = item.element) == null ? void 0 : _a.textContent) || item.children || // The composite item object itself doesn't include a value property, but
+  // other components like Select do. Since CompositeTypeahead is a generic
+  // component that can be used with those as well, we also consider the value
+  // property as a fallback for the typeahead text content.
+  "value" in item && item.value;
+  if (!itemText) return false;
+  return normalizeString(itemText).trim().toLowerCase().startsWith(text.toLowerCase());
+}
+function getSameInitialItems(items, char, activeId) {
+  if (!activeId) return items;
+  const activeItem = items.find((item) => item.id === activeId);
+  if (!activeItem) return items;
+  if (!itemTextStartsWith(activeItem, char)) return items;
+  if (chars !== char && itemTextStartsWith(activeItem, chars)) return items;
+  chars = char;
+  return _5VQZOHHZ_flipItems(
+    items.filter((item) => itemTextStartsWith(item, chars)),
+    activeId
+  ).filter((item) => item.id !== activeId);
+}
+var useCompositeTypeahead = createHook(function useCompositeTypeahead2(_a) {
+  var _b = _a, { store, typeahead = true } = _b, props = __objRest(_b, ["store", "typeahead"]);
+  const context = useCompositeContext();
+  store = store || context;
+  invariant(
+    store,
+     false && 0
+  );
+  const onKeyDownCaptureProp = props.onKeyDownCapture;
+  const cleanupTimeoutRef = (0,external_React_.useRef)(0);
+  const onKeyDownCapture = useEvent((event) => {
+    onKeyDownCaptureProp == null ? void 0 : onKeyDownCaptureProp(event);
+    if (event.defaultPrevented) return;
+    if (!typeahead) return;
+    if (!store) return;
+    const { renderedItems, items, activeId } = store.getState();
+    if (!isValidTypeaheadEvent(event)) return clearChars();
+    let enabledItems = DS36B3MQ_getEnabledItems(
+      renderedItems.length ? renderedItems : items
+    );
+    if (!isSelfTargetOrItem(event, enabledItems)) return clearChars();
+    event.preventDefault();
+    window.clearTimeout(cleanupTimeoutRef.current);
+    cleanupTimeoutRef.current = window.setTimeout(() => {
+      chars = "";
+    }, 500);
+    const char = event.key.toLowerCase();
+    chars += char;
+    enabledItems = getSameInitialItems(enabledItems, char, activeId);
+    const item = enabledItems.find((item2) => itemTextStartsWith(item2, chars));
+    if (item) {
+      store.move(item.id);
+    } else {
+      clearChars();
+    }
+  });
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
+    onKeyDownCapture
+  });
+  return removeUndefinedValues(props);
+});
+var DS36B3MQ_CompositeTypeahead = forwardRef2(function CompositeTypeahead2(props) {
+  const htmlProps = useCompositeTypeahead(props);
+  return HKOOKEDE_createElement(DS36B3MQ_TagName, htmlProps);
+});
+
+
+
+;// CONCATENATED MODULE: ./packages/components/build-module/composite/typeahead.js
+/**
+ * External dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+const CompositeTypeahead = (0,external_wp_element_namespaceObject.forwardRef)(function CompositeTypeahead(props, ref) {
+  const context = context_useCompositeContext();
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(DS36B3MQ_CompositeTypeahead, {
+    store: context?.store,
+    ...props,
+    ref: ref
+  });
+});
+
+;// CONCATENATED MODULE: ./packages/components/build-module/composite/index.js
+/**
+ * Composite is a component that may contain navigable items represented by
+ * Composite.Item. It's inspired by the WAI-ARIA Composite Role and implements
+ * all the keyboard navigation mechanisms to ensure that there's only one
+ * tab stop for the whole Composite element. This means that it can behave as
+ * a roving tabindex or aria-activedescendant container.
+ *
+ * @see https://ariakit.org/components/composite
+ */
+
+/**
+ * External dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+
+
+
+
+
+
+/**
+ * Renders a widget based on the WAI-ARIA [`composite`](https://w3c.github.io/aria/#composite)
+ * role, which provides a single tab stop on the page and arrow key navigation
+ * through the focusable descendants.
+ *
+ * @example
+ * ```jsx
+ * import { Composite, useCompositeStore } from '@wordpress/components';
+ *
+ * const store = useCompositeStore();
+ * <Composite store={store}>
+ *   <Composite.Item>Item 1</Composite.Item>
+ *   <Composite.Item>Item 2</Composite.Item>
+ * </Composite>
+ * ```
+ */
+const Composite = Object.assign((0,external_wp_element_namespaceObject.forwardRef)(function Composite({
+  // Composite store props
+  activeId,
+  defaultActiveId,
+  setActiveId,
+  focusLoop = false,
+  focusWrap = false,
+  focusShift = false,
+  virtualFocus = false,
+  orientation = 'both',
+  rtl = false,
+  // Composite component props
+  children,
+  disabled = false,
+  // To be removed
+  store: storeProp,
+  // Rest props
+  ...props
+}, ref) {
+  const newStore = useCompositeStore({
+    activeId,
+    defaultActiveId,
+    setActiveId,
+    focusLoop,
+    focusWrap,
+    focusShift,
+    virtualFocus,
+    orientation,
+    rtl
+  });
+  const store = storeProp || newStore;
+  const contextValue = (0,external_wp_element_namespaceObject.useMemo)(() => ({
+    store
+  }), [store]);
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(TW35PKTK_Composite, {
+    disabled: disabled,
+    store: store,
+    ...props,
+    ref: ref,
+    children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(CompositeContext.Provider, {
+      value: contextValue,
+      children: children
+    })
+  });
+}), {
+  /**
+   * Renders a group element for composite items.
+   *
+   * @example
+   * ```jsx
+   * import { Composite, useCompositeStore } from '@wordpress/components';
+   *
+   * const store = useCompositeStore();
+   * <Composite store={store}>
+   *   <Composite.Group>
+   *     <Composite.GroupLabel>Label</Composite.GroupLabel>
+   *     <Composite.Item>Item 1</Composite.Item>
+   *     <Composite.Item>Item 2</Composite.Item>
+   *   </CompositeGroup>
+   * </Composite>
+   * ```
+   */
+  Group: Object.assign(CompositeGroup, {
+    displayName: 'Composite.Group'
+  }),
+  /**
+   * Renders a label in a composite group. This component must be wrapped with
+   * `Composite.Group` so the `aria-labelledby` prop is properly set on the
+   * composite group element.
+   *
+   * @example
+   * ```jsx
+   * import { Composite, useCompositeStore } from '@wordpress/components';
+   *
+   * const store = useCompositeStore();
+   * <Composite store={store}>
+   *   <Composite.Group>
+   *     <Composite.GroupLabel>Label</Composite.GroupLabel>
+   *     <Composite.Item>Item 1</Composite.Item>
+   *     <Composite.Item>Item 2</Composite.Item>
+   *   </CompositeGroup>
+   * </Composite>
+   * ```
+   */
+  GroupLabel: Object.assign(CompositeGroupLabel, {
+    displayName: 'Composite.GroupLabel'
+  }),
+  /**
+   * Renders a composite item.
+   *
+   * @example
+   * ```jsx
+   * import { Composite, useCompositeStore } from '@wordpress/components';
+   *
+   * const store = useCompositeStore();
+   * <Composite store={store}>
+   *   <Composite.Item>Item 1</Composite.Item>
+   *   <Composite.Item>Item 2</Composite.Item>
+   *   <Composite.Item>Item 3</Composite.Item>
+   * </Composite>
+   * ```
+   */
+  Item: Object.assign(CompositeItem, {
+    displayName: 'Composite.Item'
+  }),
+  /**
+   * Renders a composite row. Wrapping `Composite.Item` elements within
+   * `Composite.Row` will create a two-dimensional composite widget, such as a
+   * grid.
+   *
+   * @example
+   * ```jsx
+   * import { Composite, useCompositeStore } from '@wordpress/components';
+   *
+   * const store = useCompositeStore();
+   * <Composite store={store}>
+   *   <Composite.Row>
+   *     <Composite.Item>Item 1.1</Composite.Item>
+   *     <Composite.Item>Item 1.2</Composite.Item>
+   *     <Composite.Item>Item 1.3</Composite.Item>
+   *   </Composite.Row>
+   *   <Composite.Row>
+   *     <Composite.Item>Item 2.1</Composite.Item>
+   *     <Composite.Item>Item 2.2</Composite.Item>
+   *     <Composite.Item>Item 2.3</Composite.Item>
+   *   </Composite.Row>
+   * </Composite>
+   * ```
+   */
+  Row: Object.assign(CompositeRow, {
+    displayName: 'Composite.Row'
+  }),
+  /**
+   * Renders an element in a composite widget that receives focus on mouse move
+   * and loses focus to the composite base element on mouse leave. This should
+   * be combined with the `Composite.Item` component.
+   *
+   * @example
+   * ```jsx
+   * import { Composite, useCompositeStore } from '@wordpress/components';
+   *
+   * const store = useCompositeStore();
+   * <Composite store={store}>
+   *   <Composite.Hover render={ <Composite.Item /> }>
+   *     Item 1
+   *   </Composite.Hover>
+   *   <Composite.Hover render={ <Composite.Item /> }>
+   *     Item 2
+   *   </Composite.Hover>
+   * </Composite>
+   * ```
+   */
+  Hover: Object.assign(CompositeHover, {
+    displayName: 'Composite.Hover'
+  }),
+  /**
+   * Renders a component that adds typeahead functionality to composite
+   * components. Hitting printable character keys will move focus to the next
+   * composite item that begins with the input characters.
+   *
+   * @example
+   * ```jsx
+   * import { Composite, useCompositeStore } from '@wordpress/components';
+   *
+   * const store = useCompositeStore();
+   * <Composite store={store} render={ <CompositeTypeahead /> }>
+   *   <Composite.Item>Item 1</Composite.Item>
+   *   <Composite.Item>Item 2</Composite.Item>
+   * </Composite>
+   * ```
+   */
+  Typeahead: Object.assign(CompositeTypeahead, {
+    displayName: 'Composite.Typeahead'
+  }),
+  /**
+   * The React context used by the composite components. It can be used by
+   * to access the composite store, and to forward the context when composite
+   * sub-components are rendered across portals (ie. `SlotFill` components)
+   * that would not otherwise forward the context to the `Fill` children.
+   *
+   * @example
+   * ```jsx
+   * import { Composite } from '@wordpress/components';
+   * import { useContext } from '@wordpress/element';
+   *
+   * const compositeContext = useContext( Composite.Context );
+   * ```
+   */
+  Context: Object.assign(CompositeContext, {
+    displayName: 'Composite.Context'
+  })
+});
+
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/6E4KKOSB.js
 "use client";
 
 
@@ -4623,16 +5949,14 @@ function createDisclosureStore(props = {}) {
   setup(
     disclosure,
     () => sync(disclosure, ["animated", "animating"], (state) => {
-      if (state.animated)
-        return;
+      if (state.animated) return;
       disclosure.setState("animating", false);
     })
   );
   setup(
     disclosure,
     () => subscribe(disclosure, ["open"], () => {
-      if (!disclosure.getState().animated)
-        return;
+      if (!disclosure.getState().animated) return;
       disclosure.setState("animating", true);
     })
   );
@@ -4642,7 +5966,7 @@ function createDisclosureStore(props = {}) {
       disclosure.setState("mounted", state.open || state.animating);
     })
   );
-  return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, disclosure), {
+  return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, disclosure), {
     disclosure: props.disclosure,
     setOpen: (value) => disclosure.setState("open", value),
     show: () => disclosure.setState("open", true),
@@ -4656,7 +5980,7 @@ function createDisclosureStore(props = {}) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/5UDX7WKK.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/KGK2TTFO.js
 "use client";
 
 
@@ -4671,13 +5995,13 @@ function useDisclosureStoreProps(store, update, props) {
   return Object.assign(store, { disclosure: props.disclosure });
 }
 function useDisclosureStore(props = {}) {
-  const [store, update] = DTNGDFNU_useStore(createDisclosureStore, props);
+  const [store, update] = _2GXGCHW6_useStore(createDisclosureStore, props);
   return useDisclosureStoreProps(store, update, props);
 }
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/NWACXGIN.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/YOHCVXJB.js
 "use client";
 
 
@@ -4688,7 +6012,7 @@ function createDialogStore(props = {}) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/X5ETRS5D.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/QYS5FHDY.js
 "use client";
 
 
@@ -4699,13 +6023,13 @@ function useDialogStoreProps(store, update, props) {
   return useDisclosureStoreProps(store, update, props);
 }
 function useDialogStore(props = {}) {
-  const [store, update] = DTNGDFNU_useStore(createDialogStore, props);
+  const [store, update] = _2GXGCHW6_useStore(createDialogStore, props);
   return useDialogStoreProps(store, update, props);
 }
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/GO53B7AR.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/CBC47ZYL.js
 "use client";
 
 
@@ -4725,7 +6049,7 @@ function usePopoverStore(props = {}) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/IOEKCBMU.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/XMDAT5SM.js
 "use client";
 
 
@@ -4745,7 +6069,7 @@ function useHovercardStore(props = {}) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/SAZZJI72.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/3UYWTADI.js
 "use client";
 
 
@@ -4756,7 +6080,7 @@ function useHovercardStore(props = {}) {
 function createPopoverStore(_a = {}) {
   var _b = _a, {
     popover: otherPopover
-  } = _b, props = _4R3V3JGP_objRest(_b, [
+  } = _b, props = _3YLGPPWQ_objRest(_b, [
     "popover"
   ]);
   const store = mergeStore(
@@ -4771,13 +6095,13 @@ function createPopoverStore(_a = {}) {
   );
   throwOnConflictingProps(props, store);
   const syncState = store == null ? void 0 : store.getState();
-  const dialog = createDialogStore(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, props), { store }));
+  const dialog = createDialogStore(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, props), { store }));
   const placement = defaultValue(
     props.placement,
     syncState == null ? void 0 : syncState.placement,
     "bottom"
   );
-  const initialState = _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, dialog.getState()), {
+  const initialState = _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, dialog.getState()), {
     placement,
     currentPlacement: placement,
     anchorElement: defaultValue(syncState == null ? void 0 : syncState.anchorElement, null),
@@ -4786,7 +6110,7 @@ function createPopoverStore(_a = {}) {
     rendered: Symbol("rendered")
   });
   const popover = createStore(initialState, dialog, store);
-  return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, dialog), popover), {
+  return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, dialog), popover), {
     setAnchorElement: (element) => popover.setState("anchorElement", element),
     setPopoverElement: (element) => popover.setState("popoverElement", element),
     setArrowElement: (element) => popover.setState("arrowElement", element),
@@ -4796,7 +6120,7 @@ function createPopoverStore(_a = {}) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/E4HA32QI.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/__chunks/EACLTACN.js
 "use client";
 
 
@@ -4807,7 +6131,7 @@ function createPopoverStore(_a = {}) {
 function createHovercardStore(props = {}) {
   var _a;
   const syncState = (_a = props.store) == null ? void 0 : _a.getState();
-  const popover = createPopoverStore(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, props), {
+  const popover = createPopoverStore(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, props), {
     placement: defaultValue(
       props.placement,
       syncState == null ? void 0 : syncState.placement,
@@ -4815,21 +6139,21 @@ function createHovercardStore(props = {}) {
     )
   }));
   const timeout = defaultValue(props.timeout, syncState == null ? void 0 : syncState.timeout, 500);
-  const initialState = _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, popover.getState()), {
+  const initialState = _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, popover.getState()), {
     timeout,
     showTimeout: defaultValue(props.showTimeout, syncState == null ? void 0 : syncState.showTimeout),
     hideTimeout: defaultValue(props.hideTimeout, syncState == null ? void 0 : syncState.hideTimeout),
     autoFocusOnShow: defaultValue(syncState == null ? void 0 : syncState.autoFocusOnShow, false)
   });
   const hovercard = createStore(initialState, popover, props.store);
-  return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, popover), hovercard), {
+  return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, popover), hovercard), {
     setAutoFocusOnShow: (value) => hovercard.setState("autoFocusOnShow", value)
   });
 }
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/tooltip/tooltip-store.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/tooltip/tooltip-store.js
 "use client";
 
 
@@ -4844,7 +6168,7 @@ function createTooltipStore(props = {}) {
   var _a;
   if (false) {}
   const syncState = (_a = props.store) == null ? void 0 : _a.getState();
-  const hovercard = createHovercardStore(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, props), {
+  const hovercard = createHovercardStore(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, props), {
     placement: defaultValue(
       props.placement,
       syncState == null ? void 0 : syncState.placement,
@@ -4852,16 +6176,16 @@ function createTooltipStore(props = {}) {
     ),
     hideTimeout: defaultValue(props.hideTimeout, syncState == null ? void 0 : syncState.hideTimeout, 0)
   }));
-  const initialState = _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, hovercard.getState()), {
+  const initialState = _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, hovercard.getState()), {
     type: defaultValue(props.type, syncState == null ? void 0 : syncState.type, "description"),
     skipTimeout: defaultValue(props.skipTimeout, syncState == null ? void 0 : syncState.skipTimeout, 300)
   });
   const tooltip = createStore(initialState, hovercard, props.store);
-  return _chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, hovercard), tooltip);
+  return _chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, hovercard), tooltip);
 }
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/QESPTHDX.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/2D53SX6Q.js
 "use client";
 
 
@@ -4874,19 +6198,19 @@ function useTooltipStoreProps(store, update, props) {
   return useHovercardStoreProps(store, update, props);
 }
 function useTooltipStore(props = {}) {
-  const [store, update] = DTNGDFNU_useStore(createTooltipStore, props);
+  const [store, update] = _2GXGCHW6_useStore(createTooltipStore, props);
   return useTooltipStoreProps(store, update, props);
 }
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/DGQNUP7F.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/AXRBYZQP.js
 "use client";
 
 
 // src/role/role.tsx
-var DGQNUP7F_TagName = "div";
-var DGQNUP7F_elements = [
+var AXRBYZQP_TagName = "div";
+var AXRBYZQP_elements = [
   "a",
   "button",
   "details",
@@ -4915,7 +6239,7 @@ var DGQNUP7F_elements = [
   "ul",
   "svg"
 ];
-var DGQNUP7F_useRole = createHook(
+var useRole = createHook(
   function useRole2(props) {
     return props;
   }
@@ -4923,14 +6247,14 @@ var DGQNUP7F_useRole = createHook(
 var Role = forwardRef2(
   // @ts-expect-error
   function Role2(props) {
-    return YIF72NQG_createElement(DGQNUP7F_TagName, props);
+    return HKOOKEDE_createElement(AXRBYZQP_TagName, props);
   }
 );
 Object.assign(
   Role,
-  DGQNUP7F_elements.reduce((acc, element) => {
+  AXRBYZQP_elements.reduce((acc, element) => {
     acc[element] = forwardRef2(function Role3(props) {
-      return YIF72NQG_createElement(element, props);
+      return HKOOKEDE_createElement(element, props);
     });
     return acc;
   }, {})
@@ -4938,78 +6262,78 @@ Object.assign(
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/SJ5YBTFK.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/RGUP62TM.js
 "use client";
 
 
 // src/disclosure/disclosure-context.tsx
-var SJ5YBTFK_ctx = createStoreContext();
-var useDisclosureContext = SJ5YBTFK_ctx.useContext;
-var useDisclosureScopedContext = SJ5YBTFK_ctx.useScopedContext;
-var useDisclosureProviderContext = SJ5YBTFK_ctx.useProviderContext;
-var DisclosureContextProvider = SJ5YBTFK_ctx.ContextProvider;
-var DisclosureScopedContextProvider = SJ5YBTFK_ctx.ScopedContextProvider;
+var RGUP62TM_ctx = createStoreContext();
+var useDisclosureContext = RGUP62TM_ctx.useContext;
+var useDisclosureScopedContext = RGUP62TM_ctx.useScopedContext;
+var useDisclosureProviderContext = RGUP62TM_ctx.useProviderContext;
+var DisclosureContextProvider = RGUP62TM_ctx.ContextProvider;
+var DisclosureScopedContextProvider = RGUP62TM_ctx.ScopedContextProvider;
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/J7UNXP2A.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/DU4D3UCJ.js
 "use client";
 
 
 
 // src/dialog/dialog-context.tsx
 
-var J7UNXP2A_ctx = createStoreContext(
+var DU4D3UCJ_ctx = createStoreContext(
   [DisclosureContextProvider],
   [DisclosureScopedContextProvider]
 );
-var useDialogContext = J7UNXP2A_ctx.useContext;
-var useDialogScopedContext = J7UNXP2A_ctx.useScopedContext;
-var useDialogProviderContext = J7UNXP2A_ctx.useProviderContext;
-var DialogContextProvider = J7UNXP2A_ctx.ContextProvider;
-var DialogScopedContextProvider = J7UNXP2A_ctx.ScopedContextProvider;
+var useDialogContext = DU4D3UCJ_ctx.useContext;
+var useDialogScopedContext = DU4D3UCJ_ctx.useScopedContext;
+var useDialogProviderContext = DU4D3UCJ_ctx.useProviderContext;
+var DialogContextProvider = DU4D3UCJ_ctx.ContextProvider;
+var DialogScopedContextProvider = DU4D3UCJ_ctx.ScopedContextProvider;
 var DialogHeadingContext = (0,external_React_.createContext)(void 0);
 var DialogDescriptionContext = (0,external_React_.createContext)(void 0);
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/URSEQETI.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/54MGSIOI.js
 "use client";
 
 
 
 // src/popover/popover-context.tsx
-var URSEQETI_ctx = createStoreContext(
+var _54MGSIOI_ctx = createStoreContext(
   [DialogContextProvider],
   [DialogScopedContextProvider]
 );
-var usePopoverContext = URSEQETI_ctx.useContext;
-var usePopoverScopedContext = URSEQETI_ctx.useScopedContext;
-var usePopoverProviderContext = URSEQETI_ctx.useProviderContext;
-var PopoverContextProvider = URSEQETI_ctx.ContextProvider;
-var PopoverScopedContextProvider = URSEQETI_ctx.ScopedContextProvider;
+var usePopoverContext = _54MGSIOI_ctx.useContext;
+var usePopoverScopedContext = _54MGSIOI_ctx.useScopedContext;
+var usePopoverProviderContext = _54MGSIOI_ctx.useProviderContext;
+var PopoverContextProvider = _54MGSIOI_ctx.ContextProvider;
+var PopoverScopedContextProvider = _54MGSIOI_ctx.ScopedContextProvider;
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/ZPKRQJBS.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/CTQR3VDU.js
 "use client";
 
 
 
 // src/hovercard/hovercard-context.tsx
-var ZPKRQJBS_ctx = createStoreContext(
+var CTQR3VDU_ctx = createStoreContext(
   [PopoverContextProvider],
   [PopoverScopedContextProvider]
 );
-var useHovercardContext = ZPKRQJBS_ctx.useContext;
-var useHovercardScopedContext = ZPKRQJBS_ctx.useScopedContext;
-var useHovercardProviderContext = ZPKRQJBS_ctx.useProviderContext;
-var HovercardContextProvider = ZPKRQJBS_ctx.ContextProvider;
-var HovercardScopedContextProvider = ZPKRQJBS_ctx.ScopedContextProvider;
+var useHovercardContext = CTQR3VDU_ctx.useContext;
+var useHovercardScopedContext = CTQR3VDU_ctx.useScopedContext;
+var useHovercardProviderContext = CTQR3VDU_ctx.useProviderContext;
+var HovercardContextProvider = CTQR3VDU_ctx.ContextProvider;
+var HovercardScopedContextProvider = CTQR3VDU_ctx.ScopedContextProvider;
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/UV4QOTER.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/QA27FYGF.js
 "use client";
 
 
@@ -5021,7 +6345,7 @@ var HovercardScopedContextProvider = ZPKRQJBS_ctx.ScopedContextProvider;
 
 
 
-var UV4QOTER_TagName = "a";
+var QA27FYGF_TagName = "a";
 var useHovercardAnchor = createHook(
   function useHovercardAnchor2(_a) {
     var _b = _a, { store, showOnHover = true } = _b, props = __objRest(_b, ["store", "showOnHover"]);
@@ -5036,13 +6360,10 @@ var useHovercardAnchor = createHook(
     (0,external_React_.useEffect)(() => () => window.clearTimeout(showTimeoutRef.current), []);
     (0,external_React_.useEffect)(() => {
       const onMouseLeave = (event) => {
-        if (!store)
-          return;
+        if (!store) return;
         const { anchorElement } = store.getState();
-        if (!anchorElement)
-          return;
-        if (event.target !== anchorElement)
-          return;
+        if (!anchorElement) return;
+        if (event.target !== anchorElement) return;
         window.clearTimeout(showTimeoutRef.current);
         showTimeoutRef.current = 0;
       };
@@ -5053,26 +6374,19 @@ var useHovercardAnchor = createHook(
     const isMouseMoving = useIsMouseMoving();
     const onMouseMove = useEvent((event) => {
       onMouseMoveProp == null ? void 0 : onMouseMoveProp(event);
-      if (disabled)
-        return;
-      if (!store)
-        return;
-      if (event.defaultPrevented)
-        return;
-      if (showTimeoutRef.current)
-        return;
-      if (!isMouseMoving())
-        return;
-      if (!showOnHoverProp(event))
-        return;
+      if (disabled) return;
+      if (!store) return;
+      if (event.defaultPrevented) return;
+      if (showTimeoutRef.current) return;
+      if (!isMouseMoving()) return;
+      if (!showOnHoverProp(event)) return;
       const element = event.currentTarget;
       store.setAnchorElement(element);
       store.setDisclosureElement(element);
       const { showTimeout, timeout } = store.getState();
       const showHovercard = () => {
         showTimeoutRef.current = 0;
-        if (!isMouseMoving())
-          return;
+        if (!isMouseMoving()) return;
         store == null ? void 0 : store.setAnchorElement(element);
         store == null ? void 0 : store.show();
         queueMicrotask(() => {
@@ -5089,23 +6403,20 @@ var useHovercardAnchor = createHook(
     const onClickProp = props.onClick;
     const onClick = useEvent((event) => {
       onClickProp == null ? void 0 : onClickProp(event);
-      if (!store)
-        return;
+      if (!store) return;
       window.clearTimeout(showTimeoutRef.current);
       showTimeoutRef.current = 0;
     });
     const ref = (0,external_React_.useCallback)(
       (element) => {
-        if (!store)
-          return;
+        if (!store) return;
         const { anchorElement } = store.getState();
-        if (anchorElement == null ? void 0 : anchorElement.isConnected)
-          return;
+        if (anchorElement == null ? void 0 : anchorElement.isConnected) return;
         store.setAnchorElement(element);
       },
       [store]
     );
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
       ref: useMergeRefs(ref, props.ref),
       onMouseMove,
       onClick
@@ -5116,26 +6427,26 @@ var useHovercardAnchor = createHook(
 );
 var HovercardAnchor = forwardRef2(function HovercardAnchor2(props) {
   const htmlProps = useHovercardAnchor(props);
-  return YIF72NQG_createElement(UV4QOTER_TagName, htmlProps);
+  return HKOOKEDE_createElement(QA27FYGF_TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/RV6RYOXG.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/TWCRTUOB.js
 "use client";
 
 
 
 // src/tooltip/tooltip-context.tsx
-var RV6RYOXG_ctx = createStoreContext(
+var TWCRTUOB_ctx = createStoreContext(
   [HovercardContextProvider],
   [HovercardScopedContextProvider]
 );
-var useTooltipContext = RV6RYOXG_ctx.useContext;
-var useTooltipScopedContext = RV6RYOXG_ctx.useScopedContext;
-var useTooltipProviderContext = RV6RYOXG_ctx.useProviderContext;
-var TooltipContextProvider = RV6RYOXG_ctx.ContextProvider;
-var TooltipScopedContextProvider = RV6RYOXG_ctx.ScopedContextProvider;
+var useTooltipContext = TWCRTUOB_ctx.useContext;
+var useTooltipScopedContext = TWCRTUOB_ctx.useScopedContext;
+var useTooltipProviderContext = TWCRTUOB_ctx.useProviderContext;
+var TooltipContextProvider = TWCRTUOB_ctx.ContextProvider;
+var TooltipScopedContextProvider = TWCRTUOB_ctx.ScopedContextProvider;
 
 
 
@@ -5165,8 +6476,7 @@ var globalStore = createStore({
 function createRemoveStoreCallback(store) {
   return () => {
     const { activeStore } = globalStore.getState();
-    if (activeStore !== store)
-      return;
+    if (activeStore !== store) return;
     globalStore.setState("activeStore", null);
   };
 }
@@ -5182,22 +6492,19 @@ var useTooltipAnchor = createHook(
     const canShowOnHoverRef = (0,external_React_.useRef)(false);
     (0,external_React_.useEffect)(() => {
       return sync(store, ["mounted"], (state) => {
-        if (state.mounted)
-          return;
+        if (state.mounted) return;
         canShowOnHoverRef.current = false;
       });
     }, [store]);
     (0,external_React_.useEffect)(() => {
-      if (!store)
-        return;
+      if (!store) return;
       return chain(
         // Immediately remove the current store from the global store when
         // the component unmounts. This is useful, for example, to avoid
         // showing tooltips immediately on serial tests.
         createRemoveStoreCallback(store),
         sync(store, ["mounted", "skipTimeout"], (state) => {
-          if (!store)
-            return;
+          if (!store) return;
           if (state.mounted) {
             const { activeStore } = globalStore.getState();
             if (activeStore !== store) {
@@ -5221,16 +6528,14 @@ var useTooltipAnchor = createHook(
     const onFocusVisibleProp = props.onFocusVisible;
     const onFocusVisible = useEvent((event) => {
       onFocusVisibleProp == null ? void 0 : onFocusVisibleProp(event);
-      if (event.defaultPrevented)
-        return;
+      if (event.defaultPrevented) return;
       store == null ? void 0 : store.setAnchorElement(event.currentTarget);
       store == null ? void 0 : store.show();
     });
     const onBlurProp = props.onBlur;
     const onBlur = useEvent((event) => {
       onBlurProp == null ? void 0 : onBlurProp(event);
-      if (event.defaultPrevented)
-        return;
+      if (event.defaultPrevented) return;
       const { activeStore } = globalStore.getState();
       canShowOnHoverRef.current = false;
       if (activeStore === store) {
@@ -5242,23 +6547,20 @@ var useTooltipAnchor = createHook(
       var _a2;
       return (_a2 = state.contentElement) == null ? void 0 : _a2.id;
     });
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       "aria-labelledby": type === "label" ? contentId : void 0
     }, props), {
       onMouseEnter,
       onFocusVisible,
       onBlur
     });
-    props = useHovercardAnchor(_4R3V3JGP_spreadValues({
+    props = useHovercardAnchor(_3YLGPPWQ_spreadValues({
       store,
       showOnHover(event) {
-        if (!canShowOnHoverRef.current)
-          return false;
-        if (isFalsyBooleanCallback(showOnHover, event))
-          return false;
+        if (!canShowOnHoverRef.current) return false;
+        if (isFalsyBooleanCallback(showOnHover, event)) return false;
         const { activeStore } = globalStore.getState();
-        if (!activeStore)
-          return true;
+        if (!activeStore) return true;
         store == null ? void 0 : store.show();
         return false;
       }
@@ -5268,11 +6570,11 @@ var useTooltipAnchor = createHook(
 );
 var TooltipAnchor = forwardRef2(function TooltipAnchor2(props) {
   const htmlProps = useTooltipAnchor(props);
-  return YIF72NQG_createElement(tooltip_anchor_TagName, htmlProps);
+  return HKOOKEDE_createElement(tooltip_anchor_TagName, htmlProps);
 });
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/SD6TYZJO.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/X7QOZUD3.js
 "use client";
 
 // src/hovercard/utils/polygon.ts
@@ -5290,8 +6592,7 @@ function isPointInPolygon(point, polygon) {
     const where = (yi - yj) * (x - xi) - (xi - xj) * (y - yi);
     if (yj < yi) {
       if (y >= yj && y < yi) {
-        if (where === 0)
-          return true;
+        if (where === 0) return true;
         if (where > 0) {
           if (y === yj) {
             if (y > vy) {
@@ -5304,8 +6605,7 @@ function isPointInPolygon(point, polygon) {
       }
     } else if (yi < yj) {
       if (y > yi && y <= yj) {
-        if (where === 0)
-          return true;
+        if (where === 0) return true;
         if (where < 0) {
           if (y === yj) {
             if (y < vy) {
@@ -5359,28 +6659,23 @@ function getElementPolygon(element, enterPoint) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/MKDDWKFK.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/63XF7ACK.js
 "use client";
 
 // src/dialog/utils/is-backdrop.ts
-function MKDDWKFK_isBackdrop(element, ...ids) {
-  if (!element)
-    return false;
+function _63XF7ACK_isBackdrop(element, ...ids) {
+  if (!element) return false;
   const backdrop = element.getAttribute("data-backdrop");
-  if (backdrop == null)
-    return false;
-  if (backdrop === "")
-    return true;
-  if (backdrop === "true")
-    return true;
-  if (!ids.length)
-    return true;
+  if (backdrop == null) return false;
+  if (backdrop === "") return true;
+  if (backdrop === "true") return true;
+  if (!ids.length) return true;
   return ids.some((id) => backdrop === id);
 }
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/53CQGCDZ.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/K2ZF5NU7.js
 "use client";
 
 // src/dialog/utils/orchestrate.ts
@@ -5408,8 +6703,7 @@ function orchestrate(element, key, setup) {
   elementCleanups.set(key, nextCleanup);
   return () => {
     const isCurrent = elementCleanups.get(key) === nextCleanup;
-    if (!isCurrent)
-      return;
+    if (!isCurrent) return;
     cleanup();
     elementCleanups.set(key, prevCleanup);
   };
@@ -5444,9 +6738,8 @@ function setProperty(element, property, value) {
   return orchestrate(element, property, setup);
 }
 function assignStyle(element, style) {
-  if (!element)
-    return () => {
-    };
+  if (!element) return () => {
+  };
   const setup = () => {
     const prevStyle = element.style.cssText;
     Object.assign(element.style, style);
@@ -5457,9 +6750,8 @@ function assignStyle(element, style) {
   return orchestrate(element, "style", setup);
 }
 function setCSSProperty(element, property, value) {
-  if (!element)
-    return () => {
-    };
+  if (!element) return () => {
+  };
   const setup = () => {
     const previousValue = element.style.getPropertyValue(property);
     element.style.setProperty(property, value);
@@ -5476,7 +6768,7 @@ function setCSSProperty(element, property, value) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/4SXGPXPS.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/AOUGVQZ3.js
 "use client";
 
 
@@ -5490,36 +6782,27 @@ function getSnapshotPropertyName(id) {
 function inSnapshot(id, element) {
   const doc = getDocument(element);
   const propertyName = getSnapshotPropertyName(id);
-  if (!doc.body[propertyName])
-    return true;
+  if (!doc.body[propertyName]) return true;
   do {
-    if (element === doc.body)
-      return false;
-    if (element[propertyName])
-      return true;
-    if (!element.parentElement)
-      return false;
+    if (element === doc.body) return false;
+    if (element[propertyName]) return true;
+    if (!element.parentElement) return false;
     element = element.parentElement;
   } while (true);
 }
 function isValidElement(id, element, ignoredElements) {
-  if (ignoreTags.includes(element.tagName))
-    return false;
-  if (!inSnapshot(id, element))
-    return false;
+  if (ignoreTags.includes(element.tagName)) return false;
+  if (!inSnapshot(id, element)) return false;
   return !ignoredElements.some(
     (enabledElement) => enabledElement && contains(element, enabledElement)
   );
 }
-function _4SXGPXPS_walkTreeOutside(id, elements, callback, ancestorCallback) {
+function AOUGVQZ3_walkTreeOutside(id, elements, callback, ancestorCallback) {
   for (let element of elements) {
-    if (!(element == null ? void 0 : element.isConnected))
-      continue;
+    if (!(element == null ? void 0 : element.isConnected)) continue;
     const hasAncestorAlready = elements.some((maybeAncestor) => {
-      if (!maybeAncestor)
-        return false;
-      if (maybeAncestor === element)
-        return false;
+      if (!maybeAncestor) return false;
+      if (maybeAncestor === element) return false;
       return maybeAncestor.contains(element);
     });
     const doc = getDocument(element);
@@ -5543,7 +6826,7 @@ function createWalkTreeSnapshot(id, elements) {
   const markElement = (element) => {
     cleanups.push(setProperty(element, getSnapshotPropertyName(id), true));
   };
-  _4SXGPXPS_walkTreeOutside(id, elements, markElement);
+  AOUGVQZ3_walkTreeOutside(id, elements, markElement);
   return chain(setProperty(body, getSnapshotPropertyName(id), true), () => {
     for (const cleanup of cleanups) {
       cleanup();
@@ -5553,7 +6836,7 @@ function createWalkTreeSnapshot(id, elements) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/3M4W2SZ7.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/2PGBN2Y4.js
 "use client";
 
 
@@ -5578,32 +6861,27 @@ function markAncestor(element, id = "") {
 }
 function isElementMarked(element, id) {
   const ancestorProperty = getPropertyName(id, true);
-  if (element[ancestorProperty])
-    return true;
+  if (element[ancestorProperty]) return true;
   const elementProperty = getPropertyName(id);
   do {
-    if (element[elementProperty])
-      return true;
-    if (!element.parentElement)
-      return false;
+    if (element[elementProperty]) return true;
+    if (!element.parentElement) return false;
     element = element.parentElement;
   } while (true);
 }
 function markTreeOutside(id, elements) {
   const cleanups = [];
   const ids = elements.map((el) => el == null ? void 0 : el.id);
-  _4SXGPXPS_walkTreeOutside(
+  AOUGVQZ3_walkTreeOutside(
     id,
     elements,
     (element) => {
-      if (MKDDWKFK_isBackdrop(element, ...ids))
-        return;
+      if (_63XF7ACK_isBackdrop(element, ...ids)) return;
       cleanups.unshift(markElement(element, id));
     },
     (ancestor, element) => {
       const isAnotherDialogAncestor = element.hasAttribute("data-dialog") && element.id !== id;
-      if (isAnotherDialogAncestor)
-        return;
+      if (isAnotherDialogAncestor) return;
       cleanups.unshift(markAncestor(ancestor, id));
     }
   );
@@ -5619,7 +6897,7 @@ function markTreeOutside(id, elements) {
 
 ;// CONCATENATED MODULE: external "ReactDOM"
 const external_ReactDOM_namespaceObject = window["ReactDOM"];
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/TNHM3SUC.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/BSEL4YAF.js
 "use client";
 
 
@@ -5633,12 +6911,12 @@ const external_ReactDOM_namespaceObject = window["ReactDOM"];
 
 
 
-var TNHM3SUC_TagName = "div";
+var BSEL4YAF_TagName = "div";
 function afterTimeout(timeoutMs, cb) {
   const timeoutId = setTimeout(cb, timeoutMs);
   return () => clearTimeout(timeoutId);
 }
-function TNHM3SUC_afterPaint(cb) {
+function BSEL4YAF_afterPaint(cb) {
   let raf = requestAnimationFrame(() => {
     raf = requestAnimationFrame(cb);
   });
@@ -5648,8 +6926,7 @@ function parseCSSTime(...times) {
   return times.join(", ").split(", ").reduce((longestTime, currentTimeString) => {
     const multiplier = currentTimeString.endsWith("ms") ? 1 : 1e3;
     const currentTime = Number.parseFloat(currentTimeString || "0s") * multiplier;
-    if (currentTime > longestTime)
-      return currentTime;
+    if (currentTime > longestTime) return currentTime;
     return longestTime;
   }, 0);
 }
@@ -5673,8 +6950,7 @@ var useDisclosureContent = createHook(function useDisclosureContent2(_a) {
   const contentElement = store.useState("contentElement");
   const otherElement = useStoreState(store.disclosure, "contentElement");
   useSafeLayoutEffect(() => {
-    if (!ref.current)
-      return;
+    if (!ref.current) return;
     store == null ? void 0 : store.setContentElement(ref.current);
   }, [store]);
   useSafeLayoutEffect(() => {
@@ -5684,37 +6960,31 @@ var useDisclosureContent = createHook(function useDisclosureContent2(_a) {
       return true;
     });
     return () => {
-      if (previousAnimated === void 0)
-        return;
+      if (previousAnimated === void 0) return;
       store == null ? void 0 : store.setState("animated", previousAnimated);
     };
   }, [store]);
   useSafeLayoutEffect(() => {
-    if (!animated)
-      return;
+    if (!animated) return;
     if (!(contentElement == null ? void 0 : contentElement.isConnected)) {
       setTransition(null);
       return;
     }
-    return TNHM3SUC_afterPaint(() => {
+    return BSEL4YAF_afterPaint(() => {
       setTransition(open ? "enter" : mounted ? "leave" : null);
     });
   }, [animated, contentElement, open, mounted]);
   useSafeLayoutEffect(() => {
-    if (!store)
-      return;
-    if (!animated)
-      return;
+    if (!store) return;
+    if (!animated) return;
     const stopAnimation = () => store == null ? void 0 : store.setState("animating", false);
     const stopAnimationSync = () => (0,external_ReactDOM_namespaceObject.flushSync)(stopAnimation);
     if (!transition || !contentElement) {
       stopAnimation();
       return;
     }
-    if (transition === "leave" && open)
-      return;
-    if (transition === "enter" && !open)
-      return;
+    if (transition === "leave" && open) return;
+    if (transition === "enter" && !open) return;
     if (typeof animated === "number") {
       const timeout2 = animated;
       return afterTimeout(timeout2, stopAnimationSync);
@@ -5763,11 +7033,10 @@ var useDisclosureContent = createHook(function useDisclosureContent2(_a) {
   const hidden = isHidden(mounted, props.hidden, alwaysVisible);
   const styleProp = props.style;
   const style = (0,external_React_.useMemo)(() => {
-    if (hidden)
-      return _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, styleProp), { display: "none" });
+    if (hidden) return _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, styleProp), { display: "none" });
     return styleProp;
   }, [hidden, styleProp]);
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
     id,
     "data-open": open || void 0,
     "data-enter": transition === "enter" || void 0,
@@ -5781,7 +7050,7 @@ var useDisclosureContent = createHook(function useDisclosureContent2(_a) {
 });
 var DisclosureContentImpl = forwardRef2(function DisclosureContentImpl2(props) {
   const htmlProps = useDisclosureContent(props);
-  return YIF72NQG_createElement(TNHM3SUC_TagName, htmlProps);
+  return HKOOKEDE_createElement(BSEL4YAF_TagName, htmlProps);
 });
 var DisclosureContent = forwardRef2(function DisclosureContent2(_a) {
   var _b = _a, {
@@ -5795,14 +7064,13 @@ var DisclosureContent = forwardRef2(function DisclosureContent2(_a) {
     store,
     (state) => !unmountOnHide || (state == null ? void 0 : state.mounted)
   );
-  if (mounted === false)
-    return null;
-  return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(DisclosureContentImpl, _4R3V3JGP_spreadValues({}, props));
+  if (mounted === false) return null;
+  return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(DisclosureContentImpl, _3YLGPPWQ_spreadValues({}, props));
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/GRUZR3XS.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/UQBPM777.js
 "use client";
 
 
@@ -5826,19 +7094,15 @@ function DialogBackdrop({
   useSafeLayoutEffect(() => {
     const backdrop2 = ref.current;
     const dialog = contentElement;
-    if (!backdrop2)
-      return;
-    if (!dialog)
-      return;
+    if (!backdrop2) return;
+    if (!dialog) return;
     backdrop2.style.zIndex = getComputedStyle(dialog).zIndex;
   }, [contentElement]);
   useSafeLayoutEffect(() => {
     const id = contentElement == null ? void 0 : contentElement.id;
-    if (!id)
-      return;
+    if (!id) return;
     const backdrop2 = ref.current;
-    if (!backdrop2)
-      return;
+    if (!backdrop2) return;
     return markAncestor(backdrop2, id);
   }, [contentElement]);
   const props = useDisclosureContent({
@@ -5856,18 +7120,17 @@ function DialogBackdrop({
       left: 0
     }
   });
-  if (!backdrop)
-    return null;
+  if (!backdrop) return null;
   if ((0,external_React_.isValidElement)(backdrop)) {
-    return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Role, _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { render: backdrop }));
+    return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Role, _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { render: backdrop }));
   }
   const Component = typeof backdrop !== "boolean" ? backdrop : "div";
-  return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Role, _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { render: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Component, {}) }));
+  return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Role, _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { render: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Component, {}) }));
 }
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/SYFUIAXQ.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/ESSM74HH.js
 "use client";
 
 
@@ -5881,8 +7144,7 @@ function disableAccessibilityTreeOutside(id, elements) {
   const cleanups = [];
   const ids = elements.map((el) => el == null ? void 0 : el.id);
   walkTreeOutside(id, elements, (element) => {
-    if (isBackdrop(element, ...ids))
-      return;
+    if (isBackdrop(element, ...ids)) return;
     cleanups.unshift(hideElementFromAccessibilityTree(element));
   });
   const restoreAccessibilityTree = () => {
@@ -5905,7 +7167,7 @@ function supportsInert() {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/75IH3TOO.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/NSFBIL2Z.js
 "use client";
 
 
@@ -5918,15 +7180,13 @@ function supportsInert() {
 
 
 function disableTree(element, ignoredElements) {
-  if (!("style" in element))
-    return noop;
+  if (!("style" in element)) return noop;
   if (supportsInert()) {
     return setProperty(element, "inert", true);
   }
   const tabbableElements = getAllTabbableIn(element, true);
   const enableElements = tabbableElements.map((element2) => {
-    if (ignoredElements == null ? void 0 : ignoredElements.some((el) => el && contains(el, element2)))
-      return noop;
+    if (ignoredElements == null ? void 0 : ignoredElements.some((el) => el && contains(el, element2))) return noop;
     const restoreFocusMethod = orchestrate(element2, "focus", () => {
       element2.focus = noop;
       return () => {
@@ -5948,19 +7208,16 @@ function disableTree(element, ignoredElements) {
 function disableTreeOutside(id, elements) {
   const cleanups = [];
   const ids = elements.map((el) => el == null ? void 0 : el.id);
-  _4SXGPXPS_walkTreeOutside(
+  AOUGVQZ3_walkTreeOutside(
     id,
     elements,
     (element) => {
-      if (MKDDWKFK_isBackdrop(element, ...ids))
-        return;
+      if (_63XF7ACK_isBackdrop(element, ...ids)) return;
       cleanups.unshift(disableTree(element, elements));
     },
     (element) => {
-      if (!element.hasAttribute("role"))
-        return;
-      if (elements.some((el) => el && contains(el, element)))
-        return;
+      if (!element.hasAttribute("role")) return;
+      if (elements.some((el) => el && contains(el, element))) return;
       cleanups.unshift(setAttribute(element, "role", "none"));
     }
   );
@@ -5974,7 +7231,7 @@ function disableTreeOutside(id, elements) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/DDNAPH23.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/YJS26JVG.js
 "use client";
 
 
@@ -5990,21 +7247,16 @@ function useRootDialog({
 }) {
   const [updated, retry] = useForceUpdate();
   const isRootDialog = (0,external_React_.useCallback)(() => {
-    if (!enabled)
-      return false;
-    if (!contentElement)
-      return false;
+    if (!enabled) return false;
+    if (!contentElement) return false;
     const { body } = getDocument(contentElement);
     const id = body.getAttribute(attribute);
     return !id || id === contentId;
   }, [updated, enabled, contentElement, attribute, contentId]);
   (0,external_React_.useEffect)(() => {
-    if (!enabled)
-      return;
-    if (!contentId)
-      return;
-    if (!contentElement)
-      return;
+    if (!enabled) return;
+    if (!contentId) return;
+    if (!contentElement) return;
     const { body } = getDocument(contentElement);
     if (isRootDialog()) {
       body.setAttribute(attribute, contentId);
@@ -6019,7 +7271,7 @@ function useRootDialog({
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/P7YNSWBG.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/KB6RR6FL.js
 "use client";
 
 
@@ -6042,10 +7294,8 @@ function usePreventBodyScroll(contentElement, contentId, enabled) {
     enabled
   });
   (0,external_React_.useEffect)(() => {
-    if (!isRootDialog())
-      return;
-    if (!contentElement)
-      return;
+    if (!isRootDialog()) return;
+    if (!contentElement) return;
     const doc = getDocument(contentElement);
     const win = getWindow(contentElement);
     const { documentElement, body } = doc;
@@ -6077,7 +7327,7 @@ function usePreventBodyScroll(contentElement, contentId, enabled) {
       return () => {
         restoreStyle();
         if (true) {
-          win.scrollTo(scrollX, scrollY);
+          win.scrollTo({ left: scrollX, top: scrollY, behavior: "instant" });
         }
       };
     };
@@ -6091,7 +7341,7 @@ function usePreventBodyScroll(contentElement, contentId, enabled) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/PKNBS4Q6.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/T3RMEPVH.js
 "use client";
 
 
@@ -6117,10 +7367,8 @@ function useNestedDialogs(store) {
   useSafeLayoutEffect(() => {
     return sync(store, ["open", "contentElement"], (state) => {
       var _a;
-      if (!state.open)
-        return;
-      if (!state.contentElement)
-        return;
+      if (!state.open) return;
+      if (!state.contentElement) return;
       return (_a = context.add) == null ? void 0 : _a.call(context, store);
     });
   }, [store, context]);
@@ -6157,7 +7405,7 @@ function usePreviousMouseDownRef(enabled) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/OTPVYNVT.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/43UOHFGG.js
 "use client";
 
 
@@ -6169,15 +7417,12 @@ function usePreviousMouseDownRef(enabled) {
 
 
 function isInDocument(target) {
-  if (target.tagName === "HTML")
-    return true;
+  if (target.tagName === "HTML") return true;
   return contains(getDocument(target).body, target);
 }
 function isDisclosure(disclosure, target) {
-  if (!disclosure)
-    return false;
-  if (contains(disclosure, target))
-    return true;
+  if (!disclosure) return false;
+  if (contains(disclosure, target)) return true;
   const activeId = target.getAttribute("aria-activedescendant");
   if (activeId) {
     const activeElement = getDocument(disclosure).getElementById(activeId);
@@ -6188,11 +7433,9 @@ function isDisclosure(disclosure, target) {
   return false;
 }
 function isMouseEventOnDialog(event, dialog) {
-  if (!("clientY" in event))
-    return false;
+  if (!("clientY" in event)) return false;
   const rect = dialog.getBoundingClientRect();
-  if (rect.width === 0 || rect.height === 0)
-    return false;
+  if (rect.width === 0 || rect.height === 0) return false;
   return rect.top <= event.clientY && event.clientY <= rect.top + rect.height && rect.left <= event.clientX && event.clientX <= rect.left + rect.width;
 }
 function useEventOutside({
@@ -6206,13 +7449,10 @@ function useEventOutside({
   const open = store.useState("open");
   const focusedRef = (0,external_React_.useRef)(false);
   useSafeLayoutEffect(() => {
-    if (!open)
-      return;
-    if (!domReady)
-      return;
+    if (!open) return;
+    if (!domReady) return;
     const { contentElement } = store.getState();
-    if (!contentElement)
-      return;
+    if (!contentElement) return;
     const onFocus = () => {
       focusedRef.current = true;
     };
@@ -6220,28 +7460,19 @@ function useEventOutside({
     return () => contentElement.removeEventListener("focusin", onFocus, true);
   }, [store, open, domReady]);
   (0,external_React_.useEffect)(() => {
-    if (!open)
-      return;
+    if (!open) return;
     const onEvent = (event) => {
       const { contentElement, disclosureElement } = store.getState();
       const target = event.target;
-      if (!contentElement)
-        return;
-      if (!target)
-        return;
-      if (!isInDocument(target))
-        return;
-      if (contains(contentElement, target))
-        return;
-      if (isDisclosure(disclosureElement, target))
-        return;
-      if (target.hasAttribute("data-focus-trap"))
-        return;
-      if (isMouseEventOnDialog(event, contentElement))
-        return;
+      if (!contentElement) return;
+      if (!target) return;
+      if (!isInDocument(target)) return;
+      if (contains(contentElement, target)) return;
+      if (isDisclosure(disclosureElement, target)) return;
+      if (target.hasAttribute("data-focus-trap")) return;
+      if (isMouseEventOnDialog(event, contentElement)) return;
       const focused = focusedRef.current;
-      if (focused && !isElementMarked(target, contentElement.id))
-        return;
+      if (focused && !isElementMarked(target, contentElement.id)) return;
       callListener(event);
     };
     return addGlobalEventListener(type, onEvent, capture);
@@ -6257,40 +7488,32 @@ function useHideOnInteractOutside(store, hideOnInteractOutside, domReady) {
   const open = store.useState("open");
   const previousMouseDownRef = usePreviousMouseDownRef(open);
   const props = { store, domReady, capture: true };
-  useEventOutside(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+  useEventOutside(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
     type: "click",
     listener: (event) => {
       const { contentElement } = store.getState();
       const previousMouseDown = previousMouseDownRef.current;
-      if (!previousMouseDown)
-        return;
-      if (!isVisible(previousMouseDown))
-        return;
-      if (!isElementMarked(previousMouseDown, contentElement == null ? void 0 : contentElement.id))
-        return;
-      if (!shouldHideOnInteractOutside(hideOnInteractOutside, event))
-        return;
+      if (!previousMouseDown) return;
+      if (!isVisible(previousMouseDown)) return;
+      if (!isElementMarked(previousMouseDown, contentElement == null ? void 0 : contentElement.id)) return;
+      if (!shouldHideOnInteractOutside(hideOnInteractOutside, event)) return;
       store.hide();
     }
   }));
-  useEventOutside(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+  useEventOutside(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
     type: "focusin",
     listener: (event) => {
       const { contentElement } = store.getState();
-      if (!contentElement)
-        return;
-      if (event.target === getDocument(contentElement))
-        return;
-      if (!shouldHideOnInteractOutside(hideOnInteractOutside, event))
-        return;
+      if (!contentElement) return;
+      if (event.target === getDocument(contentElement)) return;
+      if (!shouldHideOnInteractOutside(hideOnInteractOutside, event)) return;
       store.hide();
     }
   }));
-  useEventOutside(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+  useEventOutside(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
     type: "contextmenu",
     listener: (event) => {
-      if (!shouldHideOnInteractOutside(hideOnInteractOutside, event))
-        return;
+      if (!shouldHideOnInteractOutside(hideOnInteractOutside, event)) return;
       store.hide();
     }
   }));
@@ -6331,7 +7554,7 @@ function prependHiddenDismiss(container, onClick) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/5PY7H3O6.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/HT3UEUDM.js
 "use client";
 
 
@@ -6340,7 +7563,7 @@ function prependHiddenDismiss(container, onClick) {
 
 // src/focusable/focusable-container.tsx
 
-var _5PY7H3O6_TagName = "div";
+var HT3UEUDM_TagName = "div";
 var useFocusableContainer = createHook(function useFocusableContainer2(_a) {
   var _b = _a, { autoFocusOnShow = true } = _b, props = __objRest(_b, ["autoFocusOnShow"]);
   props = useWrapElement(
@@ -6352,7 +7575,7 @@ var useFocusableContainer = createHook(function useFocusableContainer2(_a) {
 });
 var FocusableContainer = forwardRef2(function FocusableContainer2(props) {
   const htmlProps = useFocusableContainer(props);
-  return YIF72NQG_createElement(_5PY7H3O6_TagName, htmlProps);
+  return HKOOKEDE_createElement(HT3UEUDM_TagName, htmlProps);
 });
 
 
@@ -6384,17 +7607,17 @@ function HeadingLevel({ level, children }) {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/2N6FBM3O.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/ILNAUGA4.js
 "use client";
 
 
 
 // src/visually-hidden/visually-hidden.tsx
-var _2N6FBM3O_TagName = "span";
+var ILNAUGA4_TagName = "span";
 var useVisuallyHidden = createHook(
   function useVisuallyHidden2(props) {
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
-      style: _4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
+      style: _3YLGPPWQ_spreadValues({
         border: 0,
         clip: "rect(0 0 0 0)",
         height: "1px",
@@ -6411,27 +7634,27 @@ var useVisuallyHidden = createHook(
 );
 var VisuallyHidden = forwardRef2(function VisuallyHidden2(props) {
   const htmlProps = useVisuallyHidden(props);
-  return YIF72NQG_createElement(_2N6FBM3O_TagName, htmlProps);
+  return HKOOKEDE_createElement(ILNAUGA4_TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/FG25KND2.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/LWDIJ7XK.js
 "use client";
 
 
 
 
 // src/focus-trap/focus-trap.tsx
-var FG25KND2_TagName = "span";
+var LWDIJ7XK_TagName = "span";
 var useFocusTrap = createHook(
   function useFocusTrap2(props) {
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       "data-focus-trap": "",
       tabIndex: 0,
       "aria-hidden": true
     }, props), {
-      style: _4R3V3JGP_spreadValues({
+      style: _3YLGPPWQ_spreadValues({
         // Prevents unintended scroll jumps.
         position: "fixed",
         top: 0,
@@ -6444,7 +7667,7 @@ var useFocusTrap = createHook(
 );
 var FocusTrap = forwardRef2(function FocusTrap2(props) {
   const htmlProps = useFocusTrap(props);
-  return YIF72NQG_createElement(FG25KND2_TagName, htmlProps);
+  return HKOOKEDE_createElement(LWDIJ7XK_TagName, htmlProps);
 });
 
 
@@ -6458,7 +7681,7 @@ var PortalContext = (0,external_React_.createContext)(null);
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/3HD5ZDMZ.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/UNZQGRPO.js
 "use client";
 
 
@@ -6474,7 +7697,7 @@ var PortalContext = (0,external_React_.createContext)(null);
 
 
 
-var _3HD5ZDMZ_TagName = "div";
+var UNZQGRPO_TagName = "div";
 function getRootElement(element) {
   return getDocument(element).body;
 }
@@ -6541,20 +7764,16 @@ var usePortal = createHook(function usePortal2(_a) {
     }
     setPortalNode(portalEl);
     setRef(portalRef, portalEl);
-    if (isPortalInDocument)
-      return;
+    if (isPortalInDocument) return;
     return () => {
       portalEl.remove();
       setRef(portalRef, null);
     };
   }, [portal, portalElement, context, portalRef]);
   useSafeLayoutEffect(() => {
-    if (!portal)
-      return;
-    if (!preserveTabOrder)
-      return;
-    if (!preserveTabOrderAnchor)
-      return;
+    if (!portal) return;
+    if (!preserveTabOrder) return;
+    if (!preserveTabOrderAnchor) return;
     const doc = getDocument(preserveTabOrderAnchor);
     const element = doc.createElement("span");
     element.style.position = "fixed";
@@ -6566,14 +7785,11 @@ var usePortal = createHook(function usePortal2(_a) {
     };
   }, [portal, preserveTabOrder, preserveTabOrderAnchor]);
   (0,external_React_.useEffect)(() => {
-    if (!portalNode)
-      return;
-    if (!preserveTabOrder)
-      return;
+    if (!portalNode) return;
+    if (!preserveTabOrder) return;
     let raf = 0;
     const onFocus = (event) => {
-      if (!isFocusEventOutside(event))
-        return;
+      if (!isFocusEventOutside(event)) return;
       const focusing = event.type === "focusin";
       cancelAnimationFrame(raf);
       if (focusing) {
@@ -6598,8 +7814,7 @@ var usePortal = createHook(function usePortal2(_a) {
       // current context to the portal context, otherwise it's going to
       // reset to the body element on nested portals.
       /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(PortalContext.Provider, { value: portalNode || context, children: element });
-      if (!portal)
-        return element;
+      if (!portal) return element;
       if (!portalNode) {
         return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
           "span",
@@ -6700,19 +7915,19 @@ var usePortal = createHook(function usePortal2(_a) {
     },
     [portalNode, context, portal, props.id, preserveTabOrder, anchorPortalNode]
   );
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
     ref: refProp
   });
   return props;
 });
 var Portal = forwardRef2(function Portal2(props) {
   const htmlProps = usePortal(props);
-  return YIF72NQG_createElement(_3HD5ZDMZ_TagName, htmlProps);
+  return HKOOKEDE_createElement(UNZQGRPO_TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/CN7DDZL2.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/TT2355LN.js
 "use client";
 
 
@@ -6743,26 +7958,20 @@ var Portal = forwardRef2(function Portal2(props) {
 
 
 
-var CN7DDZL2_TagName = "div";
-var CN7DDZL2_isSafariBrowser = isSafari();
+var TT2355LN_TagName = "div";
+var TT2355LN_isSafariBrowser = isSafari();
 function isAlreadyFocusingAnotherElement(dialog) {
   const activeElement = getActiveElement();
-  if (!activeElement)
-    return false;
-  if (dialog && contains(dialog, activeElement))
-    return false;
-  if (isFocusable(activeElement))
-    return true;
+  if (!activeElement) return false;
+  if (dialog && contains(dialog, activeElement)) return false;
+  if (isFocusable(activeElement)) return true;
   return false;
 }
 function getElementFromProp(prop, focusable = false) {
-  if (!prop)
-    return null;
+  if (!prop) return null;
   const element = "current" in prop ? prop.current : prop;
-  if (!element)
-    return null;
-  if (focusable)
-    return isFocusable(element) ? element : null;
+  if (!element) return null;
+  if (focusable) return isFocusable(element) ? element : null;
   return element;
 }
 var useDialog = createHook(function useDialog2(_a) {
@@ -6809,18 +8018,15 @@ var useDialog = createHook(function useDialog2(_a) {
     store: storeProp || context,
     open: openProp,
     setOpen(open2) {
-      if (open2)
-        return;
+      if (open2) return;
       const dialog = ref.current;
-      if (!dialog)
-        return;
+      if (!dialog) return;
       const event = new Event("close", { bubbles: false, cancelable: true });
       if (onClose) {
         dialog.addEventListener("close", onClose, { once: true });
       }
       dialog.dispatchEvent(event);
-      if (!event.defaultPrevented)
-        return;
+      if (!event.defaultPrevented) return;
       store.setOpen(true);
     }
   });
@@ -6839,27 +8045,20 @@ var useDialog = createHook(function useDialog2(_a) {
   const { wrapElement, nestedDialogs } = useNestedDialogs(store);
   props = useWrapElement(props, wrapElement, [wrapElement]);
   useSafeLayoutEffect(() => {
-    if (!open)
-      return;
+    if (!open) return;
     const dialog = ref.current;
     const activeElement = getActiveElement(dialog, true);
-    if (!activeElement)
-      return;
-    if (activeElement.tagName === "BODY")
-      return;
-    if (dialog && contains(dialog, activeElement))
-      return;
+    if (!activeElement) return;
+    if (activeElement.tagName === "BODY") return;
+    if (dialog && contains(dialog, activeElement)) return;
     store.setDisclosureElement(activeElement);
   }, [store, open]);
-  if (CN7DDZL2_isSafariBrowser) {
+  if (TT2355LN_isSafariBrowser) {
     (0,external_React_.useEffect)(() => {
-      if (!mounted)
-        return;
+      if (!mounted) return;
       const { disclosureElement } = store.getState();
-      if (!disclosureElement)
-        return;
-      if (!isButton(disclosureElement))
-        return;
+      if (!disclosureElement) return;
+      if (!isButton(disclosureElement)) return;
       const onMouseDown = () => {
         let receivedFocus = false;
         const onFocus = () => {
@@ -6869,8 +8068,7 @@ var useDialog = createHook(function useDialog2(_a) {
         disclosureElement.addEventListener("focusin", onFocus, options);
         queueBeforeEvent(disclosureElement, "mouseup", () => {
           disclosureElement.removeEventListener("focusin", onFocus, true);
-          if (receivedFocus)
-            return;
+          if (receivedFocus) return;
           focusIfNeeded(disclosureElement);
         });
       };
@@ -6881,49 +8079,35 @@ var useDialog = createHook(function useDialog2(_a) {
     }, [store, mounted]);
   }
   (0,external_React_.useEffect)(() => {
-    if (!modal)
-      return;
-    if (!mounted)
-      return;
-    if (!domReady)
-      return;
+    if (!modal) return;
+    if (!mounted) return;
+    if (!domReady) return;
     const dialog = ref.current;
-    if (!dialog)
-      return;
+    if (!dialog) return;
     const existingDismiss = dialog.querySelector("[data-dialog-dismiss]");
-    if (existingDismiss)
-      return;
+    if (existingDismiss) return;
     return prependHiddenDismiss(dialog, store.hide);
   }, [store, modal, mounted, domReady]);
   useSafeLayoutEffect(() => {
-    if (!supportsInert())
-      return;
-    if (open)
-      return;
-    if (!mounted)
-      return;
-    if (!domReady)
-      return;
+    if (!supportsInert()) return;
+    if (open) return;
+    if (!mounted) return;
+    if (!domReady) return;
     const dialog = ref.current;
-    if (!dialog)
-      return;
+    if (!dialog) return;
     return disableTree(dialog);
   }, [open, mounted, domReady]);
   const canTakeTreeSnapshot = open && domReady;
   useSafeLayoutEffect(() => {
-    if (!id)
-      return;
-    if (!canTakeTreeSnapshot)
-      return;
+    if (!id) return;
+    if (!canTakeTreeSnapshot) return;
     const dialog = ref.current;
     return createWalkTreeSnapshot(id, [dialog]);
   }, [id, canTakeTreeSnapshot, unstable_treeSnapshotKey]);
   const getPersistentElementsProp = useEvent(getPersistentElements);
   useSafeLayoutEffect(() => {
-    if (!id)
-      return;
-    if (!canTakeTreeSnapshot)
-      return;
+    if (!id) return;
+    if (!canTakeTreeSnapshot) return;
     const { disclosureElement } = store.getState();
     const dialog = ref.current;
     const persistentElements = getPersistentElementsProp() || [];
@@ -6952,14 +8136,10 @@ var useDialog = createHook(function useDialog2(_a) {
   const autoFocusOnShowProp = useBooleanEvent(autoFocusOnShow);
   const [autoFocusEnabled, setAutoFocusEnabled] = (0,external_React_.useState)(false);
   (0,external_React_.useEffect)(() => {
-    if (!open)
-      return;
-    if (!mayAutoFocusOnShow)
-      return;
-    if (!domReady)
-      return;
-    if (!(contentElement == null ? void 0 : contentElement.isConnected))
-      return;
+    if (!open) return;
+    if (!mayAutoFocusOnShow) return;
+    if (!domReady) return;
+    if (!(contentElement == null ? void 0 : contentElement.isConnected)) return;
     const element = getElementFromProp(initialFocus, true) || // If no initial focus is specified, we try to focus the first element
     // with the autofocus attribute. If it's an Ariakit component, the
     // Focusable component will consume the autoFocus prop and add the
@@ -6973,13 +8153,11 @@ var useDialog = createHook(function useDialog2(_a) {
     getFirstTabbableIn(contentElement, true, portal && preserveTabOrder) || // Finally, we fallback to the dialog element itself.
     contentElement;
     const isElementFocusable = isFocusable(element);
-    if (!autoFocusOnShowProp(isElementFocusable ? element : null))
-      return;
+    if (!autoFocusOnShowProp(isElementFocusable ? element : null)) return;
     setAutoFocusEnabled(true);
     queueMicrotask(() => {
       element.focus();
-      if (!CN7DDZL2_isSafariBrowser)
-        return;
+      if (!TT2355LN_isSafariBrowser) return;
       element.scrollIntoView({ block: "nearest", inline: "nearest" });
     });
   }, [
@@ -6996,16 +8174,14 @@ var useDialog = createHook(function useDialog2(_a) {
   const autoFocusOnHideProp = useBooleanEvent(autoFocusOnHide);
   const [hasOpened, setHasOpened] = (0,external_React_.useState)(false);
   (0,external_React_.useEffect)(() => {
-    if (!open)
-      return;
+    if (!open) return;
     setHasOpened(true);
     return () => setHasOpened(false);
   }, [open]);
   const focusOnHide = (0,external_React_.useCallback)(
     (dialog, retry = true) => {
       const { disclosureElement } = store.getState();
-      if (isAlreadyFocusingAnotherElement(dialog))
-        return;
+      if (isAlreadyFocusingAnotherElement(dialog)) return;
       let element = getElementFromProp(finalFocus) || disclosureElement;
       if (element == null ? void 0 : element.id) {
         const doc = getDocument(element);
@@ -7031,31 +8207,24 @@ var useDialog = createHook(function useDialog2(_a) {
         requestAnimationFrame(() => focusOnHide(dialog, false));
         return;
       }
-      if (!autoFocusOnHideProp(isElementFocusable ? element : null))
-        return;
-      if (!isElementFocusable)
-        return;
+      if (!autoFocusOnHideProp(isElementFocusable ? element : null)) return;
+      if (!isElementFocusable) return;
       element == null ? void 0 : element.focus();
     },
     [store, finalFocus, autoFocusOnHideProp]
   );
   const focusedOnHideRef = (0,external_React_.useRef)(false);
   useSafeLayoutEffect(() => {
-    if (open)
-      return;
-    if (!hasOpened)
-      return;
-    if (!mayAutoFocusOnHide)
-      return;
+    if (open) return;
+    if (!hasOpened) return;
+    if (!mayAutoFocusOnHide) return;
     const dialog = ref.current;
     focusedOnHideRef.current = true;
     focusOnHide(dialog);
   }, [open, hasOpened, domReady, mayAutoFocusOnHide, focusOnHide]);
   (0,external_React_.useEffect)(() => {
-    if (!hasOpened)
-      return;
-    if (!mayAutoFocusOnHide)
-      return;
+    if (!hasOpened) return;
+    if (!mayAutoFocusOnHide) return;
     const dialog = ref.current;
     return () => {
       if (focusedOnHideRef.current) {
@@ -7067,39 +8236,26 @@ var useDialog = createHook(function useDialog2(_a) {
   }, [hasOpened, mayAutoFocusOnHide, focusOnHide]);
   const hideOnEscapeProp = useBooleanEvent(hideOnEscape);
   (0,external_React_.useEffect)(() => {
-    if (!domReady)
-      return;
-    if (!mounted)
-      return;
+    if (!domReady) return;
+    if (!mounted) return;
     const onKeyDown = (event) => {
-      if (event.key !== "Escape")
-        return;
-      if (event.defaultPrevented)
-        return;
+      if (event.key !== "Escape") return;
+      if (event.defaultPrevented) return;
       const dialog = ref.current;
-      if (!dialog)
-        return;
-      if (isElementMarked(dialog))
-        return;
+      if (!dialog) return;
+      if (isElementMarked(dialog)) return;
       const target = event.target;
-      if (!target)
-        return;
+      if (!target) return;
       const { disclosureElement } = store.getState();
       const isValidTarget = () => {
-        if (target.tagName === "BODY")
-          return true;
-        if (contains(dialog, target))
-          return true;
-        if (!disclosureElement)
-          return true;
-        if (contains(disclosureElement, target))
-          return true;
+        if (target.tagName === "BODY") return true;
+        if (contains(dialog, target)) return true;
+        if (!disclosureElement) return true;
+        if (contains(disclosureElement, target)) return true;
         return false;
       };
-      if (!isValidTarget())
-        return;
-      if (!hideOnEscapeProp(event))
-        return;
+      if (!isValidTarget()) return;
+      if (!hideOnEscapeProp(event)) return;
       store.hide();
     };
     return addGlobalEventListener("keydown", onKeyDown, true);
@@ -7114,8 +8270,7 @@ var useDialog = createHook(function useDialog2(_a) {
   props = useWrapElement(
     props,
     (element) => {
-      if (!backdrop)
-        return element;
+      if (!backdrop) return element;
       return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_ReactJSXRuntime_namespaceObject.Fragment, { children: [
         /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
           DialogBackdrop,
@@ -7138,7 +8293,7 @@ var useDialog = createHook(function useDialog2(_a) {
     (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(DialogScopedContextProvider, { value: store, children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(DialogHeadingContext.Provider, { value: setHeadingId, children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(DialogDescriptionContext.Provider, { value: setDescriptionId, children: element }) }) }),
     [store]
   );
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
     id,
     "data-dialog": "",
     role: "dialog",
@@ -7148,12 +8303,12 @@ var useDialog = createHook(function useDialog2(_a) {
   }, props), {
     ref: useMergeRefs(ref, props.ref)
   });
-  props = useFocusableContainer(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+  props = useFocusableContainer(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
     autoFocusOnShow: autoFocusEnabled
   }));
-  props = useDisclosureContent(_4R3V3JGP_spreadValues({ store }, props));
-  props = useFocusable(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { focusable }));
-  props = usePortal(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({ portal }, props), { portalRef, preserveTabOrder }));
+  props = useDisclosureContent(_3YLGPPWQ_spreadValues({ store }, props));
+  props = useFocusable(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { focusable }));
+  props = usePortal(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({ portal }, props), { portalRef, preserveTabOrder }));
   return props;
 });
 function createDialogComponent(Component, useProviderContext = useDialogProviderContext) {
@@ -7164,15 +8319,14 @@ function createDialogComponent(Component, useProviderContext = useDialogProvider
       store,
       (state) => !props.unmountOnHide || (state == null ? void 0 : state.mounted) || !!props.open
     );
-    if (!mounted)
-      return null;
-    return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Component, _4R3V3JGP_spreadValues({}, props));
+    if (!mounted) return null;
+    return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Component, _3YLGPPWQ_spreadValues({}, props));
   });
 }
 var Dialog = createDialogComponent(
   forwardRef2(function Dialog2(props) {
     const htmlProps = useDialog(props);
-    return YIF72NQG_createElement(CN7DDZL2_TagName, htmlProps);
+    return HKOOKEDE_createElement(TT2355LN_TagName, htmlProps);
   }),
   useDialogProviderContext
 );
@@ -9267,7 +10421,7 @@ const floating_ui_dom_computePosition = (reference, floating, options) => {
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/PKN6MQJP.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/JS55N6L7.js
 "use client";
 
 
@@ -9280,7 +10434,7 @@ const floating_ui_dom_computePosition = (reference, floating, options) => {
 
 
 
-var PKN6MQJP_TagName = "div";
+var JS55N6L7_TagName = "div";
 function createDOMRect(x = 0, y = 0, width = 0, height = 0) {
   if (typeof DOMRect === "function") {
     return new DOMRect(x, y, width, height);
@@ -9295,11 +10449,10 @@ function createDOMRect(x = 0, y = 0, width = 0, height = 0) {
     bottom: y + height,
     left: x
   };
-  return _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, rect), { toJSON: () => rect });
+  return _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, rect), { toJSON: () => rect });
 }
 function getDOMRect(anchorRect) {
-  if (!anchorRect)
-    return createDOMRect();
+  if (!anchorRect) return createDOMRect();
   const { x, y, width, height } = anchorRect;
   return createDOMRect(x, y, width, height);
 }
@@ -9338,8 +10491,7 @@ function getOffsetMiddleware(arrowElement, props) {
   });
 }
 function getFlipMiddleware(props) {
-  if (props.flip === false)
-    return;
+  if (props.flip === false) return;
   const fallbackPlacements = typeof props.flip === "string" ? props.flip.split(" ") : void 0;
   invariant(
     !fallbackPlacements || fallbackPlacements.every(isValidPlacement),
@@ -9351,8 +10503,7 @@ function getFlipMiddleware(props) {
   });
 }
 function getShiftMiddleware(props) {
-  if (!props.slide && !props.overlap)
-    return;
+  if (!props.slide && !props.overlap) return;
   return floating_ui_dom_shift({
     mainAxis: props.slide,
     crossAxis: props.overlap,
@@ -9391,8 +10542,7 @@ function getSizeMiddleware(props) {
   });
 }
 function getArrowMiddleware(arrowElement, props) {
-  if (!arrowElement)
-    return;
+  if (!arrowElement) return;
   return floating_ui_dom_arrow({
     element: arrowElement,
     padding: props.arrowPadding
@@ -9460,16 +10610,14 @@ var usePopover = createHook(
     const updatePositionProp = useEvent(updatePosition);
     const hasCustomUpdatePosition = !!updatePosition;
     useSafeLayoutEffect(() => {
-      if (!(popoverElement == null ? void 0 : popoverElement.isConnected))
-        return;
+      if (!(popoverElement == null ? void 0 : popoverElement.isConnected)) return;
       popoverElement.style.setProperty(
         "--popover-overflow-padding",
         `${overflowPadding}px`
       );
       const anchor = getAnchorElement(anchorElement, getAnchorRectProp);
       const updatePosition2 = async () => {
-        if (!mounted)
-          return;
+        if (!mounted) return;
         if (!arrowElement) {
           defaultArrowElementRef.current = defaultArrowElementRef.current || document.createElement("div");
         }
@@ -9563,14 +10711,10 @@ var usePopover = createHook(
       updatePositionProp
     ]);
     useSafeLayoutEffect(() => {
-      if (!mounted)
-        return;
-      if (!domReady)
-        return;
-      if (!(popoverElement == null ? void 0 : popoverElement.isConnected))
-        return;
-      if (!(contentElement == null ? void 0 : contentElement.isConnected))
-        return;
+      if (!mounted) return;
+      if (!domReady) return;
+      if (!(popoverElement == null ? void 0 : popoverElement.isConnected)) return;
+      if (!(contentElement == null ? void 0 : contentElement.isConnected)) return;
       const applyZIndex = () => {
         popoverElement.style.zIndex = getComputedStyle(contentElement).zIndex;
       };
@@ -9585,8 +10729,8 @@ var usePopover = createHook(
       props,
       (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
         "div",
-        _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, wrapperProps), {
-          style: _4R3V3JGP_spreadValues({
+        _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, wrapperProps), {
+          style: _3YLGPPWQ_spreadValues({
             // https://floating-ui.com/docs/computeposition#initial-layout
             position,
             top: 0,
@@ -9604,18 +10748,18 @@ var usePopover = createHook(
       (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(PopoverScopedContextProvider, { value: store, children: element }),
       [store]
     );
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       // data-placing is not part of the public API. We're setting this here so
       // we can wait for the popover to be positioned before other components
       // move focus into it. For example, this attribute is observed by the
       // Combobox component with the autoSelect behavior.
       "data-placing": !positioned || void 0
     }, props), {
-      style: _4R3V3JGP_spreadValues({
+      style: _3YLGPPWQ_spreadValues({
         position: "relative"
       }, props.style)
     });
-    props = useDialog(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = useDialog(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       store,
       modal,
       portal,
@@ -9631,14 +10775,14 @@ var usePopover = createHook(
 var Popover = createDialogComponent(
   forwardRef2(function Popover2(props) {
     const htmlProps = usePopover(props);
-    return YIF72NQG_createElement(PKN6MQJP_TagName, htmlProps);
+    return HKOOKEDE_createElement(JS55N6L7_TagName, htmlProps);
   }),
   usePopoverProviderContext
 );
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/SYLYP2IN.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/HQFKUKP3.js
 "use client";
 
 
@@ -9656,16 +10800,12 @@ var Popover = createDialogComponent(
 
 
 
-var SYLYP2IN_TagName = "div";
+var HQFKUKP3_TagName = "div";
 function isMovingOnHovercard(target, card, anchor, nested) {
-  if (hasFocusWithin(card))
-    return true;
-  if (!target)
-    return false;
-  if (contains(card, target))
-    return true;
-  if (anchor && contains(anchor, target))
-    return true;
+  if (hasFocusWithin(card)) return true;
+  if (!target) return false;
+  if (contains(card, target)) return true;
+  if (anchor && contains(anchor, target)) return true;
   if (nested == null ? void 0 : nested.some((card2) => isMovingOnHovercard(target, card2, anchor))) {
     return true;
   }
@@ -9687,8 +10827,7 @@ function useAutoFocusOnHide(_a) {
   const onFocusProp = props.onFocus;
   const onFocus = useEvent((event) => {
     onFocusProp == null ? void 0 : onFocusProp(event);
-    if (event.defaultPrevented)
-      return;
+    if (event.defaultPrevented) return;
     setAutoFocusOnHide(true);
   });
   const finalFocusRef = (0,external_React_.useRef)(null);
@@ -9697,7 +10836,7 @@ function useAutoFocusOnHide(_a) {
       finalFocusRef.current = state.anchorElement;
     });
   }, []);
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
     autoFocusOnHide,
     finalFocus: finalFocusRef
   }, props), {
@@ -9734,6 +10873,7 @@ var useHovercard = createHook(
     const hideTimeoutRef = (0,external_React_.useRef)(0);
     const enterPointRef = (0,external_React_.useRef)(null);
     const { portalRef, domReady } = usePortalRef(portal, props.portalRef);
+    const isMouseMoving = useIsMouseMoving();
     const mayHideOnHoverOutside = !!hideOnHoverOutside;
     const hideOnHoverOutsideProp = useBooleanEvent(hideOnHoverOutside);
     const mayDisablePointerEvents = !!disablePointerEventsOnApproach;
@@ -9743,18 +10883,14 @@ var useHovercard = createHook(
     const open = store.useState("open");
     const mounted = store.useState("mounted");
     (0,external_React_.useEffect)(() => {
-      if (!domReady)
-        return;
-      if (!mounted)
-        return;
-      if (!mayHideOnHoverOutside && !mayDisablePointerEvents)
-        return;
+      if (!domReady) return;
+      if (!mounted) return;
+      if (!mayHideOnHoverOutside && !mayDisablePointerEvents) return;
       const element = ref.current;
-      if (!element)
-        return;
+      if (!element) return;
       const onMouseMove = (event) => {
-        if (!store)
-          return;
+        if (!store) return;
+        if (!isMouseMoving()) return;
         const { anchorElement, hideTimeout, timeout } = store.getState();
         const enterPoint = enterPointRef.current;
         const [target] = event.composedPath();
@@ -9765,22 +10901,19 @@ var useHovercard = createHook(
           hideTimeoutRef.current = 0;
           return;
         }
-        if (hideTimeoutRef.current)
-          return;
+        if (hideTimeoutRef.current) return;
         if (enterPoint) {
           const currentPoint = getEventPoint(event);
           const polygon = getElementPolygon(element, enterPoint);
           if (isPointInPolygon(currentPoint, polygon)) {
             enterPointRef.current = currentPoint;
-            if (!disablePointerEventsProp(event))
-              return;
+            if (!disablePointerEventsProp(event)) return;
             event.preventDefault();
             event.stopPropagation();
             return;
           }
         }
-        if (!hideOnHoverOutsideProp(event))
-          return;
+        if (!hideOnHoverOutsideProp(event)) return;
         hideTimeoutRef.current = window.setTimeout(() => {
           hideTimeoutRef.current = 0;
           store == null ? void 0 : store.hide();
@@ -9792,6 +10925,7 @@ var useHovercard = createHook(
       );
     }, [
       store,
+      isMouseMoving,
       domReady,
       mounted,
       mayHideOnHoverOutside,
@@ -9801,23 +10935,17 @@ var useHovercard = createHook(
       hideOnHoverOutsideProp
     ]);
     (0,external_React_.useEffect)(() => {
-      if (!domReady)
-        return;
-      if (!mounted)
-        return;
-      if (!mayDisablePointerEvents)
-        return;
+      if (!domReady) return;
+      if (!mounted) return;
+      if (!mayDisablePointerEvents) return;
       const disableEvent = (event) => {
         const element = ref.current;
-        if (!element)
-          return;
+        if (!element) return;
         const enterPoint = enterPointRef.current;
-        if (!enterPoint)
-          return;
+        if (!enterPoint) return;
         const polygon = getElementPolygon(element, enterPoint);
         if (isPointInPolygon(getEventPoint(event), polygon)) {
-          if (!disablePointerEventsProp(event))
-            return;
+          if (!disablePointerEventsProp(event)) return;
           event.preventDefault();
           event.stopPropagation();
         }
@@ -9831,16 +10959,13 @@ var useHovercard = createHook(
       );
     }, [domReady, mounted, mayDisablePointerEvents, disablePointerEventsProp]);
     (0,external_React_.useEffect)(() => {
-      if (!domReady)
-        return;
-      if (open)
-        return;
+      if (!domReady) return;
+      if (open) return;
       store == null ? void 0 : store.setAutoFocusOnShow(false);
     }, [store, domReady, open]);
     const openRef = useLiveRef(open);
     (0,external_React_.useEffect)(() => {
-      if (!domReady)
-        return;
+      if (!domReady) return;
       return () => {
         if (!openRef.current) {
           store == null ? void 0 : store.setAutoFocusOnShow(false);
@@ -9849,17 +10974,12 @@ var useHovercard = createHook(
     }, [store, domReady]);
     const registerOnParent = (0,external_React_.useContext)(NestedHovercardContext);
     useSafeLayoutEffect(() => {
-      if (modal)
-        return;
-      if (!portal)
-        return;
-      if (!mounted)
-        return;
-      if (!domReady)
-        return;
+      if (modal) return;
+      if (!portal) return;
+      if (!mounted) return;
+      if (!domReady) return;
       const element = ref.current;
-      if (!element)
-        return;
+      if (!element) return;
       return registerOnParent == null ? void 0 : registerOnParent(element);
     }, [modal, portal, mounted, domReady]);
     const registerNestedHovercard = (0,external_React_.useCallback)(
@@ -9880,14 +11000,14 @@ var useHovercard = createHook(
       (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(HovercardScopedContextProvider, { value: store, children: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(NestedHovercardContext.Provider, { value: registerNestedHovercard, children: element }) }),
       [store, registerNestedHovercard]
     );
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
       ref: useMergeRefs(ref, props.ref)
     });
-    props = useAutoFocusOnHide(_4R3V3JGP_spreadValues({ store }, props));
+    props = useAutoFocusOnHide(_3YLGPPWQ_spreadValues({ store }, props));
     const autoFocusOnShow = store.useState(
       (state) => modal || state.autoFocusOnShow
     );
-    props = usePopover(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = usePopover(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       store,
       modal,
       portal,
@@ -9895,8 +11015,7 @@ var useHovercard = createHook(
     }, props), {
       portalRef,
       hideOnEscape(event) {
-        if (isFalsyBooleanCallback(hideOnEscape, event))
-          return false;
+        if (isFalsyBooleanCallback(hideOnEscape, event)) return false;
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
             store == null ? void 0 : store.hide();
@@ -9911,7 +11030,7 @@ var useHovercard = createHook(
 var Hovercard = createDialogComponent(
   forwardRef2(function Hovercard2(props) {
     const htmlProps = useHovercard(props);
-    return YIF72NQG_createElement(SYLYP2IN_TagName, htmlProps);
+    return HKOOKEDE_createElement(HQFKUKP3_TagName, htmlProps);
   }),
   useHovercardProviderContext
 );
@@ -9998,30 +11117,24 @@ var useTooltip = createHook(
     const role = store.useState(
       (state) => state.type === "description" ? "tooltip" : "none"
     );
-    props = _4R3V3JGP_spreadValues({ role }, props);
-    props = useHovercard(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+    props = _3YLGPPWQ_spreadValues({ role }, props);
+    props = useHovercard(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
       store,
       portal,
       gutter,
       preserveTabOrder,
       hideOnHoverOutside(event) {
-        if (isFalsyBooleanCallback(hideOnHoverOutside, event))
-          return false;
+        if (isFalsyBooleanCallback(hideOnHoverOutside, event)) return false;
         const anchorElement = store == null ? void 0 : store.getState().anchorElement;
-        if (!anchorElement)
-          return true;
-        if ("focusVisible" in anchorElement.dataset)
-          return false;
+        if (!anchorElement) return true;
+        if ("focusVisible" in anchorElement.dataset) return false;
         return true;
       },
       hideOnInteractOutside: (event) => {
-        if (isFalsyBooleanCallback(hideOnInteractOutside, event))
-          return false;
+        if (isFalsyBooleanCallback(hideOnInteractOutside, event)) return false;
         const anchorElement = store == null ? void 0 : store.getState().anchorElement;
-        if (!anchorElement)
-          return true;
-        if (contains(anchorElement, event.target))
-          return false;
+        if (!anchorElement) return true;
+        if (contains(anchorElement, event.target)) return false;
         return true;
       }
     }));
@@ -10031,14 +11144,12 @@ var useTooltip = createHook(
 var Tooltip = createDialogComponent(
   forwardRef2(function Tooltip2(props) {
     const htmlProps = useTooltip(props);
-    return YIF72NQG_createElement(tooltip_TagName, htmlProps);
+    return HKOOKEDE_createElement(tooltip_TagName, htmlProps);
   }),
   useTooltipProviderContext
 );
 
 
-;// CONCATENATED MODULE: external ["wp","element"]
-const external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 const external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
@@ -10342,6 +11453,7 @@ const computePopoverPosition = c => c === null || Number.isNaN(c) ? undefined : 
 
 
 
+
 /**
  * WordPress dependencies
  */
@@ -10410,7 +11522,7 @@ function UnforwardedTooltip(props, ref) {
     placement: computedPlacement,
     showTimeout: delay
   });
-  const mounted = tooltipStore.useState('mounted');
+  const mounted = useStoreState(tooltipStore, 'mounted');
   if (isNestedInTooltip) {
     return isOnlyChild ? /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Role, {
       ...restProps,
@@ -10512,12 +11624,12 @@ function isPlainObject(o) {
  * @param {import('react').DependencyList} deps
  */
 function use_update_effect_useUpdateEffect(effect, deps) {
-  const mounted = (0,external_wp_element_namespaceObject.useRef)(false);
+  const mountedRef = (0,external_wp_element_namespaceObject.useRef)(false);
   (0,external_wp_element_namespaceObject.useEffect)(() => {
-    if (mounted.current) {
+    if (mountedRef.current) {
       return effect();
     }
-    mounted.current = true;
+    mountedRef.current = true;
     return undefined;
     // Disable reasons:
     // 1. This hook needs to pass a dep list that isn't an array literal
@@ -10526,7 +11638,7 @@ function use_update_effect_useUpdateEffect(effect, deps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, deps);
   (0,external_wp_element_namespaceObject.useEffect)(() => () => {
-    mounted.current = false;
+    mountedRef.current = false;
   }, []);
 }
 /* harmony default export */ const use_update_effect = (use_update_effect_useUpdateEffect);
@@ -14385,6 +15497,48 @@ if (false) { var globalKey, globalContext, isJest, emotion_react_browser_esm_isB
 
 
 
+;// CONCATENATED MODULE: ./packages/components/build-module/utils/space.js
+/**
+ * The argument value for the `space()` utility function.
+ *
+ * When this is a number or a numeric string, it will be interpreted as a
+ * multiplier for the grid base value (4px). For example, `space( 2 )` will be 8px.
+ *
+ * Otherwise, it will be interpreted as a literal CSS length value. For example,
+ * `space( 'auto' )` will be 'auto', and `space( '2px' )` will be 2px.
+ */
+
+const GRID_BASE = '4px';
+
+/**
+ * A function that handles numbers, numeric strings, and unit values.
+ *
+ * When given a number or a numeric string, it will return the grid-based
+ * value as a factor of GRID_BASE, defined above.
+ *
+ * When given a unit value or one of the named CSS values like `auto`,
+ * it will simply return the value back.
+ *
+ * @param value A number, numeric string, or a unit value.
+ */
+function space(value) {
+  if (typeof value === 'undefined') {
+    return undefined;
+  }
+
+  // Handle empty strings, if it's the number 0 this still works.
+  if (!value) {
+    return '0';
+  }
+  const asInt = typeof value === 'number' ? value : Number(value);
+
+  // Test if the input has a unit, was NaN, or was one of the named CSS values (like `auto`), in which case just use that value.
+  if (typeof window !== 'undefined' && window.CSS?.supports?.('margin', value.toString()) || Number.isNaN(asInt)) {
+    return value.toString();
+  }
+  return `calc(${GRID_BASE} * ${value})`;
+}
+
 ;// CONCATENATED MODULE: ./packages/components/build-module/utils/colors-values.js
 /**
  * Internal dependencies
@@ -14473,7 +15627,99 @@ const COLORS = Object.freeze({
 });
 /* harmony default export */ const colors_values = ((/* unused pure expression or super */ null && (COLORS)));
 
-;// CONCATENATED MODULE: ./packages/components/build-module/alignment-matrix-control/styles/alignment-matrix-control-styles.js
+;// CONCATENATED MODULE: ./packages/components/build-module/utils/config-values.js
+/**
+ * Internal dependencies
+ */
+
+
+const CONTROL_HEIGHT = '36px';
+const CONTROL_PROPS = {
+  controlSurfaceColor: COLORS.white,
+  controlTextActiveColor: COLORS.theme.accent,
+  // These values should be shared with TextControl.
+  controlPaddingX: 12,
+  controlPaddingXSmall: 8,
+  controlPaddingXLarge: 12 * 1.3334,
+  // TODO: Deprecate
+
+  controlBackgroundColor: COLORS.white,
+  controlBoxShadow: 'transparent',
+  controlBoxShadowFocus: `0 0 0 0.5px ${COLORS.theme.accent}`,
+  controlDestructiveBorderColor: COLORS.alert.red,
+  controlHeight: CONTROL_HEIGHT,
+  controlHeightXSmall: `calc( ${CONTROL_HEIGHT} * 0.6 )`,
+  controlHeightSmall: `calc( ${CONTROL_HEIGHT} * 0.8 )`,
+  controlHeightLarge: `calc( ${CONTROL_HEIGHT} * 1.2 )`,
+  controlHeightXLarge: `calc( ${CONTROL_HEIGHT} * 1.4 )`
+};
+const TOGGLE_GROUP_CONTROL_PROPS = {
+  toggleGroupControlBackgroundColor: CONTROL_PROPS.controlBackgroundColor,
+  toggleGroupControlBorderColor: COLORS.ui.border,
+  toggleGroupControlBackdropBackgroundColor: CONTROL_PROPS.controlSurfaceColor,
+  toggleGroupControlBackdropBorderColor: COLORS.ui.border,
+  toggleGroupControlButtonColorActive: CONTROL_PROPS.controlBackgroundColor
+};
+
+// Using Object.assign to avoid creating circular references when emitting
+// TypeScript type declarations.
+/* harmony default export */ const config_values = (Object.assign({}, CONTROL_PROPS, TOGGLE_GROUP_CONTROL_PROPS, {
+  colorDivider: 'rgba(0, 0, 0, 0.1)',
+  colorScrollbarThumb: 'rgba(0, 0, 0, 0.2)',
+  colorScrollbarThumbHover: 'rgba(0, 0, 0, 0.5)',
+  colorScrollbarTrack: 'rgba(0, 0, 0, 0.04)',
+  elevationIntensity: 1,
+  radiusXSmall: '1px',
+  radiusSmall: '2px',
+  radiusMedium: '4px',
+  radiusLarge: '8px',
+  radiusFull: '9999px',
+  radiusRound: '50%',
+  borderWidth: '1px',
+  borderWidthFocus: '1.5px',
+  borderWidthTab: '4px',
+  spinnerSize: 16,
+  fontSize: '13px',
+  fontSizeH1: 'calc(2.44 * 13px)',
+  fontSizeH2: 'calc(1.95 * 13px)',
+  fontSizeH3: 'calc(1.56 * 13px)',
+  fontSizeH4: 'calc(1.25 * 13px)',
+  fontSizeH5: '13px',
+  fontSizeH6: 'calc(0.8 * 13px)',
+  fontSizeInputMobile: '16px',
+  fontSizeMobile: '15px',
+  fontSizeSmall: 'calc(0.92 * 13px)',
+  fontSizeXSmall: 'calc(0.75 * 13px)',
+  fontLineHeightBase: '1.4',
+  fontWeight: 'normal',
+  fontWeightHeading: '600',
+  gridBase: '4px',
+  cardBorderRadius: '2px',
+  cardPaddingXSmall: `${space(2)}`,
+  cardPaddingSmall: `${space(4)}`,
+  cardPaddingMedium: `${space(4)} ${space(6)}`,
+  cardPaddingLarge: `${space(6)} ${space(8)}`,
+  elevationXSmall: `0 0.7px 1px rgba(0, 0, 0, 0.1), 0 1.2px 1.7px -0.2px rgba(0, 0, 0, 0.1), 0 2.3px 3.3px -0.5px rgba(0, 0, 0, 0.1)`,
+  elevationSmall: `0 0.7px 1px 0 rgba(0, 0, 0, 0.12), 0 2.2px 3.7px -0.2px rgba(0, 0, 0, 0.12), 0 5.3px 7.3px -0.5px rgba(0, 0, 0, 0.12)`,
+  elevationMedium: `0 0.7px 1px 0 rgba(0, 0, 0, 0.14), 0 4.2px 5.7px -0.2px rgba(0, 0, 0, 0.14), 0 7.3px 9.3px -0.5px rgba(0, 0, 0, 0.14)`,
+  elevationLarge: `0 0.7px 1px rgba(0, 0, 0, 0.15), 0 2.7px 3.8px -0.2px rgba(0, 0, 0, 0.15), 0 5.5px 7.8px -0.3px rgba(0, 0, 0, 0.15), 0.1px 11.5px 16.4px -0.5px rgba(0, 0, 0, 0.15)`,
+  surfaceBackgroundColor: COLORS.white,
+  surfaceBackgroundSubtleColor: '#F3F3F3',
+  surfaceBackgroundTintColor: '#F5F5F5',
+  surfaceBorderColor: 'rgba(0, 0, 0, 0.1)',
+  surfaceBorderBoldColor: 'rgba(0, 0, 0, 0.15)',
+  surfaceBorderSubtleColor: 'rgba(0, 0, 0, 0.05)',
+  surfaceBackgroundTertiaryColor: COLORS.white,
+  surfaceColor: COLORS.white,
+  transitionDuration: '200ms',
+  transitionDurationFast: '160ms',
+  transitionDurationFaster: '120ms',
+  transitionDurationFastest: '100ms',
+  transitionTimingFunction: 'cubic-bezier(0.08, 0.52, 0.52, 1)',
+  transitionTimingFunctionControl: 'cubic-bezier(0.12, 0.8, 0.32, 1)'
+}));
+
+;// CONCATENATED MODULE: ./packages/components/build-module/alignment-matrix-control/styles.js
 
 function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -14486,47 +15732,36 @@ function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringif
  * Internal dependencies
  */
 
-var _ref =  true ? {
-  name: "93uojk",
-  styles: "border-radius:2px;box-sizing:border-box;direction:ltr;display:grid;grid-template-columns:repeat( 3, 1fr );outline:none"
-} : 0;
-const rootBase = () => {
-  return _ref;
-};
-const rootSize = ({
+// Grid structure
+
+const rootBase = ({
   size = 92
-}) => {
-  return /*#__PURE__*/emotion_react_browser_esm_css("grid-template-rows:repeat( 3, calc( ", size, "px / 3 ) );width:", size, "px;" + ( true ? "" : 0),  true ? "" : 0);
-};
-const Root = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
-  target: "ecapk1j3"
-} : 0)(rootBase, ";border:1px solid transparent;cursor:pointer;grid-template-columns:auto;", rootSize, ";" + ( true ? "" : 0));
-const Row = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
-  target: "ecapk1j2"
+}) => /*#__PURE__*/emotion_react_browser_esm_css("direction:ltr;display:grid;grid-template-columns:repeat( 3, 1fr );grid-template-rows:repeat( 3, 1fr );box-sizing:border-box;width:", size, "px;aspect-ratio:1;border-radius:", config_values.radiusMedium, ";outline:none;" + ( true ? "" : 0),  true ? "" : 0);
+var _ref =  true ? {
+  name: "e0dnmk",
+  styles: "cursor:pointer"
+} : 0;
+const GridContainer = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
+  target: "e1r95csn3"
+} : 0)(rootBase, " border:1px solid transparent;", props => props.disablePointerEvents ? /*#__PURE__*/emotion_react_browser_esm_css( true ? "" : 0,  true ? "" : 0) : _ref, ";" + ( true ? "" : 0));
+const GridRow = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
+  target: "e1r95csn2"
 } : 0)( true ? {
-  name: "1x5gbbj",
-  styles: "box-sizing:border-box;display:grid;grid-template-columns:repeat( 3, 1fr )"
+  name: "1fbxn64",
+  styles: "grid-column:1/-1;box-sizing:border-box;display:grid;grid-template-columns:repeat( 3, 1fr )"
 } : 0);
-const pointActive = ({
-  isActive
-}) => {
-  const boxShadow = isActive ? `0 0 0 2px ${COLORS.gray[900]}` : null;
-  const pointColor = isActive ? COLORS.gray[900] : COLORS.gray[400];
-  const pointColorHover = isActive ? COLORS.gray[900] : COLORS.theme.accent;
-  return /*#__PURE__*/emotion_react_browser_esm_css("box-shadow:", boxShadow, ";color:", pointColor, ";*:hover>&{color:", pointColorHover, ";}" + ( true ? "" : 0),  true ? "" : 0);
-};
-const pointBase = props => {
-  return /*#__PURE__*/emotion_react_browser_esm_css("background:currentColor;box-sizing:border-box;display:grid;margin:auto;@media not ( prefers-reduced-motion ){transition:all 120ms linear;}", pointActive(props), ";" + ( true ? "" : 0),  true ? "" : 0);
-};
-const Point = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
-  target: "ecapk1j1"
-} : 0)("height:6px;width:6px;", pointBase, ";" + ( true ? "" : 0));
+
+// Cell
 const Cell = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
-  target: "ecapk1j0"
+  target: "e1r95csn1"
 } : 0)( true ? {
-  name: "rjf3ub",
-  styles: "appearance:none;border:none;box-sizing:border-box;margin:0;display:flex;position:relative;outline:none;align-items:center;justify-content:center;padding:0"
+  name: "e2kws5",
+  styles: "position:relative;display:flex;align-items:center;justify-content:center;box-sizing:border-box;margin:0;padding:0;appearance:none;border:none;outline:none"
 } : 0);
+const POINT_SIZE = 6;
+const Point = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
+  target: "e1r95csn0"
+} : 0)("display:block;contain:strict;box-sizing:border-box;width:", POINT_SIZE, "px;aspect-ratio:1;margin:auto;color:", COLORS.theme.gray[400], ";border:", POINT_SIZE / 2, "px solid currentColor;", Cell, "[data-active-item] &{color:", COLORS.gray[900], ";transform:scale( calc( 5 / 3 ) );}", Cell, ":not([data-active-item]):hover &{color:", COLORS.theme.accent, ";}", Cell, "[data-focus-visible] &{outline:1px solid ", COLORS.theme.accent, ";outline-offset:1px;}@media not ( prefers-reduced-motion ){transition-property:color,transform;transition-duration:120ms;transition-timing-function:linear;}" + ( true ? "" : 0));
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/alignment-matrix-control/cell.js
 /**
@@ -14545,14 +15780,12 @@ const Cell = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
 
 function cell_Cell({
   id,
-  isActive = false,
   value,
   ...props
 }) {
-  const tooltipText = ALIGNMENT_LABEL[value];
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(tooltip, {
-    text: tooltipText,
-    children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(CompositeItem, {
+    text: ALIGNMENT_LABEL[value],
+    children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(Composite.Item, {
       id: id,
       render: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Cell, {
         ...props,
@@ -14561,1001 +15794,11 @@ function cell_Cell({
       children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(visually_hidden_component, {
         children: value
       }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Point, {
-        isActive: isActive,
         role: "presentation"
       })]
     })
   });
 }
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/X3TS2MQG.js
-"use client";
-
-
-
-// src/collection/collection-store.ts
-
-function useCollectionStoreProps(store, update, props) {
-  useUpdateEffect(update, [props.store]);
-  useStoreProps(store, props, "items", "setItems");
-  return store;
-}
-function useCollectionStore(props = {}) {
-  const [store, update] = useStore(Core.createCollectionStore, props);
-  return useCollectionStoreProps(store, update, props);
-}
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/I2WJ7JBQ.js
-"use client";
-
-
-
-
-
-// src/collection/collection-store.ts
-function isElementPreceding(a, b) {
-  return Boolean(
-    b.compareDocumentPosition(a) & Node.DOCUMENT_POSITION_PRECEDING
-  );
-}
-function sortBasedOnDOMPosition(items) {
-  const pairs = items.map((item, index) => [index, item]);
-  let isOrderDifferent = false;
-  pairs.sort(([indexA, a], [indexB, b]) => {
-    const elementA = a.element;
-    const elementB = b.element;
-    if (elementA === elementB)
-      return 0;
-    if (!elementA || !elementB)
-      return 0;
-    if (isElementPreceding(elementA, elementB)) {
-      if (indexA > indexB) {
-        isOrderDifferent = true;
-      }
-      return -1;
-    }
-    if (indexA < indexB) {
-      isOrderDifferent = true;
-    }
-    return 1;
-  });
-  if (isOrderDifferent) {
-    return pairs.map(([_, item]) => item);
-  }
-  return items;
-}
-function getCommonParent(items) {
-  var _a;
-  const firstItem = items.find((item) => !!item.element);
-  const lastItem = [...items].reverse().find((item) => !!item.element);
-  let parentElement = (_a = firstItem == null ? void 0 : firstItem.element) == null ? void 0 : _a.parentElement;
-  while (parentElement && (lastItem == null ? void 0 : lastItem.element)) {
-    const parent = parentElement;
-    if (lastItem && parent.contains(lastItem.element)) {
-      return parentElement;
-    }
-    parentElement = parentElement.parentElement;
-  }
-  return getDocument(parentElement).body;
-}
-function getPrivateStore(store) {
-  return store == null ? void 0 : store.__unstablePrivateStore;
-}
-function createCollectionStore(props = {}) {
-  var _a;
-  throwOnConflictingProps(props, props.store);
-  const syncState = (_a = props.store) == null ? void 0 : _a.getState();
-  const items = defaultValue(
-    props.items,
-    syncState == null ? void 0 : syncState.items,
-    props.defaultItems,
-    []
-  );
-  const itemsMap = new Map(items.map((item) => [item.id, item]));
-  const initialState = {
-    items,
-    renderedItems: defaultValue(syncState == null ? void 0 : syncState.renderedItems, [])
-  };
-  const syncPrivateStore = getPrivateStore(props.store);
-  const privateStore = createStore(
-    { items, renderedItems: initialState.renderedItems },
-    syncPrivateStore
-  );
-  const collection = createStore(initialState, props.store);
-  const sortItems = (renderedItems) => {
-    const sortedItems = sortBasedOnDOMPosition(renderedItems);
-    privateStore.setState("renderedItems", sortedItems);
-    collection.setState("renderedItems", sortedItems);
-  };
-  setup(collection, () => init(privateStore));
-  setup(privateStore, () => {
-    return batch(privateStore, ["items"], (state) => {
-      collection.setState("items", state.items);
-    });
-  });
-  setup(privateStore, () => {
-    return batch(privateStore, ["renderedItems"], (state) => {
-      let firstRun = true;
-      let raf = requestAnimationFrame(() => {
-        const { renderedItems } = collection.getState();
-        if (state.renderedItems === renderedItems)
-          return;
-        sortItems(state.renderedItems);
-      });
-      if (typeof IntersectionObserver !== "function") {
-        return () => cancelAnimationFrame(raf);
-      }
-      const ioCallback = () => {
-        if (firstRun) {
-          firstRun = false;
-          return;
-        }
-        cancelAnimationFrame(raf);
-        raf = requestAnimationFrame(() => sortItems(state.renderedItems));
-      };
-      const root = getCommonParent(state.renderedItems);
-      const observer = new IntersectionObserver(ioCallback, { root });
-      for (const item of state.renderedItems) {
-        if (!item.element)
-          continue;
-        observer.observe(item.element);
-      }
-      return () => {
-        cancelAnimationFrame(raf);
-        observer.disconnect();
-      };
-    });
-  });
-  const mergeItem = (item, setItems, canDeleteFromMap = false) => {
-    let prevItem;
-    setItems((items2) => {
-      const index = items2.findIndex(({ id }) => id === item.id);
-      const nextItems = items2.slice();
-      if (index !== -1) {
-        prevItem = items2[index];
-        const nextItem = _chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, prevItem), item);
-        nextItems[index] = nextItem;
-        itemsMap.set(item.id, nextItem);
-      } else {
-        nextItems.push(item);
-        itemsMap.set(item.id, item);
-      }
-      return nextItems;
-    });
-    const unmergeItem = () => {
-      setItems((items2) => {
-        if (!prevItem) {
-          if (canDeleteFromMap) {
-            itemsMap.delete(item.id);
-          }
-          return items2.filter(({ id }) => id !== item.id);
-        }
-        const index = items2.findIndex(({ id }) => id === item.id);
-        if (index === -1)
-          return items2;
-        const nextItems = items2.slice();
-        nextItems[index] = prevItem;
-        itemsMap.set(item.id, prevItem);
-        return nextItems;
-      });
-    };
-    return unmergeItem;
-  };
-  const registerItem = (item) => mergeItem(
-    item,
-    (getItems) => privateStore.setState("items", getItems),
-    true
-  );
-  return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, collection), {
-    registerItem,
-    renderItem: (item) => chain(
-      registerItem(item),
-      mergeItem(
-        item,
-        (getItems) => privateStore.setState("renderedItems", getItems)
-      )
-    ),
-    item: (id) => {
-      if (!id)
-        return null;
-      let item = itemsMap.get(id);
-      if (!item) {
-        const { items: items2 } = collection.getState();
-        item = items2.find((item2) => item2.id === id);
-        if (item) {
-          itemsMap.set(id, item);
-        }
-      }
-      return item || null;
-    },
-    // @ts-expect-error Internal
-    __unstablePrivateStore: privateStore
-  });
-}
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/7PRQYBBV.js
-"use client";
-
-// src/utils/array.ts
-function toArray(arg) {
-  if (Array.isArray(arg)) {
-    return arg;
-  }
-  return typeof arg !== "undefined" ? [arg] : [];
-}
-function addItemToArray(array, item, index = -1) {
-  if (!(index in array)) {
-    return [...array, item];
-  }
-  return [...array.slice(0, index), item, ...array.slice(index)];
-}
-function flatten2DArray(array) {
-  const flattened = [];
-  for (const row of array) {
-    flattened.push(...row);
-  }
-  return flattened;
-}
-function reverseArray(array) {
-  return array.slice().reverse();
-}
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/__chunks/VH2P7HEP.js
-"use client";
-
-
-
-
-
-
-// src/composite/composite-store.ts
-var VH2P7HEP_NULL_ITEM = { id: null };
-function VH2P7HEP_findFirstEnabledItem(items, excludeId) {
-  return items.find((item) => {
-    if (excludeId) {
-      return !item.disabled && item.id !== excludeId;
-    }
-    return !item.disabled;
-  });
-}
-function getEnabledItems(items, excludeId) {
-  return items.filter((item) => {
-    if (excludeId) {
-      return !item.disabled && item.id !== excludeId;
-    }
-    return !item.disabled;
-  });
-}
-function getOppositeOrientation(orientation) {
-  if (orientation === "vertical")
-    return "horizontal";
-  if (orientation === "horizontal")
-    return "vertical";
-  return;
-}
-function getItemsInRow(items, rowId) {
-  return items.filter((item) => item.rowId === rowId);
-}
-function VH2P7HEP_flipItems(items, activeId, shouldInsertNullItem = false) {
-  const index = items.findIndex((item) => item.id === activeId);
-  return [
-    ...items.slice(index + 1),
-    ...shouldInsertNullItem ? [VH2P7HEP_NULL_ITEM] : [],
-    ...items.slice(0, index)
-  ];
-}
-function VH2P7HEP_groupItemsByRows(items) {
-  const rows = [];
-  for (const item of items) {
-    const row = rows.find((currentRow) => {
-      var _a;
-      return ((_a = currentRow[0]) == null ? void 0 : _a.rowId) === item.rowId;
-    });
-    if (row) {
-      row.push(item);
-    } else {
-      rows.push([item]);
-    }
-  }
-  return rows;
-}
-function getMaxRowLength(array) {
-  let maxLength = 0;
-  for (const { length } of array) {
-    if (length > maxLength) {
-      maxLength = length;
-    }
-  }
-  return maxLength;
-}
-function createEmptyItem(rowId) {
-  return {
-    id: "__EMPTY_ITEM__",
-    disabled: true,
-    rowId
-  };
-}
-function normalizeRows(rows, activeId, focusShift) {
-  const maxLength = getMaxRowLength(rows);
-  for (const row of rows) {
-    for (let i = 0; i < maxLength; i += 1) {
-      const item = row[i];
-      if (!item || focusShift && item.disabled) {
-        const isFirst = i === 0;
-        const previousItem = isFirst && focusShift ? VH2P7HEP_findFirstEnabledItem(row) : row[i - 1];
-        row[i] = previousItem && activeId !== previousItem.id && focusShift ? previousItem : createEmptyItem(previousItem == null ? void 0 : previousItem.rowId);
-      }
-    }
-  }
-  return rows;
-}
-function verticalizeItems(items) {
-  const rows = VH2P7HEP_groupItemsByRows(items);
-  const maxLength = getMaxRowLength(rows);
-  const verticalized = [];
-  for (let i = 0; i < maxLength; i += 1) {
-    for (const row of rows) {
-      const item = row[i];
-      if (item) {
-        verticalized.push(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, item), {
-          // If there's no rowId, it means that it's not a grid composite, but
-          // a single row instead. So, instead of verticalizing it, that is,
-          // assigning a different rowId based on the column index, we keep it
-          // undefined so they will be part of the same row. This is useful
-          // when using up/down on one-dimensional composites.
-          rowId: item.rowId ? `${i}` : void 0
-        }));
-      }
-    }
-  }
-  return verticalized;
-}
-function createCompositeStore(props = {}) {
-  var _a;
-  const syncState = (_a = props.store) == null ? void 0 : _a.getState();
-  const collection = createCollectionStore(props);
-  const activeId = defaultValue(
-    props.activeId,
-    syncState == null ? void 0 : syncState.activeId,
-    props.defaultActiveId
-  );
-  const initialState = _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, collection.getState()), {
-    activeId,
-    baseElement: defaultValue(syncState == null ? void 0 : syncState.baseElement, null),
-    includesBaseElement: defaultValue(
-      props.includesBaseElement,
-      syncState == null ? void 0 : syncState.includesBaseElement,
-      activeId === null
-    ),
-    moves: defaultValue(syncState == null ? void 0 : syncState.moves, 0),
-    orientation: defaultValue(
-      props.orientation,
-      syncState == null ? void 0 : syncState.orientation,
-      "both"
-    ),
-    rtl: defaultValue(props.rtl, syncState == null ? void 0 : syncState.rtl, false),
-    virtualFocus: defaultValue(
-      props.virtualFocus,
-      syncState == null ? void 0 : syncState.virtualFocus,
-      false
-    ),
-    focusLoop: defaultValue(props.focusLoop, syncState == null ? void 0 : syncState.focusLoop, false),
-    focusWrap: defaultValue(props.focusWrap, syncState == null ? void 0 : syncState.focusWrap, false),
-    focusShift: defaultValue(props.focusShift, syncState == null ? void 0 : syncState.focusShift, false)
-  });
-  const composite = createStore(initialState, collection, props.store);
-  setup(
-    composite,
-    () => sync(composite, ["renderedItems", "activeId"], (state) => {
-      composite.setState("activeId", (activeId2) => {
-        var _a2;
-        if (activeId2 !== void 0)
-          return activeId2;
-        return (_a2 = VH2P7HEP_findFirstEnabledItem(state.renderedItems)) == null ? void 0 : _a2.id;
-      });
-    })
-  );
-  const getNextId = (items, orientation, hasNullItem, skip) => {
-    var _a2, _b;
-    const { activeId: activeId2, rtl, focusLoop, focusWrap, includesBaseElement } = composite.getState();
-    const isHorizontal = orientation !== "vertical";
-    const isRTL = rtl && isHorizontal;
-    const allItems = isRTL ? reverseArray(items) : items;
-    if (activeId2 == null) {
-      return (_a2 = VH2P7HEP_findFirstEnabledItem(allItems)) == null ? void 0 : _a2.id;
-    }
-    const activeItem = allItems.find((item) => item.id === activeId2);
-    if (!activeItem) {
-      return (_b = VH2P7HEP_findFirstEnabledItem(allItems)) == null ? void 0 : _b.id;
-    }
-    const isGrid = !!activeItem.rowId;
-    const activeIndex = allItems.indexOf(activeItem);
-    const nextItems = allItems.slice(activeIndex + 1);
-    const nextItemsInRow = getItemsInRow(nextItems, activeItem.rowId);
-    if (skip !== void 0) {
-      const nextEnabledItemsInRow = getEnabledItems(nextItemsInRow, activeId2);
-      const nextItem2 = nextEnabledItemsInRow.slice(skip)[0] || // If we can't find an item, just return the last one.
-      nextEnabledItemsInRow[nextEnabledItemsInRow.length - 1];
-      return nextItem2 == null ? void 0 : nextItem2.id;
-    }
-    const oppositeOrientation = getOppositeOrientation(
-      // If it's a grid and orientation is not set, it's a next/previous call,
-      // which is inherently horizontal. up/down will call next with orientation
-      // set to vertical by default (see below on up/down methods).
-      isGrid ? orientation || "horizontal" : orientation
-    );
-    const canLoop = focusLoop && focusLoop !== oppositeOrientation;
-    const canWrap = isGrid && focusWrap && focusWrap !== oppositeOrientation;
-    hasNullItem = hasNullItem || !isGrid && canLoop && includesBaseElement;
-    if (canLoop) {
-      const loopItems = canWrap && !hasNullItem ? allItems : getItemsInRow(allItems, activeItem.rowId);
-      const sortedItems = VH2P7HEP_flipItems(loopItems, activeId2, hasNullItem);
-      const nextItem2 = VH2P7HEP_findFirstEnabledItem(sortedItems, activeId2);
-      return nextItem2 == null ? void 0 : nextItem2.id;
-    }
-    if (canWrap) {
-      const nextItem2 = VH2P7HEP_findFirstEnabledItem(
-        // We can use nextItems, which contains all the next items, including
-        // items from other rows, to wrap between rows. However, if there is a
-        // null item (the composite container), we'll only use the next items in
-        // the row. So moving next from the last item will focus on the
-        // composite container. On grid composites, horizontal navigation never
-        // focuses on the composite container, only vertical.
-        hasNullItem ? nextItemsInRow : nextItems,
-        activeId2
-      );
-      const nextId = hasNullItem ? (nextItem2 == null ? void 0 : nextItem2.id) || null : nextItem2 == null ? void 0 : nextItem2.id;
-      return nextId;
-    }
-    const nextItem = VH2P7HEP_findFirstEnabledItem(nextItemsInRow, activeId2);
-    if (!nextItem && hasNullItem) {
-      return null;
-    }
-    return nextItem == null ? void 0 : nextItem.id;
-  };
-  return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, collection), composite), {
-    setBaseElement: (element) => composite.setState("baseElement", element),
-    setActiveId: (id) => composite.setState("activeId", id),
-    move: (id) => {
-      if (id === void 0)
-        return;
-      composite.setState("activeId", id);
-      composite.setState("moves", (moves) => moves + 1);
-    },
-    first: () => {
-      var _a2;
-      return (_a2 = VH2P7HEP_findFirstEnabledItem(composite.getState().renderedItems)) == null ? void 0 : _a2.id;
-    },
-    last: () => {
-      var _a2;
-      return (_a2 = VH2P7HEP_findFirstEnabledItem(reverseArray(composite.getState().renderedItems))) == null ? void 0 : _a2.id;
-    },
-    next: (skip) => {
-      const { renderedItems, orientation } = composite.getState();
-      return getNextId(renderedItems, orientation, false, skip);
-    },
-    previous: (skip) => {
-      var _a2;
-      const { renderedItems, orientation, includesBaseElement } = composite.getState();
-      const isGrid = !!((_a2 = VH2P7HEP_findFirstEnabledItem(renderedItems)) == null ? void 0 : _a2.rowId);
-      const hasNullItem = !isGrid && includesBaseElement;
-      return getNextId(
-        reverseArray(renderedItems),
-        orientation,
-        hasNullItem,
-        skip
-      );
-    },
-    down: (skip) => {
-      const {
-        activeId: activeId2,
-        renderedItems,
-        focusShift,
-        focusLoop,
-        includesBaseElement
-      } = composite.getState();
-      const shouldShift = focusShift && !skip;
-      const verticalItems = verticalizeItems(
-        flatten2DArray(
-          normalizeRows(VH2P7HEP_groupItemsByRows(renderedItems), activeId2, shouldShift)
-        )
-      );
-      const canLoop = focusLoop && focusLoop !== "horizontal";
-      const hasNullItem = canLoop && includesBaseElement;
-      return getNextId(verticalItems, "vertical", hasNullItem, skip);
-    },
-    up: (skip) => {
-      const { activeId: activeId2, renderedItems, focusShift, includesBaseElement } = composite.getState();
-      const shouldShift = focusShift && !skip;
-      const verticalItems = verticalizeItems(
-        reverseArray(
-          flatten2DArray(
-            normalizeRows(
-              VH2P7HEP_groupItemsByRows(renderedItems),
-              activeId2,
-              shouldShift
-            )
-          )
-        )
-      );
-      const hasNullItem = includesBaseElement;
-      return getNextId(verticalItems, "vertical", hasNullItem, skip);
-    }
-  });
-}
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/WH6Q5C3D.js
-"use client";
-
-
-
-// src/composite/composite-store.ts
-
-function useCompositeStoreProps(store, update, props) {
-  store = useCollectionStoreProps(store, update, props);
-  useStoreProps(store, props, "activeId", "setActiveId");
-  useStoreProps(store, props, "includesBaseElement");
-  useStoreProps(store, props, "virtualFocus");
-  useStoreProps(store, props, "orientation");
-  useStoreProps(store, props, "rtl");
-  useStoreProps(store, props, "focusLoop");
-  useStoreProps(store, props, "focusWrap");
-  useStoreProps(store, props, "focusShift");
-  return store;
-}
-function useCompositeStore(props = {}) {
-  const [store, update] = DTNGDFNU_useStore(createCompositeStore, props);
-  return useCompositeStoreProps(store, update, props);
-}
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/QMBMAMY2.js
-"use client";
-
-
-
-
-
-
-
-// src/composite/composite.tsx
-
-
-
-
-
-
-
-var QMBMAMY2_TagName = "div";
-function isGrid(items) {
-  return items.some((item) => !!item.rowId);
-}
-function isPrintableKey(event) {
-  const target = event.target;
-  if (target && !isTextField(target))
-    return false;
-  return event.key.length === 1 && !event.ctrlKey && !event.metaKey;
-}
-function isModifierKey(event) {
-  return event.key === "Shift" || event.key === "Control" || event.key === "Alt" || event.key === "Meta";
-}
-function useKeyboardEventProxy(store, onKeyboardEvent, previousElementRef) {
-  return useEvent((event) => {
-    var _a;
-    onKeyboardEvent == null ? void 0 : onKeyboardEvent(event);
-    if (event.defaultPrevented)
-      return;
-    if (event.isPropagationStopped())
-      return;
-    if (!isSelfTarget(event))
-      return;
-    if (isModifierKey(event))
-      return;
-    if (isPrintableKey(event))
-      return;
-    const state = store.getState();
-    const activeElement = (_a = getEnabledItem(store, state.activeId)) == null ? void 0 : _a.element;
-    if (!activeElement)
-      return;
-    const _b = event, { view } = _b, eventInit = __objRest(_b, ["view"]);
-    const previousElement = previousElementRef == null ? void 0 : previousElementRef.current;
-    if (activeElement !== previousElement) {
-      activeElement.focus();
-    }
-    if (!fireKeyboardEvent(activeElement, event.type, eventInit)) {
-      event.preventDefault();
-    }
-    if (event.currentTarget.contains(activeElement)) {
-      event.stopPropagation();
-    }
-  });
-}
-function findFirstEnabledItemInTheLastRow(items) {
-  return findFirstEnabledItem(
-    flatten2DArray(reverseArray(groupItemsByRows(items)))
-  );
-}
-function useScheduleFocus(store) {
-  const [scheduled, setScheduled] = (0,external_React_.useState)(false);
-  const schedule = (0,external_React_.useCallback)(() => setScheduled(true), []);
-  const activeItem = store.useState(
-    (state) => getEnabledItem(store, state.activeId)
-  );
-  (0,external_React_.useEffect)(() => {
-    const activeElement = activeItem == null ? void 0 : activeItem.element;
-    if (!scheduled)
-      return;
-    if (!activeElement)
-      return;
-    setScheduled(false);
-    activeElement.focus({ preventScroll: true });
-  }, [activeItem, scheduled]);
-  return schedule;
-}
-var useComposite = createHook(
-  function useComposite2(_a) {
-    var _b = _a, {
-      store,
-      composite = true,
-      focusOnMove = composite,
-      moveOnKeyPress = true
-    } = _b, props = __objRest(_b, [
-      "store",
-      "composite",
-      "focusOnMove",
-      "moveOnKeyPress"
-    ]);
-    const context = useCompositeProviderContext();
-    store = store || context;
-    invariant(
-      store,
-       false && 0
-    );
-    const ref = (0,external_React_.useRef)(null);
-    const previousElementRef = (0,external_React_.useRef)(null);
-    const scheduleFocus = useScheduleFocus(store);
-    const moves = store.useState("moves");
-    const [, setBaseElement] = useTransactionState(
-      composite ? store.setBaseElement : null
-    );
-    (0,external_React_.useEffect)(() => {
-      var _a2;
-      if (!store)
-        return;
-      if (!moves)
-        return;
-      if (!composite)
-        return;
-      if (!focusOnMove)
-        return;
-      const { activeId: activeId2 } = store.getState();
-      const itemElement = (_a2 = getEnabledItem(store, activeId2)) == null ? void 0 : _a2.element;
-      if (!itemElement)
-        return;
-      focusIntoView(itemElement);
-    }, [store, moves, composite, focusOnMove]);
-    useSafeLayoutEffect(() => {
-      if (!store)
-        return;
-      if (!moves)
-        return;
-      if (!composite)
-        return;
-      const { baseElement, activeId: activeId2 } = store.getState();
-      const isSelfAcive = activeId2 === null;
-      if (!isSelfAcive)
-        return;
-      if (!baseElement)
-        return;
-      const previousElement = previousElementRef.current;
-      previousElementRef.current = null;
-      if (previousElement) {
-        fireBlurEvent(previousElement, { relatedTarget: baseElement });
-      }
-      if (!hasFocus(baseElement)) {
-        baseElement.focus();
-      }
-    }, [store, moves, composite]);
-    const activeId = store.useState("activeId");
-    const virtualFocus = store.useState("virtualFocus");
-    useSafeLayoutEffect(() => {
-      var _a2;
-      if (!store)
-        return;
-      if (!composite)
-        return;
-      if (!virtualFocus)
-        return;
-      const previousElement = previousElementRef.current;
-      previousElementRef.current = null;
-      if (!previousElement)
-        return;
-      const activeElement = (_a2 = getEnabledItem(store, activeId)) == null ? void 0 : _a2.element;
-      const relatedTarget = activeElement || getActiveElement(previousElement);
-      if (relatedTarget === previousElement)
-        return;
-      fireBlurEvent(previousElement, { relatedTarget });
-    }, [store, activeId, virtualFocus, composite]);
-    const onKeyDownCapture = useKeyboardEventProxy(
-      store,
-      props.onKeyDownCapture,
-      previousElementRef
-    );
-    const onKeyUpCapture = useKeyboardEventProxy(
-      store,
-      props.onKeyUpCapture,
-      previousElementRef
-    );
-    const onFocusCaptureProp = props.onFocusCapture;
-    const onFocusCapture = useEvent((event) => {
-      onFocusCaptureProp == null ? void 0 : onFocusCaptureProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!store)
-        return;
-      const { virtualFocus: virtualFocus2 } = store.getState();
-      if (!virtualFocus2)
-        return;
-      const previousActiveElement = event.relatedTarget;
-      const isSilentlyFocused = silentlyFocused(event.currentTarget);
-      if (isSelfTarget(event) && isSilentlyFocused) {
-        event.stopPropagation();
-        previousElementRef.current = previousActiveElement;
-      }
-    });
-    const onFocusProp = props.onFocus;
-    const onFocus = useEvent((event) => {
-      onFocusProp == null ? void 0 : onFocusProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!composite)
-        return;
-      if (!store)
-        return;
-      const { relatedTarget } = event;
-      const { virtualFocus: virtualFocus2 } = store.getState();
-      if (virtualFocus2) {
-        if (isSelfTarget(event) && !isItem(store, relatedTarget)) {
-          queueMicrotask(scheduleFocus);
-        }
-      } else if (isSelfTarget(event)) {
-        store.setActiveId(null);
-      }
-    });
-    const onBlurCaptureProp = props.onBlurCapture;
-    const onBlurCapture = useEvent((event) => {
-      var _a2;
-      onBlurCaptureProp == null ? void 0 : onBlurCaptureProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!store)
-        return;
-      const { virtualFocus: virtualFocus2, activeId: activeId2 } = store.getState();
-      if (!virtualFocus2)
-        return;
-      const activeElement = (_a2 = getEnabledItem(store, activeId2)) == null ? void 0 : _a2.element;
-      const nextActiveElement = event.relatedTarget;
-      const nextActiveElementIsItem = isItem(store, nextActiveElement);
-      const previousElement = previousElementRef.current;
-      previousElementRef.current = null;
-      if (isSelfTarget(event) && nextActiveElementIsItem) {
-        if (nextActiveElement === activeElement) {
-          if (previousElement && previousElement !== nextActiveElement) {
-            fireBlurEvent(previousElement, event);
-          }
-        } else if (activeElement) {
-          fireBlurEvent(activeElement, event);
-        } else if (previousElement) {
-          fireBlurEvent(previousElement, event);
-        }
-        event.stopPropagation();
-      } else {
-        const targetIsItem = isItem(store, event.target);
-        if (!targetIsItem && activeElement) {
-          fireBlurEvent(activeElement, event);
-        }
-      }
-    });
-    const onKeyDownProp = props.onKeyDown;
-    const moveOnKeyPressProp = useBooleanEvent(moveOnKeyPress);
-    const onKeyDown = useEvent((event) => {
-      var _a2;
-      onKeyDownProp == null ? void 0 : onKeyDownProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!store)
-        return;
-      if (!isSelfTarget(event))
-        return;
-      const { orientation, items, renderedItems, activeId: activeId2 } = store.getState();
-      const activeItem = getEnabledItem(store, activeId2);
-      if ((_a2 = activeItem == null ? void 0 : activeItem.element) == null ? void 0 : _a2.isConnected)
-        return;
-      const isVertical = orientation !== "horizontal";
-      const isHorizontal = orientation !== "vertical";
-      const grid = isGrid(renderedItems);
-      const isHorizontalKey = event.key === "ArrowLeft" || event.key === "ArrowRight" || event.key === "Home" || event.key === "End";
-      if (isHorizontalKey && isTextField(event.currentTarget))
-        return;
-      const up = () => {
-        if (grid) {
-          const item = items && findFirstEnabledItemInTheLastRow(items);
-          return item == null ? void 0 : item.id;
-        }
-        return store == null ? void 0 : store.last();
-      };
-      const keyMap = {
-        ArrowUp: (grid || isVertical) && up,
-        ArrowRight: (grid || isHorizontal) && store.first,
-        ArrowDown: (grid || isVertical) && store.first,
-        ArrowLeft: (grid || isHorizontal) && store.last,
-        Home: store.first,
-        End: store.last,
-        PageUp: store.first,
-        PageDown: store.last
-      };
-      const action = keyMap[event.key];
-      if (action) {
-        const id = action();
-        if (id !== void 0) {
-          if (!moveOnKeyPressProp(event))
-            return;
-          event.preventDefault();
-          store.move(id);
-        }
-      }
-    });
-    props = useWrapElement(
-      props,
-      (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(CompositeContextProvider, { value: store, children: element }),
-      [store]
-    );
-    const activeDescendant = store.useState((state) => {
-      var _a2;
-      if (!store)
-        return;
-      if (!composite)
-        return;
-      if (!state.virtualFocus)
-        return;
-      return (_a2 = getEnabledItem(store, state.activeId)) == null ? void 0 : _a2.id;
-    });
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
-      "aria-activedescendant": activeDescendant
-    }, props), {
-      ref: useMergeRefs(ref, setBaseElement, props.ref),
-      onKeyDownCapture,
-      onKeyUpCapture,
-      onFocusCapture,
-      onFocus,
-      onBlurCapture,
-      onKeyDown
-    });
-    const focusable = store.useState(
-      (state) => composite && (state.virtualFocus || state.activeId === null)
-    );
-    props = useFocusable(_4R3V3JGP_spreadValues({ focusable }, props));
-    return props;
-  }
-);
-var Composite = forwardRef2(function Composite2(props) {
-  const htmlProps = useComposite(props);
-  return YIF72NQG_createElement(QMBMAMY2_TagName, htmlProps);
-});
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/67ZQCY2E.js
-"use client";
-
-
-
-
-
-// src/composite/composite-row.tsx
-
-
-
-var _67ZQCY2E_TagName = "div";
-var useCompositeRow = createHook(
-  function useCompositeRow2(_a) {
-    var _b = _a, {
-      store,
-      "aria-setsize": ariaSetSize,
-      "aria-posinset": ariaPosInSet
-    } = _b, props = __objRest(_b, [
-      "store",
-      "aria-setsize",
-      "aria-posinset"
-    ]);
-    const context = useCompositeContext();
-    store = store || context;
-    invariant(
-      store,
-       false && 0
-    );
-    const id = useId(props.id);
-    const baseElement = store.useState(
-      (state) => state.baseElement || void 0
-    );
-    const providerValue = (0,external_React_.useMemo)(
-      () => ({ id, baseElement, ariaSetSize, ariaPosInSet }),
-      [id, baseElement, ariaSetSize, ariaPosInSet]
-    );
-    props = useWrapElement(
-      props,
-      (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(CompositeRowContext.Provider, { value: providerValue, children: element }),
-      [providerValue]
-    );
-    props = _4R3V3JGP_spreadValues({ id }, props);
-    return removeUndefinedValues(props);
-  }
-);
-var CompositeRow = forwardRef2(function CompositeRow2(props) {
-  const htmlProps = useCompositeRow(props);
-  return YIF72NQG_createElement(_67ZQCY2E_TagName, htmlProps);
-});
-
-
-
-;// CONCATENATED MODULE: ./packages/components/build-module/alignment-matrix-control/styles/alignment-matrix-control-icon-styles.js
-
-function alignment_matrix_control_icon_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
-/**
- * External dependencies
- */
-
-
-
-/**
- * Internal dependencies
- */
-
-const alignment_matrix_control_icon_styles_rootSize = () => {
-  const padding = 1.5;
-  const size = 24;
-  return /*#__PURE__*/emotion_react_browser_esm_css({
-    gridTemplateRows: `repeat( 3, calc( ${size - padding * 2}px / 3))`,
-    padding,
-    maxHeight: size,
-    maxWidth: size
-  },  true ? "" : 0,  true ? "" : 0);
-};
-const rootPointerEvents = ({
-  disablePointerEvents
-}) => {
-  return /*#__PURE__*/emotion_react_browser_esm_css({
-    pointerEvents: disablePointerEvents ? 'none' : undefined
-  },  true ? "" : 0,  true ? "" : 0);
-};
-const Wrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
-  target: "erowt52"
-} : 0)( true ? {
-  name: "ogl07i",
-  styles: "box-sizing:border-box;padding:2px"
-} : 0);
-const alignment_matrix_control_icon_styles_Root = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
-  target: "erowt51"
-} : 0)("transform-origin:top left;height:100%;width:100%;", rootBase, ";", alignment_matrix_control_icon_styles_rootSize, ";", rootPointerEvents, ";" + ( true ? "" : 0));
-const alignment_matrix_control_icon_styles_pointActive = ({
-  isActive
-}) => {
-  const boxShadow = isActive ? `0 0 0 1px currentColor` : null;
-  return /*#__PURE__*/emotion_react_browser_esm_css("box-shadow:", boxShadow, ";color:currentColor;*:hover>&{color:currentColor;}" + ( true ? "" : 0),  true ? "" : 0);
-};
-const alignment_matrix_control_icon_styles_Point = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
-  target: "erowt50"
-} : 0)("height:2px;width:2px;", pointBase, ";", alignment_matrix_control_icon_styles_pointActive, ";" + ( true ? "" : 0));
-const alignment_matrix_control_icon_styles_Cell = Cell;
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/alignment-matrix-control/icon.js
 /**
@@ -15564,39 +15807,51 @@ const alignment_matrix_control_icon_styles_Cell = Cell;
 
 
 /**
+ * WordPress dependencies
+ */
+
+
+/**
  * Internal dependencies
  */
 
 
-
 const BASE_SIZE = 24;
+const GRID_CELL_SIZE = 7;
+const GRID_PADDING = (BASE_SIZE - 3 * GRID_CELL_SIZE) / 2;
+const DOT_SIZE = 2;
+const DOT_SIZE_SELECTED = 4;
 function AlignmentMatrixControlIcon({
   className,
   disablePointerEvents = true,
-  size = BASE_SIZE,
+  size,
+  width,
+  height,
   style = {},
   value = 'center',
   ...props
 }) {
-  const alignIndex = getAlignmentIndex(value);
-  const scale = (size / BASE_SIZE).toFixed(2);
-  const classes = dist_clsx('component-alignment-matrix-control-icon', className);
-  const styles = {
-    ...style,
-    transform: `scale(${scale})`
-  };
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(alignment_matrix_control_icon_styles_Root, {
-    ...props,
-    className: classes,
-    disablePointerEvents: disablePointerEvents,
+  var _ref, _ref2;
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_primitives_namespaceObject.SVG, {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: `0 0 ${BASE_SIZE} ${BASE_SIZE}`,
+    width: (_ref = size !== null && size !== void 0 ? size : width) !== null && _ref !== void 0 ? _ref : BASE_SIZE,
+    height: (_ref2 = size !== null && size !== void 0 ? size : height) !== null && _ref2 !== void 0 ? _ref2 : BASE_SIZE,
     role: "presentation",
-    style: styles,
+    className: dist_clsx('component-alignment-matrix-control-icon', className),
+    style: {
+      pointerEvents: disablePointerEvents ? 'none' : undefined,
+      ...style
+    },
+    ...props,
     children: ALIGNMENTS.map((align, index) => {
-      const isActive = alignIndex === index;
-      return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(alignment_matrix_control_icon_styles_Cell, {
-        children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(alignment_matrix_control_icon_styles_Point, {
-          isActive: isActive
-        })
+      const dotSize = getAlignmentIndex(value) === index ? DOT_SIZE_SELECTED : DOT_SIZE;
+      return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_primitives_namespaceObject.Rect, {
+        x: GRID_PADDING + index % 3 * GRID_CELL_SIZE + (GRID_CELL_SIZE - dotSize) / 2,
+        y: GRID_PADDING + Math.floor(index / 3) * GRID_CELL_SIZE + (GRID_CELL_SIZE - dotSize) / 2,
+        width: dotSize,
+        height: dotSize,
+        fill: "currentColor"
       }, align);
     })
   });
@@ -15615,6 +15870,7 @@ function AlignmentMatrixControlIcon({
 
 
 
+
 /**
  * Internal dependencies
  */
@@ -15624,12 +15880,54 @@ function AlignmentMatrixControlIcon({
 
 
 
+function UnforwardedAlignmentMatrixControl({
+  className,
+  id,
+  label = (0,external_wp_i18n_namespaceObject.__)('Alignment Matrix Control'),
+  defaultValue = 'center center',
+  value,
+  onChange,
+  width = 92,
+  ...props
+}) {
+  const baseId = (0,external_wp_compose_namespaceObject.useInstanceId)(UnforwardedAlignmentMatrixControl, 'alignment-matrix-control', id);
+  const setActiveId = (0,external_wp_element_namespaceObject.useCallback)(nextActiveId => {
+    const nextValue = getItemValue(baseId, nextActiveId);
+    if (nextValue) {
+      onChange?.(nextValue);
+    }
+  }, [baseId, onChange]);
+  const classes = dist_clsx('component-alignment-matrix-control', className);
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Composite, {
+    defaultActiveId: getItemId(baseId, defaultValue),
+    activeId: getItemId(baseId, value),
+    setActiveId: setActiveId,
+    rtl: (0,external_wp_i18n_namespaceObject.isRTL)(),
+    render: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(GridContainer, {
+      ...props,
+      "aria-label": label,
+      className: classes,
+      id: baseId,
+      role: "grid",
+      size: width
+    }),
+    children: GRID.map((cells, index) => /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Composite.Row, {
+      render: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(GridRow, {
+        role: "row"
+      }),
+      children: cells.map(cell => /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(cell_Cell, {
+        id: getItemId(baseId, cell),
+        value: cell
+      }, cell))
+    }, index))
+  });
+}
+
 /**
- *
  * AlignmentMatrixControl components enable adjustments to horizontal and vertical alignments for UI.
  *
  * ```jsx
- * import { __experimentalAlignmentMatrixControl as AlignmentMatrixControl } from '@wordpress/components';
+ * import { AlignmentMatrixControl } from '@wordpress/components';
  * import { useState } from '@wordpress/element';
  *
  * const Example = () => {
@@ -15644,57 +15942,20 @@ function AlignmentMatrixControlIcon({
  * };
  * ```
  */
-function AlignmentMatrixControl({
-  className,
-  id,
-  label = (0,external_wp_i18n_namespaceObject.__)('Alignment Matrix Control'),
-  defaultValue = 'center center',
-  value,
-  onChange,
-  width = 92,
-  ...props
-}) {
-  const baseId = (0,external_wp_compose_namespaceObject.useInstanceId)(AlignmentMatrixControl, 'alignment-matrix-control', id);
-  const compositeStore = useCompositeStore({
-    defaultActiveId: getItemId(baseId, defaultValue),
-    activeId: getItemId(baseId, value),
-    setActiveId: nextActiveId => {
-      const nextValue = getItemValue(baseId, nextActiveId);
-      if (nextValue) {
-        onChange?.(nextValue);
-      }
-    },
-    rtl: (0,external_wp_i18n_namespaceObject.isRTL)()
-  });
-  const activeId = compositeStore.useState('activeId');
-  const classes = dist_clsx('component-alignment-matrix-control', className);
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Composite, {
-    store: compositeStore,
-    render: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Root, {
-      ...props,
-      "aria-label": label,
-      className: classes,
-      id: baseId,
-      role: "grid",
-      size: width
-    }),
-    children: GRID.map((cells, index) => /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(CompositeRow, {
-      render: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Row, {
-        role: "row"
-      }),
-      children: cells.map(cell => {
-        const cellId = getItemId(baseId, cell);
-        const isActive = cellId === activeId;
-        return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(cell_Cell, {
-          id: cellId,
-          isActive: isActive,
-          value: cell
-        }, cell);
-      })
-    }, index))
-  });
-}
-AlignmentMatrixControl.Icon = icon;
+const AlignmentMatrixControl = Object.assign(UnforwardedAlignmentMatrixControl, {
+  /**
+   * Render an alignment matrix as an icon.
+   *
+   * ```jsx
+   * import { AlignmentMatrixControl } from '@wordpress/components';
+   *
+   * <Icon icon={<AlignmentMatrixControl.Icon value="top left" />} />
+   * ```
+   */
+  Icon: Object.assign(icon, {
+    displayName: 'AlignmentMatrixControl.Icon'
+  })
+});
 /* harmony default export */ const alignment_matrix_control = (AlignmentMatrixControl);
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/animate/index.js
@@ -26825,48 +27086,6 @@ function useResponsiveValue(values, options = {}) {
   index >= array.length ? array.length - 1 : index];
 }
 
-;// CONCATENATED MODULE: ./packages/components/build-module/utils/space.js
-/**
- * The argument value for the `space()` utility function.
- *
- * When this is a number or a numeric string, it will be interpreted as a
- * multiplier for the grid base value (4px). For example, `space( 2 )` will be 8px.
- *
- * Otherwise, it will be interpreted as a literal CSS length value. For example,
- * `space( 'auto' )` will be 'auto', and `space( '2px' )` will be 2px.
- */
-
-const GRID_BASE = '4px';
-
-/**
- * A function that handles numbers, numeric strings, and unit values.
- *
- * When given a number or a numeric string, it will return the grid-based
- * value as a factor of GRID_BASE, defined above.
- *
- * When given a unit value or one of the named CSS values like `auto`,
- * it will simply return the value back.
- *
- * @param value A number, numeric string, or a unit value.
- */
-function space(value) {
-  if (typeof value === 'undefined') {
-    return undefined;
-  }
-
-  // Handle empty strings, if it's the number 0 this still works.
-  if (!value) {
-    return '0';
-  }
-  const asInt = typeof value === 'number' ? value : Number(value);
-
-  // Test if the input has a unit, was NaN, or was one of the named CSS values (like `auto`), in which case just use that value.
-  if (typeof window !== 'undefined' && window.CSS?.supports?.('margin', value.toString()) || Number.isNaN(asInt)) {
-    return value.toString();
-  }
-  return `calc(${GRID_BASE} * ${value})`;
-}
-
 ;// CONCATENATED MODULE: ./packages/components/build-module/flex/styles.js
 function styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -27725,95 +27944,6 @@ function getOptimalTextShade(backgroundColor) {
   return result === '#000000' ? 'dark' : 'light';
 }
 
-;// CONCATENATED MODULE: ./packages/components/build-module/utils/config-values.js
-/**
- * Internal dependencies
- */
-
-
-const CONTROL_HEIGHT = '36px';
-const CONTROL_PADDING_X = '12px';
-const CONTROL_PROPS = {
-  controlSurfaceColor: COLORS.white,
-  controlTextActiveColor: COLORS.theme.accent,
-  controlPaddingX: CONTROL_PADDING_X,
-  controlPaddingXLarge: `calc(${CONTROL_PADDING_X} * 1.3334)`,
-  controlPaddingXSmall: `calc(${CONTROL_PADDING_X} / 1.3334)`,
-  controlBackgroundColor: COLORS.white,
-  controlBorderRadius: '2px',
-  controlBoxShadow: 'transparent',
-  controlBoxShadowFocus: `0 0 0 0.5px ${COLORS.theme.accent}`,
-  controlDestructiveBorderColor: COLORS.alert.red,
-  controlHeight: CONTROL_HEIGHT,
-  controlHeightXSmall: `calc( ${CONTROL_HEIGHT} * 0.6 )`,
-  controlHeightSmall: `calc( ${CONTROL_HEIGHT} * 0.8 )`,
-  controlHeightLarge: `calc( ${CONTROL_HEIGHT} * 1.2 )`,
-  controlHeightXLarge: `calc( ${CONTROL_HEIGHT} * 1.4 )`
-};
-const TOGGLE_GROUP_CONTROL_PROPS = {
-  toggleGroupControlBackgroundColor: CONTROL_PROPS.controlBackgroundColor,
-  toggleGroupControlBorderColor: COLORS.ui.border,
-  toggleGroupControlBackdropBackgroundColor: CONTROL_PROPS.controlSurfaceColor,
-  toggleGroupControlBackdropBorderColor: COLORS.ui.border,
-  toggleGroupControlButtonColorActive: CONTROL_PROPS.controlBackgroundColor
-};
-
-// Using Object.assign to avoid creating circular references when emitting
-// TypeScript type declarations.
-/* harmony default export */ const config_values = (Object.assign({}, CONTROL_PROPS, TOGGLE_GROUP_CONTROL_PROPS, {
-  colorDivider: 'rgba(0, 0, 0, 0.1)',
-  colorScrollbarThumb: 'rgba(0, 0, 0, 0.2)',
-  colorScrollbarThumbHover: 'rgba(0, 0, 0, 0.5)',
-  colorScrollbarTrack: 'rgba(0, 0, 0, 0.04)',
-  elevationIntensity: 1,
-  radiusXSmall: '1px',
-  radiusSmall: '2px',
-  radiusMedium: '4px',
-  radiusLarge: '8px',
-  radiusFull: '9999px',
-  radiusRound: '50%',
-  radiusBlockUi: '2px',
-  borderWidth: '1px',
-  borderWidthFocus: '1.5px',
-  borderWidthTab: '4px',
-  spinnerSize: 16,
-  fontSize: '13px',
-  fontSizeH1: 'calc(2.44 * 13px)',
-  fontSizeH2: 'calc(1.95 * 13px)',
-  fontSizeH3: 'calc(1.56 * 13px)',
-  fontSizeH4: 'calc(1.25 * 13px)',
-  fontSizeH5: '13px',
-  fontSizeH6: 'calc(0.8 * 13px)',
-  fontSizeInputMobile: '16px',
-  fontSizeMobile: '15px',
-  fontSizeSmall: 'calc(0.92 * 13px)',
-  fontSizeXSmall: 'calc(0.75 * 13px)',
-  fontLineHeightBase: '1.4',
-  fontWeight: 'normal',
-  fontWeightHeading: '600',
-  gridBase: '4px',
-  cardBorderRadius: '2px',
-  cardPaddingXSmall: `${space(2)}`,
-  cardPaddingSmall: `${space(4)}`,
-  cardPaddingMedium: `${space(4)} ${space(6)}`,
-  cardPaddingLarge: `${space(6)} ${space(8)}`,
-  popoverShadow: `0 0.7px 1px rgba(0, 0, 0, 0.1), 0 1.2px 1.7px -0.2px rgba(0, 0, 0, 0.1), 0 2.3px 3.3px -0.5px rgba(0, 0, 0, 0.1)`,
-  surfaceBackgroundColor: COLORS.white,
-  surfaceBackgroundSubtleColor: '#F3F3F3',
-  surfaceBackgroundTintColor: '#F5F5F5',
-  surfaceBorderColor: 'rgba(0, 0, 0, 0.1)',
-  surfaceBorderBoldColor: 'rgba(0, 0, 0, 0.15)',
-  surfaceBorderSubtleColor: 'rgba(0, 0, 0, 0.05)',
-  surfaceBackgroundTertiaryColor: COLORS.white,
-  surfaceColor: COLORS.white,
-  transitionDuration: '200ms',
-  transitionDurationFast: '160ms',
-  transitionDurationFaster: '120ms',
-  transitionDurationFastest: '100ms',
-  transitionTimingFunction: 'cubic-bezier(0.08, 0.52, 0.52, 1)',
-  transitionTimingFunctionControl: 'cubic-bezier(0.12, 0.8, 0.32, 1)'
-}));
-
 ;// CONCATENATED MODULE: ./packages/components/build-module/text/styles.js
 function text_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -27833,7 +27963,7 @@ const styles_block =  true ? {
 const positive = /*#__PURE__*/emotion_react_browser_esm_css("color:", COLORS.alert.green, ";" + ( true ? "" : 0),  true ? "" : 0);
 const destructive = /*#__PURE__*/emotion_react_browser_esm_css("color:", COLORS.alert.red, ";" + ( true ? "" : 0),  true ? "" : 0);
 const muted = /*#__PURE__*/emotion_react_browser_esm_css("color:", COLORS.gray[700], ";" + ( true ? "" : 0),  true ? "" : 0);
-const highlighterText = /*#__PURE__*/emotion_react_browser_esm_css("mark{background:", COLORS.alert.yellow, ";border-radius:2px;box-shadow:0 0 0 1px rgba( 0, 0, 0, 0.05 ) inset,0 -1px 0 rgba( 0, 0, 0, 0.1 ) inset;}" + ( true ? "" : 0),  true ? "" : 0);
+const highlighterText = /*#__PURE__*/emotion_react_browser_esm_css("mark{background:", COLORS.alert.yellow, ";border-radius:", config_values.radiusSmall, ";box-shadow:0 0 0 1px rgba( 0, 0, 0, 0.05 ) inset,0 -1px 0 rgba( 0, 0, 0, 0.1 ) inset;}" + ( true ? "" : 0),  true ? "" : 0);
 const upperCase =  true ? {
   name: "50zrmy",
   styles: "text-transform:uppercase"
@@ -28268,15 +28398,14 @@ function input_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You hav
 
 
 
-
 const Prefix = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
-  target: "em5sgkm7"
+  target: "em5sgkm8"
 } : 0)( true ? {
   name: "pvvbxf",
   styles: "box-sizing:border-box;display:block"
 } : 0);
 const Suffix = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
-  target: "em5sgkm6"
+  target: "em5sgkm7"
 } : 0)( true ? {
   name: "jgf79h",
   styles: "align-items:center;align-self:stretch;box-sizing:border-box;display:flex"
@@ -28294,13 +28423,13 @@ const backdropBorderColor = ({
   return COLORS.ui.border;
 };
 const BackdropUI = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
-  target: "em5sgkm5"
+  target: "em5sgkm6"
 } : 0)("&&&{box-sizing:border-box;border-color:", backdropBorderColor, ";border-radius:inherit;border-style:solid;border-width:1px;bottom:0;left:0;margin:0;padding:0;pointer-events:none;position:absolute;right:0;top:0;", rtl({
   paddingLeft: 2
 }), ";}" + ( true ? "" : 0));
-const input_control_styles_Root = /*#__PURE__*/emotion_styled_base_browser_esm(flex_component,  true ? {
-  target: "em5sgkm4"
-} : 0)("box-sizing:border-box;position:relative;border-radius:2px;padding-top:0;&:focus-within:not( :has( :is( ", Prefix, ", ", Suffix, " ):focus-within ) ){", BackdropUI, "{border-color:", COLORS.ui.borderFocus, ";box-shadow:", config_values.controlBoxShadowFocus, ";outline:2px solid transparent;outline-offset:-2px;}}" + ( true ? "" : 0));
+const Root = /*#__PURE__*/emotion_styled_base_browser_esm(flex_component,  true ? {
+  target: "em5sgkm5"
+} : 0)("box-sizing:border-box;position:relative;border-radius:", config_values.radiusSmall, ";padding-top:0;&:focus-within:not( :has( :is( ", Prefix, ", ", Suffix, " ):focus-within ) ){", BackdropUI, "{border-color:", COLORS.ui.borderFocus, ";box-shadow:", config_values.controlBoxShadowFocus, ";outline:2px solid transparent;outline-offset:-2px;}}" + ( true ? "" : 0));
 const containerDisabledStyles = ({
   disabled
 }) => {
@@ -28333,7 +28462,7 @@ const containerWidthStyles = ({
   },  true ? "" : 0,  true ? "" : 0);
 };
 const Container = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
-  target: "em5sgkm3"
+  target: "em5sgkm4"
 } : 0)("align-items:center;box-sizing:border-box;border-radius:inherit;display:flex;flex:1;position:relative;", containerDisabledStyles, " ", containerWidthStyles, ";" + ( true ? "" : 0));
 const disabledStyles = ({
   disabled
@@ -28371,29 +28500,29 @@ const getSizeConfig = ({
       height: 40,
       lineHeight: 1,
       minHeight: 40,
-      paddingLeft: space(4),
-      paddingRight: space(4)
+      paddingLeft: config_values.controlPaddingX,
+      paddingRight: config_values.controlPaddingX
     },
     small: {
       height: 24,
       lineHeight: 1,
       minHeight: 24,
-      paddingLeft: space(2),
-      paddingRight: space(2)
+      paddingLeft: config_values.controlPaddingXSmall,
+      paddingRight: config_values.controlPaddingXSmall
     },
     compact: {
       height: 32,
       lineHeight: 1,
       minHeight: 32,
-      paddingLeft: space(2),
-      paddingRight: space(2)
+      paddingLeft: config_values.controlPaddingXSmall,
+      paddingRight: config_values.controlPaddingXSmall
     },
     '__unstable-large': {
       height: 40,
       lineHeight: 1,
       minHeight: 40,
-      paddingLeft: space(4),
-      paddingRight: space(4)
+      paddingLeft: config_values.controlPaddingX,
+      paddingRight: config_values.controlPaddingX
     }
   };
   if (!__next40pxDefaultSize) {
@@ -28432,21 +28561,49 @@ const dragStyles = ({
 // https://github.com/WordPress/gutenberg/issues/18483
 
 const Input = /*#__PURE__*/emotion_styled_base_browser_esm("input",  true ? {
-  target: "em5sgkm2"
+  target: "em5sgkm3"
 } : 0)("&&&{background-color:transparent;box-sizing:border-box;border:none;box-shadow:none!important;color:", COLORS.theme.foreground, ";display:block;font-family:inherit;margin:0;outline:none;width:100%;", dragStyles, " ", disabledStyles, " ", fontSizeStyles, " ", sizeStyles, " ", customPaddings, " &::-webkit-input-placeholder{line-height:normal;}}" + ( true ? "" : 0));
 const BaseLabel = /*#__PURE__*/emotion_styled_base_browser_esm(text_component,  true ? {
-  target: "em5sgkm1"
+  target: "em5sgkm2"
 } : 0)("&&&{", baseLabelTypography, ";box-sizing:border-box;display:block;padding-top:0;padding-bottom:0;max-width:100%;z-index:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}" + ( true ? "" : 0));
 const Label = props => /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(BaseLabel, {
   ...props,
   as: "label"
 });
 const LabelWrapper = /*#__PURE__*/emotion_styled_base_browser_esm(flex_item_component,  true ? {
-  target: "em5sgkm0"
+  target: "em5sgkm1"
 } : 0)( true ? {
   name: "1b6uupn",
   styles: "max-width:calc( 100% - 10px )"
 } : 0);
+const prefixSuffixWrapperStyles = ({
+  variant = 'default',
+  size,
+  __next40pxDefaultSize,
+  isPrefix
+}) => {
+  const {
+    paddingLeft: padding
+  } = getSizeConfig({
+    inputSize: size,
+    __next40pxDefaultSize
+  });
+  const paddingProperty = isPrefix ? 'paddingInlineStart' : 'paddingInlineEnd';
+  if (variant === 'default') {
+    return /*#__PURE__*/emotion_react_browser_esm_css({
+      [paddingProperty]: padding
+    },  true ? "" : 0,  true ? "" : 0);
+  }
+
+  // If variant is 'icon' or 'control'
+  return /*#__PURE__*/emotion_react_browser_esm_css({
+    display: 'flex',
+    [paddingProperty]: padding - 4
+  },  true ? "" : 0,  true ? "" : 0);
+};
+const PrefixSuffixWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
+  target: "em5sgkm0"
+} : 0)(prefixSuffixWrapperStyles, ";" + ( true ? "" : 0));
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/input-control/backdrop.js
 /**
@@ -28583,27 +28740,22 @@ function InputBase(props, ref) {
   } = useDeprecated36pxDefaultSizeProp(useContextSystem(props, 'InputBase'));
   const id = useUniqueId(idProp);
   const hideLabel = hideLabelFromVision || !label;
-  const {
-    paddingLeft,
-    paddingRight
-  } = getSizeConfig({
-    inputSize: size,
-    __next40pxDefaultSize
-  });
   const prefixSuffixContextValue = (0,external_wp_element_namespaceObject.useMemo)(() => {
     return {
       InputControlPrefixWrapper: {
-        paddingLeft
+        __next40pxDefaultSize,
+        size
       },
       InputControlSuffixWrapper: {
-        paddingRight
+        __next40pxDefaultSize,
+        size
       }
     };
-  }, [paddingLeft, paddingRight]);
+  }, [__next40pxDefaultSize, size]);
   return (
     /*#__PURE__*/
     // @ts-expect-error The `direction` prop from Flex (FlexDirection) conflicts with legacy SVGAttributes `direction` (string) that come from React intrinsic prop definitions.
-    (0,external_ReactJSXRuntime_namespaceObject.jsxs)(input_control_styles_Root, {
+    (0,external_ReactJSXRuntime_namespaceObject.jsxs)(Root, {
       ...restProps,
       ...getUIFlexProps(labelPosition),
       className: className,
@@ -30546,7 +30698,7 @@ function useDragCursor(isDragging, dragDirection) {
   return dragCursor;
 }
 function useDraft(props) {
-  const refPreviousValue = (0,external_wp_element_namespaceObject.useRef)(props.value);
+  const previousValueRef = (0,external_wp_element_namespaceObject.useRef)(props.value);
   const [draft, setDraft] = (0,external_wp_element_namespaceObject.useState)({});
   const value = draft.value !== undefined ? draft.value : props.value;
 
@@ -30556,8 +30708,8 @@ function useDraft(props) {
   (0,external_wp_element_namespaceObject.useLayoutEffect)(() => {
     const {
       current: previousValue
-    } = refPreviousValue;
-    refPreviousValue.current = props.value;
+    } = previousValueRef;
+    previousValueRef.current = props.value;
     if (draft.value !== undefined && !draft.isStale) {
       setDraft({
         ...draft,
@@ -30804,8 +30956,8 @@ function useInputControlStateReducer(stateReducer = initialStateReducer, initial
   const pressUp = createKeyEvent(PRESS_UP);
   const pressDown = createKeyEvent(PRESS_DOWN);
   const pressEnter = createKeyEvent(PRESS_ENTER);
-  const currentState = (0,external_wp_element_namespaceObject.useRef)(state);
-  const refProps = (0,external_wp_element_namespaceObject.useRef)({
+  const currentStateRef = (0,external_wp_element_namespaceObject.useRef)(state);
+  const refPropsRef = (0,external_wp_element_namespaceObject.useRef)({
     value: initialState.value,
     onChangeHandler
   });
@@ -30813,8 +30965,8 @@ function useInputControlStateReducer(stateReducer = initialStateReducer, initial
   // Freshens refs to props and state so that subsequent effects have access
   // to their latest values without their changes causing effect runs.
   (0,external_wp_element_namespaceObject.useLayoutEffect)(() => {
-    currentState.current = state;
-    refProps.current = {
+    currentStateRef.current = state;
+    refPropsRef.current = {
       value: initialState.value,
       onChangeHandler
     };
@@ -30822,17 +30974,17 @@ function useInputControlStateReducer(stateReducer = initialStateReducer, initial
 
   // Propagates the latest state through onChange.
   (0,external_wp_element_namespaceObject.useLayoutEffect)(() => {
-    if (currentState.current._event !== undefined && state.value !== refProps.current.value && !state.isDirty) {
+    if (currentStateRef.current._event !== undefined && state.value !== refPropsRef.current.value && !state.isDirty) {
       var _state$value;
-      refProps.current.onChangeHandler((_state$value = state.value) !== null && _state$value !== void 0 ? _state$value : '', {
-        event: currentState.current._event
+      refPropsRef.current.onChangeHandler((_state$value = state.value) !== null && _state$value !== void 0 ? _state$value : '', {
+        event: currentStateRef.current._event
       });
     }
   }, [state.value, state.isDirty]);
 
   // Updates the state from props.
   (0,external_wp_element_namespaceObject.useLayoutEffect)(() => {
-    if (initialState.value !== currentState.current.value && !currentState.current.isDirty) {
+    if (initialState.value !== currentStateRef.current.value && !currentStateRef.current.isDirty) {
       var _initialState$value;
       dispatch({
         type: CONTROL,
@@ -31137,7 +31289,7 @@ function base_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have
  */
 
 
-const base_control_styles_Wrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
+const Wrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "ej5x27r4"
 } : 0)("font-family:", font('default.fontFamily'), ";font-size:", font('default.fontSize'), ";", boxSizingReset, ";" + ( true ? "" : 0));
 const deprecatedMarginField = ({
@@ -31178,6 +31330,7 @@ const StyledVisualLabel = /*#__PURE__*/emotion_styled_base_browser_esm("span",  
  */
 
 
+
 /**
  * Internal dependencies
  */
@@ -31187,33 +31340,10 @@ const StyledVisualLabel = /*#__PURE__*/emotion_styled_base_browser_esm("span",  
 
 
 
-
-/**
- * `BaseControl` is a component used to generate labels and help text for components handling user inputs.
- *
- * ```jsx
- * import { BaseControl, useBaseControlProps } from '@wordpress/components';
- *
- * // Render a `BaseControl` for a textarea input
- * const MyCustomTextareaControl = ({ children, ...baseProps }) => (
- * 	// `useBaseControlProps` is a convenience hook to get the props for the `BaseControl`
- * 	// and the inner control itself. Namely, it takes care of generating a unique `id`,
- * 	// properly associating it with the `label` and `help` elements.
- * 	const { baseControlProps, controlProps } = useBaseControlProps( baseProps );
- *
- * 	return (
- * 		<BaseControl { ...baseControlProps } __nextHasNoMarginBottom={ true }>
- * 			<textarea { ...controlProps }>
- * 			  { children }
- * 			</textarea>
- * 		</BaseControl>
- * 	);
- * );
- * ```
- */
 const UnconnectedBaseControl = props => {
   const {
     __nextHasNoMarginBottom = false,
+    __associatedWPComponentName = 'BaseControl',
     id,
     label,
     hideLabelFromVision = false,
@@ -31221,7 +31351,14 @@ const UnconnectedBaseControl = props => {
     className,
     children
   } = useContextSystem(props, 'BaseControl');
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(base_control_styles_Wrapper, {
+  if (!__nextHasNoMarginBottom) {
+    external_wp_deprecated_default()(`Bottom margin styles for wp.components.${__associatedWPComponentName}`, {
+      since: '6.7',
+      version: '7.0',
+      hint: 'Set the `__nextHasNoMarginBottom` prop to true to start opting into the new styles, which will become the default in a future version.'
+    });
+  }
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(Wrapper, {
     className: className,
     children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(StyledField, {
       className: "components-base-control__field"
@@ -31250,24 +31387,6 @@ const UnconnectedBaseControl = props => {
     })]
   });
 };
-
-/**
- * `BaseControl.VisualLabel` is used to render a purely visual label inside a `BaseControl` component.
- *
- * It should only be used in cases where the children being rendered inside `BaseControl` are already accessibly labeled,
- * e.g., a button, but we want an additional visual label for that section equivalent to the labels `BaseControl` would
- * otherwise use if the `label` prop was passed.
- *
- * @example
- * import { BaseControl } from '@wordpress/components';
- *
- * const MyBaseControl = () => (
- * 	<BaseControl help="This button is already accessibly labeled.">
- * 		<BaseControl.VisualLabel>Author</BaseControl.VisualLabel>
- * 		<Button>Select an author</Button>
- * 	</BaseControl>
- * );
- */
 const UnforwardedVisualLabel = (props, ref) => {
   const {
     className,
@@ -31282,7 +31401,52 @@ const UnforwardedVisualLabel = (props, ref) => {
   });
 };
 const VisualLabel = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedVisualLabel);
+
+/**
+ * `BaseControl` is a component used to generate labels and help text for components handling user inputs.
+ *
+ * ```jsx
+ * import { BaseControl, useBaseControlProps } from '@wordpress/components';
+ *
+ * // Render a `BaseControl` for a textarea input
+ * const MyCustomTextareaControl = ({ children, ...baseProps }) => (
+ * 	// `useBaseControlProps` is a convenience hook to get the props for the `BaseControl`
+ * 	// and the inner control itself. Namely, it takes care of generating a unique `id`,
+ * 	// properly associating it with the `label` and `help` elements.
+ * 	const { baseControlProps, controlProps } = useBaseControlProps( baseProps );
+ *
+ * 	return (
+ * 		<BaseControl { ...baseControlProps } __nextHasNoMarginBottom>
+ * 			<textarea { ...controlProps }>
+ * 			  { children }
+ * 			</textarea>
+ * 		</BaseControl>
+ * 	);
+ * );
+ * ```
+ */
 const BaseControl = Object.assign(contextConnectWithoutRef(UnconnectedBaseControl, 'BaseControl'), {
+  /**
+   * `BaseControl.VisualLabel` is used to render a purely visual label inside a `BaseControl` component.
+   *
+   * It should only be used in cases where the children being rendered inside `BaseControl` are already accessibly labeled,
+   * e.g., a button, but we want an additional visual label for that section equivalent to the labels `BaseControl` would
+   * otherwise use if the `label` prop was passed.
+   *
+   * ```jsx
+   * import { BaseControl } from '@wordpress/components';
+   *
+   * const MyBaseControl = () => (
+   * 	<BaseControl
+   * 		__nextHasNoMarginBottom
+   * 		help="This button is already accessibly labeled."
+   * 	>
+   * 		<BaseControl.VisualLabel>Author</BaseControl.VisualLabel>
+   * 		<Button>Select an author</Button>
+   * 	</BaseControl>
+   * );
+   * ```
+   */
   VisualLabel
 });
 /* harmony default export */ const base_control = (BaseControl);
@@ -31376,8 +31540,8 @@ function UnforwardedInputControl(props, ref) {
         isPressEnterToChange: isPressEnterToChange,
         onKeyDown: onKeyDown,
         onValidate: onValidate,
-        paddingInlineStart: prefix ? space(2) : undefined,
-        paddingInlineEnd: suffix ? space(2) : undefined,
+        paddingInlineStart: prefix ? space(1) : undefined,
+        paddingInlineEnd: suffix ? space(1) : undefined,
         ref: ref,
         size: size,
         stateReducer: stateReducer,
@@ -32355,7 +32519,7 @@ const CIRCLE_SIZE = 32;
 const INNER_CIRCLE_SIZE = 6;
 const CircleRoot = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "eln3bjz3"
-} : 0)("border-radius:50%;border:", config_values.borderWidth, " solid ", COLORS.ui.border, ";box-sizing:border-box;cursor:grab;height:", CIRCLE_SIZE, "px;overflow:hidden;width:", CIRCLE_SIZE, "px;:active{cursor:grabbing;}" + ( true ? "" : 0));
+} : 0)("border-radius:", config_values.radiusRound, ";border:", config_values.borderWidth, " solid ", COLORS.ui.border, ";box-sizing:border-box;cursor:grab;height:", CIRCLE_SIZE, "px;overflow:hidden;width:", CIRCLE_SIZE, "px;:active{cursor:grabbing;}" + ( true ? "" : 0));
 const CircleIndicatorWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "eln3bjz2"
 } : 0)( true ? {
@@ -32364,7 +32528,7 @@ const CircleIndicatorWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div
 } : 0);
 const CircleIndicator = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "eln3bjz1"
-} : 0)("background:", COLORS.theme.accent, ";border-radius:50%;box-sizing:border-box;display:block;left:50%;top:4px;transform:translateX( -50% );position:absolute;width:", INNER_CIRCLE_SIZE, "px;height:", INNER_CIRCLE_SIZE, "px;" + ( true ? "" : 0));
+} : 0)("background:", COLORS.theme.accent, ";border-radius:", config_values.radiusRound, ";box-sizing:border-box;display:block;left:50%;top:4px;transform:translateX( -50% );position:absolute;width:", INNER_CIRCLE_SIZE, "px;height:", INNER_CIRCLE_SIZE, "px;" + ( true ? "" : 0));
 const UnitText = /*#__PURE__*/emotion_styled_base_browser_esm(text_component,  true ? {
   target: "eln3bjz0"
 } : 0)("color:", COLORS.theme.accent, ";margin-right:", space(3), ";" + ( true ? "" : 0));
@@ -32387,14 +32551,14 @@ function AngleCircle({
   ...props
 }) {
   const angleCircleRef = (0,external_wp_element_namespaceObject.useRef)(null);
-  const angleCircleCenter = (0,external_wp_element_namespaceObject.useRef)();
-  const previousCursorValue = (0,external_wp_element_namespaceObject.useRef)();
+  const angleCircleCenterRef = (0,external_wp_element_namespaceObject.useRef)();
+  const previousCursorValueRef = (0,external_wp_element_namespaceObject.useRef)();
   const setAngleCircleCenter = () => {
     if (angleCircleRef.current === null) {
       return;
     }
     const rect = angleCircleRef.current.getBoundingClientRect();
-    angleCircleCenter.current = {
+    angleCircleCenterRef.current = {
       x: rect.x + rect.width / 2,
       y: rect.y + rect.height / 2
     };
@@ -32409,11 +32573,11 @@ function AngleCircle({
     event.preventDefault();
     // Input control needs to lose focus and by preventDefault above, it doesn't.
     event.target?.focus();
-    if (angleCircleCenter.current !== undefined && onChange !== undefined) {
+    if (angleCircleCenterRef.current !== undefined && onChange !== undefined) {
       const {
         x: centerX,
         y: centerY
-      } = angleCircleCenter.current;
+      } = angleCircleCenterRef.current;
       onChange(getAngle(centerX, centerY, event.clientX, event.clientY));
     }
   };
@@ -32430,13 +32594,13 @@ function AngleCircle({
   });
   (0,external_wp_element_namespaceObject.useEffect)(() => {
     if (isDragging) {
-      if (previousCursorValue.current === undefined) {
-        previousCursorValue.current = document.body.style.cursor;
+      if (previousCursorValueRef.current === undefined) {
+        previousCursorValueRef.current = document.body.style.cursor;
       }
       document.body.style.cursor = 'grabbing';
     } else {
-      document.body.style.cursor = previousCursorValue.current || '';
-      previousCursorValue.current = undefined;
+      document.body.style.cursor = previousCursorValueRef.current || '';
+      previousCursorValueRef.current = undefined;
     }
   }, [isDragging]);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(CircleRoot, {
@@ -33505,15 +33669,15 @@ function StyleProvider(props) {
 
 function fill_useForceUpdate() {
   const [, setState] = (0,external_wp_element_namespaceObject.useState)({});
-  const mounted = (0,external_wp_element_namespaceObject.useRef)(true);
+  const mountedRef = (0,external_wp_element_namespaceObject.useRef)(true);
   (0,external_wp_element_namespaceObject.useEffect)(() => {
-    mounted.current = true;
+    mountedRef.current = true;
     return () => {
-      mounted.current = false;
+      mountedRef.current = false;
     };
   }, []);
   return () => {
-    if (mounted.current) {
+    if (mountedRef.current) {
       setState({});
     }
   };
@@ -34017,6 +34181,7 @@ const UnforwardedPopover = (props, forwardedRef) => {
     shift = false,
     inline = false,
     variant,
+    style: contentStyle,
     // Deprecated props
     __unstableForcePosition,
     anchorRef,
@@ -34185,6 +34350,7 @@ const UnforwardedPopover = (props, forwardedRef) => {
   } = (0,external_wp_element_namespaceObject.useMemo)(() => placementToMotionAnimationProps(computedPlacement), [computedPlacement]);
   const animationProps = shouldAnimate ? {
     style: {
+      ...contentStyle,
       ...motionInlineStyles,
       ...style
     },
@@ -34192,7 +34358,10 @@ const UnforwardedPopover = (props, forwardedRef) => {
     ...otherMotionProps
   } : {
     animate: false,
-    style
+    style: {
+      ...contentStyle,
+      ...style
+    }
   };
 
   // When Floating UI has finished positioning and Framer Motion has finished animating
@@ -35227,7 +35396,7 @@ const toggleGroupControl = ({
   isBlock,
   isDeselectable,
   size
-}) => /*#__PURE__*/emotion_react_browser_esm_css("background:", COLORS.ui.background, ";border:1px solid transparent;border-radius:", config_values.controlBorderRadius, ";display:inline-flex;min-width:0;position:relative;", toggleGroupControlSize(size), " ", !isDeselectable && enclosingBorders(isBlock), ";" + ( true ? "" : 0),  true ? "" : 0);
+}) => /*#__PURE__*/emotion_react_browser_esm_css("background:", COLORS.ui.background, ";border:1px solid transparent;border-radius:", config_values.radiusSmall, ";display:inline-flex;min-width:0;position:relative;", toggleGroupControlSize(size), " ", !isDeselectable && enclosingBorders(isBlock), ";" + ( true ? "" : 0),  true ? "" : 0);
 const enclosingBorders = isBlock => {
   const enclosingBorder = /*#__PURE__*/emotion_react_browser_esm_css("border-color:", COLORS.ui.border, ";" + ( true ? "" : 0),  true ? "" : 0);
   return /*#__PURE__*/emotion_react_browser_esm_css(isBlock && enclosingBorder, " &:hover{border-color:", COLORS.ui.borderHover, ";}&:focus-within{border-color:", COLORS.ui.borderFocus, ";box-shadow:", config_values.controlBoxShadowFocus, ";z-index:1;outline:2px solid transparent;outline-offset:-2px;}" + ( true ? "" : 0),  true ? "" : 0);
@@ -35258,7 +35427,7 @@ const VisualLabelWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  
   styles: "display:flex"
 } : 0);
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/radio/radio-store.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/radio/radio-store.js
 "use client";
 
 
@@ -35270,13 +35439,13 @@ const VisualLabelWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  
 
 // src/radio/radio-store.ts
 function createRadioStore(_a = {}) {
-  var props = _4R3V3JGP_objRest(_a, []);
+  var props = _3YLGPPWQ_objRest(_a, []);
   var _a2;
   const syncState = (_a2 = props.store) == null ? void 0 : _a2.getState();
-  const composite = createCompositeStore(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, props), {
+  const composite = createCompositeStore(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, props), {
     focusLoop: defaultValue(props.focusLoop, syncState == null ? void 0 : syncState.focusLoop, true)
   }));
-  const initialState = _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, composite.getState()), {
+  const initialState = _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, composite.getState()), {
     value: defaultValue(
       props.value,
       syncState == null ? void 0 : syncState.value,
@@ -35285,13 +35454,13 @@ function createRadioStore(_a = {}) {
     )
   });
   const radio = createStore(initialState, composite, props.store);
-  return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, composite), radio), {
+  return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, composite), radio), {
     setValue: (value) => radio.setState("value", value)
   });
 }
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/CLDRDBYI.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/DYHFBFEH.js
 "use client";
 
 
@@ -35304,27 +35473,27 @@ function useRadioStoreProps(store, update, props) {
   return store;
 }
 function useRadioStore(props = {}) {
-  const [store, update] = DTNGDFNU_useStore(createRadioStore, props);
+  const [store, update] = _2GXGCHW6_useStore(createRadioStore, props);
   return useRadioStoreProps(store, update, props);
 }
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/S6GWHPQZ.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/SOKV3TSX.js
 "use client";
 
 
 
 // src/radio/radio-context.tsx
-var S6GWHPQZ_ctx = createStoreContext(
+var SOKV3TSX_ctx = createStoreContext(
   [CompositeContextProvider],
   [CompositeScopedContextProvider]
 );
-var useRadioContext = S6GWHPQZ_ctx.useContext;
-var useRadioScopedContext = S6GWHPQZ_ctx.useScopedContext;
-var useRadioProviderContext = S6GWHPQZ_ctx.useProviderContext;
-var RadioContextProvider = S6GWHPQZ_ctx.ContextProvider;
-var RadioScopedContextProvider = S6GWHPQZ_ctx.ScopedContextProvider;
+var useRadioContext = SOKV3TSX_ctx.useContext;
+var useRadioScopedContext = SOKV3TSX_ctx.useScopedContext;
+var useRadioProviderContext = SOKV3TSX_ctx.useProviderContext;
+var RadioContextProvider = SOKV3TSX_ctx.ContextProvider;
+var RadioScopedContextProvider = SOKV3TSX_ctx.ScopedContextProvider;
 
 
 
@@ -35360,16 +35529,16 @@ var useRadioGroup = createHook(
       (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(RadioScopedContextProvider, { value: store, children: element }),
       [store]
     );
-    props = _4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadValues({
       role: "radiogroup"
     }, props);
-    props = useComposite(_4R3V3JGP_spreadValues({ store }, props));
+    props = useComposite(_3YLGPPWQ_spreadValues({ store }, props));
     return props;
   }
 );
 var RadioGroup = forwardRef2(function RadioGroup2(props) {
   const htmlProps = useRadioGroup(props);
-  return YIF72NQG_createElement(radio_group_TagName, htmlProps);
+  return HKOOKEDE_createElement(radio_group_TagName, htmlProps);
 });
 
 
@@ -35406,20 +35575,20 @@ const useToggleGroupControlContext = () => (0,external_wp_element_namespaceObjec
  * @param valueProp The received `value`
  */
 function useComputeControlledOrUncontrolledValue(valueProp) {
-  const isInitialRender = (0,external_wp_element_namespaceObject.useRef)(true);
+  const isInitialRenderRef = (0,external_wp_element_namespaceObject.useRef)(true);
   const prevValueProp = (0,external_wp_compose_namespaceObject.usePrevious)(valueProp);
-  const prevIsControlled = (0,external_wp_element_namespaceObject.useRef)(false);
+  const prevIsControlledRef = (0,external_wp_element_namespaceObject.useRef)(false);
   (0,external_wp_element_namespaceObject.useEffect)(() => {
-    if (isInitialRender.current) {
-      isInitialRender.current = false;
+    if (isInitialRenderRef.current) {
+      isInitialRenderRef.current = false;
     }
   }, []);
 
   // Assume the component is being used in controlled mode on the first re-render
   // that has a different `valueProp` from the previous render.
-  const isControlled = prevIsControlled.current || !isInitialRender.current && prevValueProp !== valueProp;
+  const isControlled = prevIsControlledRef.current || !isInitialRenderRef.current && prevValueProp !== valueProp;
   (0,external_wp_element_namespaceObject.useEffect)(() => {
-    prevIsControlled.current = isControlled;
+    prevIsControlledRef.current = isControlled;
   }, [isControlled]);
   if (isControlled) {
     // When in controlled mode, use `''` instead of `undefined`
@@ -35440,6 +35609,7 @@ function useComputeControlledOrUncontrolledValue(valueProp) {
 /**
  * External dependencies
  */
+
 
 
 
@@ -35488,7 +35658,7 @@ function UnforwardedToggleGroupControlAsRadioGroup({
     value,
     setValue: wrappedOnChangeProp
   });
-  const selectedValue = radio.useState('value');
+  const selectedValue = useStoreState(radio, 'value');
   const setValue = radio.setValue;
   const groupContextValue = (0,external_wp_element_namespaceObject.useMemo)(() => ({
     baseId,
@@ -35666,6 +35836,7 @@ function UnconnectedToggleGroupControl(props, forwardedRef) {
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(base_control, {
     help: help,
     __nextHasNoMarginBottom: __nextHasNoMarginBottom,
+    __associatedWPComponentName: "ToggleGroupControl",
     children: [!hideLabelFromVision && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(VisualLabelWrapper, {
       children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control.VisualLabel, {
         children: label
@@ -35724,7 +35895,7 @@ function UnconnectedToggleGroupControl(props, forwardedRef) {
 const ToggleGroupControl = contextConnect(UnconnectedToggleGroupControl, 'ToggleGroupControl');
 /* harmony default export */ const toggle_group_control_component = (ToggleGroupControl);
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/6MDCAUOE.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/K7FXVWIT.js
 "use client";
 
 
@@ -35736,10 +35907,9 @@ const ToggleGroupControl = contextConnect(UnconnectedToggleGroupControl, 'Toggle
 // src/radio/radio.tsx
 
 
-var _6MDCAUOE_TagName = "input";
+var K7FXVWIT_TagName = "input";
 function getIsChecked(value, storeValue) {
-  if (storeValue === void 0)
-    return;
+  if (storeValue === void 0) return;
   if (value != null && storeValue != null) {
     return storeValue === value;
   }
@@ -35769,26 +35939,21 @@ var useRadio = createHook(function useRadio2(_a) {
     (state) => checked != null ? checked : getIsChecked(value, state == null ? void 0 : state.value)
   );
   (0,external_React_.useEffect)(() => {
-    if (!id)
-      return;
-    if (!isChecked)
-      return;
+    if (!id) return;
+    if (!isChecked) return;
     const isActiveItem = (store == null ? void 0 : store.getState().activeId) === id;
-    if (isActiveItem)
-      return;
+    if (isActiveItem) return;
     store == null ? void 0 : store.setActiveId(id);
   }, [store, isChecked, id]);
   const onChangeProp = props.onChange;
-  const tagName = useTagName(ref, _6MDCAUOE_TagName);
+  const tagName = useTagName(ref, K7FXVWIT_TagName);
   const nativeRadio = isNativeRadio(tagName, props.type);
   const disabled = disabledFromProps(props);
   const [propertyUpdated, schedulePropertyUpdate] = useForceUpdate();
   (0,external_React_.useEffect)(() => {
     const element = ref.current;
-    if (!element)
-      return;
-    if (nativeRadio)
-      return;
+    if (!element) return;
+    if (nativeRadio) return;
     if (isChecked !== void 0) {
       element.checked = isChecked;
     }
@@ -35810,36 +35975,28 @@ var useRadio = createHook(function useRadio2(_a) {
       schedulePropertyUpdate();
     }
     onChangeProp == null ? void 0 : onChangeProp(event);
-    if (event.defaultPrevented)
-      return;
+    if (event.defaultPrevented) return;
     store == null ? void 0 : store.setValue(value);
   });
   const onClickProp = props.onClick;
   const onClick = useEvent((event) => {
     onClickProp == null ? void 0 : onClickProp(event);
-    if (event.defaultPrevented)
-      return;
-    if (nativeRadio)
-      return;
+    if (event.defaultPrevented) return;
+    if (nativeRadio) return;
     onChange(event);
   });
   const onFocusProp = props.onFocus;
   const onFocus = useEvent((event) => {
     onFocusProp == null ? void 0 : onFocusProp(event);
-    if (event.defaultPrevented)
-      return;
-    if (!nativeRadio)
-      return;
-    if (!store)
-      return;
+    if (event.defaultPrevented) return;
+    if (!nativeRadio) return;
+    if (!store) return;
     const { moves, activeId } = store.getState();
-    if (!moves)
-      return;
-    if (id && activeId !== id)
-      return;
+    if (!moves) return;
+    if (id && activeId !== id) return;
     onChange(event);
   });
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
     id,
     role: !nativeRadio ? "radio" : void 0,
     type: nativeRadio ? "radio" : void 0,
@@ -35850,11 +36007,11 @@ var useRadio = createHook(function useRadio2(_a) {
     onClick,
     onFocus
   });
-  props = useCompositeItem(_4R3V3JGP_spreadValues({
+  props = useCompositeItem(_3YLGPPWQ_spreadValues({
     store,
     clickOnEnter: !nativeRadio
   }, props));
-  return removeUndefinedValues(_4R3V3JGP_spreadValues({
+  return removeUndefinedValues(_3YLGPPWQ_spreadValues({
     name: nativeRadio ? name : void 0,
     value: nativeRadio ? value : void 0,
     checked: isChecked
@@ -35863,7 +36020,7 @@ var useRadio = createHook(function useRadio2(_a) {
 var Radio = memo2(
   forwardRef2(function Radio2(props) {
     const htmlProps = useRadio(props);
-    return YIF72NQG_createElement(_6MDCAUOE_TagName, htmlProps);
+    return HKOOKEDE_createElement(K7FXVWIT_TagName, htmlProps);
   })
 );
 
@@ -35895,7 +36052,7 @@ const buttonView = ({
   isIcon,
   isPressed,
   size
-}) => /*#__PURE__*/emotion_react_browser_esm_css("align-items:center;appearance:none;background:transparent;border:none;border-radius:", config_values.controlBorderRadius, ";color:", COLORS.gray[700], ";fill:currentColor;cursor:pointer;display:flex;font-family:inherit;height:100%;justify-content:center;line-height:100%;outline:none;padding:0 12px;position:relative;text-align:center;@media not ( prefers-reduced-motion ){transition:background ", config_values.transitionDurationFast, " linear,color ", config_values.transitionDurationFast, " linear,font-weight 60ms linear;}user-select:none;width:100%;z-index:2;&::-moz-focus-inner{border:0;}&[disabled]{opacity:0.4;cursor:default;}&:active{background:", config_values.toggleGroupControlBackgroundColor, ";}", isDeselectable && deselectable, " ", isIcon && isIconStyles({
+}) => /*#__PURE__*/emotion_react_browser_esm_css("align-items:center;appearance:none;background:transparent;border:none;border-radius:", config_values.radiusXSmall, ";color:", COLORS.gray[700], ";fill:currentColor;cursor:pointer;display:flex;font-family:inherit;height:100%;justify-content:center;line-height:100%;outline:none;padding:0 12px;position:relative;text-align:center;@media not ( prefers-reduced-motion ){transition:background ", config_values.transitionDurationFast, " linear,color ", config_values.transitionDurationFast, " linear,font-weight 60ms linear;}user-select:none;width:100%;z-index:2;&::-moz-focus-inner{border:0;}&[disabled]{opacity:0.4;cursor:default;}&:active{background:", config_values.toggleGroupControlBackgroundColor, ";}", isDeselectable && deselectable, " ", isIcon && isIconStyles({
   size
 }), " ", isPressed && pressed, ";" + ( true ? "" : 0),  true ? "" : 0);
 const pressed = /*#__PURE__*/emotion_react_browser_esm_css("color:", COLORS.white, ";&:active{background:transparent;}" + ( true ? "" : 0),  true ? "" : 0);
@@ -35912,7 +36069,7 @@ const isIconStyles = ({
   };
   return /*#__PURE__*/emotion_react_browser_esm_css("color:", COLORS.gray[900], ";height:", iconButtonSizes[size], ";aspect-ratio:1;padding-left:0;padding-right:0;" + ( true ? "" : 0),  true ? "" : 0);
 };
-const backdropView = /*#__PURE__*/emotion_react_browser_esm_css("background:", COLORS.gray[900], ";border-radius:", config_values.controlBorderRadius, ";position:absolute;inset:0;z-index:1;outline:2px solid transparent;outline-offset:-3px;" + ( true ? "" : 0),  true ? "" : 0);
+const backdropView = /*#__PURE__*/emotion_react_browser_esm_css("background:", COLORS.gray[900], ";border-radius:", config_values.radiusXSmall, ";position:absolute;inset:0;z-index:1;outline:2px solid transparent;outline-offset:-3px;" + ( true ? "" : 0),  true ? "" : 0);
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/toggle-group-control/toggle-group-control-option-base/component.js
 /**
@@ -36401,10 +36558,10 @@ const Dropdown = contextConnect(UnconnectedDropdown, 'Dropdown');
 
 
 
+
 function UnconnectedInputControlSuffixWrapper(props, forwardedRef) {
   const derivedProps = useContextSystem(props, 'InputControlSuffixWrapper');
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(spacer_component, {
-    marginBottom: 0,
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(PrefixSuffixWrapper, {
     ...derivedProps,
     ref: forwardedRef
   });
@@ -36515,10 +36672,10 @@ const sizePaddings = ({
   selectSize = 'default'
 }) => {
   const padding = {
-    default: 16,
-    small: 8,
-    compact: 8,
-    '__unstable-large': 16
+    default: config_values.controlPaddingX,
+    small: config_values.controlPaddingXSmall,
+    compact: config_values.controlPaddingXSmall,
+    '__unstable-large': config_values.controlPaddingX
   };
   if (!__next40pxDefaultSize) {
     padding.default = padding.compact;
@@ -36731,6 +36888,7 @@ function UnforwardedSelectControl(props, ref) {
     help: help,
     id: id,
     __nextHasNoMarginBottom: __nextHasNoMarginBottom,
+    __associatedWPComponentName: "SelectControl",
     children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(StyledInputBase, {
       className: classes,
       disabled: disabled,
@@ -36847,7 +37005,7 @@ const defaultOptions = {
  *
  * @return {[T | "", (nextState: T) => void]} The controlled value and the value setter.
  */
-function use_controlled_state_useControlledState(currentState, options = defaultOptions) {
+function useControlledState(currentState, options = defaultOptions) {
   const {
     initial,
     fallback
@@ -36879,7 +37037,7 @@ function use_controlled_state_useControlledState(currentState, options = default
 
   return [state, setState];
 }
-/* harmony default export */ const use_controlled_state = (use_controlled_state_useControlledState);
+/* harmony default export */ const use_controlled_state = (useControlledState);
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/range-control/utils.js
 /**
@@ -37009,7 +37167,7 @@ const railBackgroundColor = ({
 };
 const Rail = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
   target: "e1epgpqk10"
-} : 0)("background-color:", COLORS.gray[300], ";left:0;pointer-events:none;right:0;display:block;height:", railHeight, "px;position:absolute;margin-top:", (rangeHeightValue - railHeight) / 2, "px;top:0;border-radius:", railHeight, "px;", railBackgroundColor, ";" + ( true ? "" : 0));
+} : 0)("background-color:", COLORS.gray[300], ";left:0;pointer-events:none;right:0;display:block;height:", railHeight, "px;position:absolute;margin-top:", (rangeHeightValue - railHeight) / 2, "px;top:0;border-radius:", config_values.radiusFull, ";", railBackgroundColor, ";" + ( true ? "" : 0));
 const trackBackgroundColor = ({
   disabled,
   trackColor
@@ -37024,7 +37182,7 @@ const trackBackgroundColor = ({
 };
 const Track = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
   target: "e1epgpqk9"
-} : 0)("background-color:currentColor;border-radius:", railHeight, "px;height:", railHeight, "px;pointer-events:none;display:block;position:absolute;margin-top:", (rangeHeightValue - railHeight) / 2, "px;top:0;", trackBackgroundColor, ";" + ( true ? "" : 0));
+} : 0)("background-color:currentColor;border-radius:", config_values.radiusFull, ";height:", railHeight, "px;pointer-events:none;display:block;position:absolute;margin-top:", (rangeHeightValue - railHeight) / 2, "px;top:0;", trackBackgroundColor, ";" + ( true ? "" : 0));
 const MarksWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
   target: "e1epgpqk8"
 } : 0)( true ? {
@@ -37045,7 +37203,7 @@ const markFill = ({
 };
 const Mark = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
   target: "e1epgpqk7"
-} : 0)("height:", thumbSize, "px;left:0;position:absolute;top:-4px;width:1px;", markFill, ";" + ( true ? "" : 0));
+} : 0)("height:", thumbSize, "px;left:0;position:absolute;top:9px;width:1px;", markFill, ";" + ( true ? "" : 0));
 const markLabelFill = ({
   isFilled
 }) => {
@@ -37055,7 +37213,7 @@ const markLabelFill = ({
 };
 const MarkLabel = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
   target: "e1epgpqk6"
-} : 0)("color:", COLORS.gray[300], ";font-size:11px;position:absolute;top:12px;white-space:nowrap;", rtl({
+} : 0)("color:", COLORS.gray[300], ";font-size:11px;position:absolute;top:22px;white-space:nowrap;", rtl({
   left: 0
 }), ";", rtl({
   transform: 'translateX( -50% )'
@@ -37067,7 +37225,7 @@ const thumbColor = ({
 }) => disabled ? /*#__PURE__*/emotion_react_browser_esm_css("background-color:", COLORS.gray[400], ";" + ( true ? "" : 0),  true ? "" : 0) : /*#__PURE__*/emotion_react_browser_esm_css("background-color:", COLORS.theme.accent, ";" + ( true ? "" : 0),  true ? "" : 0);
 const ThumbWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
   target: "e1epgpqk5"
-} : 0)("align-items:center;display:flex;height:", thumbSize, "px;justify-content:center;margin-top:", (rangeHeightValue - thumbSize) / 2, "px;outline:0;pointer-events:none;position:absolute;top:0;user-select:none;width:", thumbSize, "px;border-radius:50%;", thumbColor, ";", rtl({
+} : 0)("align-items:center;display:flex;height:", thumbSize, "px;justify-content:center;margin-top:", (rangeHeightValue - thumbSize) / 2, "px;outline:0;pointer-events:none;position:absolute;top:0;user-select:none;width:", thumbSize, "px;border-radius:", config_values.radiusRound, ";", thumbColor, ";", rtl({
   marginLeft: -10
 }), ";", rtl({
   transform: 'translateX( 4.5px )'
@@ -37077,11 +37235,11 @@ const ThumbWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true 
 const thumbFocus = ({
   isFocused
 }) => {
-  return isFocused ? /*#__PURE__*/emotion_react_browser_esm_css("&::before{content:' ';position:absolute;background-color:", COLORS.theme.accent, ";opacity:0.4;border-radius:50%;height:", thumbSize + 8, "px;width:", thumbSize + 8, "px;top:-4px;left:-4px;}" + ( true ? "" : 0),  true ? "" : 0) : '';
+  return isFocused ? /*#__PURE__*/emotion_react_browser_esm_css("&::before{content:' ';position:absolute;background-color:", COLORS.theme.accent, ";opacity:0.4;border-radius:", config_values.radiusRound, ";height:", thumbSize + 8, "px;width:", thumbSize + 8, "px;top:-4px;left:-4px;}" + ( true ? "" : 0),  true ? "" : 0) : '';
 };
 const Thumb = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
   target: "e1epgpqk4"
-} : 0)("align-items:center;border-radius:50%;height:100%;outline:0;position:absolute;user-select:none;width:100%;", thumbColor, ";", thumbFocus, ";" + ( true ? "" : 0));
+} : 0)("align-items:center;border-radius:", config_values.radiusRound, ";height:100%;outline:0;position:absolute;user-select:none;width:100%;", thumbColor, ";", thumbFocus, ";" + ( true ? "" : 0));
 const InputRange = /*#__PURE__*/emotion_styled_base_browser_esm("input",  true ? {
   target: "e1epgpqk3"
 } : 0)("box-sizing:border-box;cursor:pointer;display:block;height:100%;left:0;margin:0 -", thumbSize / 2, "px;opacity:0;outline:none;position:absolute;right:0;top:0;width:calc( 100% + ", thumbSize, "px );" + ( true ? "" : 0));
@@ -37111,7 +37269,7 @@ const tooltipPosition = ({
 };
 const range_control_styles_Tooltip = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
   target: "e1epgpqk2"
-} : 0)("background:rgba( 0, 0, 0, 0.8 );border-radius:2px;color:white;display:inline-block;font-size:12px;min-width:32px;opacity:0;padding:4px 8px;pointer-events:none;position:absolute;text-align:center;user-select:none;line-height:1.4;@media not ( prefers-reduced-motion ){transition:opacity 120ms ease;}", tooltipShow, ";", tooltipPosition, ";", rtl({
+} : 0)("background:rgba( 0, 0, 0, 0.8 );border-radius:", config_values.radiusSmall, ";color:white;display:inline-block;font-size:12px;min-width:32px;opacity:0;padding:4px 8px;pointer-events:none;position:absolute;text-align:center;user-select:none;line-height:1.4;@media not ( prefers-reduced-motion ){transition:opacity 120ms ease;}", tooltipShow, ";", tooltipPosition, ";", rtl({
   transform: 'translateX(-50%)'
 }, {
   transform: 'translateX(50%)'
@@ -37407,6 +37565,23 @@ function useTooltipPosition({
 
 
 const range_control_noop = () => {};
+
+/**
+ * Computes the value that `RangeControl` should reset to when pressing
+ * the reset button.
+ */
+function computeResetValue({
+  resetFallbackValue,
+  initialPosition
+}) {
+  if (resetFallbackValue !== undefined) {
+    return !Number.isNaN(resetFallbackValue) ? resetFallbackValue : null;
+  }
+  if (initialPosition !== undefined) {
+    return !Number.isNaN(initialPosition) ? initialPosition : null;
+  }
+  return null;
+}
 function UnforwardedRangeControl(props, forwardedRef) {
   const {
     __nextHasNoMarginBottom = false,
@@ -37505,12 +37680,10 @@ function UnforwardedRangeControl(props, forwardedRef) {
     }
   };
   const handleOnReset = () => {
-    let resetValue = parseFloat(`${resetFallbackValue}`);
-    let onChangeResetValue = resetValue;
-    if (isNaN(resetValue)) {
-      resetValue = null;
-      onChangeResetValue = undefined;
-    }
+    // Reset to `resetFallbackValue` if defined, otherwise set internal value
+    // to `null` — which, if propagated to the `value` prop, will cause
+    // the value to be reset to the `initialPosition` prop if defined.
+    const resetValue = Number.isNaN(resetFallbackValue) ? null : resetFallbackValue !== null && resetFallbackValue !== void 0 ? resetFallbackValue : null;
     setValue(resetValue);
 
     /**
@@ -37526,7 +37699,7 @@ function UnforwardedRangeControl(props, forwardedRef) {
      * preserve the undefined callback argument, except when a
      * resetFallbackValue is defined.
      */
-    onChange(onChangeResetValue);
+    onChange(resetValue !== null && resetValue !== void 0 ? resetValue : undefined);
   };
   const handleShowTooltip = () => setShowTooltip(true);
   const handleHideTooltip = () => setShowTooltip(false);
@@ -37545,6 +37718,7 @@ function UnforwardedRangeControl(props, forwardedRef) {
   };
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control, {
     __nextHasNoMarginBottom: __nextHasNoMarginBottom,
+    __associatedWPComponentName: "RangeControl",
     className: classes,
     label: label,
     hideLabelFromVision: hideLabelFromVision,
@@ -37640,8 +37814,15 @@ function UnforwardedRangeControl(props, forwardedRef) {
           className: "components-range-control__reset"
           // If the RangeControl itself is disabled, the reset button shouldn't be in the tab sequence.
           ,
-          accessibleWhenDisabled: !disabled,
-          disabled: disabled || value === undefined,
+          accessibleWhenDisabled: !disabled
+          // The reset button should be disabled if RangeControl itself is disabled,
+          // or if the current `value` is equal to the value that would be currently
+          // assigned when clicking the button.
+          ,
+          disabled: disabled || value === computeResetValue({
+            resetFallbackValue,
+            initialPosition
+          }),
           variant: "secondary",
           size: "small",
           onClick: handleOnReset,
@@ -37723,7 +37904,7 @@ const ColorInputWrapper = /*#__PURE__*/emotion_styled_base_browser_esm(flex_comp
 } : 0)("padding-top:", space(4), ";padding-left:", space(4), ";padding-right:", space(3), ";padding-bottom:", space(5), ";" + ( true ? "" : 0));
 const ColorfulWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "ez9hsf41"
-} : 0)(boxSizingReset, ";width:216px;.react-colorful{display:flex;flex-direction:column;align-items:center;width:216px;height:auto;}.react-colorful__saturation{width:100%;border-radius:0;height:216px;margin-bottom:", space(4), ";border-bottom:none;}.react-colorful__hue,.react-colorful__alpha{width:184px;height:16px;border-radius:16px;margin-bottom:", space(2), ";}.react-colorful__pointer{height:16px;width:16px;border:none;box-shadow:0 0 2px 0 rgba( 0, 0, 0, 0.25 );outline:2px solid transparent;}.react-colorful__pointer-fill{box-shadow:inset 0 0 0 ", config_values.borderWidthFocus, " #fff;}", interactiveHueStyles, ";" + ( true ? "" : 0));
+} : 0)(boxSizingReset, ";width:216px;.react-colorful{display:flex;flex-direction:column;align-items:center;width:216px;height:auto;}.react-colorful__saturation{width:100%;border-radius:0;height:216px;margin-bottom:", space(4), ";border-bottom:none;}.react-colorful__hue,.react-colorful__alpha{width:184px;height:16px;border-radius:", config_values.radiusFull, ";margin-bottom:", space(2), ";}.react-colorful__pointer{height:16px;width:16px;border:none;box-shadow:0 0 2px 0 rgba( 0, 0, 0, 0.25 );outline:2px solid transparent;}.react-colorful__pointer-fill{box-shadow:inset 0 0 0 ", config_values.borderWidthFocus, " #fff;}", interactiveHueStyles, ";" + ( true ? "" : 0));
 const CopyButton = /*#__PURE__*/emotion_styled_base_browser_esm(build_module_button,  true ? {
   target: "ez9hsf40"
 } : 0)("&&&&&{min-width:", space(6), ";padding:0;>svg{margin-right:0;}}" + ( true ? "" : 0));
@@ -37766,7 +37947,7 @@ const ColorCopyButton = props => {
     colorType
   } = props;
   const [copiedColor, setCopiedColor] = (0,external_wp_element_namespaceObject.useState)(null);
-  const copyTimer = (0,external_wp_element_namespaceObject.useRef)();
+  const copyTimerRef = (0,external_wp_element_namespaceObject.useRef)();
   const copyRef = (0,external_wp_compose_namespaceObject.useCopyToClipboard)(() => {
     switch (colorType) {
       case 'hsl':
@@ -37784,20 +37965,20 @@ const ColorCopyButton = props => {
         }
     }
   }, () => {
-    if (copyTimer.current) {
-      clearTimeout(copyTimer.current);
+    if (copyTimerRef.current) {
+      clearTimeout(copyTimerRef.current);
     }
     setCopiedColor(color.toHex());
-    copyTimer.current = setTimeout(() => {
+    copyTimerRef.current = setTimeout(() => {
       setCopiedColor(null);
-      copyTimer.current = undefined;
+      copyTimerRef.current = undefined;
     }, 3000);
   });
   (0,external_wp_element_namespaceObject.useEffect)(() => {
-    // Clear copyTimer on component unmount.
+    // Clear copyTimerRef on component unmount.
     return () => {
-      if (copyTimer.current) {
-        clearTimeout(copyTimer.current);
+      if (copyTimerRef.current) {
+        clearTimeout(copyTimerRef.current);
       }
     };
   }, []);
@@ -37814,11 +37995,49 @@ const ColorCopyButton = props => {
   });
 };
 
-;// CONCATENATED MODULE: ./packages/components/build-module/color-picker/input-with-slider.js
+;// CONCATENATED MODULE: ./packages/components/build-module/input-control/input-prefix-wrapper.js
+/**
+ * External dependencies
+ */
+
 /**
  * Internal dependencies
  */
 
+
+
+
+function UnconnectedInputControlPrefixWrapper(props, forwardedRef) {
+  const derivedProps = useContextSystem(props, 'InputControlPrefixWrapper');
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(PrefixSuffixWrapper, {
+    ...derivedProps,
+    isPrefix: true,
+    ref: forwardedRef
+  });
+}
+
+/**
+ * A convenience wrapper for the `prefix` when you want to apply
+ * standard padding in accordance with the size variant.
+ *
+ * ```jsx
+ * import {
+ *   __experimentalInputControl as InputControl,
+ *   __experimentalInputControlPrefixWrapper as InputControlPrefixWrapper,
+ * } from '@wordpress/components';
+ *
+ * <InputControl
+ *   prefix={<InputControlPrefixWrapper>@</InputControlPrefixWrapper>}
+ * />
+ * ```
+ */
+const InputControlPrefixWrapper = contextConnect(UnconnectedInputControlPrefixWrapper, 'InputControlPrefixWrapper');
+/* harmony default export */ const input_prefix_wrapper = (InputControlPrefixWrapper);
+
+;// CONCATENATED MODULE: ./packages/components/build-module/color-picker/input-with-slider.js
+/**
+ * Internal dependencies
+ */
 
 
 
@@ -37854,17 +38073,18 @@ const InputWithSlider = ({
       hideLabelFromVision: true,
       value: value,
       onChange: onNumberControlChange,
-      prefix: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(spacer_component, {
-        as: text_component,
-        paddingLeft: space(4),
-        color: COLORS.theme.accent,
-        lineHeight: 1,
-        children: abbreviation
+      prefix: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(input_prefix_wrapper, {
+        children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(text_component, {
+          color: COLORS.theme.accent,
+          lineHeight: 1,
+          children: abbreviation
+        })
       }),
       spinControls: "none",
       size: "__unstable-large"
     }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(styles_RangeControl, {
       __nextHasNoMarginBottom: true,
+      __next40pxDefaultSize: true,
       label: label,
       hideLabelFromVision: true,
       min: min,
@@ -38082,7 +38302,6 @@ const HslInput = ({
 
 
 
-
 const HexInput = ({
   color,
   onChange,
@@ -38109,12 +38328,12 @@ const HexInput = ({
     };
   };
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(InputControl, {
-    prefix: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(spacer_component, {
-      as: text_component,
-      marginLeft: space(4),
-      color: COLORS.theme.accent,
-      lineHeight: 1,
-      children: "#"
+    prefix: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(input_prefix_wrapper, {
+      children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(text_component, {
+        color: COLORS.theme.accent,
+        lineHeight: 1,
+        children: "#"
+      })
     }),
     value: color.toHex().slice(1).toUpperCase(),
     onChange: handleChange,
@@ -38457,21 +38676,27 @@ function UnforwardedOptionAsOption(props, forwardedRef) {
   const {
     id,
     isSelected,
-    compositeStore,
     ...additionalProps
   } = props;
-  const activeId = compositeStore.useState('activeId');
-  if (isSelected && !activeId) {
-    compositeStore.setActiveId(id);
-  }
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(CompositeItem, {
+  const {
+    setActiveId,
+    activeId
+  } = (0,external_wp_element_namespaceObject.useContext)(CircularOptionPickerContext);
+  (0,external_wp_element_namespaceObject.useEffect)(() => {
+    if (isSelected && !activeId) {
+      // The setTimeout call is necessary to make sure that this update
+      // doesn't get overridden by `Composite`'s internal logic, which picks
+      // an initial active item if one is not specifically set.
+      window.setTimeout(() => setActiveId?.(id), 0);
+    }
+  }, [isSelected, setActiveId, activeId, id]);
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Composite.Item, {
     render: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(build_module_button, {
       ...additionalProps,
       role: "option",
       "aria-selected": !!isSelected,
       ref: forwardedRef
     }),
-    store: compositeStore,
     id: id
   });
 }
@@ -38485,7 +38710,7 @@ function Option({
 }) {
   const {
     baseId,
-    compositeStore
+    setActiveId
   } = (0,external_wp_element_namespaceObject.useContext)(CircularOptionPickerContext);
   const id = (0,external_wp_compose_namespaceObject.useInstanceId)(Option, baseId || 'components-circular-option-picker__option');
   const commonProps = {
@@ -38493,9 +38718,9 @@ function Option({
     className: 'components-circular-option-picker__option',
     ...additionalProps
   };
-  const optionControl = compositeStore ? /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(OptionAsOption, {
+  const isListbox = setActiveId !== undefined;
+  const optionControl = isListbox ? /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(OptionAsOption, {
     ...commonProps,
-    compositeStore: compositeStore,
     isSelected: isSelected
   }) : /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(OptionAsButton, {
     ...commonProps,
@@ -38596,6 +38821,7 @@ function ButtonAction({
 
 
 
+
 /**
  * Internal dependencies
  */
@@ -38662,23 +38888,24 @@ function ListboxCircularOptionPicker(props) {
     children,
     ...additionalProps
   } = props;
-  const compositeStore = useCompositeStore({
-    focusLoop: loop,
-    rtl: (0,external_wp_i18n_namespaceObject.isRTL)()
-  });
-  const compositeContext = {
+  const [activeId, setActiveId] = (0,external_wp_element_namespaceObject.useState)(undefined);
+  const contextValue = (0,external_wp_element_namespaceObject.useMemo)(() => ({
     baseId,
-    compositeStore
-  };
+    activeId,
+    setActiveId
+  }), [baseId, activeId, setActiveId]);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)("div", {
     className: className,
     children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(CircularOptionPickerContext.Provider, {
-      value: compositeContext,
+      value: contextValue,
       children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Composite, {
         ...additionalProps,
         id: baseId,
-        store: compositeStore,
+        focusLoop: loop,
+        rtl: (0,external_wp_i18n_namespaceObject.isRTL)(),
         role: "listbox",
+        activeId: activeId,
+        setActiveId: setActiveId,
         children: options
       }), children, actions]
     })
@@ -38692,13 +38919,14 @@ function ButtonsCircularOptionPicker(props) {
     baseId,
     ...additionalProps
   } = props;
+  const contextValue = (0,external_wp_element_namespaceObject.useMemo)(() => ({
+    baseId
+  }), [baseId]);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)("div", {
     ...additionalProps,
     id: baseId,
     children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(CircularOptionPickerContext.Provider, {
-      value: {
-        baseId
-      },
+      value: contextValue,
       children: [options, children, actions]
     })
   });
@@ -39043,12 +39271,24 @@ const DropdownContentWrapper = contextConnect(UnconnectedDropdownContentWrapper,
  */
 
 k([names, a11y]);
+
+/**
+ * Checks if a color value is a simple CSS color.
+ *
+ * @param value The color value to check.
+ * @return A boolean indicating whether the color value is a simple CSS color.
+ */
+const isSimpleCSSColor = value => {
+  const valueIsCssVariable = /var\(/.test(value !== null && value !== void 0 ? value : '');
+  const valueIsColorMix = /color-mix\(/.test(value !== null && value !== void 0 ? value : '');
+  return !valueIsCssVariable && !valueIsColorMix;
+};
 const extractColorNameFromCurrentValue = (currentValue, colors = [], showMultiplePalettes = false) => {
   if (!currentValue) {
     return '';
   }
-  const currentValueIsCssVariable = /^var\(/.test(currentValue);
-  const normalizedCurrentValue = currentValueIsCssVariable ? currentValue : w(currentValue).toHex();
+  const currentValueIsSimpleColor = currentValue ? isSimpleCSSColor(currentValue) : false;
+  const normalizedCurrentValue = currentValueIsSimpleColor ? w(currentValue).toHex() : currentValue;
 
   // Normalize format of `colors` to simplify the following loop
 
@@ -39062,7 +39302,7 @@ const extractColorNameFromCurrentValue = (currentValue, colors = [], showMultipl
       name: colorName,
       color: colorValue
     } of paletteColors) {
-      const normalizedColorValue = currentValueIsCssVariable ? colorValue : w(colorValue).toHex();
+      const normalizedColorValue = currentValueIsSimpleColor ? w(colorValue).toHex() : colorValue;
       if (normalizedCurrentValue === normalizedColorValue) {
         return colorName;
       }
@@ -39088,8 +39328,7 @@ const isMultiplePaletteArray = arr => {
  * @return The background color value computed from a element.
  */
 const normalizeColorValue = (value, element) => {
-  const currentValueIsCssVariable = /^var\(/.test(value !== null && value !== void 0 ? value : '');
-  if (!currentValueIsCssVariable || element === null) {
+  if (!value || !element || isSimpleCSSColor(value)) {
     return value;
   }
   const {
@@ -39425,7 +39664,7 @@ const baseUnitLabelStyles = ({
 }) => {
   const sizes = {
     small: /*#__PURE__*/emotion_react_browser_esm_css("box-sizing:border-box;padding:2px 1px;width:20px;font-size:8px;line-height:1;letter-spacing:-0.5px;text-transform:uppercase;text-align-last:center;&:not( :disabled ){color:", COLORS.gray[800], ";}" + ( true ? "" : 0),  true ? "" : 0),
-    default: /*#__PURE__*/emotion_react_browser_esm_css("box-sizing:border-box;min-width:24px;max-width:48px;height:24px;margin-inline-end:", space(2), ";padding:", space(1), ";font-size:13px;line-height:1;text-align-last:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;&:not( :disabled ){color:", COLORS.theme.accent, ";}" + ( true ? "" : 0),  true ? "" : 0)
+    default: /*#__PURE__*/emotion_react_browser_esm_css("box-sizing:border-box;min-width:24px;max-width:48px;height:24px;margin-inline-end:", space(2), ";padding:", space(1), ";font-size:13px;line-height:1;text-align-last:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;field-sizing:content;&:not( :disabled ){color:", COLORS.theme.accent, ";}" + ( true ? "" : 0),  true ? "" : 0)
   };
   return sizes[selectSize];
 };
@@ -39440,13 +39679,13 @@ const unitSelectSizes = ({
       borderTopLeftRadius: 0,
       borderBottomLeftRadius: 0
     })(), " &:not(:disabled):hover{background-color:", COLORS.gray[100], ";}&:focus{border:1px solid ", COLORS.ui.borderFocus, ";box-shadow:inset 0 0 0 ", config_values.borderWidth + ' ' + COLORS.ui.borderFocus, ";outline-offset:0;outline:2px solid transparent;z-index:1;}" + ( true ? "" : 0),  true ? "" : 0),
-    default: /*#__PURE__*/emotion_react_browser_esm_css("display:flex;justify-content:center;align-items:center;&:where( :not( :disabled ) ):hover{box-shadow:inset 0 0 0 ", config_values.borderWidth + ' ' + COLORS.ui.borderFocus, ";outline:", config_values.borderWidth, " solid transparent;}&:focus{box-shadow:0 0 0 ", config_values.borderWidthFocus + ' ' + COLORS.ui.borderFocus, ";outline:", config_values.borderWidthFocus, " solid transparent;}" + ( true ? "" : 0),  true ? "" : 0)
+    default: /*#__PURE__*/emotion_react_browser_esm_css("display:flex;justify-content:center;align-items:center;&:where( :not( :disabled ) ):hover{box-shadow:0 0 0 ", config_values.borderWidth + ' ' + COLORS.ui.borderFocus, ";outline:", config_values.borderWidth, " solid transparent;}&:focus{box-shadow:0 0 0 ", config_values.borderWidthFocus + ' ' + COLORS.ui.borderFocus, ";outline:", config_values.borderWidthFocus, " solid transparent;}" + ( true ? "" : 0),  true ? "" : 0)
   };
   return sizes[selectSize];
 };
 const UnitSelect = /*#__PURE__*/emotion_styled_base_browser_esm("select",  true ? {
   target: "e1bagdl30"
-} : 0)("&&&{appearance:none;background:transparent;border-radius:2px;border:none;display:block;outline:none;margin:0;min-height:auto;font-family:inherit;", baseUnitLabelStyles, ";", unitSelectSizes, ";&:not( :disabled ){cursor:pointer;}}" + ( true ? "" : 0));
+} : 0)("&&&{appearance:none;background:transparent;border-radius:", config_values.radiusXSmall, ";border:none;display:block;outline:none;margin:0;min-height:auto;font-family:inherit;", baseUnitLabelStyles, ";", unitSelectSizes, ";&:not( :disabled ){cursor:pointer;}}" + ( true ? "" : 0));
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/border-control/styles.js
 /**
@@ -39491,7 +39730,7 @@ const colorIndicatorWrapper = (border, size) => {
   const {
     style
   } = border || {};
-  return /*#__PURE__*/emotion_react_browser_esm_css("border-radius:9999px;border:2px solid transparent;", style ? colorIndicatorBorder(border) : undefined, " width:", size === '__unstable-large' ? '24px' : '22px', ";height:", size === '__unstable-large' ? '24px' : '22px', ";padding:", size === '__unstable-large' ? '2px' : '1px', ";&>span{height:", space(4), ";width:", space(4), ";background:linear-gradient(\n\t\t\t\t-45deg,\n\t\t\t\ttransparent 48%,\n\t\t\t\trgb( 0 0 0 / 20% ) 48%,\n\t\t\t\trgb( 0 0 0 / 20% ) 52%,\n\t\t\t\ttransparent 52%\n\t\t\t);}" + ( true ? "" : 0),  true ? "" : 0);
+  return /*#__PURE__*/emotion_react_browser_esm_css("border-radius:", config_values.radiusFull, ";border:2px solid transparent;", style ? colorIndicatorBorder(border) : undefined, " width:", size === '__unstable-large' ? '24px' : '22px', ";height:", size === '__unstable-large' ? '24px' : '22px', ";padding:", size === '__unstable-large' ? '2px' : '1px', ";&>span{height:", space(4), ";width:", space(4), ";background:linear-gradient(\n\t\t\t\t-45deg,\n\t\t\t\ttransparent 48%,\n\t\t\t\trgb( 0 0 0 / 20% ) 48%,\n\t\t\t\trgb( 0 0 0 / 20% ) 52%,\n\t\t\t\ttransparent 52%\n\t\t\t);}" + ( true ? "" : 0),  true ? "" : 0);
 };
 
 // Must equal $color-palette-circle-size from:
@@ -40586,6 +40825,7 @@ function useBorderControl(props) {
 
 
 
+
 const BorderLabel = props => {
   const {
     label,
@@ -40642,19 +40882,23 @@ const UnconnectedBorderControl = (props, forwardedRef) => {
       spacing: 4,
       className: innerWrapperClassName,
       children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(unit_control, {
-        prefix: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(border_control_dropdown_component, {
-          border: border,
-          colors: colors,
-          __unstablePopoverProps: __unstablePopoverProps,
-          disableCustomColors: disableCustomColors,
-          enableAlpha: enableAlpha,
-          enableStyle: enableStyle,
-          isStyleSettable: isStyleSettable,
-          onChange: onBorderChange,
-          previousStyleSelection: previousStyleSelection,
-          showDropdownHeader: showDropdownHeader,
-          __experimentalIsRenderedInSidebar: __experimentalIsRenderedInSidebar,
-          size: size
+        prefix: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(spacer_component, {
+          marginRight: 1,
+          marginBottom: 0,
+          children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(border_control_dropdown_component, {
+            border: border,
+            colors: colors,
+            __unstablePopoverProps: __unstablePopoverProps,
+            disableCustomColors: disableCustomColors,
+            enableAlpha: enableAlpha,
+            enableStyle: enableStyle,
+            isStyleSettable: isStyleSettable,
+            onChange: onBorderChange,
+            previousStyleSelection: previousStyleSelection,
+            showDropdownHeader: showDropdownHeader,
+            __experimentalIsRenderedInSidebar: __experimentalIsRenderedInSidebar,
+            size: size
+          })
         }),
         label: (0,external_wp_i18n_namespaceObject.__)('Border width'),
         hideLabelFromVision: true,
@@ -43206,17 +43450,17 @@ function UnconnectedCardBody(props, forwardedRef) {
 const CardBody = contextConnect(UnconnectedCardBody, 'CardBody');
 /* harmony default export */ const card_body_component = (CardBody);
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/IX2MD5WD.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/LOI6GHIP.js
 "use client";
 
 
 
 // src/separator/separator.tsx
-var IX2MD5WD_TagName = "hr";
+var LOI6GHIP_TagName = "hr";
 var useSeparator = createHook(
   function useSeparator2(_a) {
     var _b = _a, { orientation = "horizontal" } = _b, props = __objRest(_b, ["orientation"]);
-    props = _4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadValues({
       role: "separator",
       "aria-orientation": orientation
     }, props);
@@ -43225,7 +43469,7 @@ var useSeparator = createHook(
 );
 var Separator = forwardRef2(function Separator2(props) {
   const htmlProps = useSeparator(props);
-  return YIF72NQG_createElement(IX2MD5WD_TagName, htmlProps);
+  return HKOOKEDE_createElement(LOI6GHIP_TagName, htmlProps);
 });
 
 
@@ -43690,6 +43934,7 @@ function CheckboxControl(props) {
   const onChangeValue = event => onChange(event.target.checked);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control, {
     __nextHasNoMarginBottom: __nextHasNoMarginBottom,
+    __associatedWPComponentName: "CheckboxControl",
     label: heading,
     id: id,
     help: help && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)("span", {
@@ -43763,19 +44008,19 @@ function ClipboardButton({
     since: '5.8',
     alternative: 'wp.compose.useCopyToClipboard'
   });
-  const timeoutId = (0,external_wp_element_namespaceObject.useRef)();
+  const timeoutIdRef = (0,external_wp_element_namespaceObject.useRef)();
   const ref = (0,external_wp_compose_namespaceObject.useCopyToClipboard)(text, () => {
     onCopy();
-    if (timeoutId.current) {
-      clearTimeout(timeoutId.current);
+    if (timeoutIdRef.current) {
+      clearTimeout(timeoutIdRef.current);
     }
     if (onFinishCopy) {
-      timeoutId.current = setTimeout(() => onFinishCopy(), TIMEOUT);
+      timeoutIdRef.current = setTimeout(() => onFinishCopy(), TIMEOUT);
     }
   });
   (0,external_wp_element_namespaceObject.useEffect)(() => {
-    if (timeoutId.current) {
-      clearTimeout(timeoutId.current);
+    if (timeoutIdRef.current) {
+      clearTimeout(timeoutIdRef.current);
     }
   }, []);
   const classes = dist_clsx('components-clipboard-button', className);
@@ -43837,7 +44082,7 @@ const item =  true ? {
 } : 0;
 const bordered = /*#__PURE__*/emotion_react_browser_esm_css("border:1px solid ", config_values.surfaceBorderColor, ";" + ( true ? "" : 0),  true ? "" : 0);
 const separated = /*#__PURE__*/emotion_react_browser_esm_css(">*:not( marquee )>*{border-bottom:1px solid ", config_values.surfaceBorderColor, ";}>*:last-of-type>*:not( :focus ){border-bottom-color:transparent;}" + ( true ? "" : 0),  true ? "" : 0);
-const styles_borderRadius = config_values.controlBorderRadius;
+const styles_borderRadius = config_values.radiusSmall;
 const styles_spacedAround = /*#__PURE__*/emotion_react_browser_esm_css("border-radius:", styles_borderRadius, ";" + ( true ? "" : 0),  true ? "" : 0);
 const styles_rounded = /*#__PURE__*/emotion_react_browser_esm_css("border-radius:", styles_borderRadius, ";>*:first-of-type>*{border-top-left-radius:", styles_borderRadius, ";border-top-right-radius:", styles_borderRadius, ";}>*:last-of-type>*{border-bottom-left-radius:", styles_borderRadius, ";border-bottom-right-radius:", styles_borderRadius, ";}" + ( true ? "" : 0),  true ? "" : 0);
 const baseFontHeight = `calc(${config_values.fontSize} * ${config_values.fontLineHeightBase})`;
@@ -43853,9 +44098,9 @@ const paddingY = `calc((${config_values.controlHeight} - ${baseFontHeight} - 2px
 const paddingYSmall = `calc((${config_values.controlHeightSmall} - ${baseFontHeight} - 2px) / 2)`;
 const paddingYLarge = `calc((${config_values.controlHeightLarge} - ${baseFontHeight} - 2px) / 2)`;
 const itemSizes = {
-  small: /*#__PURE__*/emotion_react_browser_esm_css("padding:", paddingYSmall, " ", config_values.controlPaddingXSmall, ";" + ( true ? "" : 0),  true ? "" : 0),
-  medium: /*#__PURE__*/emotion_react_browser_esm_css("padding:", paddingY, " ", config_values.controlPaddingX, ";" + ( true ? "" : 0),  true ? "" : 0),
-  large: /*#__PURE__*/emotion_react_browser_esm_css("padding:", paddingYLarge, " ", config_values.controlPaddingXLarge, ";" + ( true ? "" : 0),  true ? "" : 0)
+  small: /*#__PURE__*/emotion_react_browser_esm_css("padding:", paddingYSmall, " ", config_values.controlPaddingXSmall, "px;" + ( true ? "" : 0),  true ? "" : 0),
+  medium: /*#__PURE__*/emotion_react_browser_esm_css("padding:", paddingY, " ", config_values.controlPaddingX, "px;" + ( true ? "" : 0),  true ? "" : 0),
+  large: /*#__PURE__*/emotion_react_browser_esm_css("padding:", paddingYLarge, " ", config_values.controlPaddingXLarge, "px;" + ( true ? "" : 0),  true ? "" : 0)
 };
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/item-group/item-group/hook.js
@@ -44221,9 +44466,9 @@ function ControlPoints({
   onStopControlPointChange,
   __experimentalIsRenderedInSidebar
 }) {
-  const controlPointMoveState = (0,external_wp_element_namespaceObject.useRef)();
+  const controlPointMoveStateRef = (0,external_wp_element_namespaceObject.useRef)();
   const onMouseMove = event => {
-    if (controlPointMoveState.current === undefined || gradientPickerDomRef.current === null) {
+    if (controlPointMoveStateRef.current === undefined || gradientPickerDomRef.current === null) {
       return;
     }
     const relativePosition = getHorizontalRelativeGradientPosition(event.clientX, gradientPickerDomRef.current);
@@ -44231,18 +44476,18 @@ function ControlPoints({
       initialPosition,
       index,
       significantMoveHappened
-    } = controlPointMoveState.current;
+    } = controlPointMoveStateRef.current;
     if (!significantMoveHappened && Math.abs(initialPosition - relativePosition) >= MINIMUM_SIGNIFICANT_MOVE) {
-      controlPointMoveState.current.significantMoveHappened = true;
+      controlPointMoveStateRef.current.significantMoveHappened = true;
     }
     onChange(updateControlPointPosition(controlPoints, index, relativePosition));
   };
   const cleanEventListeners = () => {
-    if (window && window.removeEventListener && controlPointMoveState.current && controlPointMoveState.current.listenersActivated) {
+    if (window && window.removeEventListener && controlPointMoveStateRef.current && controlPointMoveStateRef.current.listenersActivated) {
       window.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('mouseup', cleanEventListeners);
       onStopControlPointChange();
-      controlPointMoveState.current.listenersActivated = false;
+      controlPointMoveStateRef.current.listenersActivated = false;
     }
   };
 
@@ -44267,7 +44512,7 @@ function ControlPoints({
           onToggle
         }) => /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ControlPointButton, {
           onClick: () => {
-            if (controlPointMoveState.current && controlPointMoveState.current.significantMoveHappened) {
+            if (controlPointMoveStateRef.current && controlPointMoveStateRef.current.significantMoveHappened) {
               return;
             }
             if (isOpen) {
@@ -44279,7 +44524,7 @@ function ControlPoints({
           },
           onMouseDown: () => {
             if (window && window.addEventListener) {
-              controlPointMoveState.current = {
+              controlPointMoveStateRef.current = {
                 initialPosition,
                 index,
                 significantMoveHappened: false,
@@ -45711,7 +45956,7 @@ const IndicatorStyled = /*#__PURE__*/emotion_styled_base_browser_esm(color_indic
 } : 0)("&&{flex-shrink:0;width:", space(6), ";height:", space(6), ";}" + ( true ? "" : 0));
 const NameInputControl = /*#__PURE__*/emotion_styled_base_browser_esm(input_control,  true ? {
   target: "e1lpqc908"
-} : 0)(Container, "{background:", COLORS.gray[100], ";border-radius:", config_values.controlBorderRadius, ";", Input, Input, Input, Input, "{height:", space(8), ";}", BackdropUI, BackdropUI, BackdropUI, "{border-color:transparent;box-shadow:none;}}" + ( true ? "" : 0));
+} : 0)(Container, "{background:", COLORS.gray[100], ";border-radius:", config_values.radiusXSmall, ";", Input, Input, Input, Input, "{height:", space(8), ";}", BackdropUI, BackdropUI, BackdropUI, "{border-color:transparent;box-shadow:none;}}" + ( true ? "" : 0));
 const buttonStyleReset = ({
   as
 }) => {
@@ -45722,7 +45967,7 @@ const buttonStyleReset = ({
 };
 const PaletteItem = /*#__PURE__*/emotion_styled_base_browser_esm(component,  true ? {
   target: "e1lpqc907"
-} : 0)(buttonStyleReset, " padding-block:3px;padding-inline-start:", space(3), ";border:1px solid ", config_values.surfaceBorderColor, ";border-bottom-color:transparent;font-size:", font('default.fontSize'), ";&:focus-visible{border-color:transparent;box-shadow:0 0 0 var( --wp-admin-border-width-focus ) ", COLORS.theme.accent, ";outline:2px solid transparent;outline-offset:0;}border-top-left-radius:", config_values.controlBorderRadius, ";border-top-right-radius:", config_values.controlBorderRadius, ";&+&{border-top-left-radius:0;border-top-right-radius:0;}&:last-child{border-bottom-left-radius:", config_values.controlBorderRadius, ";border-bottom-right-radius:", config_values.controlBorderRadius, ";border-bottom-color:", config_values.surfaceBorderColor, ";}&.is-selected+&{border-top-color:transparent;}&.is-selected{border-color:", COLORS.theme.accent, ";}" + ( true ? "" : 0));
+} : 0)(buttonStyleReset, " padding-block:3px;padding-inline-start:", space(3), ";border:1px solid ", config_values.surfaceBorderColor, ";border-bottom-color:transparent;font-size:", font('default.fontSize'), ";&:focus-visible{border-color:transparent;box-shadow:0 0 0 var( --wp-admin-border-width-focus ) ", COLORS.theme.accent, ";outline:2px solid transparent;outline-offset:0;}border-top-left-radius:", config_values.radiusSmall, ";border-top-right-radius:", config_values.radiusSmall, ";&+&{border-top-left-radius:0;border-top-right-radius:0;}&:last-child{border-bottom-left-radius:", config_values.radiusSmall, ";border-bottom-right-radius:", config_values.radiusSmall, ";border-bottom-color:", config_values.surfaceBorderColor, ";}&.is-selected+&{border-top-color:transparent;}&.is-selected{border-color:", COLORS.theme.accent, ";}" + ( true ? "" : 0));
 const NameContainer = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "e1lpqc906"
 } : 0)("line-height:", space(8), ";margin-left:", space(2), ";margin-right:", space(2), ";white-space:nowrap;overflow:hidden;" + ( true ? "" : 0));
@@ -45953,9 +46198,9 @@ function PaletteEditListView({
   addColorRef
 }) {
   // When unmounting the component if there are empty elements (the user did not complete the insertion) clean them.
-  const elementsReference = (0,external_wp_element_namespaceObject.useRef)();
+  const elementsReferenceRef = (0,external_wp_element_namespaceObject.useRef)();
   (0,external_wp_element_namespaceObject.useEffect)(() => {
-    elementsReference.current = elements;
+    elementsReferenceRef.current = elements;
   }, [elements]);
   const debounceOnChange = (0,external_wp_compose_namespaceObject.useDebounce)(onChange, 100);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(v_stack_component, {
@@ -46655,6 +46900,7 @@ function ComboboxControl(props) {
     onFocusOutside: onFocusOutside,
     children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control, {
       __nextHasNoMarginBottom: __nextHasNoMarginBottom,
+      __associatedWPComponentName: "ComboboxControl",
       className: dist_clsx(className, 'components-combobox-control'),
       label: label,
       id: `components-form-token-input-${instanceId}`,
@@ -46717,70 +46963,52 @@ function ComboboxControl(props) {
 }
 /* harmony default export */ const combobox_control = (ComboboxControl);
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/7HVFURXT.js
-"use client";
-
-// src/group/group-label-context.tsx
-
-var GroupLabelContext = (0,external_React_.createContext)(void 0);
+;// CONCATENATED MODULE: ./packages/components/build-module/composite/store.js
+/**
+ * External dependencies
+ */
 
 
+/**
+ * Internal dependencies
+ */
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/2LDES2MP.js
-"use client";
-
-
-
-
-
-// src/group/group.tsx
-
-
-
-var _2LDES2MP_TagName = "div";
-var useGroup = createHook(
-  function useGroup2(props) {
-    const [labelId, setLabelId] = (0,external_React_.useState)();
-    props = useWrapElement(
-      props,
-      (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(GroupLabelContext.Provider, { value: setLabelId, children: element }),
-      []
-    );
-    props = _4R3V3JGP_spreadValues({
-      role: "group",
-      "aria-labelledby": labelId
-    }, props);
-    return removeUndefinedValues(props);
-  }
-);
-var Group = forwardRef2(function Group2(props) {
-  const htmlProps = useGroup(props);
-  return YIF72NQG_createElement(_2LDES2MP_TagName, htmlProps);
-});
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/PGA74ZJ4.js
-"use client";
-
-
-
-
-// src/composite/composite-group.tsx
-var PGA74ZJ4_TagName = "div";
-var useCompositeGroup = createHook(
-  function useCompositeGroup2(_a) {
-    var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
-    props = useGroup(props);
-    return props;
-  }
-);
-var CompositeGroup = forwardRef2(function CompositeGroup2(props) {
-  const htmlProps = useCompositeGroup(props);
-  return YIF72NQG_createElement(PGA74ZJ4_TagName, htmlProps);
-});
-
-
+// Props are already documented in TypeScript types.
+// eslint-disable-next-line jsdoc/require-param
+/**
+ * Creates a composite store.
+ *
+ * @example
+ * ```jsx
+ * import { Composite, useCompositeStore } from '@wordpress/components';
+ *
+ * const store = useCompositeStore();
+ * <Composite store={store}>
+ *   <Composite.Item>Item</Composite.Item>
+ *   <Composite.Item>Item</Composite.Item>
+ *   <Composite.Item>Item</Composite.Item>
+ * </Composite>
+ * ```
+ */
+function store_useCompositeStore({
+  focusLoop = false,
+  focusWrap = false,
+  focusShift = false,
+  virtualFocus = false,
+  orientation = 'both',
+  rtl = false,
+  ...props
+} = {}) {
+  return useCompositeStore({
+    focusLoop,
+    focusWrap,
+    focusShift,
+    virtualFocus,
+    orientation,
+    rtl,
+    ...props
+  });
+}
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/composite/legacy/index.js
 /**
@@ -46789,6 +47017,11 @@ var CompositeGroup = forwardRef2(function CompositeGroup2(props) {
  * all the keyboard navigation mechanisms to ensure that there's only one
  * tab stop for the whole Composite element. This means that it can behave as
  * a roving tabindex or aria-activedescendant container.
+ *
+ * This file aims at providing components that are as close as possible to the
+ * original `reakit`-based implementation (which was removed from the codebase),
+ * although it is recommended that consumers of the package switch to the stable,
+ * un-prefixed, `ariakit`-based version of `Composite`.
  *
  * @see https://ariakit.org/components/composite
  */
@@ -46801,6 +47034,7 @@ var CompositeGroup = forwardRef2(function CompositeGroup2(props) {
 /**
  * Internal dependencies
  */
+
 
 
 
@@ -46864,19 +47098,18 @@ const unproxiedCompositeGroup = (0,external_wp_element_namespaceObject.forwardRe
   role,
   ...props
 }, ref) => {
-  const Component = role === 'row' ? CompositeRow : CompositeGroup;
+  const Component = role === 'row' ? Composite.Row : Composite.Group;
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Component, {
     ref: ref,
     role: role,
     ...props
   });
 });
-unproxiedCompositeGroup.displayName = 'CompositeGroup';
 const legacy_Composite = proxyComposite(Composite, {
   baseId: 'id'
 });
 const legacy_CompositeGroup = proxyComposite(unproxiedCompositeGroup);
-const legacy_CompositeItem = proxyComposite(CompositeItem, {
+const legacy_CompositeItem = proxyComposite(Composite.Item, {
   focusable: 'accessibleWhenDisabled'
 });
 function useCompositeState(legacyStateOptions = {}) {
@@ -46893,7 +47126,7 @@ function useCompositeState(legacyStateOptions = {}) {
   } = legacyStateOptions;
   return {
     baseId: (0,external_wp_compose_namespaceObject.useInstanceId)(legacy_Composite, 'composite', baseId),
-    store: useCompositeStore({
+    store: store_useCompositeStore({
       defaultActiveId,
       rtl,
       orientation,
@@ -47064,9 +47297,9 @@ function UnforwardedModal(props, forwardedRef) {
   }, []);
 
   // Keeps a fresh ref for the subsequent effect.
-  const refOnRequestClose = (0,external_wp_element_namespaceObject.useRef)();
+  const onRequestCloseRef = (0,external_wp_element_namespaceObject.useRef)();
   (0,external_wp_element_namespaceObject.useEffect)(() => {
-    refOnRequestClose.current = onRequestClose;
+    onRequestCloseRef.current = onRequestClose;
   }, [onRequestClose]);
 
   // The list of `onRequestClose` callbacks of open (non-nested) Modals. Only
@@ -47079,10 +47312,10 @@ function UnforwardedModal(props, forwardedRef) {
   // onRequestClose for any prior and/or nested modals as applicable.
   (0,external_wp_element_namespaceObject.useEffect)(() => {
     // add this modal instance to the dismissers set
-    dismissers.add(refOnRequestClose);
+    dismissers.add(onRequestCloseRef);
     // request that all the other modals close themselves
     for (const dismisser of dismissers) {
-      if (dismisser !== refOnRequestClose) {
+      if (dismisser !== onRequestCloseRef) {
         dismisser.current?.();
       }
     }
@@ -47092,7 +47325,7 @@ function UnforwardedModal(props, forwardedRef) {
         dismisser.current?.();
       }
       // remove this modal instance from the dismissers set
-      dismissers.delete(refOnRequestClose);
+      dismissers.delete(onRequestCloseRef);
     };
   }, [dismissers, nestedDismissers]);
 
@@ -47454,7 +47687,7 @@ const UnconnectedConfirmDialog = (props, forwardedRef) => {
 const ConfirmDialog = contextConnect(UnconnectedConfirmDialog, 'ConfirmDialog');
 /* harmony default export */ const confirm_dialog_component = (ConfirmDialog);
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/3L4UCDWT.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/DWZ7E5TJ.js
 "use client";
 
 
@@ -47465,15 +47698,15 @@ const ConfirmDialog = contextConnect(UnconnectedConfirmDialog, 'ConfirmDialog');
 var ComboboxListRoleContext = (0,external_React_.createContext)(
   void 0
 );
-var _3L4UCDWT_ctx = createStoreContext(
+var DWZ7E5TJ_ctx = createStoreContext(
   [PopoverContextProvider, CompositeContextProvider],
   [PopoverScopedContextProvider, CompositeScopedContextProvider]
 );
-var useComboboxContext = _3L4UCDWT_ctx.useContext;
-var useComboboxScopedContext = _3L4UCDWT_ctx.useScopedContext;
-var useComboboxProviderContext = _3L4UCDWT_ctx.useProviderContext;
-var ComboboxContextProvider = _3L4UCDWT_ctx.ContextProvider;
-var ComboboxScopedContextProvider = _3L4UCDWT_ctx.ScopedContextProvider;
+var useComboboxContext = DWZ7E5TJ_ctx.useContext;
+var useComboboxScopedContext = DWZ7E5TJ_ctx.useScopedContext;
+var useComboboxProviderContext = DWZ7E5TJ_ctx.useProviderContext;
+var ComboboxContextProvider = DWZ7E5TJ_ctx.ContextProvider;
+var ComboboxScopedContextProvider = DWZ7E5TJ_ctx.ScopedContextProvider;
 var ComboboxItemValueContext = (0,external_React_.createContext)(
   void 0
 );
@@ -47481,7 +47714,7 @@ var ComboboxItemCheckedContext = (0,external_React_.createContext)(false);
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/select/select-store.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/select/select-store.js
 "use client";
 
 
@@ -47498,7 +47731,7 @@ var ComboboxItemCheckedContext = (0,external_React_.createContext)(false);
 function createSelectStore(_a = {}) {
   var _b = _a, {
     combobox
-  } = _b, props = _4R3V3JGP_objRest(_b, [
+  } = _b, props = _3YLGPPWQ_objRest(_b, [
     "combobox"
   ]);
   const store = mergeStore(
@@ -47517,7 +47750,7 @@ function createSelectStore(_a = {}) {
   );
   throwOnConflictingProps(props, store);
   const syncState = store.getState();
-  const composite = createCompositeStore(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, props), {
+  const composite = createCompositeStore(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, props), {
     store,
     virtualFocus: defaultValue(
       props.virtualFocus,
@@ -47541,7 +47774,7 @@ function createSelectStore(_a = {}) {
       "vertical"
     )
   }));
-  const popover = createPopoverStore(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, props), {
+  const popover = createPopoverStore(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, props), {
     store,
     placement: defaultValue(
       props.placement,
@@ -47550,7 +47783,7 @@ function createSelectStore(_a = {}) {
     )
   }));
   const initialValue = new String("");
-  const initialState = _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, composite.getState()), popover.getState()), {
+  const initialState = _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, composite.getState()), popover.getState()), {
     value: defaultValue(
       props.value,
       syncState.value,
@@ -47570,42 +47803,34 @@ function createSelectStore(_a = {}) {
   setup(
     select,
     () => sync(select, ["value", "items"], (state) => {
-      if (state.value !== initialValue)
-        return;
-      if (!state.items.length)
-        return;
+      if (state.value !== initialValue) return;
+      if (!state.items.length) return;
       const item = state.items.find(
         (item2) => !item2.disabled && item2.value != null
       );
-      if ((item == null ? void 0 : item.value) == null)
-        return;
+      if ((item == null ? void 0 : item.value) == null) return;
       select.setState("value", item.value);
     })
   );
   setup(
     select,
     () => sync(select, ["mounted"], (state) => {
-      if (state.mounted)
-        return;
+      if (state.mounted) return;
       select.setState("activeId", initialState.activeId);
     })
   );
   setup(
     select,
     () => sync(select, ["mounted", "items", "value"], (state) => {
-      if (combobox)
-        return;
-      if (state.mounted)
-        return;
+      if (combobox) return;
+      if (state.mounted) return;
       const values = toArray(state.value);
       const lastValue = values[values.length - 1];
-      if (lastValue == null)
-        return;
+      if (lastValue == null) return;
       const item = state.items.find(
         (item2) => !item2.disabled && item2.value === lastValue
       );
-      if (!item)
-        return;
+      if (!item) return;
       select.setState("activeId", item.id);
     })
   );
@@ -47613,21 +47838,16 @@ function createSelectStore(_a = {}) {
     select,
     () => batch(select, ["setValueOnMove", "moves"], (state) => {
       const { mounted, value, activeId } = select.getState();
-      if (!state.setValueOnMove && mounted)
-        return;
-      if (Array.isArray(value))
-        return;
-      if (!state.moves)
-        return;
-      if (!activeId)
-        return;
+      if (!state.setValueOnMove && mounted) return;
+      if (Array.isArray(value)) return;
+      if (!state.moves) return;
+      if (!activeId) return;
       const item = composite.item(activeId);
-      if (!item || item.disabled || item.value == null)
-        return;
+      if (!item || item.disabled || item.value == null) return;
       select.setState("value", item.value);
     })
   );
-  return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, composite), popover), select), {
+  return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, composite), popover), select), {
     combobox,
     setValue: (value) => select.setState("value", value),
     setLabelElement: (element) => select.setState("labelElement", element),
@@ -47637,7 +47857,7 @@ function createSelectStore(_a = {}) {
 }
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/HJER6CSZ.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/X5LAA6JI.js
 "use client";
 
 
@@ -47663,16 +47883,16 @@ function useSelectStoreProps(store, update, props) {
 }
 function useSelectStore(props = {}) {
   const combobox = useComboboxProviderContext();
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
     combobox: props.combobox !== void 0 ? props.combobox : combobox
   });
-  const [store, update] = DTNGDFNU_useStore(createSelectStore, props);
+  const [store, update] = _2GXGCHW6_useStore(createSelectStore, props);
   return useSelectStoreProps(store, update, props);
 }
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/FXF6FFAU.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/KZ2S4ZC5.js
 "use client";
 
 
@@ -47680,15 +47900,15 @@ function useSelectStore(props = {}) {
 
 // src/select/select-context.tsx
 
-var FXF6FFAU_ctx = createStoreContext(
+var KZ2S4ZC5_ctx = createStoreContext(
   [PopoverContextProvider, CompositeContextProvider],
   [PopoverScopedContextProvider, CompositeScopedContextProvider]
 );
-var useSelectContext = FXF6FFAU_ctx.useContext;
-var useSelectScopedContext = FXF6FFAU_ctx.useScopedContext;
-var useSelectProviderContext = FXF6FFAU_ctx.useProviderContext;
-var SelectContextProvider = FXF6FFAU_ctx.ContextProvider;
-var SelectScopedContextProvider = FXF6FFAU_ctx.ScopedContextProvider;
+var useSelectContext = KZ2S4ZC5_ctx.useContext;
+var useSelectScopedContext = KZ2S4ZC5_ctx.useScopedContext;
+var useSelectProviderContext = KZ2S4ZC5_ctx.useProviderContext;
+var SelectContextProvider = KZ2S4ZC5_ctx.ContextProvider;
+var SelectScopedContextProvider = KZ2S4ZC5_ctx.ScopedContextProvider;
 var SelectItemCheckedContext = (0,external_React_.createContext)(false);
 var SelectHeadingContext = (0,external_React_.createContext)(null);
 
@@ -47723,19 +47943,18 @@ var useSelectLabel = createHook(
     const onClickProp = props.onClick;
     const onClick = useEvent((event) => {
       onClickProp == null ? void 0 : onClickProp(event);
-      if (event.defaultPrevented)
-        return;
+      if (event.defaultPrevented) return;
       queueMicrotask(() => {
         const select = store == null ? void 0 : store.getState().selectElement;
         select == null ? void 0 : select.focus();
       });
     });
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       id
     }, props), {
       ref: useMergeRefs(store.setLabelElement, props.ref),
       onClick,
-      style: _4R3V3JGP_spreadValues({
+      style: _3YLGPPWQ_spreadValues({
         cursor: "default"
       }, props.style)
     });
@@ -47745,12 +47964,12 @@ var useSelectLabel = createHook(
 var SelectLabel = memo2(
   forwardRef2(function SelectLabel2(props) {
     const htmlProps = useSelectLabel(props);
-    return YIF72NQG_createElement(select_label_TagName, htmlProps);
+    return HKOOKEDE_createElement(select_label_TagName, htmlProps);
   })
 );
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/MYBFWPQK.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/3R3N43YO.js
 "use client";
 
 
@@ -47760,20 +47979,19 @@ var SelectLabel = memo2(
 // src/button/button.tsx
 
 
-var MYBFWPQK_TagName = "button";
+var _3R3N43YO_TagName = "button";
 var useButton = createHook(
   function useButton2(props) {
     const ref = (0,external_React_.useRef)(null);
-    const tagName = useTagName(ref, MYBFWPQK_TagName);
+    const tagName = useTagName(ref, _3R3N43YO_TagName);
     const [isNativeButton, setIsNativeButton] = (0,external_React_.useState)(
       () => !!tagName && isButton({ tagName, type: props.type })
     );
     (0,external_React_.useEffect)(() => {
-      if (!ref.current)
-        return;
+      if (!ref.current) return;
       setIsNativeButton(isButton(ref.current));
     }, []);
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       role: !isNativeButton && tagName !== "a" ? "button" : void 0
     }, props), {
       ref: useMergeRefs(ref, props.ref)
@@ -47782,14 +48000,14 @@ var useButton = createHook(
     return props;
   }
 );
-var MYBFWPQK_Button = forwardRef2(function Button2(props) {
+var _3R3N43YO_Button = forwardRef2(function Button2(props) {
   const htmlProps = useButton(props);
-  return YIF72NQG_createElement(MYBFWPQK_TagName, htmlProps);
+  return HKOOKEDE_createElement(_3R3N43YO_TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/KVYXDH67.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/O3TNZQBF.js
 "use client";
 
 
@@ -47800,8 +48018,8 @@ var MYBFWPQK_Button = forwardRef2(function Button2(props) {
 // src/disclosure/disclosure.tsx
 
 
-var KVYXDH67_TagName = "button";
-var KVYXDH67_symbol = Symbol("disclosure");
+var O3TNZQBF_TagName = "button";
+var O3TNZQBF_symbol = Symbol("disclosure");
 var useDisclosure = createHook(
   function useDisclosure2(_a) {
     var _b = _a, { store, toggleOnClick = true } = _b, props = __objRest(_b, ["store", "toggleOnClick"]);
@@ -47825,20 +48043,17 @@ var useDisclosure = createHook(
     }, [disclosureElement, store, open]);
     const onClickProp = props.onClick;
     const toggleOnClickProp = useBooleanEvent(toggleOnClick);
-    const [isDuplicate, metadataProps] = useMetadataProps(props, KVYXDH67_symbol, true);
+    const [isDuplicate, metadataProps] = useMetadataProps(props, O3TNZQBF_symbol, true);
     const onClick = useEvent((event) => {
       onClickProp == null ? void 0 : onClickProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (isDuplicate)
-        return;
-      if (!toggleOnClickProp(event))
-        return;
+      if (event.defaultPrevented) return;
+      if (isDuplicate) return;
+      if (!toggleOnClickProp(event)) return;
       store == null ? void 0 : store.setDisclosureElement(event.currentTarget);
       store == null ? void 0 : store.toggle();
     });
     const contentElement = store.useState("contentElement");
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues(_3YLGPPWQ_spreadValues({
       "aria-expanded": expanded,
       "aria-controls": contentElement == null ? void 0 : contentElement.id
     }, metadataProps), props), {
@@ -47851,12 +48066,12 @@ var useDisclosure = createHook(
 );
 var Disclosure = forwardRef2(function Disclosure2(props) {
   const htmlProps = useDisclosure(props);
-  return YIF72NQG_createElement(KVYXDH67_TagName, htmlProps);
+  return HKOOKEDE_createElement(O3TNZQBF_TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/QT5BCKOY.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/KCVNYWKF.js
 "use client";
 
 
@@ -47866,7 +48081,7 @@ var Disclosure = forwardRef2(function Disclosure2(props) {
 // src/dialog/dialog-disclosure.tsx
 
 
-var QT5BCKOY_TagName = "button";
+var KCVNYWKF_TagName = "button";
 var useDialogDisclosure = createHook(
   function useDialogDisclosure2(_a) {
     var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
@@ -47877,21 +48092,21 @@ var useDialogDisclosure = createHook(
        false && 0
     );
     const contentElement = store.useState("contentElement");
-    props = _4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadValues({
       "aria-haspopup": getPopupRole(contentElement, "dialog")
     }, props);
-    props = useDisclosure(_4R3V3JGP_spreadValues({ store }, props));
+    props = useDisclosure(_3YLGPPWQ_spreadValues({ store }, props));
     return props;
   }
 );
 var DialogDisclosure = forwardRef2(function DialogDisclosure2(props) {
   const htmlProps = useDialogDisclosure(props);
-  return YIF72NQG_createElement(QT5BCKOY_TagName, htmlProps);
+  return HKOOKEDE_createElement(KCVNYWKF_TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/IH5KTPNA.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/74NFH3UH.js
 "use client";
 
 
@@ -47899,13 +48114,13 @@ var DialogDisclosure = forwardRef2(function DialogDisclosure2(props) {
 
 
 // src/popover/popover-anchor.tsx
-var IH5KTPNA_TagName = "div";
+var _74NFH3UH_TagName = "div";
 var usePopoverAnchor = createHook(
   function usePopoverAnchor2(_a) {
     var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
     const context = usePopoverProviderContext();
     store = store || context;
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
       ref: useMergeRefs(store == null ? void 0 : store.setAnchorElement, props.ref)
     });
     return props;
@@ -47913,12 +48128,12 @@ var usePopoverAnchor = createHook(
 );
 var PopoverAnchor = forwardRef2(function PopoverAnchor2(props) {
   const htmlProps = usePopoverAnchor(props);
-  return YIF72NQG_createElement(IH5KTPNA_TagName, htmlProps);
+  return HKOOKEDE_createElement(_74NFH3UH_TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/NXZX7GS5.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/IZAFJHVY.js
 "use client";
 
 
@@ -47930,7 +48145,7 @@ var PopoverAnchor = forwardRef2(function PopoverAnchor2(props) {
 // src/popover/popover-disclosure.tsx
 
 
-var NXZX7GS5_TagName = "button";
+var IZAFJHVY_TagName = "button";
 var usePopoverDisclosure = createHook(function usePopoverDisclosure2(_a) {
   var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
   const context = usePopoverProviderContext();
@@ -47949,21 +48164,21 @@ var usePopoverDisclosure = createHook(function usePopoverDisclosure2(_a) {
     (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(PopoverScopedContextProvider, { value: store, children: element }),
     [store]
   );
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
     onClick
   });
-  props = usePopoverAnchor(_4R3V3JGP_spreadValues({ store }, props));
-  props = useDialogDisclosure(_4R3V3JGP_spreadValues({ store }, props));
+  props = usePopoverAnchor(_3YLGPPWQ_spreadValues({ store }, props));
+  props = useDialogDisclosure(_3YLGPPWQ_spreadValues({ store }, props));
   return props;
 });
 var PopoverDisclosure = forwardRef2(function PopoverDisclosure2(props) {
   const htmlProps = usePopoverDisclosure(props);
-  return YIF72NQG_createElement(NXZX7GS5_TagName, htmlProps);
+  return HKOOKEDE_createElement(IZAFJHVY_TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/5BXPMNKT.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/CAGM4AEJ.js
 "use client";
 
 
@@ -47973,7 +48188,7 @@ var PopoverDisclosure = forwardRef2(function PopoverDisclosure2(props) {
 
 
 
-var _5BXPMNKT_TagName = "span";
+var CAGM4AEJ_TagName = "span";
 var pointsMap = {
   top: "4,10 8,6 12,10",
   right: "6,4 10,8 6,12",
@@ -48009,11 +48224,11 @@ var usePopoverDisclosureArrow = createHook(function usePopoverDisclosureArrow2(_
     ),
     [points]
   );
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
     children,
     "aria-hidden": true
   }, props), {
-    style: _4R3V3JGP_spreadValues({
+    style: _3YLGPPWQ_spreadValues({
       width: "1em",
       height: "1em",
       pointerEvents: "none"
@@ -48024,13 +48239,13 @@ var usePopoverDisclosureArrow = createHook(function usePopoverDisclosureArrow2(_
 var PopoverDisclosureArrow = forwardRef2(
   function PopoverDisclosureArrow2(props) {
     const htmlProps = usePopoverDisclosureArrow(props);
-    return YIF72NQG_createElement(_5BXPMNKT_TagName, htmlProps);
+    return HKOOKEDE_createElement(CAGM4AEJ_TagName, htmlProps);
   }
 );
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/7NGG3X6T.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/2UJDTHC7.js
 "use client";
 
 
@@ -48038,137 +48253,19 @@ var PopoverDisclosureArrow = forwardRef2(
 
 
 // src/select/select-arrow.tsx
-var _7NGG3X6T_TagName = "span";
+var _2UJDTHC7_TagName = "span";
 var useSelectArrow = createHook(
   function useSelectArrow2(_a) {
     var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
     const context = useSelectContext();
     store = store || context;
-    props = usePopoverDisclosureArrow(_4R3V3JGP_spreadValues({ store }, props));
+    props = usePopoverDisclosureArrow(_3YLGPPWQ_spreadValues({ store }, props));
     return props;
   }
 );
 var SelectArrow = forwardRef2(function SelectArrow2(props) {
   const htmlProps = useSelectArrow(props);
-  return YIF72NQG_createElement(_7NGG3X6T_TagName, htmlProps);
-});
-
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/O7HGX5PA.js
-"use client";
-
-
-
-
-
-
-// src/composite/composite-typeahead.tsx
-
-
-
-
-var O7HGX5PA_TagName = "div";
-var chars = "";
-function clearChars() {
-  chars = "";
-}
-function isValidTypeaheadEvent(event) {
-  const target = event.target;
-  if (target && isTextField(target))
-    return false;
-  if (event.key === " " && chars.length)
-    return true;
-  return event.key.length === 1 && !event.ctrlKey && !event.altKey && !event.metaKey && /^[\p{Letter}\p{Number}]$/u.test(event.key);
-}
-function isSelfTargetOrItem(event, items) {
-  if (isSelfTarget(event))
-    return true;
-  const target = event.target;
-  if (!target)
-    return false;
-  const isItem = items.some((item) => item.element === target);
-  return isItem;
-}
-function O7HGX5PA_getEnabledItems(items) {
-  return items.filter((item) => !item.disabled);
-}
-function itemTextStartsWith(item, text) {
-  var _a;
-  const itemText = ((_a = item.element) == null ? void 0 : _a.textContent) || item.children || // The composite item object itself doesn't include a value property, but
-  // other components like Select do. Since CompositeTypeahead is a generic
-  // component that can be used with those as well, we also consider the value
-  // property as a fallback for the typeahead text content.
-  "value" in item && item.value;
-  if (!itemText)
-    return false;
-  return normalizeString(itemText).trim().toLowerCase().startsWith(text.toLowerCase());
-}
-function getSameInitialItems(items, char, activeId) {
-  if (!activeId)
-    return items;
-  const activeItem = items.find((item) => item.id === activeId);
-  if (!activeItem)
-    return items;
-  if (!itemTextStartsWith(activeItem, char))
-    return items;
-  if (chars !== char && itemTextStartsWith(activeItem, chars))
-    return items;
-  chars = char;
-  return flipItems(
-    items.filter((item) => itemTextStartsWith(item, chars)),
-    activeId
-  ).filter((item) => item.id !== activeId);
-}
-var useCompositeTypeahead = createHook(function useCompositeTypeahead2(_a) {
-  var _b = _a, { store, typeahead = true } = _b, props = __objRest(_b, ["store", "typeahead"]);
-  const context = useCompositeContext();
-  store = store || context;
-  invariant(
-    store,
-     false && 0
-  );
-  const onKeyDownCaptureProp = props.onKeyDownCapture;
-  const cleanupTimeoutRef = (0,external_React_.useRef)(0);
-  const onKeyDownCapture = useEvent((event) => {
-    onKeyDownCaptureProp == null ? void 0 : onKeyDownCaptureProp(event);
-    if (event.defaultPrevented)
-      return;
-    if (!typeahead)
-      return;
-    if (!store)
-      return;
-    const { renderedItems, items, activeId } = store.getState();
-    if (!isValidTypeaheadEvent(event))
-      return clearChars();
-    let enabledItems = O7HGX5PA_getEnabledItems(
-      renderedItems.length ? renderedItems : items
-    );
-    if (!isSelfTargetOrItem(event, enabledItems))
-      return clearChars();
-    event.preventDefault();
-    window.clearTimeout(cleanupTimeoutRef.current);
-    cleanupTimeoutRef.current = window.setTimeout(() => {
-      chars = "";
-    }, 500);
-    const char = event.key.toLowerCase();
-    chars += char;
-    enabledItems = getSameInitialItems(enabledItems, char, activeId);
-    const item = enabledItems.find((item2) => itemTextStartsWith(item2, chars));
-    if (item) {
-      store.move(item.id);
-    } else {
-      clearChars();
-    }
-  });
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
-    onKeyDownCapture
-  });
-  return removeUndefinedValues(props);
-});
-var CompositeTypeahead = forwardRef2(function CompositeTypeahead2(props) {
-  const htmlProps = useCompositeTypeahead(props);
-  return YIF72NQG_createElement(O7HGX5PA_TagName, htmlProps);
+  return HKOOKEDE_createElement(_2UJDTHC7_TagName, htmlProps);
 });
 
 
@@ -48212,18 +48309,15 @@ function getSelectedValues(select) {
 function nextWithValue(store, next) {
   return () => {
     const nextId = next();
-    if (!nextId)
-      return;
+    if (!nextId) return;
     let i = 0;
     let nextItem = store.item(nextId);
     const firstItem = nextItem;
     while (nextItem && nextItem.value == null) {
       const nextId2 = next(++i);
-      if (!nextId2)
-        return;
+      if (!nextId2) return;
       nextItem = store.item(nextId2);
-      if (nextItem === firstItem)
-        break;
+      if (nextItem === firstItem) break;
     }
     return nextItem == null ? void 0 : nextItem.id;
   };
@@ -48264,10 +48358,8 @@ var useSelect = createHook(function useSelect2(_a) {
   const onKeyDown = useEvent((event) => {
     var _a2;
     onKeyDownProp == null ? void 0 : onKeyDownProp(event);
-    if (event.defaultPrevented)
-      return;
-    if (!store)
-      return;
+    if (event.defaultPrevented) return;
+    if (!store) return;
     const { orientation, items: items2, activeId } = store.getState();
     const isVertical = orientation !== "horizontal";
     const isHorizontal = orientation !== "vertical";
@@ -48309,8 +48401,7 @@ var useSelect = createHook(function useSelect2(_a) {
   (0,external_React_.useEffect)(() => {
     const nativeSelectChanged = nativeSelectChangedRef.current;
     nativeSelectChangedRef.current = false;
-    if (nativeSelectChanged)
-      return;
+    if (nativeSelectChanged) return;
     setAutofill(false);
   }, [value]);
   const labelId = store.useState((state) => {
@@ -48320,8 +48411,7 @@ var useSelect = createHook(function useSelect2(_a) {
   const label = props["aria-label"];
   const labelledBy = props["aria-labelledby"] || labelId;
   const items = store.useState((state) => {
-    if (!name)
-      return;
+    if (!name) return;
     return state.items;
   });
   const values = (0,external_React_.useMemo)(() => {
@@ -48330,8 +48420,7 @@ var useSelect = createHook(function useSelect2(_a) {
   props = useWrapElement(
     props,
     (element) => {
-      if (!name)
-        return element;
+      if (!name) return element;
       return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_ReactJSXRuntime_namespaceObject.Fragment, { children: [
         /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsxs)(
           "select",
@@ -48369,10 +48458,8 @@ var useSelect = createHook(function useSelect2(_a) {
             },
             children: [
               toArray(value).map((value2) => {
-                if (value2 == null)
-                  return null;
-                if (values.includes(value2))
-                  return null;
+                if (value2 == null) return null;
+                if (values.includes(value2)) return null;
                 return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)("option", { value: value2, children: value2 }, value2);
               }),
               values.map((value2) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)("option", { value: value2, children: value2 }, value2))
@@ -48399,7 +48486,7 @@ var useSelect = createHook(function useSelect2(_a) {
     /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(SelectArrow, {})
   ] });
   const contentElement = store.useState("contentElement");
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
     role: "combobox",
     "aria-autocomplete": "none",
     "aria-labelledby": labelId,
@@ -48411,17 +48498,17 @@ var useSelect = createHook(function useSelect2(_a) {
     ref: useMergeRefs(store.setSelectElement, props.ref),
     onKeyDown
   });
-  props = usePopoverDisclosure(_4R3V3JGP_spreadValues({ store, toggleOnClick }, props));
-  props = useCompositeTypeahead(_4R3V3JGP_spreadValues({ store }, props));
+  props = usePopoverDisclosure(_3YLGPPWQ_spreadValues({ store, toggleOnClick }, props));
+  props = useCompositeTypeahead(_3YLGPPWQ_spreadValues({ store }, props));
   return props;
 });
 var select_Select = forwardRef2(function Select2(props) {
   const htmlProps = useSelect(props);
-  return YIF72NQG_createElement(select_TagName, htmlProps);
+  return HKOOKEDE_createElement(select_TagName, htmlProps);
 });
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/OJBHU3NX.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/KHUR3XXK.js
 "use client";
 
 
@@ -48436,7 +48523,7 @@ var select_Select = forwardRef2(function Select2(props) {
 
 
 
-var OJBHU3NX_TagName = "div";
+var KHUR3XXK_TagName = "div";
 var SelectListContext = (0,external_React_.createContext)(null);
 var useSelectList = createHook(
   function useSelectList2(_a) {
@@ -48467,8 +48554,7 @@ var useSelectList = createHook(
     const [defaultValue, setDefaultValue] = (0,external_React_.useState)(value);
     const mounted = store.useState("mounted");
     (0,external_React_.useEffect)(() => {
-      if (mounted)
-        return;
+      if (mounted) return;
       setDefaultValue(value);
     }, [mounted, value]);
     resetOnEscape = resetOnEscape && !multiSelectable;
@@ -48477,8 +48563,7 @@ var useSelectList = createHook(
     const hideOnEnterProp = useBooleanEvent(hideOnEnter);
     const onKeyDown = useEvent((event) => {
       onKeyDownProp == null ? void 0 : onKeyDownProp(event);
-      if (event.defaultPrevented)
-        return;
+      if (event.defaultPrevented) return;
       if (event.key === "Escape" && resetOnEscapeProp(event)) {
         store == null ? void 0 : store.setValue(defaultValue);
       }
@@ -48499,8 +48584,7 @@ var useSelectList = createHook(
     const [childStore, setChildStore] = (0,external_React_.useState)(null);
     const setStore = (0,external_React_.useContext)(SelectListContext);
     (0,external_React_.useEffect)(() => {
-      if (!setStore)
-        return;
+      if (!setStore) return;
       setStore(store);
       return () => setStore(null);
     }, [setStore, store]);
@@ -48518,9 +48602,9 @@ var useSelectList = createHook(
     const isCompositeRole = role === "listbox" || role === "menu" || role === "tree" || role === "grid";
     const ariaMultiSelectable = composite || isCompositeRole ? multiSelectable || void 0 : void 0;
     const hidden = isHidden(mounted, props.hidden, alwaysVisible);
-    const style = hidden ? _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props.style), { display: "none" }) : props.style;
+    const style = hidden ? _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props.style), { display: "none" }) : props.style;
     if (composite) {
-      props = _4R3V3JGP_spreadValues({
+      props = _3YLGPPWQ_spreadValues({
         role: "listbox",
         "aria-multiselectable": ariaMultiSelectable
       }, props);
@@ -48531,7 +48615,7 @@ var useSelectList = createHook(
         return headingId || ((_a2 = state.labelElement) == null ? void 0 : _a2.id);
       }
     );
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       id,
       "aria-labelledby": labelId,
       hidden
@@ -48540,14 +48624,14 @@ var useSelectList = createHook(
       style,
       onKeyDown
     });
-    props = useComposite(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({ store }, props), { composite }));
-    props = useCompositeTypeahead(_4R3V3JGP_spreadValues({ store, typeahead: !hasCombobox }, props));
+    props = useComposite(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({ store }, props), { composite }));
+    props = useCompositeTypeahead(_3YLGPPWQ_spreadValues({ store, typeahead: !hasCombobox }, props));
     return props;
   }
 );
 var SelectList = forwardRef2(function SelectList2(props) {
   const htmlProps = useSelectList(props);
-  return YIF72NQG_createElement(OJBHU3NX_TagName, htmlProps);
+  return HKOOKEDE_createElement(KHUR3XXK_TagName, htmlProps);
 });
 
 
@@ -48606,134 +48690,18 @@ var useSelectPopover = createHook(
     var _b = _a, { store, alwaysVisible } = _b, props = __objRest(_b, ["store", "alwaysVisible"]);
     const context = useSelectProviderContext();
     store = store || context;
-    props = useSelectList(_4R3V3JGP_spreadValues({ store, alwaysVisible }, props));
-    props = usePopover(_4R3V3JGP_spreadValues({ store, alwaysVisible }, props));
+    props = useSelectList(_3YLGPPWQ_spreadValues({ store, alwaysVisible }, props));
+    props = usePopover(_3YLGPPWQ_spreadValues({ store, alwaysVisible }, props));
     return props;
   }
 );
 var SelectPopover = createDialogComponent(
   forwardRef2(function SelectPopover2(props) {
     const htmlProps = useSelectPopover(props);
-    return YIF72NQG_createElement(select_popover_TagName, htmlProps);
+    return HKOOKEDE_createElement(select_popover_TagName, htmlProps);
   }),
   useSelectProviderContext
 );
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/CBOSGWHO.js
-"use client";
-
-
-
-
-
-// src/composite/composite-hover.tsx
-
-
-
-
-var CBOSGWHO_TagName = "div";
-function getMouseDestination(event) {
-  const relatedTarget = event.relatedTarget;
-  if ((relatedTarget == null ? void 0 : relatedTarget.nodeType) === Node.ELEMENT_NODE) {
-    return relatedTarget;
-  }
-  return null;
-}
-function hoveringInside(event) {
-  const nextElement = getMouseDestination(event);
-  if (!nextElement)
-    return false;
-  return contains(event.currentTarget, nextElement);
-}
-var CBOSGWHO_symbol = Symbol("composite-hover");
-function movingToAnotherItem(event) {
-  let dest = getMouseDestination(event);
-  if (!dest)
-    return false;
-  do {
-    if (_22HHDS5F_hasOwnProperty(dest, CBOSGWHO_symbol) && dest[CBOSGWHO_symbol])
-      return true;
-    dest = dest.parentElement;
-  } while (dest);
-  return false;
-}
-var useCompositeHover = createHook(
-  function useCompositeHover2(_a) {
-    var _b = _a, {
-      store,
-      focusOnHover = true,
-      blurOnHoverEnd = !!focusOnHover
-    } = _b, props = __objRest(_b, [
-      "store",
-      "focusOnHover",
-      "blurOnHoverEnd"
-    ]);
-    const context = useCompositeContext();
-    store = store || context;
-    invariant(
-      store,
-       false && 0
-    );
-    const isMouseMoving = useIsMouseMoving();
-    const onMouseMoveProp = props.onMouseMove;
-    const focusOnHoverProp = useBooleanEvent(focusOnHover);
-    const onMouseMove = useEvent((event) => {
-      onMouseMoveProp == null ? void 0 : onMouseMoveProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!isMouseMoving())
-        return;
-      if (!focusOnHoverProp(event))
-        return;
-      if (!hasFocusWithin(event.currentTarget)) {
-        const baseElement = store == null ? void 0 : store.getState().baseElement;
-        if (baseElement && !hasFocus(baseElement)) {
-          baseElement.focus();
-        }
-      }
-      store == null ? void 0 : store.setActiveId(event.currentTarget.id);
-    });
-    const onMouseLeaveProp = props.onMouseLeave;
-    const blurOnHoverEndProp = useBooleanEvent(blurOnHoverEnd);
-    const onMouseLeave = useEvent((event) => {
-      var _a2;
-      onMouseLeaveProp == null ? void 0 : onMouseLeaveProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!isMouseMoving())
-        return;
-      if (hoveringInside(event))
-        return;
-      if (movingToAnotherItem(event))
-        return;
-      if (!focusOnHoverProp(event))
-        return;
-      if (!blurOnHoverEndProp(event))
-        return;
-      store == null ? void 0 : store.setActiveId(null);
-      (_a2 = store == null ? void 0 : store.getState().baseElement) == null ? void 0 : _a2.focus();
-    });
-    const ref = (0,external_React_.useCallback)((element) => {
-      if (!element)
-        return;
-      element[CBOSGWHO_symbol] = true;
-    }, []);
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
-      ref: useMergeRefs(ref, props.ref),
-      onMouseMove,
-      onMouseLeave
-    });
-    return removeUndefinedValues(props);
-  }
-);
-var CompositeHover = memo2(
-  forwardRef2(function CompositeHover2(props) {
-    const htmlProps = useCompositeHover(props);
-    return YIF72NQG_createElement(CBOSGWHO_TagName, htmlProps);
-  })
-);
-
 
 
 ;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/select/select-item.js
@@ -48765,10 +48733,8 @@ var CompositeHover = memo2(
 
 var select_item_TagName = "div";
 function isSelected(storeValue, itemValue) {
-  if (itemValue == null)
-    return;
-  if (storeValue == null)
-    return false;
+  if (itemValue == null) return;
+  if (storeValue == null) return false;
   if (Array.isArray(storeValue)) {
     return storeValue.includes(itemValue);
   }
@@ -48804,7 +48770,7 @@ var useSelectItem = createHook(
     const disabled = disabledFromProps(props);
     const getItem = (0,external_React_.useCallback)(
       (item) => {
-        const nextItem = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, item), {
+        const nextItem = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, item), {
           value: disabled ? void 0 : value,
           children: value
         });
@@ -48824,16 +48790,12 @@ var useSelectItem = createHook(
     const hideOnClickProp = useBooleanEvent(hideOnClick);
     const onClick = useEvent((event) => {
       onClickProp == null ? void 0 : onClickProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (isDownloading(event))
-        return;
-      if (isOpeningInNewTab(event))
-        return;
+      if (event.defaultPrevented) return;
+      if (isDownloading(event)) return;
+      if (isOpeningInNewTab(event)) return;
       if (setValueOnClickProp(event) && value != null) {
         store == null ? void 0 : store.setValue((prevValue) => {
-          if (!Array.isArray(prevValue))
-            return value;
+          if (!Array.isArray(prevValue)) return value;
           if (prevValue.includes(value)) {
             return prevValue.filter((v) => v !== value);
           }
@@ -48852,18 +48814,15 @@ var useSelectItem = createHook(
     );
     const listElement = store.useState("listElement");
     const autoFocus = store.useState((state) => {
-      if (value == null)
-        return false;
-      if (state.value == null)
-        return false;
-      if (state.activeId !== id && (store == null ? void 0 : store.item(state.activeId)))
-        return false;
+      if (value == null) return false;
+      if (state.value == null) return false;
+      if (state.activeId !== id && (store == null ? void 0 : store.item(state.activeId))) return false;
       if (Array.isArray(state.value)) {
         return state.value[state.value.length - 1] === value;
       }
       return state.value === value;
     });
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       id,
       role: getPopupItemRole(listElement),
       "aria-selected": selected,
@@ -48872,21 +48831,20 @@ var useSelectItem = createHook(
       autoFocus: (_a2 = props.autoFocus) != null ? _a2 : autoFocus,
       onClick
     });
-    props = useCompositeItem(_4R3V3JGP_spreadValues({
+    props = useCompositeItem(_3YLGPPWQ_spreadValues({
       store,
       getItem,
       preventScrollOnKeyDown
     }, props));
     const focusOnHoverProp = useBooleanEvent(focusOnHover);
-    props = useCompositeHover(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = useCompositeHover(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       store
     }, props), {
       // We have to disable focusOnHover when the popup is closed, otherwise
       // the active item will change to null (the container) when the popup is
       // closed by clicking on an item.
       focusOnHover(event) {
-        if (!focusOnHoverProp(event))
-          return false;
+        if (!focusOnHoverProp(event)) return false;
         const state = store == null ? void 0 : store.getState();
         return !!(state == null ? void 0 : state.open);
       }
@@ -48897,7 +48855,7 @@ var useSelectItem = createHook(
 var SelectItem = memo2(
   forwardRef2(function SelectItem2(props) {
     const htmlProps = useSelectItem(props);
-    return YIF72NQG_createElement(select_item_TagName, htmlProps);
+    return HKOOKEDE_createElement(select_item_TagName, htmlProps);
   })
 );
 
@@ -48911,7 +48869,7 @@ var CheckboxCheckedContext = (0,external_React_.createContext)(false);
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/EKUOHYM2.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/RPLYUYNN.js
 "use client";
 
 
@@ -48921,7 +48879,7 @@ var CheckboxCheckedContext = (0,external_React_.createContext)(false);
 
 
 
-var EKUOHYM2_TagName = "span";
+var RPLYUYNN_TagName = "span";
 var checkmark = /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
   "svg",
   {
@@ -48952,11 +48910,11 @@ var useCheckboxCheck = createHook(
     const context = (0,external_React_.useContext)(CheckboxCheckedContext);
     checked = checked != null ? checked : context;
     const children = getChildren({ checked, children: props.children });
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       "aria-hidden": true
     }, props), {
       children,
-      style: _4R3V3JGP_spreadValues({
+      style: _3YLGPPWQ_spreadValues({
         width: "1em",
         height: "1em",
         pointerEvents: "none"
@@ -48967,7 +48925,7 @@ var useCheckboxCheck = createHook(
 );
 var CheckboxCheck = forwardRef2(function CheckboxCheck2(props) {
   const htmlProps = useCheckboxCheck(props);
-  return YIF72NQG_createElement(EKUOHYM2_TagName, htmlProps);
+  return HKOOKEDE_createElement(RPLYUYNN_TagName, htmlProps);
 });
 
 
@@ -48995,13 +48953,13 @@ var useSelectItemCheck = createHook(
     var _b = _a, { store, checked } = _b, props = __objRest(_b, ["store", "checked"]);
     const context = (0,external_React_.useContext)(SelectItemCheckedContext);
     checked = checked != null ? checked : context;
-    props = useCheckboxCheck(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { checked }));
+    props = useCheckboxCheck(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { checked }));
     return props;
   }
 );
 var SelectItemCheck = forwardRef2(function SelectItemCheck2(props) {
   const htmlProps = useSelectItemCheck(props);
-  return YIF72NQG_createElement(select_item_check_TagName, htmlProps);
+  return HKOOKEDE_createElement(select_item_check_TagName, htmlProps);
 });
 
 
@@ -49027,11 +48985,9 @@ const ANIMATION_PARAMS = {
   EASING: 'cubic-bezier( 0.16, 1, 0.3, 1 )'
 };
 const INLINE_PADDING = {
-  compact: 8,
-  // space(2)
-  small: 8,
-  // space(2)
-  default: 16 // space(4)
+  compact: config_values.controlPaddingXSmall,
+  small: config_values.controlPaddingXSmall,
+  default: config_values.controlPaddingX
 };
 const getSelectSize = (size, heightProperty) => {
   const sizes = {
@@ -49094,7 +49050,7 @@ const slideDownAndFade = emotion_react_browser_esm_keyframes({
 });
 const styles_SelectPopover = /*#__PURE__*/emotion_styled_base_browser_esm(SelectPopover,  true ? {
   target: "e1p3eej76"
-} : 0)("display:flex;flex-direction:column;background-color:", COLORS.theme.background, ";border-radius:2px;border:1px solid ", COLORS.theme.foreground, ";z-index:1000000;max-height:min( var( --popover-available-height, 400px ), 400px );overflow:auto;overscroll-behavior:contain;min-width:min-content;&[data-open]{@media not ( prefers-reduced-motion ){animation-duration:", ANIMATION_PARAMS.DURATION, ";animation-timing-function:", ANIMATION_PARAMS.EASING, ";animation-name:", slideDownAndFade, ";will-change:transform,opacity;}}&[data-focus-visible]{outline:none;}" + ( true ? "" : 0));
+} : 0)("display:flex;flex-direction:column;background-color:", COLORS.theme.background, ";border-radius:", config_values.radiusSmall, ";border:1px solid ", COLORS.theme.foreground, ";z-index:1000000;max-height:min( var( --popover-available-height, 400px ), 400px );overflow:auto;overscroll-behavior:contain;min-width:min-content;&[data-open]{@media not ( prefers-reduced-motion ){animation-duration:", ANIMATION_PARAMS.DURATION, ";animation-timing-function:", ANIMATION_PARAMS.EASING, ";animation-name:", slideDownAndFade, ";will-change:transform,opacity;}}&[data-focus-visible]{outline:none;}" + ( true ? "" : 0));
 const styles_SelectItem = /*#__PURE__*/emotion_styled_base_browser_esm(SelectItem,  true ? {
   target: "e1p3eej75"
 } : 0)(({
@@ -49124,6 +49080,7 @@ const SelectedItemCheck = /*#__PURE__*/emotion_styled_base_browser_esm(SelectIte
 /**
  * External dependencies
  */
+
 
 
 /**
@@ -49163,7 +49120,7 @@ const CustomSelectButton = ({
 }) => {
   const {
     value: currentValue
-  } = store.useState();
+  } = useStoreState(store);
   const computedRenderSelectedValue = (0,external_wp_element_namespaceObject.useMemo)(() => renderSelectedValue !== null && renderSelectedValue !== void 0 ? renderSelectedValue : defaultRenderSelectedValue, [renderSelectedValue]);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(styles_Select, {
     ...restProps,
@@ -54041,7 +53998,7 @@ const DayButton = /*#__PURE__*/emotion_styled_base_browser_esm(build_module_butt
 		justify-self: end;
 		`, " ", props => props.disabled && `
 		pointer-events: none;
-		`, " &&&{border-radius:100%;height:", space(7), ";width:", space(7), ";", props => props.isSelected && `
+		`, " &&&{border-radius:", config_values.radiusRound, ";height:", space(7), ";width:", space(7), ";", props => props.isSelected && `
 			background: ${COLORS.theme.accent};
 			color: ${COLORS.white};
 			`, " ", props => !props.isSelected && props.isToday && `
@@ -54049,7 +54006,7 @@ const DayButton = /*#__PURE__*/emotion_styled_base_browser_esm(build_module_butt
 			`, ";}", props => props.hasEvents && `
 		::before {
 			background: ${props.isSelected ? COLORS.white : COLORS.theme.accent};
-			border-radius: 2px;
+			border-radius: ${config_values.radiusRound};
 			bottom: 2px;
 			content: " ";
 			height: 4px;
@@ -54690,6 +54647,64 @@ const timezone_TimeZone = () => {
 };
 /* harmony default export */ const timezone = (timezone_TimeZone);
 
+;// CONCATENATED MODULE: ./packages/components/build-module/toggle-group-control/toggle-group-control-option/component.js
+/**
+ * External dependencies
+ */
+
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+function UnforwardedToggleGroupControlOption(props, ref) {
+  const {
+    label,
+    ...restProps
+  } = props;
+  const optionLabel = restProps['aria-label'] || label;
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(toggle_group_control_option_base_component, {
+    ...restProps,
+    "aria-label": optionLabel,
+    ref: ref,
+    children: label
+  });
+}
+
+/**
+ * `ToggleGroupControlOption` is a form component and is meant to be used as a
+ * child of `ToggleGroupControl`.
+ *
+ * ```jsx
+ * import {
+ *   __experimentalToggleGroupControl as ToggleGroupControl,
+ *   __experimentalToggleGroupControlOption as ToggleGroupControlOption,
+ * } from '@wordpress/components';
+ *
+ * function Example() {
+ *   return (
+ *     <ToggleGroupControl
+ *       label="my label"
+ *       value="vertical"
+ *       isBlock
+ *       __nextHasNoMarginBottom
+ *     >
+ *       <ToggleGroupControlOption value="horizontal" label="Horizontal" />
+ *       <ToggleGroupControlOption value="vertical" label="Vertical" />
+ *     </ToggleGroupControl>
+ *   );
+ * }
+ * ```
+ */
+const ToggleGroupControlOption = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedToggleGroupControlOption);
+/* harmony default export */ const toggle_group_control_option_component = (ToggleGroupControlOption);
+
 ;// CONCATENATED MODULE: ./packages/components/build-module/date-time/time/time-input/index.js
 /**
  * External dependencies
@@ -54705,7 +54720,6 @@ const timezone_TimeZone = () => {
 /**
  * Internal dependencies
  */
-
 
 
 
@@ -54818,23 +54832,22 @@ function TimeInput({
           __unstableStateReducer: buildPadInputStateReducer(2),
           ...minutesProps
         })]
-      }), is12Hour && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(button_group, {
-        className: "components-datetime__time-field components-datetime__time-field-am-pm" // Unused, for backwards compatibility.
-        ,
-        children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(build_module_button, {
-          className: "components-datetime__time-am-button" // Unused, for backwards compatibility.
-          ,
-          variant: dayPeriod === 'AM' ? 'primary' : 'secondary',
-          __next40pxDefaultSize: true,
-          onClick: buildAmPmChangeCallback('AM'),
-          children: (0,external_wp_i18n_namespaceObject.__)('AM')
-        }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(build_module_button, {
-          className: "components-datetime__time-pm-button" // Unused, for backwards compatibility.
-          ,
-          variant: dayPeriod === 'PM' ? 'primary' : 'secondary',
-          __next40pxDefaultSize: true,
-          onClick: buildAmPmChangeCallback('PM'),
-          children: (0,external_wp_i18n_namespaceObject.__)('PM')
+      }), is12Hour && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(toggle_group_control_component, {
+        __next40pxDefaultSize: true,
+        __nextHasNoMarginBottom: true,
+        isBlock: true,
+        label: (0,external_wp_i18n_namespaceObject.__)('Select AM or PM'),
+        hideLabelFromVision: true,
+        value: dayPeriod,
+        onChange: newValue => {
+          buildAmPmChangeCallback(newValue)();
+        },
+        children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(toggle_group_control_option_component, {
+          value: "AM",
+          label: (0,external_wp_i18n_namespaceObject.__)('AM')
+        }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(toggle_group_control_option_component, {
+          value: "PM",
+          label: (0,external_wp_i18n_namespaceObject.__)('PM')
         })]
       })]
     })]
@@ -54857,6 +54870,7 @@ function TimeInput({
 /**
  * Internal dependencies
  */
+
 
 
 
@@ -54894,7 +54908,8 @@ function TimePicker({
   is12Hour,
   currentTime,
   onChange,
-  dateOrder: dateOrderProp
+  dateOrder: dateOrderProp,
+  hideLabelFromVision = false
 }) {
   const [date, setDate] = (0,external_wp_element_namespaceObject.useState)(() =>
   // Truncate the date at the minutes, see: #15495.
@@ -55055,7 +55070,10 @@ function TimePicker({
     className: "components-datetime__time" // Unused, for backwards compatibility.
     ,
     children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(Fieldset, {
-      children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control.VisualLabel, {
+      children: [hideLabelFromVision ? /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(visually_hidden_component, {
+        as: "legend",
+        children: (0,external_wp_i18n_namespaceObject.__)('Time')
+      }) : /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control.VisualLabel, {
         as: "legend",
         className: "components-datetime__time-legend" // Unused, for backwards compatibility.
         ,
@@ -55073,7 +55091,10 @@ function TimePicker({
         }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(spacer_component, {}), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(timezone, {})]
       })]
     }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(Fieldset, {
-      children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control.VisualLabel, {
+      children: [hideLabelFromVision ? /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(visually_hidden_component, {
+        as: "legend",
+        children: (0,external_wp_i18n_namespaceObject.__)('Date')
+      }) : /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control.VisualLabel, {
         as: "legend",
         className: "components-datetime__time-legend" // Unused, for backwards compatibility.
         ,
@@ -55285,10 +55306,22 @@ const findSizeBySlug = (sizes, slug) => sizes.find(size => slug === size.slug);
 
 
 
+
+
+const dimension_control_CONTEXT_VALUE = {
+  BaseControl: {
+    // Temporary during deprecation grace period: Overrides the underlying `__associatedWPComponentName`
+    // via the context system to override the value set by SelectControl.
+    _overrides: {
+      __associatedWPComponentName: 'DimensionControl'
+    }
+  }
+};
+
 /**
  * `DimensionControl` is a component designed to provide a UI to control spacing and/or dimensions.
  *
- * This feature is still experimental. “Experimental” means this is an early implementation subject to drastic and breaking changes.
+ * @deprecated
  *
  * ```jsx
  * import { __experimentalDimensionControl as DimensionControl } from '@wordpress/components';
@@ -55299,6 +55332,7 @@ const findSizeBySlug = (sizes, slug) => sizes.find(size => slug === size.slug);
  *
  * 	return (
  * 		<DimensionControl
+ * 			__nextHasNoMarginBottom
  * 			label={ 'Padding' }
  * 			icon={ 'desktop' }
  * 			onChange={ ( value ) => setPaddingSize( value ) }
@@ -55311,6 +55345,7 @@ const findSizeBySlug = (sizes, slug) => sizes.find(size => slug === size.slug);
 function DimensionControl(props) {
   const {
     __next40pxDefaultSize = false,
+    __nextHasNoMarginBottom = false,
     label,
     value,
     sizes = dimension_control_sizes,
@@ -55318,6 +55353,10 @@ function DimensionControl(props) {
     onChange,
     className = ''
   } = props;
+  external_wp_deprecated_default()('wp.components.DimensionControl', {
+    since: '6.7',
+    version: '7.0'
+  });
   const onChangeSpacingSize = val => {
     const theSize = findSizeBySlug(sizes, val);
     if (!theSize || value === theSize.slug) {
@@ -55344,14 +55383,18 @@ function DimensionControl(props) {
       icon: icon
     }), label]
   });
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(select_control, {
-    __next40pxDefaultSize: __next40pxDefaultSize,
-    className: dist_clsx(className, 'block-editor-dimension-control'),
-    label: selectLabel,
-    hideLabelFromVision: false,
-    value: value,
-    onChange: onChangeSpacingSize,
-    options: formatSizesAsOptions(sizes)
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ContextSystemProvider, {
+    value: dimension_control_CONTEXT_VALUE,
+    children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(select_control, {
+      __next40pxDefaultSize: __next40pxDefaultSize,
+      __nextHasNoMarginBottom: __nextHasNoMarginBottom,
+      className: dist_clsx(className, 'block-editor-dimension-control'),
+      label: selectLabel,
+      hideLabelFromVision: false,
+      value: value,
+      onChange: onChangeSpacingSize,
+      options: formatSizesAsOptions(sizes)
+    })
   });
 }
 /* harmony default export */ const dimension_control = (DimensionControl);
@@ -55555,7 +55598,7 @@ function Draggable({
   __experimentalDragComponent: dragComponent
 }) {
   const dragComponentRef = (0,external_wp_element_namespaceObject.useRef)(null);
-  const cleanup = (0,external_wp_element_namespaceObject.useRef)(() => {});
+  const cleanupRef = (0,external_wp_element_namespaceObject.useRef)(() => {});
 
   /**
    * Removes the element clone, resets cursor, and removes drag listener.
@@ -55564,7 +55607,7 @@ function Draggable({
    */
   function end(event) {
     event.preventDefault();
-    cleanup.current();
+    cleanupRef.current();
     if (onDragEnd) {
       onDragEnd(event);
     }
@@ -55678,7 +55721,7 @@ function Draggable({
     if (onDragStart) {
       onDragStart(event);
     }
-    cleanup.current = () => {
+    cleanupRef.current = () => {
       // Remove drag clone.
       if (cloneWrapper && cloneWrapper.parentNode) {
         cloneWrapper.parentNode.removeChild(cloneWrapper);
@@ -55693,7 +55736,7 @@ function Draggable({
     };
   }
   (0,external_wp_element_namespaceObject.useEffect)(() => () => {
-    cleanup.current();
+    cleanupRef.current();
   }, []);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_ReactJSXRuntime_namespaceObject.Fragment, {
     children: [children({
@@ -56445,7 +56488,7 @@ const MediaWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ?
 } : 0);
 const MediaContainer = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "eeew7dm7"
-} : 0)("align-items:center;border-radius:", config_values.radiusBlockUi, ";cursor:pointer;display:inline-flex;justify-content:center;margin:auto;position:relative;height:100%;&:after{border-radius:inherit;bottom:0;box-shadow:inset 0 0 0 1px rgba( 0, 0, 0, 0.1 );content:'';left:0;pointer-events:none;position:absolute;right:0;top:0;}img,video{border-radius:inherit;box-sizing:border-box;display:block;height:auto;margin:0;max-height:100%;max-width:100%;pointer-events:none;user-select:none;width:auto;}" + ( true ? "" : 0));
+} : 0)("align-items:center;border-radius:", config_values.radiusSmall, ";cursor:pointer;display:inline-flex;justify-content:center;margin:auto;position:relative;height:100%;&:after{border-radius:inherit;bottom:0;box-shadow:inset 0 0 0 1px rgba( 0, 0, 0, 0.1 );content:'';left:0;pointer-events:none;position:absolute;right:0;top:0;}img,video{border-radius:inherit;box-sizing:border-box;display:block;height:auto;margin:0;max-height:100%;max-width:100%;pointer-events:none;user-select:none;width:auto;}" + ( true ? "" : 0));
 const MediaPlaceholder = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "eeew7dm6"
 } : 0)("background:", COLORS.gray[100], ";border-radius:inherit;box-sizing:border-box;height:", INITIAL_BOUNDS.height, "px;max-width:280px;min-width:", INITIAL_BOUNDS.width, "px;width:100%;" + ( true ? "" : 0));
@@ -56518,7 +56561,6 @@ const TEXTCONTROL_MAX = 100;
 const controls_noop = () => {};
 function FocalPointPickerControls({
   __nextHasNoMarginBottom,
-  __next40pxDefaultSize,
   hasHelpText,
   onChange = controls_noop,
   point = {
@@ -56546,14 +56588,12 @@ function FocalPointPickerControls({
     hasHelpText: hasHelpText,
     gap: 4,
     children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(FocalPointUnitControl, {
-      __next40pxDefaultSize: __next40pxDefaultSize,
       label: (0,external_wp_i18n_namespaceObject.__)('Left'),
       "aria-label": (0,external_wp_i18n_namespaceObject.__)('Focal point left position'),
       value: [valueX, '%'].join(''),
       onChange: next => handleChange(next, 'x'),
       dragDirection: "e"
     }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(FocalPointUnitControl, {
-      __next40pxDefaultSize: __next40pxDefaultSize,
       label: (0,external_wp_i18n_namespaceObject.__)('Top'),
       "aria-label": (0,external_wp_i18n_namespaceObject.__)('Focal point top position'),
       value: [valueY, '%'].join(''),
@@ -56564,6 +56604,7 @@ function FocalPointPickerControls({
 }
 function FocalPointUnitControl(props) {
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(focal_point_picker_style_StyledUnitControl, {
+    __next40pxDefaultSize: true,
     className: "focal-point-picker__controls-position-unit-control",
     labelPosition: "top",
     max: TEXTCONTROL_MAX,
@@ -56582,9 +56623,13 @@ function FocalPointUnitControl(props) {
  * External dependencies
  */
 
+/**
+ * Internal dependencies
+ */
+
 const PointerCircle = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "e19snlhg0"
-} : 0)("background-color:transparent;cursor:grab;height:40px;margin:-20px 0 0 -20px;position:absolute;user-select:none;width:40px;will-change:transform;z-index:10000;background:rgba( 255, 255, 255, 0.4 );border:1px solid rgba( 255, 255, 255, 0.4 );border-radius:50%;backdrop-filter:blur( 16px ) saturate( 180% );box-shadow:rgb( 0 0 0 / 10% ) 0px 0px 8px;@media not ( prefers-reduced-motion ){transition:transform 100ms linear;}", ({
+} : 0)("background-color:transparent;cursor:grab;height:40px;margin:-20px 0 0 -20px;position:absolute;user-select:none;width:40px;will-change:transform;z-index:10000;background:rgba( 255, 255, 255, 0.4 );border:1px solid rgba( 255, 255, 255, 0.4 );border-radius:", config_values.radiusRound, ";backdrop-filter:blur( 16px ) saturate( 180% );box-shadow:rgb( 0 0 0 / 10% ) 0px 0px 8px;@media not ( prefers-reduced-motion ){transition:transform 100ms linear;}", ({
   isDragging
 }) => isDragging && `
 			box-shadow: rgb( 0 0 0 / 12% ) 0px 0px 10px;
@@ -56781,7 +56826,6 @@ const GRID_OVERLAY_TIMEOUT = 600;
  */
 function FocalPointPicker({
   __nextHasNoMarginBottom,
-  __next40pxDefaultSize = false,
   autoPlay = true,
   className,
   help,
@@ -56946,6 +56990,7 @@ function FocalPointPicker({
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(base_control, {
     ...restProps,
     __nextHasNoMarginBottom: __nextHasNoMarginBottom,
+    __associatedWPComponentName: "FocalPointPicker",
     label: label,
     id: id,
     help: help,
@@ -56979,7 +57024,6 @@ function FocalPointPicker({
       })
     }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(FocalPointPickerControls, {
       __nextHasNoMarginBottom: __nextHasNoMarginBottom,
-      __next40pxDefaultSize: __next40pxDefaultSize,
       hasHelpText: !!help,
       point: {
         x,
@@ -57189,64 +57233,6 @@ const FontSizePickerSelect = props => {
   });
 };
 /* harmony default export */ const font_size_picker_select = (FontSizePickerSelect);
-
-;// CONCATENATED MODULE: ./packages/components/build-module/toggle-group-control/toggle-group-control-option/component.js
-/**
- * External dependencies
- */
-
-/**
- * WordPress dependencies
- */
-
-
-/**
- * Internal dependencies
- */
-
-
-
-function UnforwardedToggleGroupControlOption(props, ref) {
-  const {
-    label,
-    ...restProps
-  } = props;
-  const optionLabel = restProps['aria-label'] || label;
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(toggle_group_control_option_base_component, {
-    ...restProps,
-    "aria-label": optionLabel,
-    ref: ref,
-    children: label
-  });
-}
-
-/**
- * `ToggleGroupControlOption` is a form component and is meant to be used as a
- * child of `ToggleGroupControl`.
- *
- * ```jsx
- * import {
- *   __experimentalToggleGroupControl as ToggleGroupControl,
- *   __experimentalToggleGroupControlOption as ToggleGroupControlOption,
- * } from '@wordpress/components';
- *
- * function Example() {
- *   return (
- *     <ToggleGroupControl
- *       label="my label"
- *       value="vertical"
- *       isBlock
- *       __nextHasNoMarginBottom
- *     >
- *       <ToggleGroupControlOption value="horizontal" label="Horizontal" />
- *       <ToggleGroupControlOption value="vertical" label="Vertical" />
- *     </ToggleGroupControl>
- *   );
- * }
- * ```
- */
-const ToggleGroupControlOption = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedToggleGroupControlOption);
-/* harmony default export */ const toggle_group_control_option_component = (ToggleGroupControlOption);
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/font-size-picker/constants.js
 /**
@@ -58685,44 +58671,6 @@ function UnconnectedItem(props, forwardedRef) {
 const component_Item = contextConnect(UnconnectedItem, 'Item');
 /* harmony default export */ const item_component = (component_Item);
 
-;// CONCATENATED MODULE: ./packages/components/build-module/input-control/input-prefix-wrapper.js
-/**
- * External dependencies
- */
-
-/**
- * Internal dependencies
- */
-
-
-
-function UnconnectedInputControlPrefixWrapper(props, forwardedRef) {
-  const derivedProps = useContextSystem(props, 'InputControlPrefixWrapper');
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(spacer_component, {
-    marginBottom: 0,
-    ...derivedProps,
-    ref: forwardedRef
-  });
-}
-
-/**
- * A convenience wrapper for the `prefix` when you want to apply
- * standard padding in accordance with the size variant.
- *
- * ```jsx
- * import {
- *   __experimentalInputControl as InputControl,
- *   __experimentalInputControlPrefixWrapper as InputControlPrefixWrapper,
- * } from '@wordpress/components';
- *
- * <InputControl
- *   prefix={<InputControlPrefixWrapper>@</InputControlPrefixWrapper>}
- * />
- * ```
- */
-const InputControlPrefixWrapper = contextConnect(UnconnectedInputControlPrefixWrapper, 'InputControlPrefixWrapper');
-/* harmony default export */ const input_prefix_wrapper = (InputControlPrefixWrapper);
-
 ;// CONCATENATED MODULE: ./packages/components/build-module/keyboard-shortcuts/index.js
 /**
  * WordPress dependencies
@@ -59232,7 +59180,7 @@ const GroupTitleUI = /*#__PURE__*/emotion_styled_base_browser_esm(heading_compon
 } : 0)("min-height:", space(12), ";align-items:center;color:inherit;display:flex;justify-content:space-between;margin-bottom:", space(2), ";padding:", () => (0,external_wp_i18n_namespaceObject.isRTL)() ? `${space(1)} ${space(4)} ${space(1)} ${space(2)}` : `${space(1)} ${space(2)} ${space(1)} ${space(4)}`, ";" + ( true ? "" : 0));
 const ItemBaseUI = /*#__PURE__*/emotion_styled_base_browser_esm("li",  true ? {
   target: "eeiismy4"
-} : 0)("border-radius:2px;color:inherit;margin-bottom:0;>button,>a.components-button,>a{width:100%;color:inherit;opacity:0.7;padding:", space(2), " ", space(4), ";", rtl({
+} : 0)("border-radius:", config_values.radiusSmall, ";color:inherit;margin-bottom:0;>button,>a.components-button,>a{width:100%;color:inherit;opacity:0.7;padding:", space(2), " ", space(4), ";", rtl({
   textAlign: 'left'
 }, {
   textAlign: 'right'
@@ -59245,7 +59193,7 @@ const ItemIconUI = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? 
 } : 0)("display:flex;margin-right:", space(2), ";" + ( true ? "" : 0));
 const ItemBadgeUI = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
   target: "eeiismy1"
-} : 0)("margin-left:", () => (0,external_wp_i18n_namespaceObject.isRTL)() ? '0' : space(2), ";margin-right:", () => (0,external_wp_i18n_namespaceObject.isRTL)() ? space(2) : '0', ";display:inline-flex;padding:", space(1), " ", space(3), ";border-radius:2px;@keyframes fade-in{from{opacity:0;}to{opacity:1;}}@media not ( prefers-reduced-motion ){animation:fade-in 250ms ease-out;}" + ( true ? "" : 0));
+} : 0)("margin-left:", () => (0,external_wp_i18n_namespaceObject.isRTL)() ? '0' : space(2), ";margin-right:", () => (0,external_wp_i18n_namespaceObject.isRTL)() ? space(2) : '0', ";display:inline-flex;padding:", space(1), " ", space(3), ";border-radius:", config_values.radiusSmall, ";@keyframes fade-in{from{opacity:0;}to{opacity:1;}}@media not ( prefers-reduced-motion ){animation:fade-in 250ms ease-out;}" + ( true ? "" : 0));
 const ItemTitleUI = /*#__PURE__*/emotion_styled_base_browser_esm(text_component,  true ? {
   target: "eeiismy0"
 } : 0)(() => (0,external_wp_i18n_namespaceObject.isRTL)() ? 'margin-left: auto;' : 'margin-right: auto;', " font-size:14px;line-height:20px;color:inherit;" + ( true ? "" : 0));
@@ -59462,10 +59410,10 @@ function Navigation({
   };
 
   // Used to prevent the sliding animation on mount
-  const isMounted = (0,external_wp_element_namespaceObject.useRef)(false);
+  const isMountedRef = (0,external_wp_element_namespaceObject.useRef)(false);
   (0,external_wp_element_namespaceObject.useEffect)(() => {
-    if (!isMounted.current) {
-      isMounted.current = true;
+    if (!isMountedRef.current) {
+      isMountedRef.current = true;
     }
   }, []);
   (0,external_wp_element_namespaceObject.useEffect)(() => {
@@ -59491,7 +59439,7 @@ function Navigation({
     className: classes,
     children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)("div", {
       className: animateClassName ? dist_clsx({
-        [animateClassName]: isMounted.current && slideOrigin
+        [animateClassName]: isMountedRef.current && slideOrigin
       }) : undefined,
       children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigationContext.Provider, {
         value: context,
@@ -60069,13 +60017,14 @@ function UnforwardedSearchControl({
   const searchRef = (0,external_wp_element_namespaceObject.useRef)(null);
   const instanceId = (0,external_wp_compose_namespaceObject.useInstanceId)(SearchControl, 'components-search-control');
   const contextValue = (0,external_wp_element_namespaceObject.useMemo)(() => ({
-    // Overrides the underlying BaseControl `__nextHasNoMarginBottom` via the context system
-    // to provide backwards compatibile margin for SearchControl.
-    // (In a standard InputControl, the BaseControl `__nextHasNoMarginBottom` is always set to true.)
     BaseControl: {
+      // Overrides the underlying BaseControl `__nextHasNoMarginBottom` via the context system
+      // to provide backwards compatibile margin for SearchControl.
+      // (In a standard InputControl, the BaseControl `__nextHasNoMarginBottom` is always set to true.)
       _overrides: {
         __nextHasNoMarginBottom
-      }
+      },
+      __associatedWPComponentName: 'SearchControl'
     },
     // `isBorderless` is still experimental and not a public prop for InputControl yet.
     InputBase: {
@@ -60946,6 +60895,7 @@ const navigatorScreen = props => /*#__PURE__*/emotion_react_browser_esm_css("ove
 
 
 
+
 /**
  * Internal dependencies
  */
@@ -60957,10 +60907,14 @@ const navigatorScreen = props => /*#__PURE__*/emotion_react_browser_esm_css("ove
 
 
 
-const MAX_HISTORY_LENGTH = 50;
+
 function addScreen({
   screens
 }, screen) {
+  if (screens.some(s => s.path === screen.path)) {
+     false ? 0 : void 0;
+    return screens;
+  }
   return [...screens, screen];
 }
 function removeScreen({
@@ -60968,72 +60922,89 @@ function removeScreen({
 }, screen) {
   return screens.filter(s => s.id !== screen.id);
 }
-function goBack({
-  locationHistory
-}) {
-  if (locationHistory.length <= 1) {
-    return locationHistory;
-  }
-  return [...locationHistory.slice(0, -2), {
-    ...locationHistory[locationHistory.length - 2],
-    isBack: true,
-    hasRestoredFocus: false
-  }];
-}
 function goTo(state, path, options = {}) {
+  var _focusSelectorsCopy2;
   const {
-    locationHistory
+    focusSelectors
   } = state;
+  const currentLocation = {
+    ...state.currentLocation,
+    isInitial: false
+  };
   const {
-    focusTargetSelector,
+    // Default assignments
     isBack = false,
     skipFocus = false,
-    replace = false,
+    // Extract to avoid forwarding
+    replace,
+    focusTargetSelector,
+    // Rest
     ...restOptions
   } = options;
-  const isNavigatingToSamePath = locationHistory.length > 0 && locationHistory[locationHistory.length - 1].path === path;
-  if (isNavigatingToSamePath) {
-    return locationHistory;
+  if (currentLocation.path === path) {
+    return {
+      currentLocation,
+      focusSelectors
+    };
   }
-  const isNavigatingToPreviousPath = isBack && locationHistory.length > 1 && locationHistory[locationHistory.length - 2].path === path;
-  if (isNavigatingToPreviousPath) {
-    return goBack(state);
+  let focusSelectorsCopy;
+  function getFocusSelectorsCopy() {
+    var _focusSelectorsCopy;
+    focusSelectorsCopy = (_focusSelectorsCopy = focusSelectorsCopy) !== null && _focusSelectorsCopy !== void 0 ? _focusSelectorsCopy : new Map(state.focusSelectors);
+    return focusSelectorsCopy;
   }
-  const newLocation = {
-    ...restOptions,
-    path,
-    isBack,
-    hasRestoredFocus: false,
-    skipFocus
+
+  // Set a focus selector that will be used when navigating
+  // back to the current location.
+  if (focusTargetSelector && currentLocation.path) {
+    getFocusSelectorsCopy().set(currentLocation.path, focusTargetSelector);
+  }
+
+  // Get the focus selector for the new location.
+  let currentFocusSelector;
+  if (focusSelectors.get(path)) {
+    if (isBack) {
+      // Use the found focus selector only when navigating back.
+      currentFocusSelector = focusSelectors.get(path);
+    }
+    // Make a copy of the focusSelectors map to remove the focus selector
+    // only if necessary (ie. a focus selector was found).
+    getFocusSelectorsCopy().delete(path);
+  }
+  return {
+    currentLocation: {
+      ...restOptions,
+      path,
+      isBack,
+      hasRestoredFocus: false,
+      focusTargetSelector: currentFocusSelector,
+      skipFocus
+    },
+    focusSelectors: (_focusSelectorsCopy2 = focusSelectorsCopy) !== null && _focusSelectorsCopy2 !== void 0 ? _focusSelectorsCopy2 : focusSelectors
   };
-  if (locationHistory.length === 0) {
-    return replace ? [] : [newLocation];
-  }
-  const newLocationHistory = locationHistory.slice(locationHistory.length > MAX_HISTORY_LENGTH - 1 ? 1 : 0, -1);
-  if (!replace) {
-    newLocationHistory.push(
-    // Assign `focusTargetSelector` to the previous location in history
-    // (the one we just navigated from).
-    {
-      ...locationHistory[locationHistory.length - 1],
-      focusTargetSelector
-    });
-  }
-  newLocationHistory.push(newLocation);
-  return newLocationHistory;
 }
 function goToParent(state, options = {}) {
   const {
-    locationHistory,
-    screens
+    screens,
+    focusSelectors
   } = state;
-  const currentPath = locationHistory[locationHistory.length - 1].path;
+  const currentLocation = {
+    ...state.currentLocation,
+    isInitial: false
+  };
+  const currentPath = currentLocation.path;
   if (currentPath === undefined) {
-    return locationHistory;
+    return {
+      currentLocation,
+      focusSelectors
+    };
   }
   const parentPath = findParent(currentPath, screens);
   if (parentPath === undefined) {
-    return locationHistory;
+    return {
+      currentLocation,
+      focusSelectors
+    };
   }
   return goTo(state, parentPath, {
     ...options,
@@ -61043,8 +61014,10 @@ function goToParent(state, options = {}) {
 function routerReducer(state, action) {
   let {
     screens,
-    locationHistory,
-    matchedPath
+    currentLocation,
+    matchedPath,
+    focusSelectors,
+    ...restState
   } = state;
   switch (action.type) {
     case 'add':
@@ -61053,24 +61026,27 @@ function routerReducer(state, action) {
     case 'remove':
       screens = removeScreen(state, action.screen);
       break;
-    case 'goback':
-      locationHistory = goBack(state);
-      break;
     case 'goto':
-      locationHistory = goTo(state, action.path, action.options);
+      ({
+        currentLocation,
+        focusSelectors
+      } = goTo(state, action.path, action.options));
       break;
     case 'gotoparent':
-      locationHistory = goToParent(state, action.options);
+      ({
+        currentLocation,
+        focusSelectors
+      } = goToParent(state, action.options));
       break;
   }
 
   // Return early in case there is no change
-  if (screens === state.screens && locationHistory === state.locationHistory) {
+  if (screens === state.screens && currentLocation === state.currentLocation) {
     return state;
   }
 
   // Compute the matchedPath
-  const currentPath = locationHistory.length > 0 ? locationHistory[locationHistory.length - 1].path : undefined;
+  const currentPath = currentLocation.path;
   matchedPath = currentPath !== undefined ? patternMatch(currentPath, screens) : undefined;
 
   // If the new match is the same as the previous match,
@@ -61079,40 +61055,55 @@ function routerReducer(state, action) {
     matchedPath = state.matchedPath;
   }
   return {
+    ...restState,
     screens,
-    locationHistory,
-    matchedPath
+    currentLocation,
+    matchedPath,
+    focusSelectors
   };
 }
 function UnconnectedNavigatorProvider(props, forwardedRef) {
   const {
-    initialPath,
+    initialPath: initialPathProp,
     children,
     className,
     ...otherProps
   } = useContextSystem(props, 'NavigatorProvider');
-  const [routerState, dispatch] = (0,external_wp_element_namespaceObject.useReducer)(routerReducer, initialPath, path => ({
+  const [routerState, dispatch] = (0,external_wp_element_namespaceObject.useReducer)(routerReducer, initialPathProp, path => ({
     screens: [],
-    locationHistory: [{
-      path
-    }],
-    matchedPath: undefined
+    currentLocation: {
+      path,
+      isInitial: true
+    },
+    matchedPath: undefined,
+    focusSelectors: new Map(),
+    initialPath: initialPathProp
   }));
 
   // The methods are constant forever, create stable references to them.
   const methods = (0,external_wp_element_namespaceObject.useMemo)(() => ({
-    goBack: () => dispatch({
-      type: 'goback'
+    // Note: calling goBack calls `goToParent` internally, as it was established
+    // that `goBack` should behave like `goToParent`, and `goToParent` should
+    // be marked as deprecated.
+    goBack: options => dispatch({
+      type: 'gotoparent',
+      options
     }),
     goTo: (path, options) => dispatch({
       type: 'goto',
       path,
       options
     }),
-    goToParent: options => dispatch({
-      type: 'gotoparent',
-      options
-    }),
+    goToParent: options => {
+      external_wp_deprecated_default()(`wp.components.useNavigator().goToParent`, {
+        since: '6.7',
+        alternative: 'wp.components.useNavigator().goBack'
+      });
+      dispatch({
+        type: 'gotoparent',
+        options
+      });
+    },
     addScreen: screen => dispatch({
       type: 'add',
       screen
@@ -61123,21 +61114,18 @@ function UnconnectedNavigatorProvider(props, forwardedRef) {
     })
   }), []);
   const {
-    locationHistory,
+    currentLocation,
     matchedPath
   } = routerState;
   const navigatorContextValue = (0,external_wp_element_namespaceObject.useMemo)(() => {
     var _matchedPath$params;
     return {
-      location: {
-        ...locationHistory[locationHistory.length - 1],
-        isInitial: locationHistory.length === 1
-      },
+      location: currentLocation,
       params: (_matchedPath$params = matchedPath?.params) !== null && _matchedPath$params !== void 0 ? _matchedPath$params : {},
       match: matchedPath?.id,
       ...methods
     };
-  }, [locationHistory, matchedPath, methods]);
+  }, [currentLocation, matchedPath, methods]);
   const cx = useCx();
   const classes = (0,external_wp_element_namespaceObject.useMemo)(() => cx(navigatorProviderWrapper, className), [className, cx]);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(component, {
@@ -61185,7 +61173,7 @@ function UnconnectedNavigatorProvider(props, forwardedRef) {
  * ```
  */
 const NavigatorProvider = contextConnect(UnconnectedNavigatorProvider, 'NavigatorProvider');
-/* harmony default export */ const navigator_provider_component = (NavigatorProvider);
+/* harmony default export */ const navigator_provider_component = ((/* unused pure expression or super */ null && (NavigatorProvider)));
 
 ;// CONCATENATED MODULE: external ["wp","escapeHtml"]
 const external_wp_escapeHtml_namespaceObject = window["wp"]["escapeHtml"];
@@ -61333,7 +61321,7 @@ function UnconnectedNavigatorScreen(props, forwardedRef) {
  * ```
  */
 const NavigatorScreen = contextConnect(UnconnectedNavigatorScreen, 'NavigatorScreen');
-/* harmony default export */ const navigator_screen_component = (NavigatorScreen);
+/* harmony default export */ const navigator_screen_component = ((/* unused pure expression or super */ null && (NavigatorScreen)));
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/navigator/use-navigator.js
 /**
@@ -61364,7 +61352,6 @@ function useNavigator() {
     params
   };
 }
-/* harmony default export */ const use_navigator = (useNavigator);
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/navigator/navigator-button/hook.js
 /**
@@ -61392,7 +61379,7 @@ function useNavigatorButton(props) {
   const escapedPath = (0,external_wp_escapeHtml_namespaceObject.escapeAttribute)(path);
   const {
     goTo
-  } = use_navigator();
+  } = useNavigator();
   const handleClick = (0,external_wp_element_namespaceObject.useCallback)(e => {
     e.preventDefault();
     goTo(escapedPath, {
@@ -61463,7 +61450,7 @@ function UnconnectedNavigatorButton(props, forwardedRef) {
  * ```
  */
 const NavigatorButton = contextConnect(UnconnectedNavigatorButton, 'NavigatorButton');
-/* harmony default export */ const navigator_button_component = (NavigatorButton);
+/* harmony default export */ const navigator_button_component = ((/* unused pure expression or super */ null && (NavigatorButton)));
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/navigator/navigator-back-button/hook.js
 /**
@@ -61482,22 +61469,16 @@ function useNavigatorBackButton(props) {
   const {
     onClick,
     as = build_module_button,
-    goToParent: goToParentProp = false,
     ...otherProps
   } = useContextSystem(props, 'NavigatorBackButton');
   const {
-    goBack,
-    goToParent
-  } = use_navigator();
+    goBack
+  } = useNavigator();
   const handleClick = (0,external_wp_element_namespaceObject.useCallback)(e => {
     e.preventDefault();
-    if (goToParentProp) {
-      goToParent();
-    } else {
-      goBack();
-    }
+    goBack();
     onClick?.(e);
-  }, [goToParentProp, goToParent, goBack, onClick]);
+  }, [goBack, onClick]);
   return {
     as,
     onClick: handleClick,
@@ -61553,7 +61534,7 @@ function UnconnectedNavigatorBackButton(props, forwardedRef) {
  *     <NavigatorScreen path="/child">
  *       <p>This is the child screen.</p>
  *       <NavigatorBackButton>
- *         Go back
+ *         Go back (to parent)
  *       </NavigatorBackButton>
  *     </NavigatorScreen>
  *   </NavigatorProvider>
@@ -61561,12 +61542,13 @@ function UnconnectedNavigatorBackButton(props, forwardedRef) {
  * ```
  */
 const NavigatorBackButton = contextConnect(UnconnectedNavigatorBackButton, 'NavigatorBackButton');
-/* harmony default export */ const navigator_back_button_component = (NavigatorBackButton);
+/* harmony default export */ const navigator_back_button_component = ((/* unused pure expression or super */ null && (NavigatorBackButton)));
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/navigator/navigator-to-parent-button/component.js
 /**
- * External dependencies
+ * WordPress dependencies
  */
+
 
 /**
  * Internal dependencies
@@ -61574,55 +61556,25 @@ const NavigatorBackButton = contextConnect(UnconnectedNavigatorBackButton, 'Navi
 
 
 
-
-
 function UnconnectedNavigatorToParentButton(props, forwardedRef) {
-  const navigatorToParentButtonProps = useNavigatorBackButton({
-    ...props,
-    goToParent: true
+  external_wp_deprecated_default()('wp.components.NavigatorToParentButton', {
+    since: '6.7',
+    alternative: 'wp.components.NavigatorBackButton'
   });
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(component, {
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(NavigatorBackButton, {
     ref: forwardedRef,
-    ...navigatorToParentButtonProps
+    ...props
   });
 }
 
-/*
- * The `NavigatorToParentButton` component can be used to navigate to a screen and
- * should be used in combination with the `NavigatorProvider`, the
- * `NavigatorScreen` and the `NavigatorButton` components (or the `useNavigator`
- * hook).
+/**
+ * _Note: this component is deprecated. Please use the `NavigatorBackButton`
+ * component instead._
  *
- * @example
- * ```jsx
- * import {
- *   __experimentalNavigatorProvider as NavigatorProvider,
- *   __experimentalNavigatorScreen as NavigatorScreen,
- *   __experimentalNavigatorButton as NavigatorButton,
- *   __experimentalNavigatorToParentButton as NavigatorToParentButton,
- * } from '@wordpress/components';
- *
- * const MyNavigation = () => (
- *   <NavigatorProvider initialPath="/">
- *     <NavigatorScreen path="/">
- *       <p>This is the home screen.</p>
- *        <NavigatorButton path="/child">
- *          Navigate to child screen.
- *       </NavigatorButton>
- *     </NavigatorScreen>
- *
- *     <NavigatorScreen path="/child">
- *       <p>This is the child screen.</p>
- *       <NavigatorToParentButton>
- *         Go to parent
- *       </NavigatorToParentButton>
- *     </NavigatorScreen>
- *   </NavigatorProvider>
- * );
- * ```
+ * @deprecated
  */
 const NavigatorToParentButton = contextConnect(UnconnectedNavigatorToParentButton, 'NavigatorToParentButton');
-/* harmony default export */ const navigator_to_parent_button_component = (NavigatorToParentButton);
+/* harmony default export */ const navigator_to_parent_button_component = ((/* unused pure expression or super */ null && (NavigatorToParentButton)));
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/notice/index.js
 /**
@@ -62208,14 +62160,14 @@ function animateProgressBar(isRtl = false) {
 const INDETERMINATE_TRACK_WIDTH = 50;
 const styles_Track = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "e15u147w2"
-} : 0)("position:relative;overflow:hidden;height:", config_values.borderWidthFocus, ";background-color:color-mix(\n\t\tin srgb,\n\t\t", COLORS.theme.foreground, ",\n\t\ttransparent 90%\n\t);border-radius:", config_values.radiusBlockUi, ";outline:2px solid transparent;outline-offset:2px;:where( & ){width:160px;}" + ( true ? "" : 0));
+} : 0)("position:relative;overflow:hidden;height:", config_values.borderWidthFocus, ";background-color:color-mix(\n\t\tin srgb,\n\t\t", COLORS.theme.foreground, ",\n\t\ttransparent 90%\n\t);border-radius:", config_values.radiusFull, ";outline:2px solid transparent;outline-offset:2px;:where( & ){width:160px;}" + ( true ? "" : 0));
 var progress_bar_styles_ref =  true ? {
   name: "152sa26",
   styles: "width:var(--indicator-width);transition:width 0.4s ease-in-out"
 } : 0;
 const Indicator = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "e15u147w1"
-} : 0)("display:inline-block;position:absolute;top:0;height:100%;border-radius:", config_values.radiusBlockUi, ";background-color:color-mix(\n\t\tin srgb,\n\t\t", COLORS.theme.foreground, ",\n\t\ttransparent 10%\n\t);outline:2px solid transparent;outline-offset:-2px;", ({
+} : 0)("display:inline-block;position:absolute;top:0;height:100%;border-radius:", config_values.radiusFull, ";background-color:color-mix(\n\t\tin srgb,\n\t\t", COLORS.theme.foreground, ",\n\t\ttransparent 10%\n\t);outline:2px solid transparent;outline-offset:-2px;", ({
   isIndeterminate
 }) => isIndeterminate ? /*#__PURE__*/emotion_react_browser_esm_css({
   animationDuration: '1.5s',
@@ -62357,6 +62309,16 @@ const external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
 
 
 
+
+const tree_select_CONTEXT_VALUE = {
+  BaseControl: {
+    // Temporary during deprecation grace period: Overrides the underlying `__associatedWPComponentName`
+    // via the context system to override the value set by SelectControl.
+    _overrides: {
+      __associatedWPComponentName: 'TreeSelect'
+    }
+  }
+};
 function getSelectOptions(tree, level = 0) {
   return tree.flatMap(treeNode => [{
     value: treeNode.id,
@@ -62427,12 +62389,15 @@ function TreeSelect(props) {
       label: noOptionLabel
     }, ...getSelectOptions(tree)].filter(option => !!option);
   }, [noOptionLabel, tree]);
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(SelectControl, {
-    label,
-    options,
-    onChange,
-    value: selectedId,
-    ...restProps
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ContextSystemProvider, {
+    value: tree_select_CONTEXT_VALUE,
+    children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(SelectControl, {
+      label,
+      options,
+      onChange,
+      value: selectedId,
+      ...restProps
+    })
   });
 }
 /* harmony default export */ const tree_select = (TreeSelect);
@@ -62555,7 +62520,6 @@ function isMultipleCategorySelection(props) {
  * ```
  */
 function QueryControls({
-  __next40pxDefaultSize = false,
   authorList,
   selectedAuthorId,
   numberOfItems,
@@ -62576,7 +62540,7 @@ function QueryControls({
     className: "components-query-controls",
     children: [onOrderChange && onOrderByChange && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(select_control, {
       __nextHasNoMarginBottom: true,
-      __next40pxDefaultSize: __next40pxDefaultSize,
+      __next40pxDefaultSize: true,
       label: (0,external_wp_i18n_namespaceObject.__)('Order by'),
       value: orderBy === undefined || order === undefined ? undefined : `${orderBy}/${order}`,
       options: [{
@@ -62607,14 +62571,14 @@ function QueryControls({
         }
       }
     }, "query-controls-order-select"), isSingleCategorySelection(props) && props.categoriesList && props.onCategoryChange && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(CategorySelect, {
-      __next40pxDefaultSize: __next40pxDefaultSize,
+      __next40pxDefaultSize: true,
       categoriesList: props.categoriesList,
       label: (0,external_wp_i18n_namespaceObject.__)('Category'),
       noOptionLabel: (0,external_wp_i18n_namespaceObject._x)('All', 'categories'),
       selectedCategoryId: props.selectedCategoryId,
       onChange: props.onCategoryChange
     }, "query-controls-category-select"), isMultipleCategorySelection(props) && props.categorySuggestions && props.onCategoryChange && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(form_token_field, {
-      __next40pxDefaultSize: __next40pxDefaultSize,
+      __next40pxDefaultSize: true,
       __nextHasNoMarginBottom: true,
       label: (0,external_wp_i18n_namespaceObject.__)('Categories'),
       value: props.selectedCategories && props.selectedCategories.map(item => ({
@@ -62629,7 +62593,7 @@ function QueryControls({
       onChange: props.onCategoryChange,
       maxSuggestions: MAX_CATEGORIES_SUGGESTIONS
     }, "query-controls-categories-select"), onAuthorChange && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(AuthorSelect, {
-      __next40pxDefaultSize: __next40pxDefaultSize,
+      __next40pxDefaultSize: true,
       authorList: authorList,
       label: (0,external_wp_i18n_namespaceObject.__)('Author'),
       noOptionLabel: (0,external_wp_i18n_namespaceObject._x)('All', 'authors'),
@@ -62637,7 +62601,7 @@ function QueryControls({
       onChange: onAuthorChange
     }, "query-controls-author-select"), onNumberOfItemsChange && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(range_control, {
       __nextHasNoMarginBottom: true,
-      __next40pxDefaultSize: __next40pxDefaultSize,
+      __next40pxDefaultSize: true,
       label: (0,external_wp_i18n_namespaceObject.__)('Number of items'),
       value: numberOfItems,
       onChange: onNumberOfItemsChange,
@@ -62674,6 +62638,7 @@ const RadioGroupContext = (0,external_wp_element_namespaceObject.createContext)(
  */
 
 
+
 /**
  * Internal dependencies
  */
@@ -62689,7 +62654,7 @@ function UnforwardedRadio({
     store,
     disabled
   } = (0,external_wp_element_namespaceObject.useContext)(RadioGroupContext);
-  const selectedValue = store?.useState('value');
+  const selectedValue = useStoreState(store, 'value');
   const isChecked = selectedValue !== undefined && selectedValue === value;
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Radio, {
     disabled: disabled,
@@ -62792,6 +62757,9 @@ function generateOptionDescriptionId(radioGroupId, index) {
 function generateOptionId(radioGroupId, index) {
   return `${radioGroupId}-${index}`;
 }
+function generateHelpId(radioGroupId) {
+  return `${radioGroupId}__help`;
+}
 
 /**
  * Render a user interface to select the user type using radio inputs.
@@ -62832,27 +62800,20 @@ function RadioControl(props) {
   } = props;
   const id = (0,external_wp_compose_namespaceObject.useInstanceId)(RadioControl, 'inspector-radio-control', preferredId);
   const onChangeValue = event => onChange(event.target.value);
-
-  // Use `useBaseControlProps` to get the id of the help text.
-  const {
-    controlProps: {
-      'aria-describedby': helpTextId
-    }
-  } = useBaseControlProps({
-    id,
-    help
-  });
   if (!options?.length) {
     return null;
   }
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control, {
-    __nextHasNoMarginBottom: true,
-    label: label,
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)("fieldset", {
     id: id,
-    hideLabelFromVision: hideLabelFromVision,
-    help: help,
     className: dist_clsx(className, 'components-radio-control'),
-    children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(v_stack_component, {
+    "aria-describedby": !!help ? generateHelpId(id) : undefined,
+    children: [hideLabelFromVision ? /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(visually_hidden_component, {
+      as: "legend",
+      children: label
+    }) : /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control.VisualLabel, {
+      as: "legend",
+      children: label
+    }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(v_stack_component, {
       spacing: 3,
       className: dist_clsx('components-radio-control__group-wrapper', {
         'has-help': !!help
@@ -62867,7 +62828,7 @@ function RadioControl(props) {
           value: option.value,
           onChange: onChangeValue,
           checked: option.value === selected,
-          "aria-describedby": dist_clsx([!!option.description && generateOptionDescriptionId(id, index), helpTextId]) || undefined,
+          "aria-describedby": !!option.description ? generateOptionDescriptionId(id, index) : undefined,
           ...additionalProps
         }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)("label", {
           className: "components-radio-control__label",
@@ -62880,7 +62841,12 @@ function RadioControl(props) {
           children: option.description
         }) : null]
       }, generateOptionId(id, index)))
-    })
+    }), !!help && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(StyledHelp, {
+      __nextHasNoMarginBottom: true,
+      id: generateHelpId(id),
+      className: "components-base-control__help",
+      children: help
+    })]
   });
 }
 /* harmony default export */ const radio_control = (RadioControl);
@@ -63989,7 +63955,7 @@ const TooltipWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true
 } : 0);
 const resize_tooltip_styles_Tooltip = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   target: "e1wq7y4k1"
-} : 0)("background:", COLORS.theme.foreground, ";border-radius:2px;box-sizing:border-box;font-family:", font('default.fontFamily'), ";font-size:12px;color:", COLORS.theme.foregroundInverted, ";padding:4px 8px;position:relative;" + ( true ? "" : 0));
+} : 0)("background:", COLORS.theme.foreground, ";border-radius:", config_values.radiusSmall, ";box-sizing:border-box;font-family:", font('default.fontFamily'), ";font-size:12px;color:", COLORS.theme.foregroundInverted, ";padding:4px 8px;position:relative;" + ( true ? "" : 0));
 
 // TODO: Resolve need to use &&& to increase specificity
 // https://github.com/WordPress/gutenberg/issues/18483
@@ -64588,12 +64554,12 @@ function UnforwardedSnackbar({
 
   // The `onDismiss/onRemove` can have unstable references,
   // trigger side-effect cleanup, and reset timers.
-  const callbackRefs = (0,external_wp_element_namespaceObject.useRef)({
+  const callbacksRef = (0,external_wp_element_namespaceObject.useRef)({
     onDismiss,
     onRemove
   });
   (0,external_wp_element_namespaceObject.useLayoutEffect)(() => {
-    callbackRefs.current = {
+    callbacksRef.current = {
       onDismiss,
       onRemove
     };
@@ -64602,8 +64568,8 @@ function UnforwardedSnackbar({
     // Only set up the timeout dismiss if we're not explicitly dismissing.
     const timeoutHandle = setTimeout(() => {
       if (!explicitDismiss) {
-        callbackRefs.current.onDismiss?.();
-        callbackRefs.current.onRemove?.();
+        callbacksRef.current.onDismiss?.();
+        callbacksRef.current.onRemove?.();
       }
     }, NOTICE_TIMEOUT);
     return () => clearTimeout(timeoutHandle);
@@ -64913,7 +64879,7 @@ function UnconnectedSurface(props, forwardedRef) {
 const component_Surface = contextConnect(UnconnectedSurface, 'Surface');
 /* harmony default export */ const surface_component = (component_Surface);
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/tab/tab-store.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/tab/tab-store.js
 "use client";
 
 
@@ -64928,7 +64894,7 @@ function createTabStore(_a = {}) {
   var _b = _a, {
     composite: parentComposite,
     combobox
-  } = _b, props = _4R3V3JGP_objRest(_b, [
+  } = _b, props = _3YLGPPWQ_objRest(_b, [
     "composite",
     "combobox"
   ]);
@@ -64950,7 +64916,7 @@ function createTabStore(_a = {}) {
     omit2(combobox, independentKeys)
   );
   const syncState = store == null ? void 0 : store.getState();
-  const composite = createCompositeStore(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, props), {
+  const composite = createCompositeStore(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, props), {
     store,
     // We need to explicitly set the default value of `includesBaseElement` to
     // `false` since we don't want the composite store to default it to `true`
@@ -64969,7 +64935,7 @@ function createTabStore(_a = {}) {
     focusLoop: defaultValue(props.focusLoop, syncState == null ? void 0 : syncState.focusLoop, true)
   }));
   const panels = createCollectionStore();
-  const initialState = _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, composite.getState()), {
+  const initialState = _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, composite.getState()), {
     selectedId: defaultValue(
       props.selectedId,
       syncState == null ? void 0 : syncState.selectedId,
@@ -64986,33 +64952,26 @@ function createTabStore(_a = {}) {
     tab,
     () => sync(tab, ["moves"], () => {
       const { activeId, selectOnMove } = tab.getState();
-      if (!selectOnMove)
-        return;
-      if (!activeId)
-        return;
+      if (!selectOnMove) return;
+      if (!activeId) return;
       const tabItem = composite.item(activeId);
-      if (!tabItem)
-        return;
-      if (tabItem.dimmed)
-        return;
-      if (tabItem.disabled)
-        return;
+      if (!tabItem) return;
+      if (tabItem.dimmed) return;
+      if (tabItem.disabled) return;
       tab.setState("selectedId", tabItem.id);
     })
   );
   setup(
     tab,
     () => batch(tab, ["selectedId"], (state, prev) => {
-      if (parentComposite && state.selectedId === prev.selectedId)
-        return;
+      if (parentComposite && state.selectedId === prev.selectedId) return;
       tab.setState("activeId", state.selectedId);
     })
   );
   setup(
     tab,
     () => sync(tab, ["selectedId", "renderedItems"], (state) => {
-      if (state.selectedId !== void 0)
-        return;
+      if (state.selectedId !== void 0) return;
       const { activeId, renderedItems } = tab.getState();
       const tabItem = composite.item(activeId);
       if (tabItem && !tabItem.disabled && !tabItem.dimmed) {
@@ -65029,20 +64988,16 @@ function createTabStore(_a = {}) {
     tab,
     () => sync(tab, ["renderedItems"], (state) => {
       const tabs = state.renderedItems;
-      if (!tabs.length)
-        return;
+      if (!tabs.length) return;
       return sync(panels, ["renderedItems"], (state2) => {
         const items = state2.renderedItems;
         const hasOrphanPanels = items.some((panel) => !panel.tabId);
-        if (!hasOrphanPanels)
-          return;
+        if (!hasOrphanPanels) return;
         items.forEach((panel, i) => {
-          if (panel.tabId)
-            return;
+          if (panel.tabId) return;
           const tabItem = tabs[i];
-          if (!tabItem)
-            return;
-          panels.renderItem(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, panel), { tabId: tabItem.id }));
+          if (!tabItem) return;
+          panels.renderItem(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, panel), { tabId: tabItem.id }));
         });
       });
     })
@@ -65061,14 +65016,13 @@ function createTabStore(_a = {}) {
         sync(parentComposite, ["open"], restoreSelectedId)
       );
     }
-    if (!combobox)
-      return;
+    if (!combobox) return;
     return chain(
       sync(combobox, ["selectedValue"], backupSelectedId),
       sync(combobox, ["open"], restoreSelectedId)
     );
   });
-  return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, composite), tab), {
+  return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, composite), tab), {
     panels,
     setSelectedId: (id) => tab.setState("selectedId", id),
     select: (id) => {
@@ -65079,7 +65033,7 @@ function createTabStore(_a = {}) {
 }
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/HOOW7GH2.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/JZUY7XL6.js
 "use client";
 
 
@@ -65096,41 +65050,41 @@ function useTabStoreProps(store, update, props) {
   store = useCompositeStoreProps(store, update, props);
   useStoreProps(store, props, "selectedId", "setSelectedId");
   useStoreProps(store, props, "selectOnMove");
-  const [panels, updatePanels] = DTNGDFNU_useStore(() => store.panels, {});
+  const [panels, updatePanels] = _2GXGCHW6_useStore(() => store.panels, {});
   useUpdateEffect(updatePanels, [store, updatePanels]);
   return Object.assign(
-    (0,external_React_.useMemo)(() => _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, store), { panels }), [store, panels]),
+    (0,external_React_.useMemo)(() => _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, store), { panels }), [store, panels]),
     { composite: props.composite, combobox: props.combobox }
   );
 }
 function useTabStore(props = {}) {
   const combobox = useComboboxContext();
   const composite = useSelectContext() || combobox;
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
     composite: props.composite !== void 0 ? props.composite : composite,
     combobox: props.combobox !== void 0 ? props.combobox : combobox
   });
-  const [store, update] = DTNGDFNU_useStore(createTabStore, props);
+  const [store, update] = _2GXGCHW6_useStore(createTabStore, props);
   return useTabStoreProps(store, update, props);
 }
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/XHMHIT7V.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/TNITL632.js
 "use client";
 
 
 
 // src/tab/tab-context.tsx
-var XHMHIT7V_ctx = createStoreContext(
+var TNITL632_ctx = createStoreContext(
   [CompositeContextProvider],
   [CompositeScopedContextProvider]
 );
-var useTabContext = XHMHIT7V_ctx.useContext;
-var useTabScopedContext = XHMHIT7V_ctx.useScopedContext;
-var useTabProviderContext = XHMHIT7V_ctx.useProviderContext;
-var TabContextProvider = XHMHIT7V_ctx.ContextProvider;
-var TabScopedContextProvider = XHMHIT7V_ctx.ScopedContextProvider;
+var useTabContext = TNITL632_ctx.useContext;
+var useTabScopedContext = TNITL632_ctx.useScopedContext;
+var useTabProviderContext = TNITL632_ctx.useProviderContext;
+var TabContextProvider = TNITL632_ctx.ContextProvider;
+var TabScopedContextProvider = TNITL632_ctx.ScopedContextProvider;
 
 
 
@@ -65170,21 +65124,21 @@ var useTabList = createHook(
       [store]
     );
     if (store.composite) {
-      props = _4R3V3JGP_spreadValues({
+      props = _3YLGPPWQ_spreadValues({
         focusable: false
       }, props);
     }
-    props = _4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadValues({
       role: "tablist",
       "aria-orientation": orientation
     }, props);
-    props = useComposite(_4R3V3JGP_spreadValues({ store }, props));
+    props = useComposite(_3YLGPPWQ_spreadValues({ store }, props));
     return props;
   }
 );
 var tab_list_TabList = forwardRef2(function TabList2(props) {
   const htmlProps = useTabList(props);
-  return YIF72NQG_createElement(tab_list_TagName, htmlProps);
+  return HKOOKEDE_createElement(tab_list_TagName, htmlProps);
 });
 
 
@@ -65213,13 +65167,12 @@ var tab_TagName = "button";
 var useTab = createHook(function useTab2(_a) {
   var _b = _a, {
     store,
-    accessibleWhenDisabled = true,
     getItem: getItemProp
   } = _b, props = __objRest(_b, [
     "store",
-    "accessibleWhenDisabled",
     "getItem"
   ]);
+  var _a2;
   const context = useTabScopedContext();
   store = store || context;
   invariant(
@@ -65231,7 +65184,7 @@ var useTab = createHook(function useTab2(_a) {
   const dimmed = disabledFromProps(props);
   const getItem = (0,external_React_.useCallback)(
     (item) => {
-      const nextItem = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, item), { dimmed });
+      const nextItem = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, item), { dimmed });
       if (getItemProp) {
         return getItemProp(nextItem);
       }
@@ -65242,14 +65195,13 @@ var useTab = createHook(function useTab2(_a) {
   const onClickProp = props.onClick;
   const onClick = useEvent((event) => {
     onClickProp == null ? void 0 : onClickProp(event);
-    if (event.defaultPrevented)
-      return;
+    if (event.defaultPrevented) return;
     store == null ? void 0 : store.setSelectedId(id);
   });
   const panelId = store.panels.useState(
     (state) => {
-      var _a2;
-      return (_a2 = state.items.find((item) => item.tabId === id)) == null ? void 0 : _a2.id;
+      var _a3;
+      return (_a3 = state.items.find((item) => item.tabId === id)) == null ? void 0 : _a3.id;
     }
   );
   const shouldRegisterItem = defaultId ? props.shouldRegisterItem : false;
@@ -65257,36 +65209,17 @@ var useTab = createHook(function useTab2(_a) {
   const selected = store.useState((state) => !!id && state.selectedId === id);
   const hasActiveItem = store.useState((state) => !!store.item(state.activeId));
   const canRegisterComposedItem = isActive || selected && !hasActiveItem;
-  props = useWrapElement(
-    props,
-    (element) => {
-      if (!(store == null ? void 0 : store.composite))
-        return element;
-      const defaultProps = {
-        id,
-        store: store.composite,
-        shouldRegisterItem: canRegisterComposedItem && shouldRegisterItem,
-        render: element
-      };
-      return /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
-        CompositeItem,
-        _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, defaultProps), {
-          render: store.combobox && store.composite !== store.combobox ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(CompositeItem, _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, defaultProps), { store: store.combobox })) : element
-        })
-      );
-    },
-    [store, id, canRegisterComposedItem, shouldRegisterItem]
-  );
+  const accessibleWhenDisabled = selected || ((_a2 = props.accessibleWhenDisabled) != null ? _a2 : true);
   const isWithinVirtualFocusComposite = useStoreState(
     store.combobox || store.composite,
     "virtualFocus"
   );
   if (isWithinVirtualFocusComposite) {
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
       tabIndex: -1
     });
   }
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
     id,
     role: "tab",
     "aria-selected": selected,
@@ -65294,7 +65227,24 @@ var useTab = createHook(function useTab2(_a) {
   }, props), {
     onClick
   });
-  props = useCompositeItem(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+  if (store.composite) {
+    const defaultProps = {
+      id,
+      accessibleWhenDisabled,
+      store: store.composite,
+      shouldRegisterItem: canRegisterComposedItem && shouldRegisterItem,
+      render: props.render
+    };
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
+      render: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(
+        _3CCTMYB6_CompositeItem,
+        _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, defaultProps), {
+          render: store.combobox && store.composite !== store.combobox ? /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(_3CCTMYB6_CompositeItem, _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, defaultProps), { store: store.combobox })) : defaultProps.render
+        })
+      )
+    });
+  }
+  props = useCompositeItem(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
     store
   }, props), {
     accessibleWhenDisabled,
@@ -65306,7 +65256,7 @@ var useTab = createHook(function useTab2(_a) {
 var Tab = memo2(
   forwardRef2(function Tab2(props) {
     const htmlProps = useTab(props);
-    return YIF72NQG_createElement(tab_TagName, htmlProps);
+    return HKOOKEDE_createElement(tab_TagName, htmlProps);
   })
 );
 
@@ -65360,14 +65310,13 @@ var useTabPanel = createHook(
     const [hasTabbableChildren, setHasTabbableChildren] = (0,external_React_.useState)(false);
     (0,external_React_.useEffect)(() => {
       const element = ref.current;
-      if (!element)
-        return;
+      if (!element) return;
       const tabbable = getAllTabbableIn(element);
       setHasTabbableChildren(!!tabbable.length);
     }, []);
     const getItem = (0,external_React_.useCallback)(
       (item) => {
-        const nextItem = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, item), { id: id || item.id, tabId: tabIdProp });
+        const nextItem = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, item), { id: id || item.id, tabId: tabIdProp });
         if (getItemProp) {
           return getItemProp(nextItem);
         }
@@ -65378,12 +65327,10 @@ var useTabPanel = createHook(
     const onKeyDownProp = props.onKeyDown;
     const onKeyDown = useEvent((event) => {
       onKeyDownProp == null ? void 0 : onKeyDownProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!(store == null ? void 0 : store.composite))
-        return;
+      if (event.defaultPrevented) return;
+      if (!(store == null ? void 0 : store.composite)) return;
       const state = store.getState();
-      const tab = createTabStore(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, state), { activeId: state.selectedId }));
+      const tab = createTabStore(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, state), { activeId: state.selectedId }));
       tab.setState("renderedItems", state.renderedItems);
       const keyMap = {
         ArrowLeft: tab.previous,
@@ -65392,11 +65339,9 @@ var useTabPanel = createHook(
         End: tab.last
       };
       const action = keyMap[event.key];
-      if (!action)
-        return;
+      if (!action) return;
       const nextId = action();
-      if (!nextId)
-        return;
+      if (!nextId) return;
       event.preventDefault();
       store.move(nextId);
     });
@@ -65416,7 +65361,7 @@ var useTabPanel = createHook(
     );
     const disclosure = useDisclosureStore({ open });
     const mounted = disclosure.useState("mounted");
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       id,
       role: "tabpanel",
       "aria-labelledby": tabId || void 0
@@ -65425,19 +65370,19 @@ var useTabPanel = createHook(
       ref: useMergeRefs(ref, props.ref),
       onKeyDown
     });
-    props = useFocusable(_4R3V3JGP_spreadValues({
+    props = useFocusable(_3YLGPPWQ_spreadValues({
       // If the tab panel is rendered as part of another composite widget such
       // as combobox, it should not be focusable.
       focusable: !store.composite && !hasTabbableChildren
     }, props));
-    props = useDisclosureContent(_4R3V3JGP_spreadValues({ store: disclosure }, props));
-    props = useCollectionItem(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({ store: store.panels }, props), { getItem }));
+    props = useDisclosureContent(_3YLGPPWQ_spreadValues({ store: disclosure }, props));
+    props = useCollectionItem(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({ store: store.panels }, props), { getItem }));
     return props;
   }
 );
 var TabPanel = forwardRef2(function TabPanel2(props) {
   const htmlProps = useTabPanel(props);
-  return YIF72NQG_createElement(tab_panel_TagName, htmlProps);
+  return HKOOKEDE_createElement(tab_panel_TagName, htmlProps);
 });
 
 
@@ -65445,6 +65390,7 @@ var TabPanel = forwardRef2(function TabPanel2(props) {
 /**
  * External dependencies
  */
+
 
 
 /**
@@ -65543,7 +65489,7 @@ const UnforwardedTabPanel = ({
     selectOnMove,
     defaultSelectedId: prependInstanceId(initialTabName)
   });
-  const selectedTabName = extractTabName(tabStore.useState('selectedId'));
+  const selectedTabName = extractTabName(useStoreState(tabStore, 'selectedId'));
   const setTabStoreSelectedId = (0,external_wp_element_namespaceObject.useCallback)(tabName => {
     tabStore.setState('selectedId', prependInstanceId(tabName));
   }, [prependInstanceId, tabStore]);
@@ -65668,6 +65614,7 @@ function UnforwardedTextControl(props, ref) {
   const onChangeValue = event => onChange(event.target.value);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control, {
     __nextHasNoMarginBottom: __nextHasNoMarginBottom,
+    __associatedWPComponentName: "TextControl",
     label: label,
     hideLabelFromVision: hideLabelFromVision,
     id: id,
@@ -65712,20 +65659,6 @@ function UnforwardedTextControl(props, ref) {
 const TextControl = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedTextControl);
 /* harmony default export */ const text_control = (TextControl);
 
-;// CONCATENATED MODULE: ./packages/components/build-module/utils/input/base.js
-/**
- * External dependencies
- */
-
-
-/**
- * Internal dependencies
- */
-
-
-const inputStyleNeutral = /*#__PURE__*/emotion_react_browser_esm_css("box-shadow:0 0 0 transparent;border-radius:", config_values.radiusBlockUi, ";border:", config_values.borderWidth, " solid ", COLORS.ui.border, ";@media not ( prefers-reduced-motion ){transition:box-shadow 0.1s linear;}" + ( true ? "" : 0),  true ? "" : 0);
-const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color:", COLORS.theme.accent, ";box-shadow:0 0 0 calc( ", config_values.borderWidthFocus, " - ", config_values.borderWidth, " ) ", COLORS.theme.accent, ";outline:2px solid transparent;" + ( true ? "" : 0),  true ? "" : 0);
-
 ;// CONCATENATED MODULE: ./packages/components/build-module/utils/breakpoint-values.js
 /* harmony default export */ const breakpoint_values = ({
   huge: '1440px',
@@ -65752,34 +65685,26 @@ const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color
  */
 const breakpoint = point => `@media (min-width: ${breakpoint_values[point]})`;
 
-;// CONCATENATED MODULE: ./packages/components/build-module/utils/input/input-control.js
-/**
- * External dependencies
- */
-
-
-/**
- * Internal dependencies
- */
-
-
-
-
-const inputControl = /*#__PURE__*/emotion_react_browser_esm_css("display:block;font-family:", font('default.fontFamily'), ";padding:6px 8px;", inputStyleNeutral, ";font-size:", font('mobileTextMinFontSize'), ";line-height:normal;", breakpoint('small'), "{font-size:", font('default.fontSize'), ";line-height:normal;}&:focus{", inputStyleFocus, ";}&::-webkit-input-placeholder{color:", COLORS.ui.darkGrayPlaceholder, ";}&::-moz-placeholder{opacity:1;color:", COLORS.ui.darkGrayPlaceholder, ";}&:-ms-input-placeholder{color:", COLORS.ui.darkGrayPlaceholder, ";}.is-dark-theme &{&::-webkit-input-placeholder{color:", COLORS.ui.lightGrayPlaceholder, ";}&::-moz-placeholder{opacity:1;color:", COLORS.ui.lightGrayPlaceholder, ";}&:-ms-input-placeholder{color:", COLORS.ui.lightGrayPlaceholder, ";}}" + ( true ? "" : 0),  true ? "" : 0);
-
 ;// CONCATENATED MODULE: ./packages/components/build-module/textarea-control/styles/textarea-control-styles.js
 
 /**
  * External dependencies
  */
 
+
+
 /**
  * Internal dependencies
  */
 
+
+
+
+const inputStyleNeutral = /*#__PURE__*/emotion_react_browser_esm_css("box-shadow:0 0 0 transparent;border-radius:", config_values.radiusSmall, ";border:", config_values.borderWidth, " solid ", COLORS.ui.border, ";@media not ( prefers-reduced-motion ){transition:box-shadow 0.1s linear;}" + ( true ? "" : 0),  true ? "" : 0);
+const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color:", COLORS.theme.accent, ";box-shadow:0 0 0 calc( ", config_values.borderWidthFocus, " - ", config_values.borderWidth, " ) ", COLORS.theme.accent, ";outline:2px solid transparent;" + ( true ? "" : 0),  true ? "" : 0);
 const StyledTextarea = /*#__PURE__*/emotion_styled_base_browser_esm("textarea",  true ? {
   target: "e1w5nnrk0"
-} : 0)("width:100%;", inputControl, ";" + ( true ? "" : 0));
+} : 0)("width:100%;display:block;font-family:", font('default.fontFamily'), ";line-height:20px;padding:9px 11px;", inputStyleNeutral, ";font-size:", font('mobileTextMinFontSize'), ";", breakpoint('small'), "{font-size:", font('default.fontSize'), ";}&:focus{", inputStyleFocus, ";}&::-webkit-input-placeholder{color:", COLORS.ui.darkGrayPlaceholder, ";}&::-moz-placeholder{opacity:1;color:", COLORS.ui.darkGrayPlaceholder, ";}&:-ms-input-placeholder{color:", COLORS.ui.darkGrayPlaceholder, ";}.is-dark-theme &{&::-webkit-input-placeholder{color:", COLORS.ui.lightGrayPlaceholder, ";}&::-moz-placeholder{opacity:1;color:", COLORS.ui.lightGrayPlaceholder, ";}&:-ms-input-placeholder{color:", COLORS.ui.lightGrayPlaceholder, ";}}" + ( true ? "" : 0));
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/textarea-control/index.js
 /**
@@ -65811,6 +65736,7 @@ function UnforwardedTextareaControl(props, ref) {
   const onChangeValue = event => onChange(event.target.value);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(base_control, {
     __nextHasNoMarginBottom: __nextHasNoMarginBottom,
+    __associatedWPComponentName: "TextareaControl",
     label: label,
     hideLabelFromVision: hideLabelFromVision,
     id: id,
@@ -65956,6 +65882,7 @@ function Tip(props) {
 
 
 
+
 /**
  * Internal dependencies
  */
@@ -65985,6 +65912,13 @@ function UnforwardedToggleControl({
   const classes = cx('components-toggle-control', className, !__nextHasNoMarginBottom && /*#__PURE__*/emotion_react_browser_esm_css({
     marginBottom: space(3)
   },  true ? "" : 0,  true ? "" : 0));
+  if (!__nextHasNoMarginBottom) {
+    external_wp_deprecated_default()('Bottom margin styles for wp.components.ToggleControl', {
+      since: '6.7',
+      version: '7.0',
+      hint: 'Set the `__nextHasNoMarginBottom` prop to true to start opting into the new styles, which will become the default in a future version.'
+    });
+  }
   let describedBy, helpLabel;
   if (help) {
     if (typeof help === 'function') {
@@ -66055,25 +65989,25 @@ function UnforwardedToggleControl({
 const ToggleControl = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedToggleControl);
 /* harmony default export */ const toggle_control = (ToggleControl);
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/SORNFOKV.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/IIER4YBF.js
 "use client";
 
 
 
 // src/toolbar/toolbar-context.tsx
-var SORNFOKV_ctx = createStoreContext(
+var IIER4YBF_ctx = createStoreContext(
   [CompositeContextProvider],
   [CompositeScopedContextProvider]
 );
-var useToolbarContext = SORNFOKV_ctx.useContext;
-var useToolbarScopedContext = SORNFOKV_ctx.useScopedContext;
-var useToolbarProviderContext = SORNFOKV_ctx.useProviderContext;
-var ToolbarContextProvider = SORNFOKV_ctx.ContextProvider;
-var ToolbarScopedContextProvider = SORNFOKV_ctx.ScopedContextProvider;
+var useToolbarContext = IIER4YBF_ctx.useContext;
+var useToolbarScopedContext = IIER4YBF_ctx.useScopedContext;
+var useToolbarProviderContext = IIER4YBF_ctx.useProviderContext;
+var ToolbarContextProvider = IIER4YBF_ctx.ContextProvider;
+var ToolbarScopedContextProvider = IIER4YBF_ctx.ScopedContextProvider;
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/ELXIVOWC.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/FGSEH62K.js
 "use client";
 
 
@@ -66081,20 +66015,20 @@ var ToolbarScopedContextProvider = SORNFOKV_ctx.ScopedContextProvider;
 
 
 // src/toolbar/toolbar-item.tsx
-var ELXIVOWC_TagName = "button";
+var FGSEH62K_TagName = "button";
 var useToolbarItem = createHook(
   function useToolbarItem2(_a) {
     var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
     const context = useToolbarContext();
     store = store || context;
-    props = useCompositeItem(_4R3V3JGP_spreadValues({ store }, props));
+    props = useCompositeItem(_3YLGPPWQ_spreadValues({ store }, props));
     return props;
   }
 );
 var ToolbarItem = memo2(
   forwardRef2(function ToolbarItem2(props) {
     const htmlProps = useToolbarItem(props);
-    return YIF72NQG_createElement(ELXIVOWC_TagName, htmlProps);
+    return HKOOKEDE_createElement(FGSEH62K_TagName, htmlProps);
   })
 );
 
@@ -66445,7 +66379,7 @@ function ToolbarGroup({
 }
 /* harmony default export */ const toolbar_group = (ToolbarGroup);
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/toolbar/toolbar-store.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/toolbar/toolbar-store.js
 "use client";
 
 
@@ -66459,7 +66393,7 @@ function ToolbarGroup({
 function createToolbarStore(props = {}) {
   var _a;
   const syncState = (_a = props.store) == null ? void 0 : _a.getState();
-  return createCompositeStore(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, props), {
+  return createCompositeStore(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, props), {
     orientation: defaultValue(
       props.orientation,
       syncState == null ? void 0 : syncState.orientation,
@@ -66470,7 +66404,7 @@ function createToolbarStore(props = {}) {
 }
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/G5PRNFCL.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/GO2SPXQX.js
 "use client";
 
 
@@ -66481,7 +66415,7 @@ function useToolbarStoreProps(store, update, props) {
   return useCompositeStoreProps(store, update, props);
 }
 function useToolbarStore(props = {}) {
-  const [store, update] = DTNGDFNU_useStore(createToolbarStore, props);
+  const [store, update] = _2GXGCHW6_useStore(createToolbarStore, props);
   return useToolbarStoreProps(store, update, props);
 }
 
@@ -66540,17 +66474,17 @@ var useToolbar = createHook(
       (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(ToolbarScopedContextProvider, { value: store, children: element }),
       [store]
     );
-    props = _4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadValues({
       role: "toolbar",
       "aria-orientation": orientation
     }, props);
-    props = useComposite(_4R3V3JGP_spreadValues({ store }, props));
+    props = useComposite(_3YLGPPWQ_spreadValues({ store }, props));
     return props;
   }
 );
 var Toolbar = forwardRef2(function Toolbar2(props) {
   const htmlProps = useToolbar(props);
-  return YIF72NQG_createElement(toolbar_TagName, htmlProps);
+  return HKOOKEDE_createElement(toolbar_TagName, htmlProps);
 });
 
 
@@ -66746,7 +66680,7 @@ function tools_panel_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have 
 
 const toolsPanelGrid = {
   columns: columns => /*#__PURE__*/emotion_react_browser_esm_css("grid-template-columns:", `repeat( ${columns}, minmax(0, 1fr) )`, ";" + ( true ? "" : 0),  true ? "" : 0),
-  spacing: /*#__PURE__*/emotion_react_browser_esm_css("column-gap:", space(2), ";row-gap:", space(4), ";" + ( true ? "" : 0),  true ? "" : 0),
+  spacing: /*#__PURE__*/emotion_react_browser_esm_css("column-gap:", space(4), ";row-gap:", space(4), ";" + ( true ? "" : 0),  true ? "" : 0),
   item: {
     fullWidth:  true ? {
       name: "18iuzk9",
@@ -66774,7 +66708,7 @@ const ToolsPanelHeading =  true ? {
   name: "1pmxm02",
   styles: "font-size:inherit;font-weight:500;line-height:normal;&&{margin:0;}"
 } : 0;
-const ToolsPanelItem = /*#__PURE__*/emotion_react_browser_esm_css(toolsPanelGrid.item.fullWidth, "&>div,&>fieldset{padding-bottom:0;margin-bottom:0;max-width:100%;}&& ", base_control_styles_Wrapper, "{margin-bottom:0;", StyledField, ":last-child{margin-bottom:0;}}", StyledHelp, "{margin-bottom:0;}&& ", LabelWrapper, "{label{line-height:1.4em;}}" + ( true ? "" : 0),  true ? "" : 0);
+const ToolsPanelItem = /*#__PURE__*/emotion_react_browser_esm_css(toolsPanelGrid.item.fullWidth, "&>div,&>fieldset{padding-bottom:0;margin-bottom:0;max-width:100%;}&& ", Wrapper, "{margin-bottom:0;", StyledField, ":last-child{margin-bottom:0;}}", StyledHelp, "{margin-bottom:0;}&& ", LabelWrapper, "{label{line-height:1.4em;}}" + ( true ? "" : 0),  true ? "" : 0);
 const ToolsPanelItemPlaceholder =  true ? {
   name: "eivff4",
   styles: "display:none"
@@ -67129,16 +67063,16 @@ function useToolsPanel(props) {
     __experimentalLastVisibleItemClass,
     ...otherProps
   } = useContextSystem(props, 'ToolsPanel');
-  const isResetting = (0,external_wp_element_namespaceObject.useRef)(false);
-  const wasResetting = isResetting.current;
+  const isResettingRef = (0,external_wp_element_namespaceObject.useRef)(false);
+  const wasResetting = isResettingRef.current;
 
-  // `isResetting` is cleared via this hook to effectively batch together
+  // `isResettingRef` is cleared via this hook to effectively batch together
   // the resetAll task. Without this, the flag is cleared after the first
   // control updates and forces a rerender with subsequent controls then
   // believing they need to reset, unfortunately using stale data.
   (0,external_wp_element_namespaceObject.useEffect)(() => {
     if (wasResetting) {
-      isResetting.current = false;
+      isResettingRef.current = false;
     }
   }, [wasResetting]);
 
@@ -67271,7 +67205,7 @@ function useToolsPanel(props) {
   // Resets display of children and executes resetAll callback if available.
   const resetAllItems = (0,external_wp_element_namespaceObject.useCallback)(() => {
     if (typeof resetAll === 'function') {
-      isResetting.current = true;
+      isResettingRef.current = true;
       resetAll(resetAllFilters);
     }
 
@@ -67300,7 +67234,7 @@ function useToolsPanel(props) {
     firstDisplayedItem,
     flagItemCustomization,
     hasMenuItems: !!panelItems.length,
-    isResetting: isResetting.current,
+    isResetting: isResettingRef.current,
     lastDisplayedItem,
     menuItems,
     panelId,
@@ -68773,7 +68707,7 @@ const with_focus_return_Provider = ({
   return Component;
 }, 'withNotices'));
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/A22SDPU3.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/LG4RFBHV.js
 "use client";
 
 
@@ -68782,15 +68716,15 @@ const with_focus_return_Provider = ({
 
 // src/menu/menu-context.tsx
 
-var A22SDPU3_menu = createStoreContext(
+var LG4RFBHV_menu = createStoreContext(
   [CompositeContextProvider, HovercardContextProvider],
   [CompositeScopedContextProvider, HovercardScopedContextProvider]
 );
-var useMenuContext = A22SDPU3_menu.useContext;
-var useMenuScopedContext = A22SDPU3_menu.useScopedContext;
-var useMenuProviderContext = A22SDPU3_menu.useProviderContext;
-var MenuContextProvider = A22SDPU3_menu.ContextProvider;
-var MenuScopedContextProvider = A22SDPU3_menu.ScopedContextProvider;
+var useMenuContext = LG4RFBHV_menu.useContext;
+var useMenuScopedContext = LG4RFBHV_menu.useScopedContext;
+var useMenuProviderContext = LG4RFBHV_menu.useProviderContext;
+var MenuContextProvider = LG4RFBHV_menu.ContextProvider;
+var MenuScopedContextProvider = LG4RFBHV_menu.ScopedContextProvider;
 var useMenuBarContext = (/* unused pure expression or super */ null && (useMenubarContext));
 var useMenuBarScopedContext = (/* unused pure expression or super */ null && (useMenubarScopedContext));
 var useMenuBarProviderContext = (/* unused pure expression or super */ null && (useMenubarProviderContext));
@@ -68802,42 +68736,7 @@ var MenuItemCheckedContext = (0,external_React_.createContext)(
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/menu/menu-item-check.js
-"use client";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// src/menu/menu-item-check.tsx
-
-var menu_item_check_TagName = "span";
-var useMenuItemCheck = createHook(
-  function useMenuItemCheck2(_a) {
-    var _b = _a, { store, checked } = _b, props = __objRest(_b, ["store", "checked"]);
-    const context = (0,external_React_.useContext)(MenuItemCheckedContext);
-    checked = checked != null ? checked : context;
-    props = useCheckboxCheck(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { checked }));
-    return props;
-  }
-);
-var MenuItemCheck = forwardRef2(function MenuItemCheck2(props) {
-  const htmlProps = useMenuItemCheck(props);
-  return YIF72NQG_createElement(menu_item_check_TagName, htmlProps);
-});
-
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/ZPGENCAP.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/WSQNIDGC.js
 "use client";
 
 
@@ -68848,18 +68747,18 @@ var menubar = createStoreContext(
   [CompositeContextProvider],
   [CompositeScopedContextProvider]
 );
-var ZPGENCAP_useMenubarContext = menubar.useContext;
-var ZPGENCAP_useMenubarScopedContext = menubar.useScopedContext;
-var ZPGENCAP_useMenubarProviderContext = menubar.useProviderContext;
-var ZPGENCAP_MenubarContextProvider = menubar.ContextProvider;
-var ZPGENCAP_MenubarScopedContextProvider = menubar.ScopedContextProvider;
-var ZPGENCAP_MenuItemCheckedContext = (0,external_React_.createContext)(
+var WSQNIDGC_useMenubarContext = menubar.useContext;
+var WSQNIDGC_useMenubarScopedContext = menubar.useScopedContext;
+var WSQNIDGC_useMenubarProviderContext = menubar.useProviderContext;
+var WSQNIDGC_MenubarContextProvider = menubar.ContextProvider;
+var WSQNIDGC_MenubarScopedContextProvider = menubar.ScopedContextProvider;
+var WSQNIDGC_MenuItemCheckedContext = (0,external_React_.createContext)(
   void 0
 );
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/menu/menu-store.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/menu/menu-store.js
 "use client";
 
 
@@ -68879,7 +68778,7 @@ function createMenuStore(_a = {}) {
     combobox,
     parent,
     menubar
-  } = _b, props = _4R3V3JGP_objRest(_b, [
+  } = _b, props = _3YLGPPWQ_objRest(_b, [
     "combobox",
     "parent",
     "menubar"
@@ -68898,7 +68797,7 @@ function createMenuStore(_a = {}) {
   );
   throwOnConflictingProps(props, store);
   const syncState = store.getState();
-  const composite = createCompositeStore(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, props), {
+  const composite = createCompositeStore(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, props), {
     store,
     orientation: defaultValue(
       props.orientation,
@@ -68906,7 +68805,7 @@ function createMenuStore(_a = {}) {
       "vertical"
     )
   }));
-  const hovercard = createHovercardStore(_chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, props), {
+  const hovercard = createHovercardStore(_chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, props), {
     store,
     placement: defaultValue(
       props.placement,
@@ -68920,7 +68819,7 @@ function createMenuStore(_a = {}) {
     ),
     hideTimeout: defaultValue(props.hideTimeout, syncState.hideTimeout, 0)
   }));
-  const initialState = _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, composite.getState()), hovercard.getState()), {
+  const initialState = _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, composite.getState()), hovercard.getState()), {
     initialFocus: defaultValue(syncState.initialFocus, "container"),
     values: defaultValue(
       props.values,
@@ -68933,8 +68832,7 @@ function createMenuStore(_a = {}) {
   setup(
     menu,
     () => sync(menu, ["mounted"], (state) => {
-      if (state.mounted)
-        return;
+      if (state.mounted) return;
       menu.setState("activeId", null);
     })
   );
@@ -68947,7 +68845,7 @@ function createMenuStore(_a = {}) {
       );
     })
   );
-  return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues(_chunks_4R3V3JGP_spreadValues({}, composite), hovercard), menu), {
+  return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues(_chunks_3YLGPPWQ_spreadValues({}, composite), hovercard), menu), {
     combobox,
     parent,
     menubar,
@@ -68958,18 +68856,14 @@ function createMenuStore(_a = {}) {
     setInitialFocus: (value) => menu.setState("initialFocus", value),
     setValues: (values) => menu.setState("values", values),
     setValue: (name, value) => {
-      if (name === "__proto__")
-        return;
-      if (name === "constructor")
-        return;
-      if (Array.isArray(name))
-        return;
+      if (name === "__proto__") return;
+      if (name === "constructor") return;
+      if (Array.isArray(name)) return;
       menu.setState("values", (values) => {
         const prevValue = values[name];
-        const nextValue = _22HHDS5F_applyState(value, prevValue);
-        if (nextValue === prevValue)
-          return values;
-        return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, values), {
+        const nextValue = applyState(value, prevValue);
+        if (nextValue === prevValue) return values;
+        return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, values), {
           [name]: nextValue !== void 0 && nextValue
         });
       });
@@ -68978,7 +68872,7 @@ function createMenuStore(_a = {}) {
 }
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/RD2VYBH6.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/MS4VD4RJ.js
 "use client";
 
 
@@ -69009,14 +68903,14 @@ function useMenuStoreProps(store, update, props) {
 }
 function useMenuStore(props = {}) {
   const parent = useMenuContext();
-  const menubar = ZPGENCAP_useMenubarContext();
+  const menubar = WSQNIDGC_useMenubarContext();
   const combobox = useComboboxProviderContext();
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
     parent: props.parent !== void 0 ? props.parent : parent,
     menubar: props.menubar !== void 0 ? props.menubar : menubar,
     combobox: props.combobox !== void 0 ? props.combobox : combobox
   });
-  const [store, update] = DTNGDFNU_useStore(createMenuStore, props);
+  const [store, update] = _2GXGCHW6_useStore(createMenuStore, props);
   return useMenuStoreProps(store, update, props);
 }
 
@@ -69067,10 +68961,8 @@ function getInitialFocus(event, dir) {
 }
 function hasActiveItem(items, excludeElement) {
   return !!(items == null ? void 0 : items.some((item) => {
-    if (!item.element)
-      return false;
-    if (item.element === excludeElement)
-      return false;
+    if (!item.element) return false;
+    if (item.element === excludeElement) return false;
     return item.element.getAttribute("aria-expanded") === "true";
   }));
 }
@@ -69101,8 +68993,7 @@ var useMenuButton = createHook(
     const disabled = disabledFromProps(props);
     const showMenu = () => {
       const trigger = ref.current;
-      if (!trigger)
-        return;
+      if (!trigger) return;
       store == null ? void 0 : store.setDisclosureElement(trigger);
       store == null ? void 0 : store.setAnchorElement(trigger);
       store == null ? void 0 : store.show();
@@ -69110,16 +69001,12 @@ var useMenuButton = createHook(
     const onFocusProp = props.onFocus;
     const onFocus = useEvent((event) => {
       onFocusProp == null ? void 0 : onFocusProp(event);
-      if (disabled)
-        return;
-      if (event.defaultPrevented)
-        return;
+      if (disabled) return;
+      if (event.defaultPrevented) return;
       store == null ? void 0 : store.setAutoFocusOnShow(false);
       store == null ? void 0 : store.setActiveId(null);
-      if (!parentMenubar)
-        return;
-      if (!parentIsMenubar)
-        return;
+      if (!parentMenubar) return;
+      if (!parentIsMenubar) return;
       const { items } = parentMenubar.getState();
       if (hasActiveItem(items, event.currentTarget)) {
         showMenu();
@@ -69131,10 +69018,8 @@ var useMenuButton = createHook(
     const onKeyDownProp = props.onKeyDown;
     const onKeyDown = useEvent((event) => {
       onKeyDownProp == null ? void 0 : onKeyDownProp(event);
-      if (disabled)
-        return;
-      if (event.defaultPrevented)
-        return;
+      if (disabled) return;
+      if (event.defaultPrevented) return;
       const initialFocus = getInitialFocus(event, dir);
       if (initialFocus) {
         event.preventDefault();
@@ -69146,10 +69031,8 @@ var useMenuButton = createHook(
     const onClickProp = props.onClick;
     const onClick = useEvent((event) => {
       onClickProp == null ? void 0 : onClickProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (!store)
-        return;
+      if (event.defaultPrevented) return;
+      if (!store) return;
       const isKeyboardClick = !event.detail;
       const { open } = store.getState();
       if (!open || isKeyboardClick) {
@@ -69168,7 +69051,7 @@ var useMenuButton = createHook(
       [store]
     );
     if (hasParentMenu) {
-      props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+      props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
         render: /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(Role.div, { render: props.render })
       });
     }
@@ -69179,7 +69062,7 @@ var useMenuButton = createHook(
     );
     const role = hasParentMenu || parentIsMenubar ? getPopupItemRole(parentContentElement, "menuitem") : void 0;
     const contentElement = store.useState("contentElement");
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       id,
       role,
       "aria-haspopup": getPopupRole(contentElement, "menu")
@@ -69189,41 +69072,35 @@ var useMenuButton = createHook(
       onKeyDown,
       onClick
     });
-    props = useHovercardAnchor(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = useHovercardAnchor(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       store,
       focusable,
       accessibleWhenDisabled
     }, props), {
       showOnHover: (event) => {
         const getShowOnHover = () => {
-          if (typeof showOnHover === "function")
-            return showOnHover(event);
-          if (showOnHover != null)
-            return showOnHover;
-          if (hasParentMenu)
-            return true;
-          if (!parentMenubar)
-            return false;
+          if (typeof showOnHover === "function") return showOnHover(event);
+          if (showOnHover != null) return showOnHover;
+          if (hasParentMenu) return true;
+          if (!parentMenubar) return false;
           const { items } = parentMenubar.getState();
           return parentIsMenubar && hasActiveItem(items);
         };
         const canShowOnHover = getShowOnHover();
-        if (!canShowOnHover)
-          return false;
+        if (!canShowOnHover) return false;
         const parent = parentIsMenubar ? parentMenubar : parentMenu;
-        if (!parent)
-          return true;
+        if (!parent) return true;
         parent.setActiveId(event.currentTarget.id);
         return true;
       }
     }));
-    props = usePopoverDisclosure(_4R3V3JGP_spreadValues({
+    props = usePopoverDisclosure(_3YLGPPWQ_spreadValues({
       store,
       toggleOnClick: !hasParentMenu,
       focusable,
       accessibleWhenDisabled
     }, props));
-    props = useCompositeTypeahead(_4R3V3JGP_spreadValues({
+    props = useCompositeTypeahead(_3YLGPPWQ_spreadValues({
       store,
       typeahead: parentIsMenubar
     }, props));
@@ -69232,26 +69109,11 @@ var useMenuButton = createHook(
 );
 var MenuButton = forwardRef2(function MenuButton2(props) {
   const htmlProps = useMenuButton(props);
-  return YIF72NQG_createElement(menu_button_TagName, htmlProps);
+  return HKOOKEDE_createElement(menu_button_TagName, htmlProps);
 });
 
 
-;// CONCATENATED MODULE: ./packages/icons/build-module/library/chevron-right-small.js
-/**
- * WordPress dependencies
- */
-
-
-const chevronRightSmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_primitives_namespaceObject.SVG, {
-  xmlns: "http://www.w3.org/2000/svg",
-  viewBox: "0 0 24 24",
-  children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_primitives_namespaceObject.Path, {
-    d: "M10.8622 8.04053L14.2805 12.0286L10.8622 16.0167L9.72327 15.0405L12.3049 12.0286L9.72327 9.01672L10.8622 8.04053Z"
-  })
-});
-/* harmony default export */ const chevron_right_small = (chevronRightSmall);
-
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/PDTGHX74.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/ULASSYJG.js
 "use client";
 
 
@@ -69266,7 +69128,7 @@ const chevronRightSmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObje
 
 
 
-var PDTGHX74_TagName = "div";
+var ULASSYJG_TagName = "div";
 function useAriaLabelledBy(_a) {
   var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
   const [id, setId] = (0,external_React_.useState)(void 0);
@@ -69275,11 +69137,9 @@ function useAriaLabelledBy(_a) {
   const contentElement = useStoreState(store, "contentElement");
   (0,external_React_.useEffect)(() => {
     const disclosure = disclosureElement;
-    if (!disclosure)
-      return;
+    if (!disclosure) return;
     const menu = contentElement;
-    if (!menu)
-      return;
+    if (!menu) return;
     const menuLabel = label || menu.hasAttribute("aria-label");
     if (menuLabel) {
       setId(void 0);
@@ -69316,8 +69176,7 @@ var useMenuList = createHook(
     );
     const onKeyDown = useEvent((event) => {
       onKeyDownProp == null ? void 0 : onKeyDownProp(event);
-      if (event.defaultPrevented)
-        return;
+      if (event.defaultPrevented) return;
       if (hasParentMenu || parentMenubar && !isHorizontal) {
         const hideMap = {
           ArrowRight: () => dir === "left" && !isHorizontal,
@@ -69335,23 +69194,19 @@ var useMenuList = createHook(
       if (parentMenubar) {
         const keyMap = {
           ArrowRight: () => {
-            if (!isMenubarHorizontal)
-              return;
+            if (!isMenubarHorizontal) return;
             return parentMenubar.next();
           },
           ArrowLeft: () => {
-            if (!isMenubarHorizontal)
-              return;
+            if (!isMenubarHorizontal) return;
             return parentMenubar.previous();
           },
           ArrowDown: () => {
-            if (isMenubarHorizontal)
-              return;
+            if (isMenubarHorizontal) return;
             return parentMenubar.next();
           },
           ArrowUp: () => {
-            if (isMenubarHorizontal)
-              return;
+            if (isMenubarHorizontal) return;
             return parentMenubar.previous();
           }
         };
@@ -69369,11 +69224,11 @@ var useMenuList = createHook(
       (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(MenuScopedContextProvider, { value: store, children: element }),
       [store]
     );
-    const ariaLabelledBy = useAriaLabelledBy(_4R3V3JGP_spreadValues({ store }, props));
+    const ariaLabelledBy = useAriaLabelledBy(_3YLGPPWQ_spreadValues({ store }, props));
     const mounted = store.useState("mounted");
     const hidden = isHidden(mounted, props.hidden, alwaysVisible);
-    const style = hidden ? _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props.style), { display: "none" }) : props.style;
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    const style = hidden ? _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props.style), { display: "none" }) : props.style;
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       id,
       "aria-labelledby": ariaLabelledBy,
       hidden
@@ -69385,19 +69240,19 @@ var useMenuList = createHook(
     const hasCombobox = !!store.combobox;
     composite = composite != null ? composite : !hasCombobox;
     if (composite) {
-      props = _4R3V3JGP_spreadValues({
+      props = _3YLGPPWQ_spreadValues({
         role: "menu",
         "aria-orientation": orientation
       }, props);
     }
-    props = useComposite(_4R3V3JGP_spreadValues({ store, composite }, props));
-    props = useCompositeTypeahead(_4R3V3JGP_spreadValues({ store, typeahead: !hasCombobox }, props));
+    props = useComposite(_3YLGPPWQ_spreadValues({ store, composite }, props));
+    props = useCompositeTypeahead(_3YLGPPWQ_spreadValues({ store, typeahead: !hasCombobox }, props));
     return props;
   }
 );
 var MenuList = forwardRef2(function MenuList2(props) {
   const htmlProps = useMenuList(props);
-  return YIF72NQG_createElement(PDTGHX74_TagName, htmlProps);
+  return HKOOKEDE_createElement(ULASSYJG_TagName, htmlProps);
 });
 
 
@@ -69488,10 +69343,10 @@ var useMenu = createHook(function useMenu2(_a) {
   const parentMenubar = store.menubar;
   const hasParentMenu = !!parentMenu;
   const parentIsMenubar = !!parentMenubar && !hasParentMenu;
-  props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), {
+  props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), {
     ref: useMergeRefs(ref, props.ref)
   });
-  const _a2 = useMenuList(_4R3V3JGP_spreadValues({
+  const _a2 = useMenuList(_3YLGPPWQ_spreadValues({
     store,
     alwaysVisible
   }, props)), { "aria-labelledby": ariaLabelledBy } = _a2, menuListProps = __objRest(_a2, ["aria-labelledby"]);
@@ -69505,12 +69360,9 @@ var useMenu = createHook(function useMenu2(_a) {
     let cleaning = false;
     setInitialFocusRef((prevInitialFocusRef) => {
       var _a3, _b2, _c;
-      if (cleaning)
-        return;
-      if (!autoFocusOnShowState)
-        return;
-      if ((_a3 = prevInitialFocusRef == null ? void 0 : prevInitialFocusRef.current) == null ? void 0 : _a3.isConnected)
-        return prevInitialFocusRef;
+      if (cleaning) return;
+      if (!autoFocusOnShowState) return;
+      if ((_a3 = prevInitialFocusRef == null ? void 0 : prevInitialFocusRef.current) == null ? void 0 : _a3.isConnected) return prevInitialFocusRef;
       const ref2 = (0,external_React_.createRef)();
       switch (initialFocus) {
         case "first":
@@ -69540,31 +69392,27 @@ var useMenu = createHook(function useMenu2(_a) {
     "contentElement"
   );
   const preserveTabOrderAnchor = (0,external_React_.useMemo)(() => {
-    if (!parentContentElement)
-      return;
-    if (!contentElement)
-      return;
+    if (!parentContentElement) return;
+    if (!contentElement) return;
     const role = contentElement.getAttribute("role");
     const parentRole = parentContentElement.getAttribute("role");
     const parentIsMenuOrMenubar = parentRole === "menu" || parentRole === "menubar";
-    if (parentIsMenuOrMenubar && role === "menu")
-      return;
+    if (parentIsMenuOrMenubar && role === "menu") return;
     return parentContentElement;
   }, [contentElement, parentContentElement]);
   if (preserveTabOrderAnchor !== void 0) {
-    props = _4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadValues({
       preserveTabOrderAnchor
     }, props);
   }
-  props = useHovercard(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+  props = useHovercard(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
     store,
     alwaysVisible,
     initialFocus: initialFocusRef,
     autoFocusOnShow: mayAutoFocusOnShow ? canAutoFocusOnShow && autoFocusOnShow : autoFocusOnShowState || !!modal
   }, props), {
     hideOnEscape(event) {
-      if (isFalsyBooleanCallback(hideOnEscape, event))
-        return false;
+      if (isFalsyBooleanCallback(hideOnEscape, event)) return false;
       store == null ? void 0 : store.hideAll();
       return true;
     },
@@ -69574,32 +69422,21 @@ var useMenu = createHook(function useMenu2(_a) {
         if (typeof hideOnHoverOutside === "function") {
           return hideOnHoverOutside(event);
         }
-        if (hideOnHoverOutside != null)
-          return hideOnHoverOutside;
-        if (hasParentMenu)
-          return true;
-        if (!parentIsMenubar)
-          return false;
-        if (!disclosureElement)
-          return true;
-        if (hasFocusWithin(disclosureElement))
-          return false;
+        if (hideOnHoverOutside != null) return hideOnHoverOutside;
+        if (hasParentMenu) return true;
+        if (!parentIsMenubar) return false;
+        if (!disclosureElement) return true;
+        if (hasFocusWithin(disclosureElement)) return false;
         return true;
       };
-      if (!getHideOnHoverOutside())
-        return false;
-      if (event.defaultPrevented)
-        return true;
-      if (!hasParentMenu)
-        return true;
-      if (!disclosureElement)
-        return true;
+      if (!getHideOnHoverOutside()) return false;
+      if (event.defaultPrevented) return true;
+      if (!hasParentMenu) return true;
+      if (!disclosureElement) return true;
       fireEvent(disclosureElement, "mouseout", event);
-      if (!hasFocusWithin(disclosureElement))
-        return true;
+      if (!hasFocusWithin(disclosureElement)) return true;
       requestAnimationFrame(() => {
-        if (hasFocusWithin(disclosureElement))
-          return;
+        if (hasFocusWithin(disclosureElement)) return;
         store == null ? void 0 : store.hide();
       });
       return false;
@@ -69608,7 +69445,7 @@ var useMenu = createHook(function useMenu2(_a) {
     portal,
     backdrop: hasParentMenu ? false : props.backdrop
   }));
-  props = _4R3V3JGP_spreadValues({
+  props = _3YLGPPWQ_spreadValues({
     "aria-labelledby": ariaLabelledBy
   }, props);
   return props;
@@ -69616,13 +69453,28 @@ var useMenu = createHook(function useMenu2(_a) {
 var Menu = createDialogComponent(
   forwardRef2(function Menu2(props) {
     const htmlProps = useMenu(props);
-    return YIF72NQG_createElement(menu_TagName, htmlProps);
+    return HKOOKEDE_createElement(menu_TagName, htmlProps);
   }),
   useMenuProviderContext
 );
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/4Q67VK3V.js
+;// CONCATENATED MODULE: ./packages/icons/build-module/library/chevron-right-small.js
+/**
+ * WordPress dependencies
+ */
+
+
+const chevronRightSmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_primitives_namespaceObject.SVG, {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 24 24",
+  children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_primitives_namespaceObject.Path, {
+    d: "M10.8622 8.04053L14.2805 12.0286L10.8622 16.0167L9.72327 15.0405L12.3049 12.0286L9.72327 9.01672L10.8622 8.04053Z"
+  })
+});
+/* harmony default export */ const chevron_right_small = (chevronRightSmall);
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/B6XZVSMQ.js
 "use client";
 
 
@@ -69638,28 +69490,22 @@ var Menu = createDialogComponent(
 
 
 
-var _4Q67VK3V_TagName = "div";
+var B6XZVSMQ_TagName = "div";
 function menuHasFocus(baseElement, items, currentTarget) {
   var _a;
-  if (!baseElement)
-    return false;
-  if (hasFocusWithin(baseElement))
-    return true;
+  if (!baseElement) return false;
+  if (hasFocusWithin(baseElement)) return true;
   const expandedItem = items == null ? void 0 : items.find((item) => {
     var _a2;
-    if (item.element === currentTarget)
-      return false;
+    if (item.element === currentTarget) return false;
     return ((_a2 = item.element) == null ? void 0 : _a2.getAttribute("aria-expanded")) === "true";
   });
   const expandedMenuId = (_a = expandedItem == null ? void 0 : expandedItem.element) == null ? void 0 : _a.getAttribute("aria-controls");
-  if (!expandedMenuId)
-    return false;
+  if (!expandedMenuId) return false;
   const doc = getDocument(baseElement);
   const expandedMenu = doc.getElementById(expandedMenuId);
-  if (!expandedMenu)
-    return false;
-  if (hasFocusWithin(expandedMenu))
-    return true;
+  if (!expandedMenu) return false;
+  if (hasFocusWithin(expandedMenu)) return true;
   return !!expandedMenu.querySelector("[role=menuitem][aria-expanded=true]");
 }
 var useMenuItem = createHook(
@@ -69678,7 +69524,7 @@ var useMenuItem = createHook(
       "blurOnHoverEnd"
     ]);
     const menuContext = useMenuScopedContext(true);
-    const menubarContext = ZPGENCAP_useMenubarScopedContext();
+    const menubarContext = WSQNIDGC_useMenubarScopedContext();
     store = store || menuContext || menubarContext;
     invariant(
       store,
@@ -69690,19 +69536,13 @@ var useMenuItem = createHook(
     const isWithinMenu = !!hideMenu;
     const onClick = useEvent((event) => {
       onClickProp == null ? void 0 : onClickProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (isDownloading(event))
-        return;
-      if (isOpeningInNewTab(event))
-        return;
-      if (!hideMenu)
-        return;
+      if (event.defaultPrevented) return;
+      if (isDownloading(event)) return;
+      if (isOpeningInNewTab(event)) return;
+      if (!hideMenu) return;
       const popupType = event.currentTarget.getAttribute("aria-haspopup");
-      if (popupType === "menu")
-        return;
-      if (!hideOnClickProp(event))
-        return;
+      if (popupType === "menu") return;
+      if (!hideOnClickProp(event)) return;
       hideMenu();
     });
     const contentElement = useStoreState(
@@ -69710,30 +69550,26 @@ var useMenuItem = createHook(
       (state) => "contentElement" in state ? state.contentElement : null
     );
     const role = getPopupItemRole(contentElement, "menuitem");
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       role
     }, props), {
       onClick
     });
-    props = useCompositeItem(_4R3V3JGP_spreadValues({
+    props = useCompositeItem(_3YLGPPWQ_spreadValues({
       store,
       preventScrollOnKeyDown
     }, props));
-    props = useCompositeHover(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = useCompositeHover(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       store
     }, props), {
       focusOnHover(event) {
         const getFocusOnHover = () => {
-          if (typeof focusOnHover === "function")
-            return focusOnHover(event);
-          if (focusOnHover != null)
-            return focusOnHover;
+          if (typeof focusOnHover === "function") return focusOnHover(event);
+          if (focusOnHover != null) return focusOnHover;
           return true;
         };
-        if (!store)
-          return false;
-        if (!getFocusOnHover())
-          return false;
+        if (!store) return false;
+        if (!getFocusOnHover()) return false;
         const { baseElement, items } = store.getState();
         if (isWithinMenu) {
           if (event.currentTarget.hasAttribute("aria-expanded")) {
@@ -69748,40 +69584,38 @@ var useMenuItem = createHook(
         return false;
       },
       blurOnHoverEnd(event) {
-        if (typeof blurOnHoverEnd === "function")
-          return blurOnHoverEnd(event);
-        if (blurOnHoverEnd != null)
-          return blurOnHoverEnd;
+        if (typeof blurOnHoverEnd === "function") return blurOnHoverEnd(event);
+        if (blurOnHoverEnd != null) return blurOnHoverEnd;
         return isWithinMenu;
       }
     }));
     return props;
   }
 );
-var _4Q67VK3V_MenuItem = memo2(
+var B6XZVSMQ_MenuItem = memo2(
   forwardRef2(function MenuItem2(props) {
     const htmlProps = useMenuItem(props);
-    return YIF72NQG_createElement(_4Q67VK3V_TagName, htmlProps);
+    return HKOOKEDE_createElement(B6XZVSMQ_TagName, htmlProps);
   })
 );
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/G3HTND37.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/AUGWLYYL.js
 "use client";
 
 
 // src/checkbox/checkbox-context.tsx
-var G3HTND37_ctx = createStoreContext();
-var useCheckboxContext = G3HTND37_ctx.useContext;
-var useCheckboxScopedContext = G3HTND37_ctx.useScopedContext;
-var useCheckboxProviderContext = G3HTND37_ctx.useProviderContext;
-var CheckboxContextProvider = G3HTND37_ctx.ContextProvider;
-var CheckboxScopedContextProvider = G3HTND37_ctx.ScopedContextProvider;
+var AUGWLYYL_ctx = createStoreContext();
+var useCheckboxContext = AUGWLYYL_ctx.useContext;
+var useCheckboxScopedContext = AUGWLYYL_ctx.useScopedContext;
+var useCheckboxProviderContext = AUGWLYYL_ctx.useProviderContext;
+var CheckboxContextProvider = AUGWLYYL_ctx.ContextProvider;
+var CheckboxScopedContextProvider = AUGWLYYL_ctx.ScopedContextProvider;
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/272IHWKI.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/L7GTXQJP.js
 "use client";
 
 
@@ -69795,7 +69629,7 @@ var CheckboxScopedContextProvider = G3HTND37_ctx.ScopedContextProvider;
 
 
 
-var _272IHWKI_TagName = "input";
+var L7GTXQJP_TagName = "input";
 function setMixed(element, mixed) {
   if (mixed) {
     element.indeterminate = true;
@@ -69831,10 +69665,8 @@ var useCheckbox = createHook(
     store = store || context;
     const [_checked, setChecked] = (0,external_React_.useState)(defaultChecked != null ? defaultChecked : false);
     const checked = useStoreState(store, (state) => {
-      if (checkedProp !== void 0)
-        return checkedProp;
-      if ((state == null ? void 0 : state.value) === void 0)
-        return _checked;
+      if (checkedProp !== void 0) return checkedProp;
+      if ((state == null ? void 0 : state.value) === void 0) return _checked;
       if (valueProp != null) {
         if (Array.isArray(state.value)) {
           const primitiveValue = getPrimitiveValue(valueProp);
@@ -69842,14 +69674,12 @@ var useCheckbox = createHook(
         }
         return state.value === valueProp;
       }
-      if (Array.isArray(state.value))
-        return false;
-      if (typeof state.value === "boolean")
-        return state.value;
+      if (Array.isArray(state.value)) return false;
+      if (typeof state.value === "boolean") return state.value;
       return false;
     });
     const ref = (0,external_React_.useRef)(null);
-    const tagName = useTagName(ref, _272IHWKI_TagName);
+    const tagName = useTagName(ref, L7GTXQJP_TagName);
     const nativeCheckbox = isNativeCheckbox(tagName, props.type);
     const mixed = checked ? checked === "mixed" : void 0;
     const isChecked = checked === "mixed" ? false : checked;
@@ -69857,11 +69687,9 @@ var useCheckbox = createHook(
     const [propertyUpdated, schedulePropertyUpdate] = useForceUpdate();
     (0,external_React_.useEffect)(() => {
       const element = ref.current;
-      if (!element)
-        return;
+      if (!element) return;
       setMixed(element, mixed);
-      if (nativeCheckbox)
-        return;
+      if (nativeCheckbox) return;
       element.checked = isChecked;
       if (name !== void 0) {
         element.name = name;
@@ -69883,13 +69711,11 @@ var useCheckbox = createHook(
         schedulePropertyUpdate();
       }
       onChangeProp == null ? void 0 : onChangeProp(event);
-      if (event.defaultPrevented)
-        return;
+      if (event.defaultPrevented) return;
       const elementChecked = event.currentTarget.checked;
       setChecked(elementChecked);
       store == null ? void 0 : store.setValue((prevValue) => {
-        if (valueProp == null)
-          return elementChecked;
+        if (valueProp == null) return elementChecked;
         const primitiveValue = getPrimitiveValue(valueProp);
         if (!Array.isArray(prevValue)) {
           return prevValue === primitiveValue ? false : primitiveValue;
@@ -69906,10 +69732,8 @@ var useCheckbox = createHook(
     const onClickProp = props.onClick;
     const onClick = useEvent((event) => {
       onClickProp == null ? void 0 : onClickProp(event);
-      if (event.defaultPrevented)
-        return;
-      if (nativeCheckbox)
-        return;
+      if (event.defaultPrevented) return;
+      if (nativeCheckbox) return;
       onChange(event);
     });
     props = useWrapElement(
@@ -69917,7 +69741,7 @@ var useCheckbox = createHook(
       (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(CheckboxCheckedContext.Provider, { value: isChecked, children: element }),
       [isChecked]
     );
-    props = _4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({
       role: !nativeCheckbox ? "checkbox" : void 0,
       type: nativeCheckbox ? "checkbox" : void 0,
       "aria-checked": checked
@@ -69926,8 +69750,8 @@ var useCheckbox = createHook(
       onChange,
       onClick
     });
-    props = useCommand(_4R3V3JGP_spreadValues({ clickOnEnter: !nativeCheckbox }, props));
-    return removeUndefinedValues(_4R3V3JGP_spreadValues({
+    props = useCommand(_3YLGPPWQ_spreadValues({ clickOnEnter: !nativeCheckbox }, props));
+    return removeUndefinedValues(_3YLGPPWQ_spreadValues({
       name: nativeCheckbox ? name : void 0,
       value: nativeCheckbox ? valueProp : void 0,
       checked: isChecked
@@ -69936,12 +69760,12 @@ var useCheckbox = createHook(
 );
 var Checkbox = forwardRef2(function Checkbox2(props) {
   const htmlProps = useCheckbox(props);
-  return YIF72NQG_createElement(_272IHWKI_TagName, htmlProps);
+  return HKOOKEDE_createElement(L7GTXQJP_TagName, htmlProps);
 });
 
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/core/esm/checkbox/checkbox-store.js
+;// CONCATENATED MODULE: ./node_modules/@ariakit/core/esm/checkbox/checkbox-store.js
 "use client";
 
 
@@ -69961,13 +69785,13 @@ function createCheckboxStore(props = {}) {
     )
   };
   const checkbox = createStore(initialState, props.store);
-  return _chunks_4R3V3JGP_spreadProps(_chunks_4R3V3JGP_spreadValues({}, checkbox), {
+  return _chunks_3YLGPPWQ_spreadProps(_chunks_3YLGPPWQ_spreadValues({}, checkbox), {
     setValue: (value) => checkbox.setState("value", value)
   });
 }
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/GDEEEVWP.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/EJOTW52C.js
 "use client";
 
 
@@ -69980,7 +69804,7 @@ function useCheckboxStoreProps(store, update, props) {
   return store;
 }
 function useCheckboxStore(props = {}) {
-  const [store, update] = DTNGDFNU_useStore(createCheckboxStore, props);
+  const [store, update] = _2GXGCHW6_useStore(createCheckboxStore, props);
   return useCheckboxStoreProps(store, update, props);
 }
 
@@ -70026,8 +69850,7 @@ function menu_item_checkbox_getPrimitiveValue(value) {
 }
 function getValue(storeValue, value, checked) {
   if (value === void 0) {
-    if (Array.isArray(storeValue))
-      return storeValue;
+    if (Array.isArray(storeValue)) return storeValue;
     return !!checked;
   }
   const primitiveValue = menu_item_checkbox_getPrimitiveValue(value);
@@ -70071,14 +69894,12 @@ var useMenuItemCheckbox = createHook(
     const defaultChecked = useInitialValue(defaultCheckedProp);
     (0,external_React_.useEffect)(() => {
       store == null ? void 0 : store.setValue(name, (prevValue = []) => {
-        if (!defaultChecked)
-          return prevValue;
+        if (!defaultChecked) return prevValue;
         return getValue(prevValue, value, true);
       });
     }, [store, name, value, defaultChecked]);
     (0,external_React_.useEffect)(() => {
-      if (checked === void 0)
-        return;
+      if (checked === void 0) return;
       store == null ? void 0 : store.setValue(name, (prevValue) => {
         return getValue(prevValue, value, checked);
       });
@@ -70087,36 +69908,32 @@ var useMenuItemCheckbox = createHook(
       value: store.useState((state) => state.values[name]),
       setValue(internalValue) {
         store == null ? void 0 : store.setValue(name, () => {
-          if (checked === void 0)
-            return internalValue;
+          if (checked === void 0) return internalValue;
           const nextValue = getValue(internalValue, value, checked);
-          if (!Array.isArray(nextValue))
-            return nextValue;
-          if (!Array.isArray(internalValue))
-            return nextValue;
-          if (shallowEqual(internalValue, nextValue))
-            return internalValue;
+          if (!Array.isArray(nextValue)) return nextValue;
+          if (!Array.isArray(internalValue)) return nextValue;
+          if (shallowEqual(internalValue, nextValue)) return internalValue;
           return nextValue;
         });
       }
     });
-    props = _4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadValues({
       role: "menuitemcheckbox"
     }, props);
-    props = useCheckbox(_4R3V3JGP_spreadValues({
+    props = useCheckbox(_3YLGPPWQ_spreadValues({
       store: checkboxStore,
       name,
       value,
       checked
     }, props));
-    props = useMenuItem(_4R3V3JGP_spreadValues({ store, hideOnClick }, props));
+    props = useMenuItem(_3YLGPPWQ_spreadValues({ store, hideOnClick }, props));
     return props;
   }
 );
 var MenuItemCheckbox = memo2(
   forwardRef2(function MenuItemCheckbox2(props) {
     const htmlProps = useMenuItemCheckbox(props);
-    return YIF72NQG_createElement(menu_item_checkbox_TagName, htmlProps);
+    return HKOOKEDE_createElement(menu_item_checkbox_TagName, htmlProps);
   })
 );
 
@@ -70153,10 +69970,8 @@ var MenuItemCheckbox = memo2(
 
 var menu_item_radio_TagName = "div";
 function menu_item_radio_getValue(prevValue, value, checked) {
-  if (checked === void 0)
-    return prevValue;
-  if (checked)
-    return value;
+  if (checked === void 0) return prevValue;
+  if (checked) return value;
   return prevValue;
 }
 var useMenuItemRadio = createHook(
@@ -70189,8 +70004,7 @@ var useMenuItemRadio = createHook(
       });
     }, [store, name, value, defaultChecked]);
     (0,external_React_.useEffect)(() => {
-      if (checked === void 0)
-        return;
+      if (checked === void 0) return;
       store == null ? void 0 : store.setValue(name, (prevValue) => {
         return menu_item_radio_getValue(prevValue, value, checked);
       });
@@ -70201,31 +70015,30 @@ var useMenuItemRadio = createHook(
       (element) => /* @__PURE__ */ (0,external_ReactJSXRuntime_namespaceObject.jsx)(MenuItemCheckedContext.Provider, { value: !!isChecked, children: element }),
       [isChecked]
     );
-    props = _4R3V3JGP_spreadValues({
+    props = _3YLGPPWQ_spreadValues({
       role: "menuitemradio"
     }, props);
-    props = useRadio(_4R3V3JGP_spreadValues({
+    props = useRadio(_3YLGPPWQ_spreadValues({
       name,
       value,
       checked: isChecked,
       onChange(event) {
         onChangeProp == null ? void 0 : onChangeProp(event);
-        if (event.defaultPrevented)
-          return;
+        if (event.defaultPrevented) return;
         const element = event.currentTarget;
         store == null ? void 0 : store.setValue(name, (prevValue) => {
           return menu_item_radio_getValue(prevValue, value, checked != null ? checked : element.checked);
         });
       }
     }, props));
-    props = useMenuItem(_4R3V3JGP_spreadValues({ store, hideOnClick }, props));
+    props = useMenuItem(_3YLGPPWQ_spreadValues({ store, hideOnClick }, props));
     return props;
   }
 );
 var MenuItemRadio = memo2(
   forwardRef2(function MenuItemRadio2(props) {
     const htmlProps = useMenuItemRadio(props);
-    return YIF72NQG_createElement(menu_item_radio_TagName, htmlProps);
+    return HKOOKEDE_createElement(menu_item_radio_TagName, htmlProps);
   })
 );
 
@@ -70250,11 +70063,35 @@ var useMenuGroup = createHook(
 );
 var menu_group_MenuGroup = forwardRef2(function MenuGroup2(props) {
   const htmlProps = useMenuGroup(props);
-  return YIF72NQG_createElement(menu_group_TagName, htmlProps);
+  return HKOOKEDE_createElement(menu_group_TagName, htmlProps);
 });
 
 
-;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/2INQ6K4L.js
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/menu/menu-group-label.js
+"use client";
+
+
+
+
+
+
+
+
+// src/menu/menu-group-label.tsx
+var menu_group_label_TagName = "div";
+var useMenuGroupLabel = createHook(
+  function useMenuGroupLabel2(props) {
+    props = useCompositeGroupLabel(props);
+    return props;
+  }
+);
+var MenuGroupLabel = forwardRef2(function MenuGroupLabel2(props) {
+  const htmlProps = useMenuGroupLabel(props);
+  return HKOOKEDE_createElement(menu_group_label_TagName, htmlProps);
+});
+
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/__chunks/WEEEI3KU.js
 "use client";
 
 
@@ -70263,7 +70100,7 @@ var menu_group_MenuGroup = forwardRef2(function MenuGroup2(props) {
 
 // src/composite/composite-separator.tsx
 
-var _2INQ6K4L_TagName = "hr";
+var WEEEI3KU_TagName = "hr";
 var useCompositeSeparator = createHook(function useCompositeSeparator2(_a) {
   var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
   const context = useCompositeContext();
@@ -70275,12 +70112,12 @@ var useCompositeSeparator = createHook(function useCompositeSeparator2(_a) {
   const orientation = store.useState(
     (state) => state.orientation === "horizontal" ? "vertical" : "horizontal"
   );
-  props = useSeparator(_4R3V3JGP_spreadProps(_4R3V3JGP_spreadValues({}, props), { orientation }));
+  props = useSeparator(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { orientation }));
   return props;
 });
 var CompositeSeparator = forwardRef2(function CompositeSeparator2(props) {
   const htmlProps = useCompositeSeparator(props);
-  return YIF72NQG_createElement(_2INQ6K4L_TagName, htmlProps);
+  return HKOOKEDE_createElement(WEEEI3KU_TagName, htmlProps);
 });
 
 
@@ -70309,13 +70146,13 @@ var useMenuSeparator = createHook(
     var _b = _a, { store } = _b, props = __objRest(_b, ["store"]);
     const context = useMenuContext();
     store = store || context;
-    props = useCompositeSeparator(_4R3V3JGP_spreadValues({ store }, props));
+    props = useCompositeSeparator(_3YLGPPWQ_spreadValues({ store }, props));
     return props;
   }
 );
 var MenuSeparator = forwardRef2(function MenuSeparator2(props) {
   const htmlProps = useMenuSeparator(props);
-  return YIF72NQG_createElement(menu_separator_TagName, htmlProps);
+  return HKOOKEDE_createElement(menu_separator_TagName, htmlProps);
 });
 
 
@@ -70335,95 +70172,67 @@ function dropdown_menu_v2_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You 
 
 
 const styles_ANIMATION_PARAMS = {
-  SLIDE_AMOUNT: '2px',
-  DURATION: '400ms',
-  EASING: 'cubic-bezier( 0.16, 1, 0.3, 1 )'
+  SCALE_AMOUNT_OUTER: 0.82,
+  SCALE_AMOUNT_CONTENT: 0.9,
+  DURATION: {
+    IN: '400ms',
+    OUT: '200ms'
+  },
+  EASING: 'cubic-bezier(0.33, 0, 0, 1)'
 };
 const CONTENT_WRAPPER_PADDING = space(1);
 const ITEM_PADDING_BLOCK = space(2);
 const ITEM_PADDING_INLINE = space(3);
 
 // TODO:
-// - those values are different from saved variables?
-// - should bring this into the config, and make themeable
-// - border color and divider color are different?
-const DEFAULT_BORDER_COLOR = COLORS.gray[300];
-const DIVIDER_COLOR = COLORS.gray[200];
-const TOOLBAR_VARIANT_BORDER_COLOR = COLORS.gray['900'];
-const DEFAULT_BOX_SHADOW = `0 0 0 ${config_values.borderWidth} ${DEFAULT_BORDER_COLOR}, ${config_values.popoverShadow}`;
+// - border color and divider color are different from COLORS.theme variables
+// - lighter text color is not defined in COLORS.theme, should it be?
+// - lighter background color is not defined in COLORS.theme, should it be?
+const DEFAULT_BORDER_COLOR = COLORS.theme.gray[300];
+const DIVIDER_COLOR = COLORS.theme.gray[200];
+const LIGHTER_TEXT_COLOR = COLORS.theme.gray[700];
+const LIGHT_BACKGROUND_COLOR = COLORS.theme.gray[100];
+const TOOLBAR_VARIANT_BORDER_COLOR = COLORS.theme.foreground;
+const DEFAULT_BOX_SHADOW = `0 0 0 ${config_values.borderWidth} ${DEFAULT_BORDER_COLOR}, ${config_values.elevationXSmall}`;
 const TOOLBAR_VARIANT_BOX_SHADOW = `0 0 0 ${config_values.borderWidth} ${TOOLBAR_VARIANT_BORDER_COLOR}`;
 const GRID_TEMPLATE_COLS = 'minmax( 0, max-content ) 1fr';
-const slideUpAndFade = emotion_react_browser_esm_keyframes({
-  '0%': {
-    opacity: 0,
-    transform: `translateY(${styles_ANIMATION_PARAMS.SLIDE_AMOUNT})`
-  },
-  '100%': {
-    opacity: 1,
-    transform: 'translateY(0)'
-  }
-});
-const slideRightAndFade = emotion_react_browser_esm_keyframes({
-  '0%': {
-    opacity: 0,
-    transform: `translateX(-${styles_ANIMATION_PARAMS.SLIDE_AMOUNT})`
-  },
-  '100%': {
-    opacity: 1,
-    transform: 'translateX(0)'
-  }
-});
-const styles_slideDownAndFade = emotion_react_browser_esm_keyframes({
-  '0%': {
-    opacity: 0,
-    transform: `translateY(-${styles_ANIMATION_PARAMS.SLIDE_AMOUNT})`
-  },
-  '100%': {
-    opacity: 1,
-    transform: 'translateY(0)'
-  }
-});
-const slideLeftAndFade = emotion_react_browser_esm_keyframes({
-  '0%': {
-    opacity: 0,
-    transform: `translateX(${styles_ANIMATION_PARAMS.SLIDE_AMOUNT})`
-  },
-  '100%': {
-    opacity: 1,
-    transform: 'translateX(0)'
-  }
-});
-const dropdown_menu_v2_styles_DropdownMenu = /*#__PURE__*/emotion_styled_base_browser_esm(Menu,  true ? {
+const MenuPopoverOuterWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
+  target: "e1kdzosf14"
+} : 0)("position:relative;background-color:", COLORS.ui.background, ";border-radius:", config_values.radiusMedium, ";", props => /*#__PURE__*/emotion_react_browser_esm_css("box-shadow:", props.variant === 'toolbar' ? TOOLBAR_VARIANT_BOX_SHADOW : DEFAULT_BOX_SHADOW, ";" + ( true ? "" : 0),  true ? "" : 0), " overflow:hidden;@media not ( prefers-reduced-motion ){transition-property:transform,opacity;transition-timing-function:", styles_ANIMATION_PARAMS.EASING, ";transition-duration:", styles_ANIMATION_PARAMS.DURATION.IN, ";will-change:transform,opacity;opacity:0;&:has( [data-enter] ){opacity:1;}&:has( [data-leave] ){transition-duration:", styles_ANIMATION_PARAMS.DURATION.OUT, ";}&:has( [data-side='bottom'] ),&:has( [data-side='top'] ){transform:scaleY( ", styles_ANIMATION_PARAMS.SCALE_AMOUNT_OUTER, " );}&:has( [data-side='bottom'] ){transform-origin:top;}&:has( [data-side='top'] ){transform-origin:bottom;}&:has( [data-enter][data-side='bottom'] ),&:has( [data-enter][data-side='top'] ),&:has( [data-leave][data-side='bottom'] ),&:has( [data-leave][data-side='top'] ){transform:scaleY( 1 );}}" + ( true ? "" : 0));
+const MenuPopoverInnerWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
+  target: "e1kdzosf13"
+} : 0)("position:relative;z-index:1000000;display:grid;grid-template-columns:", GRID_TEMPLATE_COLS, ";grid-template-rows:auto;box-sizing:border-box;min-width:160px;max-width:320px;max-height:var( --popover-available-height );padding:", CONTENT_WRAPPER_PADDING, ";overscroll-behavior:contain;overflow:auto;outline:2px solid transparent!important;@media not ( prefers-reduced-motion ){transition:inherit;transform-origin:inherit;&[data-side='bottom'],&[data-side='top']{transform:scaleY(\n\t\t\t\tcalc(\n\t\t\t\t\t1 / ", styles_ANIMATION_PARAMS.SCALE_AMOUNT_OUTER, " *\n\t\t\t\t\t\t", styles_ANIMATION_PARAMS.SCALE_AMOUNT_CONTENT, "\n\t\t\t\t)\n\t\t\t);}&[data-enter][data-side='bottom'],&[data-enter][data-side='top'],&[data-leave][data-side='bottom'],&[data-leave][data-side='top']{transform:scaleY( 1 );}}" + ( true ? "" : 0));
+const baseItem = /*#__PURE__*/emotion_react_browser_esm_css("all:unset;position:relative;min-height:", space(10), ";box-sizing:border-box;grid-column:1/-1;display:grid;grid-template-columns:", GRID_TEMPLATE_COLS, ";align-items:center;@supports ( grid-template-columns: subgrid ){grid-template-columns:subgrid;}font-size:", font('default.fontSize'), ";font-family:inherit;font-weight:normal;line-height:20px;color:", COLORS.theme.foreground, ";border-radius:", config_values.radiusSmall, ";padding-block:", ITEM_PADDING_BLOCK, ";padding-inline:", ITEM_PADDING_INLINE, ";scroll-margin:", CONTENT_WRAPPER_PADDING, ";user-select:none;outline:none;&[aria-disabled='true']{color:", COLORS.ui.textDisabled, ";cursor:not-allowed;}&[data-active-item]:not( [data-focus-visible] ):not(\n\t\t\t[aria-disabled='true']\n\t\t){background-color:", COLORS.theme.accent, ";color:", COLORS.white, ";}&[data-focus-visible]{box-shadow:0 0 0 1.5px ", COLORS.theme.accent, ";outline:2px solid transparent;}&:active,&[data-active]{}", MenuPopoverInnerWrapper, ":not(:focus) &:not(:focus)[aria-expanded=\"true\"]{background-color:", LIGHT_BACKGROUND_COLOR, ";color:", COLORS.theme.foreground, ";}svg{fill:currentColor;}" + ( true ? "" : 0),  true ? "" : 0);
+const styles_DropdownMenuItem = /*#__PURE__*/emotion_styled_base_browser_esm(B6XZVSMQ_MenuItem,  true ? {
   target: "e1kdzosf12"
-} : 0)("position:relative;z-index:1000000;display:grid;grid-template-columns:", GRID_TEMPLATE_COLS, ";grid-template-rows:auto;box-sizing:border-box;min-width:160px;max-width:320px;max-height:var( --popover-available-height );padding:", CONTENT_WRAPPER_PADDING, ";background-color:", COLORS.ui.background, ";border-radius:4px;", props => /*#__PURE__*/emotion_react_browser_esm_css("box-shadow:", props.variant === 'toolbar' ? TOOLBAR_VARIANT_BOX_SHADOW : DEFAULT_BOX_SHADOW, ";" + ( true ? "" : 0),  true ? "" : 0), " overscroll-behavior:contain;overflow:auto;outline:2px solid transparent!important;&[data-open]{@media not ( prefers-reduced-motion ){animation-duration:", styles_ANIMATION_PARAMS.DURATION, ";animation-timing-function:", styles_ANIMATION_PARAMS.EASING, ";will-change:transform,opacity;animation-name:", styles_slideDownAndFade, ";&[data-side='left']{animation-name:", slideLeftAndFade, ";}&[data-side='up']{animation-name:", slideUpAndFade, ";}&[data-side='right']{animation-name:", slideRightAndFade, ";}}}" + ( true ? "" : 0));
-const baseItem = /*#__PURE__*/emotion_react_browser_esm_css("all:unset;position:relative;min-height:", space(10), ";box-sizing:border-box;grid-column:1/-1;display:grid;grid-template-columns:", GRID_TEMPLATE_COLS, ";align-items:center;@supports ( grid-template-columns: subgrid ){grid-template-columns:subgrid;}font-size:", font('default.fontSize'), ";font-family:inherit;font-weight:normal;line-height:20px;color:", COLORS.gray[900], ";border-radius:", config_values.radiusBlockUi, ";padding-block:", ITEM_PADDING_BLOCK, ";padding-inline:", ITEM_PADDING_INLINE, ";scroll-margin:", CONTENT_WRAPPER_PADDING, ";user-select:none;outline:none;&[aria-disabled='true']{color:", COLORS.ui.textDisabled, ";cursor:not-allowed;}&[data-active-item]:not( [data-focus-visible] ):not(\n\t\t\t[aria-disabled='true']\n\t\t){background-color:", COLORS.theme.accent, ";color:", COLORS.white, ";}&[data-focus-visible]{box-shadow:0 0 0 1.5px ", COLORS.theme.accent, ";outline:2px solid transparent;}&:active,&[data-active]{}", dropdown_menu_v2_styles_DropdownMenu, ":not(:focus) &:not(:focus)[aria-expanded=\"true\"]{background-color:", COLORS.gray[100], ";color:", COLORS.gray[900], ";}svg{fill:currentColor;}" + ( true ? "" : 0),  true ? "" : 0);
-const styles_DropdownMenuItem = /*#__PURE__*/emotion_styled_base_browser_esm(_4Q67VK3V_MenuItem,  true ? {
-  target: "e1kdzosf11"
 } : 0)(baseItem, ";" + ( true ? "" : 0));
 const styles_DropdownMenuCheckboxItem = /*#__PURE__*/emotion_styled_base_browser_esm(MenuItemCheckbox,  true ? {
-  target: "e1kdzosf10"
+  target: "e1kdzosf11"
 } : 0)(baseItem, ";" + ( true ? "" : 0));
 const styles_DropdownMenuRadioItem = /*#__PURE__*/emotion_styled_base_browser_esm(MenuItemRadio,  true ? {
-  target: "e1kdzosf9"
+  target: "e1kdzosf10"
 } : 0)(baseItem, ";" + ( true ? "" : 0));
 const ItemPrefixWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
-  target: "e1kdzosf8"
-} : 0)("grid-column:1;", styles_DropdownMenuCheckboxItem, ">&,", styles_DropdownMenuRadioItem, ">&{min-width:", space(6), ";}", styles_DropdownMenuCheckboxItem, ">&,", styles_DropdownMenuRadioItem, ">&,&:not( :empty ){margin-inline-end:", space(2), ";}display:flex;align-items:center;justify-content:center;color:", COLORS.gray['700'], ";[data-active-item]:not( [data-focus-visible] )>&,[aria-disabled='true']>&{color:inherit;}" + ( true ? "" : 0));
+  target: "e1kdzosf9"
+} : 0)("grid-column:1;", styles_DropdownMenuCheckboxItem, ">&,", styles_DropdownMenuRadioItem, ">&{min-width:", space(6), ";}", styles_DropdownMenuCheckboxItem, ">&,", styles_DropdownMenuRadioItem, ">&,&:not( :empty ){margin-inline-end:", space(2), ";}display:flex;align-items:center;justify-content:center;color:", LIGHTER_TEXT_COLOR, ";[data-active-item]:not( [data-focus-visible] )>&,[aria-disabled='true']>&{color:inherit;}" + ( true ? "" : 0));
 const DropdownMenuItemContentWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
-  target: "e1kdzosf7"
+  target: "e1kdzosf8"
 } : 0)("grid-column:2;display:flex;align-items:center;justify-content:space-between;gap:", space(3), ";pointer-events:none;" + ( true ? "" : 0));
 const DropdownMenuItemChildrenWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
-  target: "e1kdzosf6"
+  target: "e1kdzosf7"
 } : 0)("flex:1;display:inline-flex;flex-direction:column;gap:", space(1), ";" + ( true ? "" : 0));
 const ItemSuffixWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
-  target: "e1kdzosf5"
-} : 0)("flex:0 1 fit-content;min-width:0;width:fit-content;display:flex;align-items:center;justify-content:center;gap:", space(3), ";color:", COLORS.gray['700'], ";[data-active-item]:not( [data-focus-visible] ) *:not(", dropdown_menu_v2_styles_DropdownMenu, ") &,[aria-disabled='true'] *:not(", dropdown_menu_v2_styles_DropdownMenu, ") &{color:inherit;}" + ( true ? "" : 0));
+  target: "e1kdzosf6"
+} : 0)("flex:0 1 fit-content;min-width:0;width:fit-content;display:flex;align-items:center;justify-content:center;gap:", space(3), ";color:", LIGHTER_TEXT_COLOR, ";[data-active-item]:not( [data-focus-visible] ) *:not(", MenuPopoverInnerWrapper, ") &,[aria-disabled='true'] *:not(", MenuPopoverInnerWrapper, ") &{color:inherit;}" + ( true ? "" : 0));
 const styles_DropdownMenuGroup = /*#__PURE__*/emotion_styled_base_browser_esm(menu_group_MenuGroup,  true ? {
-  target: "e1kdzosf4"
+  target: "e1kdzosf5"
 } : 0)( true ? {
   name: "49aokf",
   styles: "display:contents"
 } : 0);
+const DropdownMenuGroupLabel = /*#__PURE__*/emotion_styled_base_browser_esm(MenuGroupLabel,  true ? {
+  target: "e1kdzosf4"
+} : 0)("grid-column:1/-1;padding-block-start:", space(3), ";padding-block-end:", space(2), ";padding-inline:", ITEM_PADDING_INLINE, ";" + ( true ? "" : 0));
 const styles_DropdownMenuSeparator = /*#__PURE__*/emotion_styled_base_browser_esm(MenuSeparator,  true ? {
   target: "e1kdzosf3"
 } : 0)("grid-column:1/-1;border:none;height:", config_values.borderWidth, ";background-color:", props => props.variant === 'toolbar' ? TOOLBAR_VARIANT_BORDER_COLOR : DIVIDER_COLOR, ";margin-block:", space(2), ";margin-inline:", ITEM_PADDING_INLINE, ";outline:2px solid transparent;" + ( true ? "" : 0));
@@ -70439,20 +70248,45 @@ const styles_DropdownMenuItemLabel = /*#__PURE__*/emotion_styled_base_browser_es
 } : 0)("font-size:", font('default.fontSize'), ";line-height:20px;color:inherit;" + ( true ? "" : 0));
 const styles_DropdownMenuItemHelpText = /*#__PURE__*/emotion_styled_base_browser_esm(truncate_component,  true ? {
   target: "e1kdzosf0"
-} : 0)("font-size:", font('helpText.fontSize'), ";line-height:16px;color:", COLORS.gray['700'], ";word-break:break-all;[data-active-item]:not( [data-focus-visible] ) *:not( ", dropdown_menu_v2_styles_DropdownMenu, " ) &,[aria-disabled='true'] *:not( ", dropdown_menu_v2_styles_DropdownMenu, " ) &{color:inherit;}" + ( true ? "" : 0));
+} : 0)("font-size:", font('helpText.fontSize'), ";line-height:16px;color:", LIGHTER_TEXT_COLOR, ";word-break:break-all;[data-active-item]:not( [data-focus-visible] ) *:not( ", MenuPopoverInnerWrapper, " ) &,[aria-disabled='true'] *:not( ", MenuPopoverInnerWrapper, " ) &{color:inherit;}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/index.js
-/**
- * External dependencies
- */
-
-
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/context.js
 /**
  * WordPress dependencies
  */
 
 
+/**
+ * Internal dependencies
+ */
 
+const DropdownMenuContext = (0,external_wp_element_namespaceObject.createContext)(undefined);
+
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/use-temporary-focus-visible-fix.js
+/**
+ * WordPress dependencies
+ */
+
+function useTemporaryFocusVisibleFix({
+  onBlur: onBlurProp
+}) {
+  const [focusVisible, setFocusVisible] = (0,external_wp_element_namespaceObject.useState)(false);
+  return {
+    'data-focus-visible': focusVisible || undefined,
+    onFocusVisible: () => {
+      (0,external_wp_element_namespaceObject.flushSync)(() => setFocusVisible(true));
+    },
+    onBlur: event => {
+      onBlurProp?.(event);
+      setFocusVisible(false);
+    }
+  };
+}
+
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/item.js
+/**
+ * WordPress dependencies
+ */
 
 
 /**
@@ -70464,18 +70298,23 @@ const styles_DropdownMenuItemHelpText = /*#__PURE__*/emotion_styled_base_browser
 
 
 
-const DropdownMenuContext = (0,external_wp_element_namespaceObject.createContext)(undefined);
 const DropdownMenuItem = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuItem({
   prefix,
   suffix,
   children,
+  onBlur,
   hideOnClick = true,
   ...props
 }, ref) {
+  // TODO: Remove when https://github.com/ariakit/ariakit/issues/4083 is fixed
+  const focusVisibleFixProps = useTemporaryFocusVisibleFix({
+    onBlur
+  });
   const dropdownMenuContext = (0,external_wp_element_namespaceObject.useContext)(DropdownMenuContext);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(styles_DropdownMenuItem, {
     ref: ref,
     ...props,
+    ...focusVisibleFixProps,
     accessibleWhenDisabled: true,
     hideOnClick: hideOnClick,
     store: dropdownMenuContext?.store,
@@ -70490,16 +70329,79 @@ const DropdownMenuItem = (0,external_wp_element_namespaceObject.forwardRef)(func
     })]
   });
 });
+
+;// CONCATENATED MODULE: ./packages/components/node_modules/@ariakit/react-core/esm/menu/menu-item-check.js
+"use client";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// src/menu/menu-item-check.tsx
+
+var menu_item_check_TagName = "span";
+var useMenuItemCheck = createHook(
+  function useMenuItemCheck2(_a) {
+    var _b = _a, { store, checked } = _b, props = __objRest(_b, ["store", "checked"]);
+    const context = (0,external_React_.useContext)(MenuItemCheckedContext);
+    checked = checked != null ? checked : context;
+    props = useCheckboxCheck(_3YLGPPWQ_spreadProps(_3YLGPPWQ_spreadValues({}, props), { checked }));
+    return props;
+  }
+);
+var MenuItemCheck = forwardRef2(function MenuItemCheck2(props) {
+  const htmlProps = useMenuItemCheck(props);
+  return HKOOKEDE_createElement(menu_item_check_TagName, htmlProps);
+});
+
+
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/checkbox-item.js
+/**
+ * External dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+
+
+
 const DropdownMenuCheckboxItem = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuCheckboxItem({
   suffix,
   children,
+  onBlur,
   hideOnClick = false,
   ...props
 }, ref) {
+  // TODO: Remove when https://github.com/ariakit/ariakit/issues/4083 is fixed
+  const focusVisibleFixProps = useTemporaryFocusVisibleFix({
+    onBlur
+  });
   const dropdownMenuContext = (0,external_wp_element_namespaceObject.useContext)(DropdownMenuContext);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(styles_DropdownMenuCheckboxItem, {
     ref: ref,
     ...props,
+    ...focusVisibleFixProps,
     accessibleWhenDisabled: true,
     hideOnClick: hideOnClick,
     store: dropdownMenuContext?.store,
@@ -70512,7 +70414,7 @@ const DropdownMenuCheckboxItem = (0,external_wp_element_namespaceObject.forwardR
         width: 'auto',
         height: 'auto'
       },
-      children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(build_module_icon, {
+      children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(icons_build_module_icon, {
         icon: library_check,
         size: 24
       })
@@ -70525,6 +70427,29 @@ const DropdownMenuCheckboxItem = (0,external_wp_element_namespaceObject.forwardR
     })]
   });
 });
+
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/radio-item.js
+/**
+ * External dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+
+
+
+
 const radioCheck = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_primitives_namespaceObject.SVG, {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 24 24",
@@ -70537,13 +70462,19 @@ const radioCheck = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 const DropdownMenuRadioItem = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuRadioItem({
   suffix,
   children,
+  onBlur,
   hideOnClick = false,
   ...props
 }, ref) {
+  // TODO: Remove when https://github.com/ariakit/ariakit/issues/4083 is fixed
+  const focusVisibleFixProps = useTemporaryFocusVisibleFix({
+    onBlur
+  });
   const dropdownMenuContext = (0,external_wp_element_namespaceObject.useContext)(DropdownMenuContext);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(styles_DropdownMenuRadioItem, {
     ref: ref,
     ...props,
+    ...focusVisibleFixProps,
     accessibleWhenDisabled: true,
     hideOnClick: hideOnClick,
     store: dropdownMenuContext?.store,
@@ -70556,7 +70487,7 @@ const DropdownMenuRadioItem = (0,external_wp_element_namespaceObject.forwardRef)
         width: 'auto',
         height: 'auto'
       },
-      children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(build_module_icon, {
+      children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(icons_build_module_icon, {
         icon: radioCheck,
         size: 24
       })
@@ -70569,6 +70500,20 @@ const DropdownMenuRadioItem = (0,external_wp_element_namespaceObject.forwardRef)
     })]
   });
 });
+
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/group.js
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+
 const DropdownMenuGroup = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuGroup(props, ref) {
   const dropdownMenuContext = (0,external_wp_element_namespaceObject.useContext)(DropdownMenuContext);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(styles_DropdownMenuGroup, {
@@ -70577,6 +70522,134 @@ const DropdownMenuGroup = (0,external_wp_element_namespaceObject.forwardRef)(fun
     store: dropdownMenuContext?.store
   });
 });
+
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/group-label.js
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+
+
+const group_label_DropdownMenuGroupLabel = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuGroup(props, ref) {
+  const dropdownMenuContext = (0,external_wp_element_namespaceObject.useContext)(DropdownMenuContext);
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(DropdownMenuGroupLabel, {
+    ref: ref,
+    render:
+    /*#__PURE__*/
+    // @ts-expect-error The `children` prop is passed
+    (0,external_ReactJSXRuntime_namespaceObject.jsx)(text_component, {
+      upperCase: true,
+      variant: "muted",
+      size: "11px",
+      weight: 500,
+      lineHeight: "16px"
+    }),
+    ...props,
+    store: dropdownMenuContext?.store
+  });
+});
+
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/separator.js
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+
+const DropdownMenuSeparator = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuSeparator(props, ref) {
+  const dropdownMenuContext = (0,external_wp_element_namespaceObject.useContext)(DropdownMenuContext);
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(styles_DropdownMenuSeparator, {
+    ref: ref,
+    ...props,
+    store: dropdownMenuContext?.store,
+    variant: dropdownMenuContext?.variant
+  });
+});
+
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/item-label.js
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+const DropdownMenuItemLabel = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuItemLabel(props, ref) {
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(styles_DropdownMenuItemLabel, {
+    numberOfLines: 1,
+    ref: ref,
+    ...props
+  });
+});
+
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/item-help-text.js
+/**
+ * WordPress dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+const DropdownMenuItemHelpText = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuItemHelpText(props, ref) {
+  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(styles_DropdownMenuItemHelpText, {
+    numberOfLines: 2,
+    ref: ref,
+    ...props
+  });
+});
+
+;// CONCATENATED MODULE: ./packages/components/build-module/dropdown-menu-v2/index.js
+/**
+ * External dependencies
+ */
+
+
+
+/**
+ * WordPress dependencies
+ */
+
+
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const dropdown_menu_v2_UnconnectedDropdownMenu = (props, ref) => {
   var _props$placement;
   const {
@@ -70629,7 +70702,9 @@ const dropdown_menu_v2_UnconnectedDropdownMenu = (props, ref) => {
   }), [dropdownMenuStore, variant]);
 
   // Extract the side from the applied placement — useful for animations.
-  const appliedPlacementSide = dropdownMenuStore.useState('placement').split('-')[0];
+  // Using `currentPlacement` instead of `placement` to make sure that we
+  // use the final computed placement (including "flips" etc).
+  const appliedPlacementSide = useStoreState(dropdownMenuStore, 'currentPlacement').split('-')[0];
   if (dropdownMenuStore.parent && !((0,external_wp_element_namespaceObject.isValidElement)(trigger) && DropdownMenuItem === trigger.type)) {
     // eslint-disable-next-line no-console
     console.warn('For nested DropdownMenus, the `trigger` should always be a `DropdownMenuItem`.');
@@ -70662,7 +70737,7 @@ const dropdown_menu_v2_UnconnectedDropdownMenu = (props, ref) => {
           })]
         })
       }) : trigger
-    }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(dropdown_menu_v2_styles_DropdownMenu, {
+    }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(Menu, {
       ...otherProps,
       modal: modal,
       store: dropdownMenuStore
@@ -70676,10 +70751,21 @@ const dropdown_menu_v2_UnconnectedDropdownMenu = (props, ref) => {
       shift: shift !== null && shift !== void 0 ? shift : dropdownMenuStore.parent ? -4 : 0,
       hideOnHoverOutside: false,
       "data-side": appliedPlacementSide,
-      variant: variant,
       wrapperProps: wrapperProps,
       hideOnEscape: hideOnEscape,
       unmountOnHide: true,
+      render: renderProps =>
+      /*#__PURE__*/
+      // Two wrappers are needed for the entry animation, where the menu
+      // container scales with a different factor than its contents.
+      // The {...renderProps} are passed to the inner wrapper, so that the
+      // menu element is the direct parent of the menu item elements.
+      (0,external_ReactJSXRuntime_namespaceObject.jsx)(MenuPopoverOuterWrapper, {
+        variant: variant,
+        children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(MenuPopoverInnerWrapper, {
+          ...renderProps
+        })
+      }),
       children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(DropdownMenuContext.Provider, {
         value: contextValue,
         children: children
@@ -70687,30 +70773,36 @@ const dropdown_menu_v2_UnconnectedDropdownMenu = (props, ref) => {
     })]
   });
 };
-const dropdown_menu_v2_DropdownMenu = contextConnect(dropdown_menu_v2_UnconnectedDropdownMenu, 'DropdownMenu');
-const DropdownMenuSeparator = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuSeparator(props, ref) {
-  const dropdownMenuContext = (0,external_wp_element_namespaceObject.useContext)(DropdownMenuContext);
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(styles_DropdownMenuSeparator, {
-    ref: ref,
-    ...props,
-    store: dropdownMenuContext?.store,
-    variant: dropdownMenuContext?.variant
-  });
+const DropdownMenuV2 = Object.assign(contextConnect(dropdown_menu_v2_UnconnectedDropdownMenu, 'DropdownMenu'), {
+  Context: Object.assign(DropdownMenuContext, {
+    displayName: 'DropdownMenuV2.Context'
+  }),
+  Item: Object.assign(DropdownMenuItem, {
+    displayName: 'DropdownMenuV2.Item'
+  }),
+  RadioItem: Object.assign(DropdownMenuRadioItem, {
+    displayName: 'DropdownMenuV2.RadioItem'
+  }),
+  CheckboxItem: Object.assign(DropdownMenuCheckboxItem, {
+    displayName: 'DropdownMenuV2.CheckboxItem'
+  }),
+  Group: Object.assign(DropdownMenuGroup, {
+    displayName: 'DropdownMenuV2.Group'
+  }),
+  GroupLabel: Object.assign(group_label_DropdownMenuGroupLabel, {
+    displayName: 'DropdownMenuV2.GroupLabel'
+  }),
+  Separator: Object.assign(DropdownMenuSeparator, {
+    displayName: 'DropdownMenuV2.Separator'
+  }),
+  ItemLabel: Object.assign(DropdownMenuItemLabel, {
+    displayName: 'DropdownMenuV2.ItemLabel'
+  }),
+  ItemHelpText: Object.assign(DropdownMenuItemHelpText, {
+    displayName: 'DropdownMenuV2.ItemHelpText'
+  })
 });
-const DropdownMenuItemLabel = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuItemLabel(props, ref) {
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(styles_DropdownMenuItemLabel, {
-    numberOfLines: 1,
-    ref: ref,
-    ...props
-  });
-});
-const DropdownMenuItemHelpText = (0,external_wp_element_namespaceObject.forwardRef)(function DropdownMenuItemHelpText(props, ref) {
-  return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(styles_DropdownMenuItemHelpText, {
-    numberOfLines: 2,
-    ref: ref,
-    ...props
-  });
-});
+/* harmony default export */ const dropdown_menu_v2 = ((/* unused pure expression or super */ null && (DropdownMenuV2)));
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/theme/styles.js
 
@@ -70927,10 +71019,10 @@ const TabListWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true
 } : 0)("position:relative;display:flex;align-items:stretch;flex-direction:row;text-align:center;&[aria-orientation='vertical']{flex-direction:column;text-align:start;}@media not ( prefers-reduced-motion: reduce ){&.is-animation-enabled::after{transition-property:left,top,width,height;transition-duration:0.2s;transition-timing-function:ease-out;}}&::after{content:'';position:absolute;pointer-events:none;outline:2px solid transparent;outline-offset:-1px;}&:not( [aria-orientation='vertical'] )::after{bottom:0;left:var( --indicator-left );width:var( --indicator-width );height:0;border-bottom:var( --wp-admin-border-width-focus ) solid ", COLORS.theme.accent, ";}&[aria-orientation='vertical']::after{z-index:-1;left:0;width:100%;top:var( --indicator-top );height:var( --indicator-height );background-color:", COLORS.theme.gray[100], ";}" + ( true ? "" : 0));
 const styles_Tab = /*#__PURE__*/emotion_styled_base_browser_esm(Tab,  true ? {
   target: "enfox0g1"
-} : 0)("&{display:inline-flex;align-items:center;position:relative;border-radius:0;min-height:", space(12), ";height:auto;background:transparent;border:none;box-shadow:none;cursor:pointer;line-height:1.2;padding:", space(4), ";margin-left:0;font-weight:500;text-align:inherit;hyphens:auto;color:", COLORS.theme.foreground, ";&[aria-disabled='true']{cursor:default;color:", COLORS.ui.textDisabled, ";}&:not( [aria-disabled='true'] ):hover{color:", COLORS.theme.accent, ";}&:focus:not( :disabled ){position:relative;box-shadow:none;outline:none;}&::before{content:'';position:absolute;top:", space(3), ";right:", space(3), ";bottom:", space(3), ";left:", space(3), ";pointer-events:none;outline:var( --wp-admin-border-width-focus ) solid ", COLORS.theme.accent, ";border-radius:2px;opacity:0;@media not ( prefers-reduced-motion ){transition:opacity 0.1s linear;}}&:focus-visible::before{opacity:1;}}[aria-orientation='vertical'] &{min-height:", space(10), ";}" + ( true ? "" : 0));
+} : 0)("&{display:inline-flex;align-items:center;position:relative;border-radius:0;min-height:", space(12), ";height:auto;background:transparent;border:none;box-shadow:none;cursor:pointer;line-height:1.2;padding:", space(4), ";margin-left:0;font-weight:500;text-align:inherit;hyphens:auto;color:", COLORS.theme.foreground, ";&[aria-disabled='true']{cursor:default;color:", COLORS.ui.textDisabled, ";}&:not( [aria-disabled='true'] ):hover{color:", COLORS.theme.accent, ";}&:focus:not( :disabled ){position:relative;box-shadow:none;outline:none;}&::before{content:'';position:absolute;top:", space(3), ";right:", space(3), ";bottom:", space(3), ";left:", space(3), ";pointer-events:none;outline:var( --wp-admin-border-width-focus ) solid ", COLORS.theme.accent, ";border-radius:", config_values.radiusSmall, ";opacity:0;@media not ( prefers-reduced-motion ){transition:opacity 0.1s linear;}}&:focus-visible::before{opacity:1;}}[aria-orientation='vertical'] &{min-height:", space(10), ";}" + ( true ? "" : 0));
 const styles_TabPanel = /*#__PURE__*/emotion_styled_base_browser_esm(TabPanel,  true ? {
   target: "enfox0g0"
-} : 0)("&:focus{box-shadow:none;outline:none;}&:focus-visible{border-radius:2px;box-shadow:0 0 0 var( --wp-admin-border-width-focus ) ", COLORS.theme.accent, ";outline:2px solid transparent;outline-offset:0;}" + ( true ? "" : 0));
+} : 0)("&:focus{box-shadow:none;outline:none;}&:focus-visible{box-shadow:0 0 0 var( --wp-admin-border-width-focus ) ", COLORS.theme.accent, ";outline:2px solid transparent;outline-offset:0;}" + ( true ? "" : 0));
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/tabs/tab.js
 /**
@@ -71205,6 +71297,7 @@ onUpdate) {
  */
 
 
+
 /**
  * WordPress dependencies
  */
@@ -71226,13 +71319,14 @@ const TabList = (0,external_wp_element_namespaceObject.forwardRef)(function TabL
   ...otherProps
 }, ref) {
   const context = useTabsContext();
-  const selectedId = context?.store.useState('selectedId');
+  const tabStoreState = useStoreState(context?.store);
+  const selectedId = tabStoreState?.selectedId;
   const indicatorPosition = useTrackElementOffsetRect(context?.store.item(selectedId)?.element);
   const [animationEnabled, setAnimationEnabled] = (0,external_wp_element_namespaceObject.useState)(false);
   useOnValueUpdate(selectedId, ({
     previousValue
   }) => previousValue && setAnimationEnabled(true));
-  if (!context) {
+  if (!context || !tabStoreState) {
      false ? 0 : void 0;
     return null;
   }
@@ -71242,7 +71336,7 @@ const TabList = (0,external_wp_element_namespaceObject.forwardRef)(function TabL
   const {
     activeId,
     selectOnMove
-  } = store.useState();
+  } = tabStoreState;
   const {
     setActiveId
   } = store;
@@ -71285,9 +71379,13 @@ const TabList = (0,external_wp_element_namespaceObject.forwardRef)(function TabL
 
 ;// CONCATENATED MODULE: ./packages/components/build-module/tabs/tabpanel.js
 /**
- * WordPress dependencies
+ * External dependencies
  */
 
+
+/**
+ * WordPress dependencies
+ */
 
 
 /**
@@ -71305,6 +71403,7 @@ const tabpanel_TabPanel = (0,external_wp_element_namespaceObject.forwardRef)(fun
   ...otherProps
 }, ref) {
   const context = useTabsContext();
+  const selectedId = useStoreState(context?.store, 'selectedId');
   if (!context) {
      false ? 0 : void 0;
     return null;
@@ -71314,7 +71413,6 @@ const tabpanel_TabPanel = (0,external_wp_element_namespaceObject.forwardRef)(fun
     instanceId
   } = context;
   const instancedTabId = `${instanceId}-${tabId}`;
-  const selectedId = store.useState(state => state.selectedId);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(styles_TabPanel, {
     ref: ref,
     store: store
@@ -71334,6 +71432,7 @@ const tabpanel_TabPanel = (0,external_wp_element_namespaceObject.forwardRef)(fun
 /**
  * External dependencies
  */
+
 
 
 /**
@@ -71375,7 +71474,7 @@ function Tabs({
     items,
     selectedId,
     activeId
-  } = store.useState();
+  } = useStoreState(store);
   const {
     setSelectedId,
     setActiveId
@@ -71384,9 +71483,9 @@ function Tabs({
   // Keep track of whether tabs have been populated. This is used to prevent
   // certain effects from firing too early while tab data and relevant
   // variables are undefined during the initial render.
-  const tabsHavePopulated = (0,external_wp_element_namespaceObject.useRef)(false);
+  const tabsHavePopulatedRef = (0,external_wp_element_namespaceObject.useRef)(false);
   if (items.length > 0) {
-    tabsHavePopulated.current = true;
+    tabsHavePopulatedRef.current = true;
   }
   const selectedTab = items.find(item => item.id === selectedId);
   const firstEnabledTab = items.find(item => {
@@ -71419,7 +71518,7 @@ function Tabs({
       }
       if (firstEnabledTab) {
         setSelectedId(firstEnabledTab.id);
-      } else if (tabsHavePopulated.current) {
+      } else if (tabsHavePopulatedRef.current) {
         setSelectedId(null);
       }
     }
@@ -71458,7 +71557,7 @@ function Tabs({
 
     // Once the tabs have populated, if the `selectedTabId` still can't be
     // found, clear the selection.
-    if (tabsHavePopulated.current && !!selectedTabId && !selectedTab) {
+    if (tabsHavePopulatedRef.current && !!selectedTabId && !selectedTab) {
       setSelectedId(null);
     }
   }, [isControlled, selectedTab, selectedTabId, setSelectedId]);
@@ -71528,26 +71627,22 @@ const {
 
 
 
+
 const privateApis = {};
 lock(privateApis, {
   CompositeV2: Composite,
-  CompositeGroupV2: CompositeGroup,
-  CompositeItemV2: CompositeItem,
-  CompositeRowV2: CompositeRow,
-  useCompositeStoreV2: useCompositeStore,
+  CompositeGroupV2: Composite.Group,
+  CompositeItemV2: Composite.Item,
+  CompositeRowV2: Composite.Row,
+  CompositeTypeaheadV2: Composite.Typeahead,
+  CompositeHoverV2: Composite.Hover,
+  useCompositeStoreV2: store_useCompositeStore,
   __experimentalPopoverLegacyPositionToPlacement: positionToPlacement,
   createPrivateSlotFill: createPrivateSlotFill,
   ComponentsContext: ComponentsContext,
   Tabs: tabs,
   Theme: theme,
-  DropdownMenuV2: dropdown_menu_v2_DropdownMenu,
-  DropdownMenuGroupV2: DropdownMenuGroup,
-  DropdownMenuItemV2: DropdownMenuItem,
-  DropdownMenuCheckboxItemV2: DropdownMenuCheckboxItem,
-  DropdownMenuRadioItemV2: DropdownMenuRadioItem,
-  DropdownMenuSeparatorV2: DropdownMenuSeparator,
-  DropdownMenuItemLabelV2: DropdownMenuItemLabel,
-  DropdownMenuItemHelpTextV2: DropdownMenuItemHelpText,
+  DropdownMenuV2: DropdownMenuV2,
   kebabCase: kebabCase
 });
 

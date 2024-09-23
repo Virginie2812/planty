@@ -1,184 +1,275 @@
-
-	
-	@media (min-width: 768px) and (max-width: 1024px ) {
-		h1, h2, h3, h4, h5, p  {
-			font-size: 100% !important;
-		}	
-		/* ACCEUIL */
-		/* marge bloc titre */
-			.elementor-element .elementor-element-5f4221d {
-			padding-bottom: 470px !important;
-		}
-		
-		
-		
-/* PAGE NOUS RENCONTRER */
-
-
- /* images l'équipe */
- /* bloc */
- .elementor-40 .elementor-element.elementor-element-c3ce7dd {
-	padding-left: 0px;
-	padding-right: 0px;
-	display: flex;
-	justify-content: center;
- }
- .elementor-element .elementor-element-e0614ba .wp-image-281 {
-	width: 10% !important;
- }
- /* formulaire */
- .elementor-element .elementor-element-c5c6efd  {
-	width: 60% !important ;
- }
- .elementor-element .elementor-element-c5c6efd label {
-	font-size: 80%;
-	text-align: left;
- }
- /* feuilles */
- .elementor-element .elementor-element-641d995 .wp-image-506  {
-	width: 20%;
-	
- }
-/* PAGE COMMANDER */
- /* sous titre */
- .elementor-67 .elementor-element.elementor-element-86f9281 .elementor-widget-container {
-	margin: -25px 0px 0px 50px;
- }
- /* images commande */
- .elementor-element .elementor-element-8afd33a  {
-	width: 100% !important;
- }
- .elementor-element .elementor-element-4e3a413 .gallery-item {
-	margin: 10px;
- }
-.elementor-element .elementor-element-1b8c16a {
-	width: 100%;
-	margin-top: -130px;
-	
-}
-.elementor-element .elementor-element-1b8c16a h2 {
-	font-size: 50% !important;
-	
-}
-/* commande */
-.formulaire {
-	width: 100%;
-	display: flex;
-	
-}
-.formulaire h2 {
-	font-size: 100% !important;
-}
-.ligne {
-	height: 2px;
-	width: 100%; 
-	background-color: #ffff;
-	margin-top: 10px;
+@media (min-width: 768px) and (max-width: 1024px) {
+	h1 {
+		font-size: 22px !important;
 	}
+
+	h2 {
+		font-size: 20px !important;
+	}
+
+	h3 {
+		font-size: 18px !important;
+	}
+
+	h4 {
+		font-size: 16px !important;
+	}
+
+	h5 {
+		font-size: 14px !important;
+	}
+
+	p {
+		font-size: 12px !important;
+	}
+
+	/* ACCEUIL */
+	/* marge bloc titre */
+	.elementor-element .elementor-element-5f4221d {
+		padding-bottom: 470px !important;
+	}
+
+
+	/* PAGE NOUS RENCONTRER */
+
+
+	/* images l'équipe */
+	/* bloc */
+	.elementor-40 .elementor-element.elementor-element-c3ce7dd {
+		padding-left: 0px;
+		padding-right: 0px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.elementor-element .elementor-element-e0614ba .wp-image-281 {
+		width: 10% !important;
+	}
+
+	/* feuilles */
+	.elementor-element .elementor-element-e0614ba .wp-image-281 {
+		width: 15% !important;
+		margin-top: 5px;
+	}
+
+	/* formulaire */
+	.elementor-element .elementor-element-c5c6efd {
+		width: 60% !important;
+	}
+
+	.elementor-element .elementor-element-c5c6efd label {
+		font-size: 80%;
+		text-align: left;
+	}
+
+	/* feuilles */
+	.elementor-element .elementor-element-641d995 .wp-image-506 {
+		width: 20%;
+
+	}
+
+	/* PAGE COMMANDER */
+	/* sous titre */
+	.elementor-67 .elementor-element.elementor-element-86f9281 .elementor-widget-container {
+		margin: -25px 0px 0px 50px;
+	}
+
+	/* textes images commande */
+	/* fraise*/
+	.elementor-element .elementor-element-9e3a73d .elementor-heading-title {
+		font-size: 100% !important;
+		margin-top: 80px;
+	}
+
+	/* pamplemousse*/
+	.elementor-element .elementor-element-c595c98 .elementor-heading-title {
+		font-size: 100% !important;
+		margin-top: 80px;
+	}
+
+	/* framboise*/
+	.elementor-element .elementor-element-8fab661 .elementor-heading-title {
+		font-size: 100% !important;
+		margin-top: 80px;
+	}
+
+	/* citron*/
+	.elementor-element .elementor-element-aa0ed5a .elementor-heading-title {
+		font-size: 100% !important;
+		margin-top: 80px;
+	}
+
 	/* formulaire compteur */
-.compteur {
-	display: flex !important;
-	gap: 110px !important;
-	
-}
+	.compteur {
+		margin-top: 20px;
 
-}
-
-	               /* ........................ */
-
-@media (min-width: 320px ) and (max-width: 767.98px) {
-	h1, h2, h3, h4, h5, p  {
-		font-size: 90% !important ;
 	}
+
+	/* commande */
+	.formulaire {
+		display: flex;
+		gap: 15px;
+	}
+
+	.formulaire h2 {
+		font-size: 100% !important;
+	}
+
+	.ligne {
+		width: 2px;
+		height: 350px;
+		background-color: #ffff;
+		margin-top: 50px;
+	}
+
+
+}
+
+/* ........................ */
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+	h1 {
+		font-size: 22px !important;
+	}
+
+	h2 {
+		font-size: 20px !important;
+	}
+
+	h3 {
+		font-size: 18px !important;
+	}
+
+	h4 {
+		font-size: 16px !important;
+	}
+
+	h5 {
+		font-size: 14px !important;
+	}
+
+	p {
+		font-size: 12px !important;
+	}
+
 	/* PAGE ACCUEIL */
 	.elementor-element .elementor-element-5f4221d {
 		padding-bottom: 300px !important;
 	}
-	
- /* PAGE NOUS RENCONTRER */
- .elementor-40 .elementor-element.elementor-element-453113f {
-	padding: 0px;
- }
- .elementor-element .elementor-element-10ce064 p {
-	padding-left: 0px;
-	padding-right: 0px;
- }
- /* images l'équipe */
- /* bloc */
- .elementor-40 .elementor-element.elementor-element-c3ce7dd {
-	padding-left: 0px;
-	padding-right: 0px;
-	display: flex;
-	justify-content: center;
 
- }
-/* feuilles */
-.elementor-element .elementor-element-641d995 .wp-image-281  {
-	width: 10% !important;
-	margin-top: -50px;
- }
- /* formulaire */
- .elementor-element .elementor-element-c5c6efd  {
-	width: 60% !important;
- }
- .elementor-element .elementor-element-c5c6efd label {
-	font-size: 80%;
-	text-align: left;
- }
- .elementor-element .elementor-element-641d995 .wp-image-506  {
-	width: 20%;
-	margin-right: -100px;
-	
- }
- /* feuilles */
-.elementor-element .elementor-element-641d995 .wp-image-506  {
-	width: 15% !important;
-}
- /* PAGE COMMANDER */
- /* sous titre */
-.elementor-67 .elementor-element.elementor-element-86f9281 .elementor-widget-container {
-	margin: -25px 0px 0px 50px;
- }
- /* images commande */
- .elementor-element .elementor-element-8afd33a  {
-	width: 100% !important;
- }
+	/* PAGE NOUS RENCONTRER */
+	.elementor-element.elementor-element-453113f {
+		margin-top: 100px;
+	}
 
-.elementor-element .elementor-element-1b8c16a {
-	width: 100%;
-	margin-top: -130px;
-	padding-top: 50px !important;
-	height: 100%
-}
-.elementor-element .elementor-element-1b8c16a h2 {
-	font-size: 50% !important;
-	
-}
- 
- /* formulaire compteur */
- .compteur {
-	display: flex !important;
-	gap: 50px !important;
-	padding-top: 20px;
-	
-}
+	.elementor-element .elementor-element-10ce064 p {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
-/* commande */
-.formulaire {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-}
-.formulaire h2 {
-	font-size: 100% !important;
-}
-.ligne {
-	height: 2px;
-	width: 100%; 
-	background-color: #ffff;
-	margin-top: 10px;
+	/* images l'équipe */
+	/* bloc */
+	.elementor-40 .elementor-element.elementor-element-c3ce7dd {
+		padding-left: 0px;
+		padding-right: 0px;
+		display: flex;
+		justify-content: center;
+
+	}
+
+	/* feuilles */
+	.elementor-element .elementor-element-e0614ba .wp-image-281 {
+		width: 15% !important;
+		margin-top: 5px;
+	}
+
+	/* formulaire */
+	.elementor-element .elementor-element-c5c6efd {
+		width: 60% !important;
+	}
+
+	.elementor-element .elementor-element-c5c6efd label {
+		font-size: 80%;
+		text-align: left;
+	}
+
+	.elementor-element .elementor-element-641d995 .wp-image-506 {
+		width: 20%;
+		margin-right: -100px;
+
+	}
+
+	/* feuilles */
+	.elementor-element .elementor-element-641d995 .wp-image-506 {
+		width: 15% !important;
+	}
+
+	/* PAGE COMMANDER */
+	/* header */
+	.singular .entry-header {
+		margin: -200px 15px 0px 15px;
+	}
+
+	/* textes images commande */
+
+	/* fraise*/
+	.elementor-element.elementor-element-ed13a96 {
+		height: 350px;
+		display: flex;
+
+	}
+
+	.elementor-element .elementor-element-9e3a73d .elementor-heading-title h2 {
+		font-size: 100% !important;
+		justify-content: center;
+		margin: 0px;
+
+	}
+
+	/*compteur */
+	.elementor-element .elementor-element-de24fda {
+		margin-top: 20px;
+	}
+
+	/* pamplemousse*/
+	.elementor-element.elementor-element-07bdc49 {
+		height: 350px;
+
+	}
+
+	/* framboise*/
+	.elementor-element.elementor-element-e63c81e {
+		height: 350px;
+	}
+
+	/* citron*/
+	.elementor-element.elementor-element-6e44285 {
+		height: 350px;
+	}
+
+
+	/* formulaire compteur */
+	.compteur {
+		display: flex !important;
+		gap: 50px !important;
+	}
+
+	/* commande */
+	.formulaire {
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+	}
+
+	.formulaire h2 {
+		font-size: 100% !important;
+	}
+
+	.ligne {
+		height: 2px;
+		width: 100%;
+		background-color: #ffff;
+		margin-top: 10px;
 	}
 }
-
-
-

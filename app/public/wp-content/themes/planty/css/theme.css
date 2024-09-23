@@ -11,7 +11,6 @@ body * {
 }
 
 
-
 nav a {
 	color: black !important;
 	display: inline-block;
@@ -24,7 +23,7 @@ li a:hover {
 	color: white !important;
 	background: #D2776A;
 	text-decoration: none !important;
-	padding: 20px;
+	padding: 35px 40px 35px 40px;
 	margin: 0px;
 }
 
@@ -77,11 +76,25 @@ p {
 	margin-left: 0px;
 	margin-right: 0px;
 }
+
 /* header */
+.singular .entry-header {
+
+	margin: -250px 15px 0px 15px;
+}
+
+
 .site-logo .custom-logo {
-	width: 60%;
+	width: 50%;
 	height: auto;
 }
+
+.header-inner {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 0px;
+}
+
 /* footer*/
 .site-footer .footer {
 	padding: 20px;
@@ -91,6 +104,9 @@ p {
 }
 
 /* accueil*/
+.elementor-element.elementor-element-342eefe {
+	padding-top: 250px;
+}
 
 .elementor-56 .elementor-element.elementor-element-7c6d70e0 {
 	width: 100%;
@@ -111,25 +127,31 @@ p {
 	font-family: "Syne", sans-serif !important;
 	font-weight: 900 !important;
 }
+
 /* Arrondis bloc */
 .elementor-element.elementor-element-497b00a {
 	border-bottom-right-radius: 7%;
 	border-bottom-left-radius: 7%;
 }
+
 /* Titres images */
-.elementor-element .elementor-element-2224221  .elementor-heading-title {
-		color: white !important;
+.elementor-element .elementor-element-2224221 .elementor-heading-title {
+	color: white !important;
 }
+
 .elementor-element .elementor-element-2629b3c .elementor-heading-title {
-		color: white !important;
-	
+	color: white !important;
+
 }
+
 .elementor-element .elementor-element-544482a .elementor-heading-title {
 	color: white !important;
 }
+
 .elementor-element .elementor-element-3f77966 .elementor-heading-title {
 	color: white !important;
 }
+
 /*button*/
 .elementor-element .elementor-element-ffffc34 .elementor-button-content-wrapper {
 	justify-content: center;
@@ -148,13 +170,14 @@ p {
 	display: flex;
 	padding-left: 10px;
 }
+
 /*mise en forme "ce qu'ils en pensent"*/
 
 /*titre Fathia*/
 .elementor-element .elementor-element-3c0a467 .elementor-widget-container .elementor-heading-title {
 	color: #3B8E46 !important;
 	font-size: 26px;
-	
+
 	font-weight: bold !important;
 	text-align: left;
 	margin-top: 10px;
@@ -178,9 +201,9 @@ p {
 
 /*text Véro*/
 .elementor-56 .elementor-element .elementor-element-f39c475 p {
-	font-size: 15px !important ;
+	font-size: 15px !important;
 	text-align: left !important;
-	
+
 }
 
 /*titre Marc*/
@@ -208,13 +231,12 @@ p {
 	border-bottom-right-radius: 7%;
 	border-bottom-left-radius: 7%;
 	padding: 50px 100px 50px 100px;
-	}
+}
 
 /*image*/
 .elementor-element .elementor-element-d5bd055 .wp-image-302 {
 	width: 15%;
-	margin-bottom: -150px;
-	/*padding-left: -50px;*/
+	margin-bottom: -300px;
 	display: flex;
 	justify-content: left;
 }
@@ -229,7 +251,7 @@ p {
 /*texte*/
 .elementor-element .elementor-element-10ce064 p {
 	font-family: "Syne", sans-serif !important;
-	
+
 }
 
 
@@ -247,6 +269,7 @@ p {
 	gap: 20px;
 	justify-content: center;
 }
+
 /* noms fonctions */
 
 .elementor-40 .elementor-element.elementor-element-eeb7f0a {
@@ -274,117 +297,105 @@ p {
 	width: 15%;
 	margin-top: -150px;
 	margin-right: 15px;
-	
+
 }
 
 /*formulaire*/
 /*background*/
 .elementor-40 .elementor-element.elementor-element-094abec {
 	background-color: #ece2da;
-	
+
 }
+
 /*nous contacter*/
 /*titre*/
 .elementor-element .elementor-element-9dc6753 .elementor-heading-title {
-	color: black !important ;
-	
+	color: black !important;
+
 }
-
-
-
 
 
 /* COMMANDER */
 /* sous titre */
 .elementor-element .elementor-element-86f9281 .elementor-heading-title {
 	font-weight: 700 !important;
-		
+
 }
+
 .post-67 {
 	color: white !important;
-	background-color: #3B8E46 !important;
 }
+
 /* titre page */
- .elementor-67 .elementor-element.elementor-element-8320e05 .elementor-heading-title {
+.elementor-67 .elementor-element.elementor-element-8320e05 .elementor-heading-title {
 	color: white !important;
 }
 
 .elementor-element .elementor-element-86f9281 .elementor-heading-title {
 	color: white !important;
 	text-align: left;
-} 
-
-/* superposition sous titre*/
-.elementor-element .elementor-element-4e3a413 {
-	margin:auto;
 }
 
-.elementor-element .elementor-element-ef9d503 {	
-	margin-top: -250px;
-
-} 
-
-	
 /* Texte fruits */
 .elementor-element .elementor-element-9e3a73d .elementor-heading-title {
 	color: white !important;
 }
+
 .elementor-element .elementor-element-c595c98 .elementor-heading-title {
 	color: white !important;
 }
+
 .elementor-element .elementor-element-8fab661 .elementor-heading-title {
 	color: white !important;
 }
+
 .elementor-element .elementor-element-aa0ed5a .elementor-heading-title {
 	color: white !important;
 }
 
 /* format quantité */
-.wpcf7-form .compteur {
-    display: flex;
-	gap: 180px;
+.compteur {
+	display: flex;
 	justify-content: center;
-	width: 15%;
-    margin: auto;
-	}
+}
+
+
 /* formulaire */
-	.formulaire h2 {
-		color:white !important;
-		font-size: 26px;
-		text-align: left;
-		font-weight: 700 !important;
-	}
-	.formulaire label {
-		text-align: left !important ;
-	}
-	.formulaire {
-		display: flex;
-		justify-content: center; 
-		gap: 50px;
-	}
-	.colonne {
-		margin-bottom: 20px;
-		display: flex;
-    	flex-direction: column;
-		}
-	
-	.elementor-element.elementor-element-03a84a9 {
-		padding-left: 10px;
-	}
-	.elementor-element .elementor-element-9046a2d p {
-		font-size: 60% !important;
-	}
-	.ligne {
-			width: 2px; 
-			height: 350px;
-			background-color: #ffff;
-			margin-top: 50px;
-			}
-	
-	/* ......................... */
+.formulaire h2 {
+	color: white !important;
+	font-size: 26px;
+	text-align: left;
+	font-weight: 700 !important;
+}
 
-	
-	
+.formulaire label {
+	text-align: left !important;
+}
 
+.formulaire {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
 
+.colonne {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
 
+.elementor-element.elementor-element-03a84a9 {
+	padding-left: 10px;
+}
+
+.elementor-element .elementor-element-9046a2d p {
+	font-size: 60% !important;
+}
+
+.ligne {
+	width: 2px;
+	background-color: #ffff;
+	margin-top: 50px;
+}
+
+/* ......................... */
