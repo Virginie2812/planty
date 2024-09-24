@@ -1,34 +1,54 @@
 @media (min-width: 768px) and (max-width: 1024px) {
-	h1 {
-		font-size: 22px !important;
+	/*h1 {
+		font-size: 28px !important;
 	}
 
 	h2 {
-		font-size: 20px !important;
+		font-size: 26px !important;
 	}
 
 	h3 {
-		font-size: 18px !important;
+		font-size: 24px !important;
 	}
 
 	h4 {
-		font-size: 16px !important;
+		font-size: 22px !important;
 	}
 
 	h5 {
-		font-size: 14px !important;
+		font-size: 20px !important;
 	}
 
 	p {
-		font-size: 12px !important;
-	}
+		font-size: 18px !important;
+	}*/
 
 	/* ACCEUIL */
 	/* marge bloc titre */
 	.elementor-element .elementor-element-5f4221d {
 		padding-bottom: 470px !important;
+		display: flex !important;
+		flex-direction: column !important;
 	}
+	/* bloc fraise*/
+	.elementor-element .elementor-element-03ad47c {
+		width: 70%;
+	}
+	
+    /* bloc pamplemousse*/
+.elementor-element .elementor-element-f754b5f  {
+	width: 70%;
+}
 
+/* bloc framboise*/
+.elementor-element .elementor-element-5afd51e  {
+	width: 70%;
+}
+
+/* bloc citron*/
+.elementor-element .elementor-element-77a3b3a  {
+	width: 70%;
+}
 
 	/* PAGE NOUS RENCONTRER */
 
@@ -156,7 +176,26 @@
 	.elementor-element .elementor-element-5f4221d {
 		padding-bottom: 300px !important;
 	}
+/* bloc fraise*/
+.elementor-element .elementor-element-03ad47c {
+	width: 70%;
+}
 
+/* bloc pamplemousse*/
+.elementor-element .elementor-element-f754b5f  {
+width: 70%;
+}
+/* bloc framboise*/
+.elementor-element .elementor-element-5afd51e  {
+width: 70%;
+}
+
+/* bloc citron*/
+.elementor-element .elementor-element-77a3b3a  {
+width: 70%;
+}
+
+	
 	/* PAGE NOUS RENCONTRER */
 	.elementor-element.elementor-element-453113f {
 		margin-top: 100px;
