@@ -1,27 +1,4 @@
 @media (min-width: 768px) and (max-width: 1024px) {
-	/*h1 {
-		font-size: 28px !important;
-	}
-
-	h2 {
-		font-size: 26px !important;
-	}
-
-	h3 {
-		font-size: 24px !important;
-	}
-
-	h4 {
-		font-size: 22px !important;
-	}
-
-	h5 {
-		font-size: 20px !important;
-	}
-
-	p {
-		font-size: 18px !important;
-	}*/
 
 	/* ACCEUIL */
 	/* marge bloc titre */
@@ -253,16 +230,21 @@ width: 70%;
 
 	/* fraise*/
 	.elementor-element.elementor-element-ed13a96 {
-		height: 350px;
-		display: flex;
-
+		height: 350px;	
+	}
+	/* pamplemousse*/
+	.elementor-element.elementor-element-07bdc49 {
+	height: 350px;
 	}
 
-	.elementor-element .elementor-element-9e3a73d .elementor-heading-title h2 {
-		font-size: 100% !important;
-		justify-content: center;
-		margin: 0px;
+	/* framboise*/
+	.elementor-element.elementor-element-e63c81e {
+	height: 350px;
+	}
 
+	/* citron*/
+	.elementor-element.elementor-element-6e44285 {
+	height: 350px;
 	}
 
 	/*compteur */
@@ -270,24 +252,7 @@ width: 70%;
 		margin-top: 20px;
 	}
 
-	/* pamplemousse*/
-	.elementor-element.elementor-element-07bdc49 {
-		height: 350px;
-
-	}
-
-	/* framboise*/
-	.elementor-element.elementor-element-e63c81e {
-		height: 350px;
-	}
-
-	/* citron*/
-	.elementor-element.elementor-element-6e44285 {
-		height: 350px;
-	}
-
-
-	/* formulaire compteur */
+		/* formulaire compteur */
 	.compteur {
 		display: flex !important;
 		gap: 50px !important;

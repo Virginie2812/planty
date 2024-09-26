@@ -133,10 +133,7 @@ p {
 	border-bottom-right-radius: 7%;
 	border-bottom-left-radius: 7%;
 }
-.elementor-element .elementor-element-595df1d {
-	display: flex;
-	flex-direction: column;
-}
+
 /* Titres images */
 .elementor-element .elementor-element-2224221 .elementor-heading-title {
 	color: white !important;
@@ -316,7 +313,9 @@ p {
 	color: black !important;
 
 }
-
+.elementor-element .elementor-element-c5c6efd label {
+	text-align: left;
+}
 
 /* COMMANDER */
 /* sous titre */

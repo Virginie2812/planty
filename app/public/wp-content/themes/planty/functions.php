@@ -27,7 +27,7 @@ function afficher_page_admin_pour_utilisateurs_connectes($items, $args) {
         $page_admin_link = get_permalink($page_admin_id);
 
        // Le lien "Admin" à ajouter
-        $admin_link = '<li><a href="' . $page_admin_link . '">Admin</a></li>';
+        $admin_link = '<li><a href="' . get_admin_url() . '">Admin</a></li>';
 
         // Trouvez la position du premier élément du menu
         $menu_items = explode('</li>', $items);

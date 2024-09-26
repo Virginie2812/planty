@@ -17675,3 +17675,5 @@ Stack trace:
 [11-Sep-2024 14:14:42 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
 [11-Sep-2024 14:14:46 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
 [12-Sep-2024 13:30:17 UTC] PHP Warning:  Undefined array key "editor_post_id" in C:\Users\Utilisateur\Local Sites\planty\app\public\wp-content\plugins\elementor\modules\history\revisions-manager.php on line 363
+[25-Sep-2024 06:36:13 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[25-Sep-2024 06:36:25 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
